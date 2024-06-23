@@ -8,6 +8,7 @@
 ```
 Difficulty: Easy
 OS: Linux
+Subscription type: Free
 Description: boot2root machine for FIT and bsides guatemala CTF
 ```
 Room link: [https://tryhackme.com/r/room/bsidesgtthompson](https://tryhackme.com/r/room/bsidesgtthompson)
