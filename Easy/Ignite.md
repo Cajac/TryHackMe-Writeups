@@ -182,8 +182,8 @@ www-data@ubuntu:/var/www/html$
 
 It's now time for enumeration and finding a way to escalate our privileges.  
 Searching the Internet for information on `Fuel CMS` turns out two interesting things:
-- The [default user and password](https://forum.getfuelcms.com/discussion/1522/default-user-name-and-password) is `admin:admin`
-- There is a [database configuration file](https://www.codeigniter.com/user_guide/database/configuration.html) located at app/Config/Database.php
+- The [default user and password](https://forum.getfuelcms.com/discussion/1522/default-user-name-and-password) for the database is `admin:admin`
+- There is a [database configuration file](https://www.codeigniter.com/user_guide/database/configuration.html) located at `app/Config/Database.php`
 
 We search for the `database.php` file and check its contents
 ```bash
@@ -251,7 +251,7 @@ Excellent, we are root.
 
 ### Get the root flag
 
-Finally, we locate and get the root flag
+Finally, we locate and cat the root flag
 ```bash
 root@ubuntu:/var/www/html# cd /root
 cd /root
