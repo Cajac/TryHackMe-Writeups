@@ -26,4 +26,4 @@ I'm not a native English speaker so please forgive any spelling mistakes or gram
  ## Acknowledgements
 
  Some of the solutions were inspired by writeups and walkthroughs from these guys:
- - [Almond Force](https://www.youtube.com/@AlmondForce)
+ - [XXX](https://www.youtube.com/@XXX)
