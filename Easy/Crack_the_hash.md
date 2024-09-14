@@ -15,7 +15,7 @@ Room link: [https://tryhackme.com/r/room/crackthehash](https://tryhackme.com/r/r
 
 ## Solution
 
-You should always try to Google for the hash before attempt to crack it. This usually work for easier hashes from common passwords.
+You should always try to Google for the hash before attempting to crack it. This usually works for easier hashes from common passwords.
 
 Note that you will find examples below from both September 2020 when I originally solved the room and September 2024 when I made this more formal writeup.
 
@@ -26,9 +26,9 @@ The first hashes will likely be one of the following:
 - [SHA-1 hashes](https://en.wikipedia.org/wiki/SHA-1) (40 hex chars)
 - [SHA-2 hashes](https://en.wikipedia.org/wiki/SHA-2) (64 hex chars)
 
-You can also use tools such as [hashid](https://www.kali.org/tools/hashid/) or [hash-identifier](https://www.kali.org/tools/hash-identifier/) to help you identify hashes.
+You can also use tools such as [hashid](https://www.kali.org/tools/hashid/) or [hash-identifier](https://www.kali.org/tools/hash-identifier/) to help you identify hash types.
 
-Finally, there are a bunch of online services that can also help such as:
+Finally, there are a bunch of online services that can also help, for example:
 - [dcode.fr](https://www.dcode.fr/hash-identifier)
 - [hashes.pro](https://hashes.pro/)
 - [tunnelsup.com](https://www.tunnelsup.com/hash-analyzer/)
@@ -51,7 +51,7 @@ You can also use an online service to lookup this `MD5`-hash:
 - [crackstation.net](https://crackstation.net/)
 - [md5.gromweb.com](https://md5.gromweb.com/)
 
-Plaintext password: e<REDACTED>y
+Plaintext password: `e<REDACTED>y`
 
 **Hash: CBFDAC6008F9CAB4083784CBD1874F76618D2A97**
 
@@ -61,7 +61,7 @@ You can also use an online service to lookup this `SHA1`-hash:
 - [crackstation.net](https://crackstation.net/)
 - [sha1.gromweb.com](https://sha1.gromweb.com/)
 
-Plaintext password: p<REDACTED>3
+Plaintext password: `p<REDACTED>3`
 
 **Hash: 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032**
 
@@ -70,7 +70,7 @@ The hash [can be found](https://md5hashing.net/hash/sha256/1c8bfe8f801d79745c463
 You can also use an online service to lookup this `SHA2`-hash:
 - [crackstation.net](https://crackstation.net/)
 
-Plaintext password: l<REDACTED>n
+Plaintext password: `l<REDACTED>n`
 
 **Hash: $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom**
 
@@ -152,7 +152,7 @@ Hash.Target......: $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX...8wsRom
 ```
 Note that the cracking time is still **several hours**!
 
-Plaintext password: b<REDACTED>h
+Plaintext password: `b<REDACTED>h`
 
 **Hash: 279412f945939ba78ce0758d3fd83daa**
 
@@ -234,7 +234,7 @@ Time.Estimated...: Sat Sep 14 12:00:47 2024 (0 secs)
 <---snip--->
 ```
 
-Plaintext password: E<REDACTED>2
+Plaintext password: `E<REDACTED>2`
 
 ### Level 2 hashes
 
@@ -311,7 +311,7 @@ Started: Sat Sep 14 12:14:06 2024
 Stopped: Sat Sep 14 12:14:25 2024
 ```
 
-Plaintext password: p<REDACTED>e
+Plaintext password: `p<REDACTED>e`
 
 **Hash: 1DFECA0C002AE40B8619ECF94819CC1B**
 
@@ -340,7 +340,8 @@ Analyzing '1DFECA0C002AE40B8619ECF94819CC1B'
 [+] DNSSEC(NSEC3) [Hashcat Mode: 8300]
 [+] RAdmin v2.x [Hashcat Mode: 9900][JtR Format: radmin]
 ```
-Here there are several possible hash types. Let's go through them in some likelihood order
+Here there are several possible hash types.  
+Let's go through them in some likelihood order.
 
 First we try MD5
 ```bash
@@ -381,7 +382,7 @@ Started: Sat Sep 12 11:04:20 2020
 Stopped: Sat Sep 12 11:04:56 2020
 ```
 
-Plaintext password: n<REDACTED>i
+Plaintext password: `n<REDACTED>i`
 
 **Hash: $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.**
 
@@ -429,7 +430,7 @@ Stopped: Sat Sep 12 20:11:27 2020
 ```
 The cracking time is around 20-30 minutes or so.
 
-Plaintext password: w<REDACTED>9
+Plaintext password: `w<REDACTED>9`
 
 **Hash: e5d8870e5bdd26602cab8dbe07a942c8669e56d6**
 
@@ -515,7 +516,7 @@ Started: Sat Sep 14 12:48:48 2024
 Stopped: Sat Sep 14 12:49:18 2024
 ```
 
-Plaintext password: 4<REDACTED>6
+Plaintext password: `4<REDACTED>6`
 
 For additional information, please see the references below.
 
