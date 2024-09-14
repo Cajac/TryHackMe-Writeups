@@ -24,7 +24,7 @@ If you appreciate this repository and learn from it, please consider [giving it 
 
 I'm not a native English speaker so please forgive any spelling mistakes or grammatical errors.
  
- ## Acknowledgements
+## Acknowledgements
 
- Some of the solutions were inspired by writeups and walkthroughs from these guys:
- - [XXX](https://www.youtube.com/@XXX)
+Some of the solutions were inspired by writeups and walkthroughs from these guys:
+- [XXX](https://www.youtube.com/@XXX)

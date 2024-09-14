@@ -5,6 +5,7 @@
 - [Basic Pentesting](Basic_Pentesting.md)
 - [HeartBleed](HeartBleed.md)
 - [Ignite](Ignite.md)
+- [Investigating Windows](Investigating_Windows.md)
 - [Simple CTF](Simple_CTF.md)
 - [Thompson](Thompson.md)
 
