@@ -254,7 +254,7 @@ See question above and the `Start Date` line.
 
 ### During the compromise, at what time did Windows first assign special privileges to a new logon?
 
-We check the security event log for event IDs 4672 (Special privileges assigned to new logon) with `Get-EventLog` and `Select-Object` in the PowerShell window
+We check the security event log for event IDs 4672 (Special privileges assigned to new logon) with `Get-EventLog` in the PowerShell window
 ```
 PS C:\Users\Administrator> Get-WinEvent -FilterHashtable @{Logname='Security';ID=4672} -MaxEvents 25 -Oldest
 
@@ -327,7 +327,7 @@ Repeat: Until: Time:                  None
 Repeat: Until: Duration:              Disabled
 Repeat: Stop If Still Running:        Disabled
 ```
-If you don't recognize the tool and it's syntax you may need to do some additional Googling.
+If you don't recognize the tool and it's syntax you may need to do some additional Googling.  
 Or check the contents of the file `C:\TMP\mim-out.txt`.
 
 ### What was the attackers external control and command servers IP?
@@ -444,6 +444,7 @@ For additional information, please see the references below.
 - [findstr - Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/findstr)
 - [Get-EventLog - Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-eventlog?view=powershell-5.1)
 - [Get-Item - Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-item?view=powershell-5.1)
+- [Internet Information Services - Wikipedia](https://en.wikipedia.org/wiki/Internet_Information_Services)
 - [Mimikatz - Github](https://github.com/gentilkiwi/mimikatz)
 - [Mimikatz - Wiki](https://github.com/gentilkiwi/mimikatz/wiki)
 - [Net user - Microsoft Learn](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc771865(v=ws.11))
