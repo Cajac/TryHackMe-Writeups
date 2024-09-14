@@ -331,7 +331,8 @@ The flag can be found in the beginning of the leaked memory in the `user_message
 ```
 <---snip--->
 [*] 34.242.247.21:443     - Printable info leaked:
-......f......w....8....:.y.O.c;.B@}.....f.....".!.9.8.........5.............................3.2.....E.D...../...A.......................................36 (KHTML, like Gecko) Chrome/44.0.2403.89 Safari/537.36..Content-Length: 75..Content-Type: application/x-www-form-urlencoded....user_name=hacker101&user_email=haxor@haxor.com&user_message=THM{<REDACTED>}q1.......F....8t....+............-.....3.&.$... .j.M..c../R.r?..8: ..].....x...
+<---snip--->
+Content-Type: application/x-www-form-urlencoded....user_name=hacker101&user_email=haxor@haxor.com&user_message=THM{<REDACTED>}q1.....
 <---snip--->
 ```
 
