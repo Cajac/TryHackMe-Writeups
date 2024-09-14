@@ -429,7 +429,7 @@ From the hint we see that the answer is Firewall-related.
 
 Let's launch the `Windows Firewall with Advanced Security` GUI, select Inbound Rules, and sort by the `Local Port`
 
-![Firewall Rules on Investing Windows](Firewall_Rules_on_Investing_Windows.png)
+![Firewall Rules on Investing Windows](Images/Firewall_Rules_on_Investigating_Windows.png)
 
 ### Check for DNS poisoning, what site was targeted?
 
