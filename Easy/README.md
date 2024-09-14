@@ -3,6 +3,7 @@
 ## Machines
 - [Anonforce](Anonforce.md)
 - [Basic Pentesting](Basic_Pentesting.md)
+- [HeartBleed](HeartBleed.md)
 - [Ignite](Ignite.md)
 - [Simple CTF](Simple_CTF.md)
 - [Thompson](Thompson.md)

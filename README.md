@@ -1,12 +1,13 @@
-# Writeups for TryHackMe challenges
+# Writeups for TryHackMe Challenges
 
 ![TryHackMe Logo](TryHackMe_logo.png)
 
-Welcome to my writeups for [TryHackMe](https://tryhackme.com/) challenges. These writeups are mainly a documentation for myself but I hope others will benefit from them as well.  
+Welcome to my writeups for [TryHackMe](https://tryhackme.com/) challenges/rooms.  
+These writeups are mainly a documentation for myself but I hope others will benefit from them as well.  
 
-In total you will find more than XX challenge solutions here.
+In total you will find more than XX room solutions here.
 
-## Challenges
+## Challenges/Rooms
 
 - [Easy Challenges](Easy/README.md)
 
