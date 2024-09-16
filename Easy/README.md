@@ -8,6 +8,7 @@
 - [Investigating Windows](Investigating_Windows.md)
 - [Simple CTF](Simple_CTF.md)
 - [Thompson](Thompson.md)
+- [ToolsRus](ToolsRus.md)
 
 ## Other Rooms
 - [Crack the hash](Crack_the_hash.md)
