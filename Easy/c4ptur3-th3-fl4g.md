@@ -241,7 +241,7 @@ This task can be solved with [Sonic Visualiser](https://www.sonicvisualiser.org/
 3. Zoom in/out with the Up/Down arrow keys, or the mouse wheel
 4. Move the spectrogram with the Left/Right arrow keys if needed
 
-![Spectrogram in c4ptur3-th3-fl4g](Spectrogram_in_c4ptur3-th3-fl4g.png)
+![Spectrogram in c4ptur3-th3-fl4g](Images/Spectrogram_in_c4ptur3-th3-fl4g.png)
 
 ### Task 3: Steganography
 
@@ -375,7 +375,7 @@ Finally, we check the end of the file with `xxd` and `tail`
 000015a0: ae42 6082 2241 4848 5f59 4f55 5f46 4f55  .B`."A<--REDACTE
 000015b0: 4e44 5f4d 4521 2220 0d0a                 D!-->!" ..
 ```
-And the we have the hidden (redacted) text.
+And there we have the hidden (redacted) text.
 
 For additional information, please see the references below.
 
