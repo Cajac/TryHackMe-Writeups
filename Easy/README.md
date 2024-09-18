@@ -6,6 +6,7 @@
 - [HeartBleed](HeartBleed.md)
 - [Ignite](Ignite.md)
 - [Investigating Windows](Investigating_Windows.md)
+- [Library](Library.md)
 - [Simple CTF](Simple_CTF.md)
 - [Thompson](Thompson.md)
 - [ToolsRus](ToolsRus.md)
