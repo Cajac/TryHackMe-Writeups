@@ -1,6 +1,7 @@
 # Easy Challenges
 
 ## Machines
+- [Agent Sudo](Agent_Sudo.md)
 - [Anonforce](Anonforce.md)
 - [Basic Pentesting](Basic_Pentesting.md)
 - [Dav](Dav.md)
