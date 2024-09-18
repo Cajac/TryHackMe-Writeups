@@ -11,6 +11,7 @@
 - [Simple CTF](Simple_CTF.md)
 - [Thompson](Thompson.md)
 - [ToolsRus](ToolsRus.md)
+- [Wgel CTF](Wgel_CTF.md)
 
 ## Other Rooms
 - [c4ptur3-th3-fl4g](c4ptur3-th3-fl4g.md)
