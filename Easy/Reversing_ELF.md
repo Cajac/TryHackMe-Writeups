@@ -283,7 +283,7 @@ undefined8 main(void)
 }
 ```
 
-The string we are looking for is divided up in bytes/chars and is hex-encoded.  
+The string we are looking for is divided up into bytes/chars and is hex-encoded.  
 Let's change the hex-values by right-clicking on each of them and show them as `Char` instead
 ```C
   local_10 = *(long *)(in_FS_OFFSET + 0x28);
