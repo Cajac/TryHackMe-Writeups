@@ -19,3 +19,4 @@
 - [Investigating Windows](Investigating_Windows.md)
 - [Ninja Skills](Ninja_Skills.md)
 - [OhSINT](OhSINT.md)
+- [Reversing ELF](Reversing_ELF.md)
