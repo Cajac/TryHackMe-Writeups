@@ -229,7 +229,7 @@ backup.pgp  private.asc  user.txt
 
 ### Crack the PGP private key
 
-Now, we turn our attention to the PGP ASCII amored file `private.asc` and try to crack it with [John the Ripper](https://www.openwall.com/john/)
+Now, we turn our attention to the PGP ASCII armored file `private.asc` and try to crack it with [John the Ripper](https://www.openwall.com/john/)
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Anonforce]
 └─$ gpg2john private.asc 
