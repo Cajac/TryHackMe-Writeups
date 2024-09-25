@@ -4,6 +4,7 @@
 - [Agent Sudo](Agent_Sudo.md)
 - [Anonforce](Anonforce.md)
 - [Basic Pentesting](Basic_Pentesting.md)
+- [Blueprint](Blueprint.md)
 - [Dav](Dav.md)
 - [HeartBleed](HeartBleed.md)
 - [Ignite](Ignite.md)
