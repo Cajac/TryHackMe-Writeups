@@ -7,7 +7,7 @@
 ## Room information
 ```
 Difficulty: Easy
-OS: Linux
+OS: Windows
 Subscription type: Free
 Description: Hack into this Windows machine and escalate your privileges to Administrator.
 ```
