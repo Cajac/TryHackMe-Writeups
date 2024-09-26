@@ -8,6 +8,7 @@
 - [Dav](Dav.md)
 - [HeartBleed](HeartBleed.md)
 - [Ignite](Ignite.md)
+- [LazyAdmin](LazyAdmin.md)
 - [Library](Library.md)
 - [Simple CTF](Simple_CTF.md)
 - [Thompson](Thompson.md)
