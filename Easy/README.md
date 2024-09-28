@@ -10,6 +10,7 @@
 - [Ignite](Ignite.md)
 - [LazyAdmin](LazyAdmin.md)
 - [Library](Library.md)
+- [Madness](Madness.md)
 - [Simple CTF](Simple_CTF.md)
 - [Thompson](Thompson.md)
 - [ToolsRus](ToolsRus.md)
