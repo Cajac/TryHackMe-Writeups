@@ -118,7 +118,8 @@ One easy way to see it is to select all text in the browser with `CTRL + A`.
 
 `Description: Such technology is quite reliable.`
 
-The image is a [QR code](https://en.wikipedia.org/wiki/QR_code) and you can convert it with an online service such as [CyberChef](https://gchq.github.io/CyberChef/#recipe=Parse_QR_Code(false)) or [ZXing Decoder Online](https://zxing.org/w/decode.jspx) or with the `zbarimg` tool from the `zbar-tools` package.
+The image is a [QR code](https://en.wikipedia.org/wiki/QR_code) and you can convert it with an online service such as [CyberChef](https://gchq.github.io/CyberChef/#recipe=Parse_QR_Code(false)) or [ZXing Decoder Online](https://zxing.org/w/decode.jspx), or  
+with the `zbarimg` tool from the `zbar-tools` package.
 
 Decode with `zbarimg`
 ```bash
@@ -166,7 +167,7 @@ THM{<REDACTED>}
 
 The text is rotated 7 steps (ROT-7) rather than the common 3 steps as in a caesar cipher or 13 steps as in ROT13.
 
-You can decode the text with [cyberChef](https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,7)).
+You can decode the text with [CyberChef](https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,7)).
 
 Alternatively, you can brute-force the number of steps with the `caesar` tool from the [bsdgames](https://wiki.linuxquestions.org/wiki/BSD_games) package.
 ```bash
@@ -205,7 +206,7 @@ Alternatively, you can brute-force the number of steps with the `caesar` tool fr
 
 The flag is hidden in the HTML-code. 
 
-Select the `Huh .......` text in the browser, right-click and select `Inspect` and then expand the `<p style="display:none;"> tag to view the flag which is broken up in two parts.
+Select the `Huh .......` text in the browser, right-click and select `Inspect` and then expand the `<p style="display:none;">` tag to view the flag which is broken up in two parts.
 
 ### Can you fix it?
 
@@ -333,7 +334,7 @@ THM{<REDACTED>}
 The description `lurking in the dark` likely points to another [steganography](https://en.wikipedia.org/wiki/Steganography) challenge.  
 Another commonly used stego-program is `stegsolve`.
 
-Open the image in `stegsolve` and step left with the buttons at the bottom of the tool.  
+Open the image in `stegsolve` and step left/back with the buttons at the bottom of the tool.  
 With the `Gray bits` mode you should see the flag.
 
 ### A sounding QR
