@@ -18,6 +18,7 @@
 ## Other Rooms
 - [c4ptur3-th3-fl4g](c4ptur3-th3-fl4g.md)
 - [Crack the hash](Crack_the_hash.md)
+- [CTF collection Vol.1](CTF_collection_Vol_1.md)
 - [Investigating Windows](Investigating_Windows.md)
 - [Ninja Skills](Ninja_Skills.md)
 - [OhSINT](OhSINT.md)
