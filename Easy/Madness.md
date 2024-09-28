@@ -85,7 +85,7 @@ We have two services running:
 
 Manually browsing to port 80 shows an `Apache2 Ubuntu Default Page`.
 
-Looking more closely at the HTML-source we can find an interesting comment near a missing `thm.jpg` file
+Looking more closely at the HTML-source we can find an interesting comment near a `thm.jpg` file
 ```html
       <div class="page_header floating_element">
         <img src="thm.jpg" class="floating_element"/>
@@ -114,7 +114,7 @@ thm.jpg                                        100%[============================
 2024-09-28 17:59:29 (547 KB/s) - ‘thm.jpg’ saved [22210/22210]
 ```
 
-Checking the file with `xxd` shows a PNG header
+Checking the file with `xxd` shows a PNG header!?  
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ xxd -l 48 thm.jpg        
@@ -122,6 +122,7 @@ Checking the file with `xxd` shows a PNG header
 00000010: 0001 0000 ffdb 0043 0003 0202 0302 0203  .......C........
 00000020: 0303 0304 0303 0405 0805 0504 0405 0a07  ................
 ```
+What's going on? Is the header corrupted with a PNG header?
 
 Checking [this list of file signatures](https://en.wikipedia.org/wiki/List_of_file_signatures) we can see that the first 12 bytes should be `FF D8 FF E0 00 10 4A 46 49 46 00 01` in hexadecimal instead.
 
@@ -246,7 +247,7 @@ joker@10.10.143.14's password:
 ```
 But no, that didn't work!
 
-Here I got stuck for quite a while until I found a hint to use the image from the room (the file `5iW7kC8.jpg`).
+Here I got stuck for quite a while until I found a hint to use the image from the room (the file named `5iW7kC8.jpg`).
 
 ### Another steghide hidden file
 
