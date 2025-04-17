@@ -5,21 +5,25 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: N/A
 Subscription type: Free
 Description: A beginner level CTF challenge
 ```
+
 Room link: [https://tryhackme.com/r/room/c4ptur3th3fl4g](https://tryhackme.com/r/room/c4ptur3th3fl4g)
 
 ## Solution
 
 ### Task 1: Translation & Shifting
 
-**c4n y0u c4p7u23 7h3 f149?**
+#### c4n y0u c4p7u23 7h3 f149?
 
 This is [leetspeak](https://en.wikipedia.org/wiki/Leet) and you can either solve it manually, with an online service such as [dcode.fr](https://www.dcode.fr/leet-speak-1337) or with a simple python script
+
 ```python
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
@@ -30,15 +34,17 @@ print(encoded_flag.translate(str.maketrans('1234790','lreatgo')))
 ```
 
 Run the script to get the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ python solve_1-1.py
 c<REDACTED>?
 ```
 
-**01101100 01100101 01110100 etc**
+#### 01101100 01100101 01110100 etc
 
 This is [binary numbers](https://en.wikipedia.org/wiki/Binary_number) and you convert them to [ASCII]((https://en.wikipedia.org/wiki/ASCII)) manually (which is tedious), with an online service such as [branah.com](https://www.branah.com/ascii-converter) or [RapidTables](https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html), or with a simple python script
+
 ```python
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
@@ -53,17 +59,19 @@ print(flag)
 ```
 
 Run the script to get the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ python solve_1-2.py
 l<REDACTED>!
 ```
 
-**MJQXGZJTGIQGS4ZAON2XAZLSEBRW63LNN5XCA2LOEBBVIRRHOM======**
+#### MJQXGZJTGIQGS4ZAON2XAZLSEBRW63LNN5XCA2LOEBBVIRRHOM======
 
 This is [base32](https://en.wikipedia.org/wiki/Base32) and you can convert it to ASCII with [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base32('A-Z2-7%3D',false)), `base32` in bash, or with the base64 module in Python.
 
 Convert using bash
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ echo 'MJQXGZJTGIQGS4ZAON2XAZLSEBRW63LNN5XCA2LOEBBVIRRHOM======' | base32 -d
@@ -71,6 +79,7 @@ b<REDACTED>s
 ```
 
 Convert with a simple python script
+
 ```python
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
@@ -83,17 +92,19 @@ print(base64.b32decode(encoded_flag).decode())
 ```
 
 Then run the script to get the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ python solve_1-3.py                                                        
 b<REDACTED>s
 ```
 
-**RWFjaCBCYXNlNjQgZGlnaXQgcmVwcmVzZW50cyBleGFjdGx5IDYgYml0cyBvZiBkYXRhLg==**
+#### RWFjaCBCYXNlNjQgZGlnaXQgcmVwcmVzZW50cyBleGFjdGx5IDYgYml0cyBvZiBkYXRhLg==
 
 This is [base64](https://en.wikipedia.org/wiki/Base64) and you can convert it to ASCII with [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)), `base64` in bash, or with the base64 module in Python.
 
 Convert using bash
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ echo 'RWFjaCBCYXNlNjQgZGlnaXQgcmVwcmVzZW50cyBleGFjdGx5IDYgYml0cyBvZiBkYXRhLg==' | base64 -d
@@ -101,6 +112,7 @@ E<REDACTED>.
 ```
 
 Convert with a simple python script
+
 ```python
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
@@ -113,17 +125,19 @@ print(base64.b64decode(encoded_flag).decode())
 ```
 
 Then run the script to get the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ python solve_1-4.py                                                                        
 E<REDACTED>.
 ```
 
-**68 65 78 61 64 65 63 69 6d 61 6c 20 6f 72 20 62 61 73 65 31 36 3f**
+#### 68 65 78 61 64 65 63 69 6d 61 6c 20 6f 72 20 62 61 73 65 31 36 3f
 
 This is [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal) and they can be converted to ASCII with online services such as [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Hex('Space')) or [RapidTables](https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html), `xxd` in bash, or with a Python script.
 
 Convert in bash with `xxd`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ echo '68 65 78 61 64 65 63 69 6d 61 6c 20 6f 72 20 62 61 73 65 31 36 3f' | xxd -r -p       
@@ -131,6 +145,7 @@ h<REDACTED>?
 ```
 
 Convert with a simple python script
+
 ```python
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
@@ -145,17 +160,19 @@ print(flag)
 ```
 
 Then run the script to get the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ python solve_1-5.py                                                                 
 h<REDACTED>?
 ```
 
-**Ebgngr zr 13 cynprf!**
+#### Ebgngr zr 13 cynprf!
 
 This is [ROT13](https://en.wikipedia.org/wiki/ROT13) and it can be solved with online services such as [CyberChef](https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)) or [dcode.fr](https://www.dcode.fr/rot-13-cipher), the `tr` command in bash, or with the codecs module in Python.
 
 Convert in bash with `tr`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ echo 'Ebgngr zr 13 cynprf!' | tr 'A-Za-z' 'N-ZA-Mn-za-m'                            
@@ -163,6 +180,7 @@ R<REDACTED>!
 ```
 
 Convert with a simple python script
+
 ```python
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
@@ -175,32 +193,35 @@ print(codecs.encode(encoded_flag, 'rot_13'))
 ```
 
 Then run the script to get the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ python solve_1-6.py                                     
 R<REDACTED>!
 ```
 
-***@F DA:? >6 C:89E C@F?5 323J C:89E C@F?5 Wcf E:>6DX**
+#### @F DA:? >6 C:89E C@F?5 323J C:89E C@F?5 Wcf E:>6DX
 
 This is ROT47 and you can solve it with the `tr` command in bash, or with an online service such as [CyberChef](https://gchq.github.io/CyberChef/#recipe=ROT47(47)) or [dcode.fr](https://www.dcode.fr/rot-47-cipher)
 
 Convert in bash with `tr`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ echo '*@F DA:? >6 C:89E C@F?5 323J C:89E C@F?5 Wcf E:>6DX' | tr '\!-~' 'P-~\!-O' 
 Y<REDACTED>)
 ```
 
-**- . .-.. . -.-. --- -- -- ..- -. .. -.-. .- - .. --- -. etc**
+#### - . .-.. . -.-. --- -- -- ..- -. .. -.-. .- - .. --- -. etc
 
 This is [morse code](https://en.wikipedia.org/wiki/Morse_code) and it can be converted with online services such as [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Morse_Code('Space','Line%20feed')) or [Lexilogos](https://www.lexilogos.com/keyboard/morse.htm).
 
-**85 110 112 97 99 107 32 116 104 105 115 32 66 67 68**
+#### 85 110 112 97 99 107 32 116 104 105 115 32 66 67 68
 
 This is ASCII text converted to decimal numbers. It can be converted with an online service such as [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Decimal('Space',false)) or [RapidTables](https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html), or with a simple Python script.
 
 Convert with a simple python script
+
 ```python
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
@@ -215,15 +236,17 @@ print(flag)
 ```
 
 Then run the script to get the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ python solve_1-9.py                                                              
 U<REDACTED>D
 ```
 
-**LS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0KLS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLi0tLS0gLS0tLS0gLi0 etc**
+#### LS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0KLS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLi0tLS0gLS0tLS0gLi0 etc
 
 This is a combination of some of the earlier encoding schemes namely:
+
 - Base64 (note the `=` at the end of the encoded data)
 - Morse Code
 - Binary to ASCII
@@ -246,6 +269,7 @@ This task can be solved with [Sonic Visualiser](https://www.sonicvisualiser.org/
 ### Task 3: Steganography
 
 We can solve this task with `steghide`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ steghide extract -sf stegosteg.jpg 
@@ -255,6 +279,7 @@ wrote extracted data to "steganopayload2248.txt".
 ```
 
 Cat the extracted file
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ cat steganopayload2248.txt                  
@@ -264,6 +289,7 @@ S<REDACTED>g
 ### Task 4: Security through obscurity
 
 First, we recursively (`-M`) extract embedded files (`-e`) with `binwalk`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ binwalk -Me meme.jpg 
@@ -312,6 +338,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 ```
 
 We check the result in the `_meme.jpg.extracted` directory
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/c4ptur3-th3-fl4g]
 └─$ cd _meme.jpg.extracted    
@@ -327,9 +354,11 @@ drwxrwxrwx 1 root root  4096 Sep 16 19:12 ..
 -rwxrwxrwx 1 root root  5562 May 28  2019 hackerchat.png
 drwxrwxrwx 1 root root     0 Sep 16 19:12 _hackerchat.png.extracted
 ```
+
 The embedded file is `hackerchat.png`.
 
 Let's check the metadata of the file with `exiftool`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/CTFs/Easy/c4ptur3-th3-fl4g/_meme.jpg.extracted]
 └─$ exiftool hackerchat.png                                                          
@@ -358,9 +387,11 @@ Warning                         : [minor] Trailer data after PNG IEND chunk
 Image Size                      : 147x37
 Megapixels                      : 0.005
 ```
+
 We can see that there are data appended after the PNG-file.
 
 Finally, we check the end of the file with `xxd` and `tail`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/CTFs/Easy/c4ptur3-th3-fl4g/_meme.jpg.extracted]
 └─$ xxd hackerchat.png| tail -10
@@ -375,7 +406,8 @@ Finally, we check the end of the file with `xxd` and `tail`
 000015a0: ae42 6082 2241 4848 5f59 4f55 5f46 4f55  .B`."A<--REDACTE
 000015b0: 4e44 5f4d 4521 2220 0d0a                 D!-->!" ..
 ```
-And there we have the hidden (redacted) text.
+
+And there we have the hidden (here redacted) text.
 
 For additional information, please see the references below.
 

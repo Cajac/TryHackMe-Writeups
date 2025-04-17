@@ -5,19 +5,23 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: N/A
 Subscription type: Free
 Description: Practise your Linux skills and complete the challenges.
 ```
+
 Room link: [https://tryhackme.com/r/room/ninjaskills](https://tryhackme.com/r/room/ninjaskills)
 
 ## Solution
 
 ### Login with SSH
 
-We begin by logging in with SSH 
+We begin by logging in with SSH
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Ninja_Skills]
 └─$ ssh newuser@10.10.209.181
@@ -39,6 +43,7 @@ Last login: Wed Sep 18 16:03:41 2024 from ip-10-100-1-36.eu-west-1.compute.inter
 ```
 
 Before diving in let's prepare a file with all the names of our file candidates
+
 ```bash
 [new-user@ip-10-10-209-181 ~]$ cd /tmp
 [new-user@ip-10-10-209-181 tmp]$ echo 8V2L > file_candidates.txt
@@ -69,6 +74,7 @@ X1Uy
 ```
 
 Now we use this list to get the full path of the files
+
 ```bash
 [new-user@ip-10-10-209-181 tmp]$ for f in $(cat file_candidates.txt); do find / -type f -name $f 2>/dev/null; done >> file_candidates_full.txt 
 [new-user@ip-10-10-209-181 tmp]$ cat file_candidates_full.txt 
@@ -84,11 +90,13 @@ Now we use this list to get the full path of the files
 /home/v2Vb
 /X1Uy
 ```
+
 Note that the file named `bny0` is missing from the list.
 
 ### Which of the above files are owned by the best-group group?
 
 We can use `find` for this
+
 ```bash
 [new-user@ip-10-10-209-181 tmp]$ find / -type f -group best-group 2>/dev/null
 /mnt/D8B3
@@ -98,6 +106,7 @@ We can use `find` for this
 ### Which of these files contain an IP address?
 
 We can use `grep` to solve this
+
 ```bash
 [new-user@ip-10-10-209-181 tmp]$ for f in $(cat file_candidates_full.txt); do grep -H -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}.[0-9]{1,3}' $f; done 
 /opt/oiMO:1.1.1.1
@@ -106,6 +115,7 @@ We can use `grep` to solve this
 ### WWhich file has the SHA1 hash of 9d54da7584015647ba052173b84d45e8007eba94
 
 We can `sha1sum` and `grep` to find out
+
 ```bash
 [new-user@ip-10-10-209-181 tmp]$ for f in $(cat file_candidates_full.txt); do sha1sum $f | grep 9d54da7584015647ba052173b84d45e8007eba94; done 
 9d54da7584015647ba052173b84d45e8007eba94  /mnt/c4ZX
@@ -114,15 +124,18 @@ We can `sha1sum` and `grep` to find out
 ### Which file contains 230 lines?
 
 We can use `wc` together with `grep` to solve this
+
 ```bash
 [new-user@ip-10-10-209-181 tmp]$ for f in $(cat file_candidates_full.txt); do wc -l $f | grep 230; done 
 [new-user@ip-10-10-209-181 tmp]$ 
 ```
+
 No file found!? Then the answer ought to be the missing file.
 
 ### Which file's owner has an ID of 502?
 
 We can use `find` to get the answer
+
 ```bash
 [new-user@ip-10-10-209-181 tmp]$ find / -type f -user 502 2>/dev/null
 /var/spool/mail/newer-user
@@ -132,6 +145,7 @@ We can use `find` to get the answer
 ### Which file is executable by everyone?
 
 Again we can use `find` for this
+
 ```bash
 [new-user@ip-10-10-209-181 tmp]$ for f in $(cat file_candidates_full.txt); do find $f -perm -o+x 2>/dev/null; done 
 /etc/8V2L

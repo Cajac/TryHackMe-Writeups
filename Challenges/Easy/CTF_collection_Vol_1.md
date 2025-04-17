@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: N/A
 Subscription type: Free
 Description: Sharpening up your CTF skill with the collection. The first volume is designed for beginner.
 ```
+
 Room link: [https://tryhackme.com/r/room/ctfcollectionvol1](https://tryhackme.com/r/room/ctfcollectionvol1)
 
 ## Solution
@@ -22,6 +25,7 @@ Room link: [https://tryhackme.com/r/room/ctfcollectionvol1](https://tryhackme.co
 This is [base64](https://en.wikipedia.org/wiki/Base64) and you can convert it to ASCII with [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)), `base64` in bash, or with the base64 module in Python.
 
 Convert using bash
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ echo 'VEhNe2p1NTdfZDNjMGQzXzdoM19iNDUzfQ==' | base64 -d                            
@@ -29,6 +33,7 @@ THM{<REDACTED>}
 ```
 
 Convert with a simple python script
+
 ```python
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
@@ -41,6 +46,7 @@ print(base64.b64decode(encoded_flag).decode())
 ```
 
 Then run the script to get the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ python task2.py 
@@ -52,6 +58,7 @@ THM{<REDACTED>}
 `Description: Meta! meta! meta! meta...................................`
 
 After downloading the file, we check for [metadata](https://en.wikipedia.org/wiki/Metadata) with `exiftool`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ exiftool Findme.jpg 
@@ -86,6 +93,7 @@ Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
 Image Size                      : 800x480
 Megapixels                      : 0.384
 ```
+
 And there in the `Owner Name` field, we have the flag.
 
 ### Mon, are we going to be okay?
@@ -94,6 +102,7 @@ And there in the `Owner Name` field, we have the flag.
 
 The description `Something is hiding` likely points to [steganography](https://en.wikipedia.org/wiki/Steganography).  
 One commonly used program for this is `steghide`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ steghide extract -sf Extinction.jpg          
@@ -122,6 +131,7 @@ The image is a [QR code](https://en.wikipedia.org/wiki/QR_code) and you can conv
 with the `zbarimg` tool from the `zbar-tools` package.
 
 Decode with `zbarimg`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ zbarimg QR.png 
@@ -134,14 +144,17 @@ scanned 1 barcode symbols from 1 images in 0.01 seconds
 `Description: Both works, it's all up to you.`
 
 We start by checking the file type with `file`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ file hello.hello 
 hello.hello: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=02900338a56c3c8296f8ef7a8cf5df8699b18696, for GNU/Linux 3.2.0, not stripped
 ```
+
 We have an 64-bit [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) binary.
 
 Let's check for [strings](https://en.wikipedia.org/wiki/String_(computer_science)) and `grep` for the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ strings -n 8 hello.hello | grep THM
@@ -155,6 +168,7 @@ THM{<REDACTED>}
 This is Base58 and you can decode it with online services such as [Code Beautify](https://codebeautify.org/base58-decode) or [CyberChef](https://gchq.github.io/CyberChef/#recipe=To_Base58('123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz')).
 
 Or we can use the `base58` tool from the `base58` package
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ echo '3agrSy1CewF9v8ukcSkPSYm3oKUoByUpKG4L' | base58 -d
@@ -170,6 +184,7 @@ The text is rotated 7 steps (ROT-7) rather than the common 3 steps as in a caesa
 You can decode the text with [CyberChef](https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,7)).
 
 Alternatively, you can brute-force the number of steps with the `caesar` tool from the [bsdgames](https://wiki.linuxquestions.org/wiki/BSD_games) package.
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ for i in $(seq 1 25); do echo -n "$i: "; echo 'MAF{atbe_max_vtxltk}' | caesar $i; done
@@ -204,7 +219,7 @@ Alternatively, you can brute-force the number of steps with the `caesar` tool fr
 
 `Description: No downloadable file, no ciphered or encoded text. Huh .......`
 
-The flag is hidden in the HTML-code. 
+The flag is hidden in the HTML-code.
 
 Select the `Huh .......` text in the browser, right-click and select `Inspect` and then expand the `<p style="display:none;">` tag to view the flag which is broken up in two parts.
 
@@ -213,6 +228,7 @@ Select the `Huh .......` text in the browser, right-click and select `Inspect` a
 `Description: I accidentally messed up with this PNG file. Can you help me fix it? Thanks, ^^`
 
 Let's view the file header with `xxd`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ xxd -l 48 spoil.png 
@@ -224,6 +240,7 @@ Let's view the file header with `xxd`
 If we check [this list of file signatures](https://en.wikipedia.org/wiki/List_of_file_signatures) we can see that the first 4 bytes of PNG-images should be the text `‰PNG` or `89 50 4E 47` in hexadecimal.
 
 So we fix the file with `echo` and `dd`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ echo -en '\x89\x50\x4e\x47' > fixed_spoil.png 
@@ -265,6 +282,7 @@ Both strings are hexadecimal numbers. The `S1` string is the [ASCII](https://en.
 You can decode the `S1` string with [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'Hex','string':'10'%7D,'Standard',false)) to get the flag.
 
 Alternatively, you can write a small Python script to decode it
+
 ```python
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
@@ -279,6 +297,7 @@ print(xor(S1, S2).decode())
 ```
 
 Then run the script to get the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ python task14.py
@@ -292,6 +311,7 @@ THM{<REDACTED>}
 The challenge name referes to the [binwalk](https://github.com/ReFirmLabs/binwalk) tool.
 
 We can use `binwalk` to recursively extract embedded files from the image
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ binwalk -Me hell.jpg 
@@ -319,6 +339,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 ```
 
 Then we check the text file
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ cat _hell.jpg.extracted/hello_there.txt 
@@ -342,6 +363,7 @@ With the `Gray bits` mode you should see the flag.
 `Description: How good is your listening skill?`
 
 First we decode the QR-image to text
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ zbarimg QRCTF.png 
@@ -349,7 +371,7 @@ QR-Code:https://soundcloud.com/user-86667759/thm-ctf-vol1
 scanned 1 barcode symbols from 1 images in 0.01 seconds
 ```
 
-Then we visit the SoundCloud site (https://soundcloud.com/user-86667759/thm-ctf-vol1) and listen to the message.
+Then we visit the SoundCloud site (`https://soundcloud.com/user-86667759/thm-ctf-vol1`) and listen to the message.
 
 It's very hard to hear but fortunately someone has posted the flag in the comments.  
 Just convert it to uppercase and wrap it in `THM{<the_flag>}`.
@@ -381,6 +403,7 @@ You can use the default setting on the service to get the flag.
 The "text" is a large deciaml number and you can get the flag by converting the number to hexadecimal and then to ASCII-characters.
 
 One way to do it is to use the tools `bc` and `xxd` in bash
+
 ```bash
 ┌──(kali㉿kali)-[~]
 └─$ echo "ibase=10;obase=16;581695969015253365094191591547859387620042736036246486373595515576333693" | bc | xxd -r -p
@@ -388,6 +411,7 @@ THM{<REDACTED>}
 ```
 
 Another way is to write a small Python script
+
 ```python
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
@@ -399,6 +423,7 @@ print(bytearray.fromhex(hex).decode())
 ```
 
 Then we run the script to get the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/CTF_Collection_Vol.1]
 └─$ python task20.py                                       
@@ -414,7 +439,8 @@ Apply a display filter of `frame contains "flag"` and you will get only one matc
 
 Right-click on the packet and select `Follow` and then `HTTP Stream`.  
 A new windows pops up and include the flag at the end of the conversation
-```
+
+```text
 GET /flag.txt HTTP/1.1
 Host: 192.168.247.140
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0

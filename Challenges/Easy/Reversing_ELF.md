@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: N/A
 Subscription type: Free
 Description: Room for beginner Reverse Engineering CTF players
 ```
+
 Room link: [https://tryhackme.com/r/room/reverselfiles](https://tryhackme.com/r/room/reverselfiles)
 
 ## Solution
@@ -18,14 +21,17 @@ Room link: [https://tryhackme.com/r/room/reverselfiles](https://tryhackme.com/r/
 ### Crackme1
 
 We begin by checking the file type with `file`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ file crackme1          
 crackme1: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=672f525a7ad3c33f190c060c09b11e9ffd007f34, not stripped
 ```
+
 We have a 64-bit [ELF file](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format).
 
 Let's run it and see what happens?
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ chmod +x crackme1                                      
@@ -34,11 +40,13 @@ Let's run it and see what happens?
 └─$ ./crackme1          
 flag{<REDACTED>}
 ```
+
 Ah, I gave us the flag directly.
 
 ### Crackme2
 
 This time we have a 32-bit ELF file
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ file crackme2
@@ -46,6 +54,7 @@ crackme2: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically 
 ```
 
 Again we run it to get more information
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ chmod +x crackme2
@@ -58,9 +67,11 @@ Usage: ./crackme2 password
 └─$ ./crackme2 test
 Access denied.
 ```
+
 We need a password.
 
 Let's check for possible passwords with `strings`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ strings -n 8 crackme2
@@ -78,20 +89,24 @@ Access granted.
 GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609
 <---snip--->
 ```
+
 The password is likely `super_secret_password`.
 
 We verify it by inputting the password to the program
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ ./crackme2 super_secret_password
 Access granted.
 flag{<REDACTED>}
 ```
+
 Yes, the password was correct!
 
 ### Crackme3
 
 We have another 32-bit ELF file
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ file crackme3
@@ -99,6 +114,7 @@ crackme3: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically 
 ```
 
 Next, we run it to get more information
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ chmod +x crackme3               
@@ -107,9 +123,11 @@ Next, we run it to get more information
 └─$ ./crackme3                      
 Usage: ./crackme3 PASSWORD
 ```
+
 We need another password.
 
 Let's check for possible passwords with `strings`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ strings -n 8 crackme3
@@ -128,9 +146,11 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 GCC: (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
 <---snip--->
 ```
+
 The long string ending with two equal signs looks like a [base64 encoded](https://en.wikipedia.org/wiki/Base64) string.
 
 Let's try to decode it
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ echo 'ZjByX3kwdXJfNWVjMG5kX2xlNTVvbl91bmJhc2U2NF80bGxfN2gzXzdoMW5nNQ==' | base64 -d
@@ -138,6 +158,7 @@ f0r_<REDACTED>_7h1ng5
 ```
 
 Finally, we verify the password
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ ./crackme3 f0r_<REDACTED>_7h1ng5                          
@@ -147,6 +168,7 @@ Correct password!
 ### Crackme4
 
 Now we have a 64-bit ELF file again
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ file crackme4 
@@ -154,6 +176,7 @@ crackme4: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linke
 ```
 
 As usual we execute for further information
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ chmod +x crackme4
@@ -165,6 +188,7 @@ This time the string is hidden and we used strcmp
 ```
 
 Since the program is dynamically linked we can see the call to `strcmp` with `ltrace`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ ltrace ./crackme4 fake
@@ -174,9 +198,11 @@ printf("password "%s" not OK\n", "fake"password "fake" not OK
 )                                                                          = 23
 +++ exited (status 0) +++
 ```
+
 The password seems to be `my_<REDACTED>_pwd`.
 
 Let's verify it
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ ./crackme4 my_<REDACTED>_pwd
@@ -186,6 +212,7 @@ password OK
 ### Crackme5
 
 First, we run the program to see how it behaves
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ chmod +x crackme5
@@ -200,6 +227,7 @@ Always dig deeper
 Let's open the file in [Ghidra](https://ghidra-sre.org/) and decompile it.  
 Import the file in Ghidra and analyze it with the default settings.  
 Double-click on the `main` function to show the decompiled version of it.
+
 ```C
 undefined8 main(void)
 
@@ -285,6 +313,7 @@ undefined8 main(void)
 
 The string we are looking for is divided up into bytes/chars and is hex-encoded.  
 Let's change the hex-values by right-clicking on each of them and show them as `Char` instead
+
 ```C
   local_10 = *(long *)(in_FS_OFFSET + 0x28);
   local_38 = 'O';
@@ -297,9 +326,11 @@ Let's change the hex-values by right-clicking on each of them and show them as `
   local_31 = '|';
 <---snip--->
 ```
+
 Much better! Now we can create the password manually from each character.
 
 Alternatively, we can get the password by debugging the program with `gdb` and the [GEF extension](https://hugsy.github.io/gef/)
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ gdb-gef -q crackme5
@@ -377,7 +408,8 @@ End of assembler dump.
 ```
 
 We set a breakpoint at the `strcmp` call and run the program
-```
+
+```text
 gef➤  break *main+188
 Breakpoint 1 at 0x40082f
 gef➤  run
@@ -406,9 +438,11 @@ $r11   : 0x0
 $r12   : 0x0               
 <---snip--->
 ```
+
 We can see the password as a string in both the `RDX` and `RSI` registers.
 
 Finally we verify the password
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ ./crackme5                             
@@ -416,11 +450,13 @@ Enter your input:
 Ofdl<REDACTED>tXtz
 Good game
 ```
+
 And we were correct!
 
 ### Crackme6
 
 As before, we run the program to see what happens
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ ./crackme6
@@ -433,6 +469,7 @@ password "test_pw" not OK
 ```
 
 Let's decompile in Ghidra. The `main` function looks like this
+
 ```C
 undefined8 main(int param_1,undefined8 *param_2)
 
@@ -446,7 +483,9 @@ undefined8 main(int param_1,undefined8 *param_2)
   return 0;
 }
 ```
+
 The `compare_pwd` function looks like this
+
 ```C
 void compare_pwd(undefined8 param_1)
 
@@ -463,7 +502,9 @@ void compare_pwd(undefined8 param_1)
   return;
 }
 ```
+
 And the `my_secure_test` function is decompiled to this
+
 ```C
 undefined8 my_secure_test(char *param_1)
 
@@ -503,9 +544,11 @@ undefined8 my_secure_test(char *param_1)
   return uVar1;
 }
 ```
+
 Here the password is shorter and is again compared character by character.
 
 Let's verify it
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ ./crackme6 1<REDACTED>d
@@ -515,6 +558,7 @@ password OK
 ### Crackme7
 
 As usual, we run the program to get more information
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ chmod +x crackme7
@@ -549,9 +593,11 @@ Menu:
 [>] 3
 Goodbye!
 ```
+
 Nothing really interesting there.
 
 Time to decompile in Ghidra. The `main` function looks like this
+
 ```C
 undefined4 main(void)
 
@@ -620,15 +666,18 @@ undefined4 main(void)
 ```
 
 This comparison looks interesting
+
 ```C
       else if (local_14 == 0x7a69) {
         puts("Wow such h4x0r!");
         giveFlag();
       }
 ```
+
 The hex-value corresponds to `31337` in decimal.
 
 Let's verify as usual and get the flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ ./crackme7
@@ -646,6 +695,7 @@ flag{<REDACTED>}
 ### Crackme8
 
 As normal, we run the program to get further information
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ chmod +x crackme8
@@ -660,6 +710,7 @@ Access denied.
 ```
 
 Let's decompile in Ghidra. `main` looks like this
+
 ```C
 undefined4 main(int param_1,undefined4 *param_2)
 
@@ -686,15 +737,18 @@ undefined4 main(int param_1,undefined4 *param_2)
   return uVar1;
 }
 ```
+
 Pretty straight forward. The hexadecimal number corresponds to `-889262067` in decimal.
 
 We try it
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Reversing_ELF]
 └─$ ./crackme8 -889262067
 Access granted.
 flag{<REDACTED>}
 ```
+
 And get rewarded with the flag!
 
 For additional information, please see the references below.

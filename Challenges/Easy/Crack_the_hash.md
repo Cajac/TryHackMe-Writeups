@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: N/A
 Subscription type: Free
 Description: Cracking hashes challenges
 ```
+
 Room link: [https://tryhackme.com/r/room/crackthehash](https://tryhackme.com/r/room/crackthehash)
 
 ## Solution
@@ -22,6 +25,7 @@ Note that you will find examples below from both September 2020 when I originall
 ### Hash identification
 
 The first hashes will likely be one of the following:
+
 - [MD5-hashes](https://en.wikipedia.org/wiki/MD5) (32 hex chars)
 - [SHA-1 hashes](https://en.wikipedia.org/wiki/SHA-1) (40 hex chars)
 - [SHA-2 hashes](https://en.wikipedia.org/wiki/SHA-2) (64 hex chars)
@@ -29,6 +33,7 @@ The first hashes will likely be one of the following:
 You can also use tools such as [hashid](https://www.kali.org/tools/hashid/) or [hash-identifier](https://www.kali.org/tools/hash-identifier/) to help you identify hash types.
 
 Finally, there are a bunch of online services that can also help, for example:
+
 - [dcode.fr](https://www.dcode.fr/hash-identifier)
 - [hashes.pro](https://hashes.pro/)
 - [tunnelsup.com](https://www.tunnelsup.com/hash-analyzer/)
@@ -37,44 +42,48 @@ Finally, there are a bunch of online services that can also help, for example:
 
 The main wordlist to use in CTFs is the [rockyou.txt wordlist](https://github.com/zacheller/rockyou).
 
-`rockyou.txt` is a list of over 14 million plaintext passwords from the 2009 RockYou hack. 
+`rockyou.txt` is a list of over 14 million plaintext passwords from the 2009 RockYou hack.
 
 The list is available on default Kali Linux installations in the `/usr/share/wordlists/` directory.
 
 ### Level 1 hashes
 
-**Hash: 48bb6e862e54f2a795ffc4e541caed4d**
+#### Hash: 48bb6e862e54f2a795ffc4e541caed4d
 
 The hash [can be found](https://md5.gromweb.com/?md5=48bb6e862e54f2a795ffc4e541caed4d) through a Google-search.
 
 You can also use an online service to lookup this `MD5`-hash:
+
 - [crackstation.net](https://crackstation.net/)
 - [md5.gromweb.com](https://md5.gromweb.com/)
 
 Plaintext password: `e<REDACTED>y`
 
-**Hash: CBFDAC6008F9CAB4083784CBD1874F76618D2A97**
+#### Hash: CBFDAC6008F9CAB4083784CBD1874F76618D2A97
 
 The hash [can be found](https://md5hashing.net/hash/sha1/cbfdac6008f9cab4083784cbd1874f76618d2a97) through a Google-search.
 
 You can also use an online service to lookup this `SHA1`-hash:
+
 - [crackstation.net](https://crackstation.net/)
 - [sha1.gromweb.com](https://sha1.gromweb.com/)
 
 Plaintext password: `p<REDACTED>3`
 
-**Hash: 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032**
+#### Hash: 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032
 
 The hash [can be found](https://md5hashing.net/hash/sha256/1c8bfe8f801d79745c4631d09fff36c82aa37fc4cce4fc946683d7b336b63032) through a Google-search.
 
 You can also use an online service to lookup this `SHA2`-hash:
+
 - [crackstation.net](https://crackstation.net/)
 
 Plaintext password: `l<REDACTED>n`
 
-**Hash: $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom**
+#### Hash: $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom
 
 First, we identify the hash type with `hashid` (note the need for single quotes aound the hash)
+
 ```bash
 ┌──(kali㉿kali)-[~]
 └─$ hashid -m -j $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom
@@ -91,6 +100,7 @@ Analyzing '$2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom'
 
 Since [bcrypt](https://en.wikipedia.org/wiki/Bcrypt) is one of the more time-consuming hashes to crack we cannot simply try to crack it with the rockyou wordlist.  
 This could take a number days!
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Crack_the_hash]
 └─$ hashcat -a 0 -m 3200 '$2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom' /usr/share/wordlists/rockyou.txt
@@ -130,6 +140,7 @@ Hardware.Mon.#1..: Util: 84%
 ```
 
 Instead, we utilize the fact that the correct answer is a four-letter word and try a mask attack (`-a 3`) with all four letter lower case words
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Crack_the_hash]
 └─$ hashcat -a 3 -m 3200 '$2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom' ?l?l?l?l                       
@@ -150,20 +161,23 @@ Hash.Type........: bcrypt $2*$, Blowfish (Unix)
 Hash.Target......: $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX...8wsRom
 <---snip--->
 ```
+
 Note that the cracking time is still **several hours**!
 
 Plaintext password: `b<REDACTED>h`
 
-**Hash: 279412f945939ba78ce0758d3fd83daa**
+#### Hash: 279412f945939ba78ce0758d3fd83daa
 
 The hash [can be found](https://md5hashing.net/hash/md4/279412f945939ba78ce0758d3fd83daa) through a Google-search.
 
 You can also use an online service to lookup this `MD4`-hash:
+
 - [crackstation.net](https://crackstation.net/)
 - [md5hashing.net](https://md5hashing.net/hash/md4/)
 
 If we want to crack the hash manually we can't just use the rockyou wordlist as is
-```
+
+```text
 C:\Program Files\hashcat-6.2.6>hashcat -a 0 -m 900 279412f945939ba78ce0758d3fd83daa D:\Wordlists\Straight\01_Small\rockyou_sorted.dict
 hashcat (v6.2.6) starting
 
@@ -200,10 +214,12 @@ Hardware.Mon.#1..: Temp: 32c Fan: 40% Util: 33% Core: 670MHz Mem: 810MHz Bus:16
 Started: Sat Sep 14 11:56:40 2024
 Stopped: Sat Sep 14 11:57:45 2024
 ```
+
 Since the plaintext password isn't in the wordlist.
 
 We need to apply rules as well, such as the `best64.rule` rules
-```
+
+```text
 C:\Program Files\hashcat-6.2.6>hashcat -a 0 -m 900 -r rules\best64.rule 279412f945939ba78ce0758d3fd83daa D:\Wordlists\Straight\01_Small\rockyou_sorted.dict
 hashcat (v6.2.6) starting
 
@@ -238,12 +254,13 @@ Plaintext password: `E<REDACTED>2`
 
 ### Level 2 hashes
 
-**Hash: F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85**
+#### Hash: F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85
 
 First, we identify the hash type with `hashid`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Crack_the_hash]
-└─$ hashid -m -j F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85               
+└─$ hashid -m -j F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85
 Analyzing 'F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85'
 [+] Snefru-256 [JtR Format: snefru-256]
 [+] SHA-256 [Hashcat Mode: 1400][JtR Format: raw-sha256]
@@ -255,9 +272,11 @@ Analyzing 'F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85'
 [+] Skein-256 [JtR Format: skein-256]
 [+] Skein-512(256) 
 ```
+
 A `SHA-256` hash seems to be the most likely candidate here.
 
 Then we try to crack it with the rockyou wordlist and the `best64.rule` rules
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Crack_the_hash]
 └─$ hashcat -a 0 -m 1400 -r /usr/share/hashcat/rules/best64.rule F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85 /usr/share/wordlists/rockyou.txt
@@ -313,12 +332,13 @@ Stopped: Sat Sep 14 12:14:25 2024
 
 Plaintext password: `p<REDACTED>e`
 
-**Hash: 1DFECA0C002AE40B8619ECF94819CC1B**
+#### Hash: 1DFECA0C002AE40B8619ECF94819CC1B
 
 As usual, we identify the hash type with `hashid`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Crack_the_hash]
-└─$ hashid -m -j 1DFECA0C002AE40B8619ECF94819CC1B                                                                                                         
+└─$ hashid -m -j 1DFECA0C002AE40B8619ECF94819CC1B  
 
 Analyzing '1DFECA0C002AE40B8619ECF94819CC1B'
 [+] MD2 [JtR Format: md2]
@@ -340,22 +360,28 @@ Analyzing '1DFECA0C002AE40B8619ECF94819CC1B'
 [+] DNSSEC(NSEC3) [Hashcat Mode: 8300]
 [+] RAdmin v2.x [Hashcat Mode: 9900][JtR Format: radmin]
 ```
+
 Here there are several possible hash types.  
 Let's go through them in some likelihood order.
 
 First we try MD5
+
 ```bash
 hashcat -a 0 -m 0 -r /usr/share/hashcat/rules/best64.rule 1DFECA0C002AE40B8619ECF94819CC1B /usr/share/wordlists/rockyou.txt 
 ```
+
 No solution found!
 
 Then we try MD4
+
 ```bash
 kali@kali:~$ hashcat -a 0 -m 900 -r /usr/share/hashcat/rules/best64.rule 1DFECA0C002AE40B8619ECF94819CC1B /usr/share/wordlists/rockyou.txt
 ```
+
 No solution found!
 
 We try NTLM next
+
 ```bash
 kali@kali:~$ hashcat -a 0 -m 1000 -r /usr/share/hashcat/rules/best64.rule 1DFECA0C002AE40B8619ECF94819CC1B /usr/share/wordlists/rockyou.txt
 <---snip--->
@@ -384,11 +410,12 @@ Stopped: Sat Sep 12 11:04:56 2020
 
 Plaintext password: `n<REDACTED>i`
 
-**Hash: $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.**
+#### Hash: $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.
 
 Given salt: aReallyHardSalt
 
 Hash type identification with `hashid`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Crack_the_hash]
 └─$ hashid -m -j '$6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.'
@@ -397,11 +424,13 @@ Analyzing '$6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/q
 ```
 
 This is also a somewhat time-consuming hash to crack so:
+
 - Crack it on a native OS (rather than a virtual machine)
 - Add the `-O` parameter to enable optimized kernels (but limit password length)
 
 Cracking with `hashcat`
-```
+
+```text
 C:\Program Files\hashcat-6.2.6>hashcat.exe -a 0 -m 1800 -O "$6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02." D:\Wordlists\Straight\01_Small\rockyou_sorted.dict
 hashcat (v6.2.6) starting
 
@@ -428,18 +457,20 @@ Hardware.Mon.#1..: Temp: 64c Fan: 54% Util: 99% Core:1670MHz Mem:3504MHz Bus:16
 Started: Sat Sep 12 19:42:24 2020
 Stopped: Sat Sep 12 20:11:27 2020
 ```
+
 The cracking time is around 20-30 minutes or so.
 
 Plaintext password: `w<REDACTED>9`
 
-**Hash: e5d8870e5bdd26602cab8dbe07a942c8669e56d6**
+#### Hash: e5d8870e5bdd26602cab8dbe07a942c8669e56d6
 
 Given salt: tryhackme
 
 Hash type identification with `hashid`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Crack_the_hash]
-└─$ hashid -m -j e5d8870e5bdd26602cab8dbe07a942c8669e56d6                                                                                                            
+└─$ hashid -m -j e5d8870e5bdd26602cab8dbe07a942c8669e56d6             
 Analyzing 'e5d8870e5bdd26602cab8dbe07a942c8669e56d6'
 [+] SHA-1 [Hashcat Mode: 100][JtR Format: raw-sha1]
 [+] Double SHA-1 [Hashcat Mode: 4500]
@@ -451,11 +482,12 @@ Analyzing 'e5d8870e5bdd26602cab8dbe07a942c8669e56d6'
 [+] Skein-256(160) 
 [+] Skein-512(160) 
 ```
+
 Hhm, this was harder to figure out since a salt should be involved.
 
-Let's use the hint to help us: `HMAC-SHA1`.
-
+Let's use the hint to help us: `HMAC-SHA1`.  
 We need to search for the correct hashcat mode
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Crack_the_hash]
 └─$ hashcat --help | grep -i hmac-sha1
@@ -472,9 +504,11 @@ We need to search for the correct hashcat mode
   24410 | PKCS#8 Private Keys (PBKDF2-HMAC-SHA1 + 3DES/AES)          | Private Key
   22600 | Telegram Desktop < v2.1.14 (PBKDF2-HMAC-SHA1)              | Instant Messaging Service
 ```
+
 The mode is likely `160`.
 
 Now we can start cracking (note the syntax of the hash and salt)
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/Crack_the_hash]
 └─$ hashcat -a 0 -m 160 'e5d8870e5bdd26602cab8dbe07a942c8669e56d6:tryhackme' /usr/share/wordlists/rockyou.txt

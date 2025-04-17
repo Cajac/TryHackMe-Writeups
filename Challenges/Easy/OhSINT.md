@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: N/A
 Subscription type: Free
 Description: Are you able to use open source intelligence to solve this challenge?
 ```
+
 Room link: [https://tryhackme.com/r/room/ohsint](https://tryhackme.com/r/room/ohsint)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/ohsint](https://tryhackme.com/r/room/oh
 ### What is this user's avatar of?
 
 We begin by checking for metadata with `exiftool`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/OhSINT]
 └─$ exiftool WindowsXP.jpg   
@@ -48,23 +52,27 @@ GPS Latitude Ref                : North
 GPS Longitude Ref               : West
 GPS Position                    : 54 deg 17' 41.27" N, 2 deg 15' 1.33" W
 ```
+
 From the `Copyright` line the user seem to be `OWoodflint`.
 
 Googling for this username turns up the following possible social media presence:
-- Blog: https://oliverwoodflint.wordpress.com/
-- Github: https://github.com/OWoodfl1nt
-- X (Twitter): https://x.com/OWoodflint
+
+- Blog: `https://oliverwoodflint.wordpress.com/`
+- Github: `https://github.com/OWoodfl1nt`
+- X (Twitter): `https://x.com/OWoodflint`
 
 The X/Twitter-account has a profile photo of a cat.
 
 ### What city is this person in?
 
 The first tweet contains a BSSID that we could locate
-```
+
+```text
 From my house I can get free wifi ;D
 
 Bssid: B4:5D:50:AA:86:41 - Go nuts!
 ```
+
 with [Wigle.net](https://www.wigle.net/).
 
 Login and select `Basic Search` in the View menu. Then search for the BSSID `B4:5D:50:AA:86:41`.

