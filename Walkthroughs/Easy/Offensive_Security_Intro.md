@@ -56,7 +56,7 @@ ubuntu@tryhackme:~/Desktop$
 
 Ah, a `/bank-transfer` directory. Let's visit it in the browser.
 
-![Bank Transfer Page](Images/Offensive_Security_Intro_1.png.png)
+![Bank Transfer Page](Images/Offensive_Security_Intro_1.png)
 
 Next, we input the wanted information:  
 Send from: 2276  

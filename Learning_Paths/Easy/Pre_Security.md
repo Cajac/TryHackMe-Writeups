@@ -17,3 +17,8 @@ Web link: [https://tryhackme.com/path/outline/presecurity](https://tryhackme.com
 - [OSI Model](../../Walkthroughs/Info/OSI_Model.md)
 - [Packets & Frames](../../Walkthroughs/Info/Packets_and_Frames.md)
 - [Extending Your Network](../../Walkthroughs/Info/Extending_Your_Network.md)
+
+### How the Web Works
+
+- [DNS in detail](../../Walkthroughs/Easy/DNS_in_detail.md)
+- [HTTP in Detail](../../Walkthroughs/Easy/HTTP_in_Detail.md)
