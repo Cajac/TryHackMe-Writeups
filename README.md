@@ -13,10 +13,12 @@ In total you will find more than XX room solutions here.
 
 ## Modules
 
+- [Info Modules](Modules/Info/README.md)
 - [Easy Modules](Modules/Easy/README.md)
 
 ## Walkthroughs
 
+- [Info Walkthroughs](Walkthroughs/Info/README.md)
 - [Easy Walkthroughs](Walkthroughs/Easy/README.md)
 - [Medium Walkthroughs](Walkthroughs/Medium/README.md)
 
