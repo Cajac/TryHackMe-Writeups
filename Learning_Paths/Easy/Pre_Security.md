@@ -22,3 +22,11 @@ Web link: [https://tryhackme.com/path/outline/presecurity](https://tryhackme.com
 
 - [DNS in detail](../../Walkthroughs/Easy/DNS_in_detail.md)
 - [HTTP in Detail](../../Walkthroughs/Easy/HTTP_in_Detail.md)
+- [How Websites Work](../../Walkthroughs/Easy/How_Websites_Work.md)
+- [Putting it all together](../../Walkthroughs/Easy/Putting_it_all_together.md)
+
+## Linux Fundamentals
+
+- [Linux Fundamentals Part 1](../../Walkthroughs/Info/Linux_Fundamentals_Part_1.md)
+- [Linux Fundamentals Part 2](../../Walkthroughs/Info/Linux_Fundamentals_Part_2.md)
+- [Linux Fundamentals Part 3](../../Walkthroughs/Info/Linux_Fundamentals_Part_3.md)

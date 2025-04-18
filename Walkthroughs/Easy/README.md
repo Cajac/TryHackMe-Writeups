@@ -8,7 +8,9 @@
 ## Networking
 
 - [DNS in detail](DNS_in_detail.md)
+- [How Websites Work](How_Websites_Work.md)
 - [HTTP in Detail](HTTP_in_Detail.md)
+- [Putting it all together](Putting_it_all_together.md)
 
 ## Scripting and Programming
 
