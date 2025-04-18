@@ -11,6 +11,10 @@ In total you will find more than XX room solutions here.
 
 - [Easy Challenges](Challenges/Easy/README.md)
 
+## Learning Paths
+
+- [Easy Learning Paths](Learning_Paths/Easy/README.md)
+
 ## Modules
 
 - [Info Modules](Modules/Info/README.md)
