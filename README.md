@@ -11,6 +11,15 @@ In total you will find more than XX room solutions here.
 
 - [Easy Challenges](Challenges/Easy/README.md)
 
+## Modules
+
+- [Easy Modules](Modules/Easy/README.md)
+
+## Walkthroughs
+
+- [Easy Walkthroughs](Walkthroughs/Easy/README.md)
+- [Medium Walkthroughs](Walkthroughs/Medium/README.md)
+
 ## No spoilers
 
 The solutions contain step-by-step walkthroughs but doesn't display the flags in plain text.  
