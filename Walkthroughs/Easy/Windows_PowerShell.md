@@ -148,7 +148,7 @@ Answer: Get-Command -Name Remove*
 ```powershell
 PS C:\Users\captain> Get-Alias -Name echo 
 
-CommandType     Name                                               Version    Source                                                                                                       
+CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
 Alias           echo -> Write-Output
 
@@ -257,8 +257,8 @@ PS C:\Users\captain\Documents\captain-cabin> Get-ChildItem | Where-Object -Prope
     Directory: C:\Users\captain\Documents\captain-cabin
 
 
-Mode                 LastWriteTime         Length Name                                                                                                                                     
-----                 -------------         ------ ----                                                                                                                                     
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
 -a----          9/4/2024  12:29 PM              0 captain-boots.txt
 -a----          9/4/2024  12:14 PM            264 captain-hat.txt
 -a----          9/4/2024  12:37 PM           2116 ship-flag.txt   
@@ -283,8 +283,8 @@ PS C:\Users\captain\Documents\captain-cabin> Get-ChildItem | Where-Object -Prope
     Directory: C:\Users\captain\Documents\captain-cabin
 
 
-Mode                 LastWriteTime         Length Name                                                                                                                                     
-----                 -------------         ------ ----                                                                                                                                     
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
 -a----          9/4/2024  12:37 PM           2116 ship-flag.txt   
 
 ```
@@ -369,7 +369,7 @@ Mode                 LastWriteTime         Length Name
 d-----          9/5/2024   4:34 AM                Administrator
 d-----          9/4/2024  12:34 PM                captain
 d-----          9/4/2024  10:40 AM                p1r4t3
-d-r---         4/23/2024  10:05 AM                Public                                                                                                                                   
+d-r---         4/23/2024  10:05 AM                Public
 
 
 PS C:\Users> cd .\p1r4t3\
@@ -396,7 +396,7 @@ d-r---          5/8/2021   9:15 AM                Videos
     Directory: C:\Users\p1r4t3\hidden-treasure-chest
 
 
-Mode                 LastWriteTime         Length Name                                                                                                                                     
+Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 -a----         8/29/2024   1:15 PM            322 big-treasure.txt
 
@@ -441,7 +441,7 @@ These cmdlets collectively provide a comprehensive set of tools for real-time sy
 ```powershell
 PS C:\Users\p1r4t3> Get-FileHash C:\Users\p1r4t3\hidden-treasure-chest\big-treasure.txt
 
-Algorithm       Hash                                                                   Path                                                                                                
+Algorithm       Hash                                                                   Path
 ---------       ----                                                                   ----
 SHA256          71FC5EC11C2497A32F8F08E61399687D90ABE6E204D2964DF589543A613F3E08       C:\Users\p1r4t3\hidden-treasure-chest\big-treasure.txt
 
