@@ -4,6 +4,7 @@
 
 - [Defensive Security Intro](Defensive_Security_Intro.md)
 - [Offensive Security Intro](Offensive_Security_Intro.md)
+- [Search Skills](Search_Skills.md)
 
 ## Networking
 
@@ -21,3 +22,5 @@
 ## Windows
 
 - [Active Directory Basics](Active_Directory_Basics.md)
+- [Windows Command Line](Windows_Command_Line.md)
+- [Windows PowerShell](Windows_PowerShell.md)
