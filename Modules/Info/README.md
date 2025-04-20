@@ -3,6 +3,7 @@
 ## Operating Systems
 
 - [Linux Fundamentals](Linux_Fundamentals.md)
+- [Windows Fundamentals](Windows_Fundamentals.md)
 
 ## XXX
 
