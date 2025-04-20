@@ -11,7 +11,7 @@ Type: Walkthrough
 Difficulty: Info
 OS: Windows
 Subscription type: Free
-In part 3 of the Windows Fundamentals module, learn about the built-in Microsoft tools that help keep 
+Description: In part 3 of the Windows Fundamentals module, learn about the built-in Microsoft tools that help keep 
 the device secure, such as Windows Updates, Windows Security, BitLocker, and more...
 ```
 

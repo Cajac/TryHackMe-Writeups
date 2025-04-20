@@ -11,7 +11,7 @@ Type: Walkthrough
 Difficulty: Easy
 OS: N/A
 Subscription type: Premium
-Learn the basics of PowerShell and PowerShell Scripting
+Description: Learn the basics of PowerShell and PowerShell Scripting
 ```
 
 Room link: [https://tryhackme.com/room/powershell](https://tryhackme.com/room/powershell)

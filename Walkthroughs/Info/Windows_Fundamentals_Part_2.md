@@ -11,7 +11,7 @@ Type: Walkthrough
 Difficulty: Info
 OS: Windows
 Subscription type: Free
-In part 2 of the Windows Fundamentals module, discover more about System Configuration, UAC Settings, 
+Description: In part 2 of the Windows Fundamentals module, discover more about System Configuration, UAC Settings, 
 Resource Monitoring, the Windows Registry and more.
 ```
 

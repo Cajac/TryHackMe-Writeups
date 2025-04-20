@@ -17,3 +17,7 @@
 - [Hacking with PowerShell](Hacking_with_PowerShell.md)
 - [Python Basics](Python_Basics.md)
 - [Python for Pentesters](Python_for_Pentesters.md)
+
+## Windows
+
+- [Active Directory Basics](Active_Directory_Basics.md)

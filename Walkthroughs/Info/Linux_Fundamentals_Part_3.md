@@ -11,7 +11,7 @@ Type: Walkthrough
 Difficulty: Info
 OS: Linux
 Subscription type: Premium
-Power-up your Linux skills and get hands-on with some common utilities that you are likely to use day-to-day!
+Description: Power-up your Linux skills and get hands-on with some common utilities that you are likely to use day-to-day!
 ```
 
 Room link: [https://tryhackme.com/room/linuxfundamentalspart3](https://tryhackme.com/room/linuxfundamentalspart3)

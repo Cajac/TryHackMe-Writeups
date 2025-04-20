@@ -11,7 +11,7 @@ Type: Walkthrough
 Difficulty: Info
 OS: Linux
 Subscription type: Free
-Embark on the journey of learning the fundamentals of Linux. 
+Description: Embark on the journey of learning the fundamentals of Linux. 
 Learn to run some of the first essential commands on an interactive terminal.
 ```
 

@@ -1,5 +1,11 @@
 # Info Walkthroughs
 
+## Linux
+
+- [Linux Fundamentals Part 1](Linux_Fundamentals_Part_1.md)
+- [Linux Fundamentals Part 2](Linux_Fundamentals_Part_2.md)
+- [Linux Fundamentals Part 3](Linux_Fundamentals_Part_3.md)
+
 ## Miscellaneous
 
 - [Careers in Cyber](Careers_in_Cyber.md)
@@ -12,8 +18,8 @@
 - [Packets & Frames](Packets_and_Frames.md)
 - [What is Networking?](What_is_Networking.md)
 
-## Operating Systems
+## Windows
 
-- [Linux Fundamentals Part 1](Linux_Fundamentals_Part_1.md)
-- [Linux Fundamentals Part 2](Linux_Fundamentals_Part_2.md)
-- [Linux Fundamentals Part 3](Linux_Fundamentals_Part_3.md)
+- [Windows Fundamentals Part 1](Windows_Fundamentals_Part_1.md)
+- [Windows Fundamentals Part 2](Windows_Fundamentals_Part_2.md)
+- [Windows Fundamentals Part 3](Windows_Fundamentals_Part_3.md)
