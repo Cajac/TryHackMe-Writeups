@@ -19,7 +19,10 @@
 - [Networking Core Protocols](Networking_Core_Protocols.md)
 - [Networking Essentials](Networking_Essentials.md)
 - [Networking Secure Protocols](Networking_Secure_Protocols.md)
+- [Nmap: The Basics](Nmap_The_Basics.md)
 - [Putting it all together](Putting_it_all_together.md)
+- [Tcpdump: The Basics](Tcpdump_The_Basics.md)
+- [Wireshark: The Basics](Wireshark_The_Basics.md)
 
 ## Scripting and Programming
 

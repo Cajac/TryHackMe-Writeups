@@ -53,3 +53,6 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 - [Networking Essentials](../../Walkthroughs/Easy/Networking_Essentials.md)
 - [Networking Core Protocols](../../Walkthroughs/Easy/Networking_Core_Protocols.md)
 - [Networking Secure Protocols](../../Walkthroughs/Easy/Networking_Secure_Protocols.md)
+- [Wireshark: The Basics](../../Walkthroughs/Easy/Wireshark_The_Basics.md)
+- [Tcpdump: The Basics](../../Walkthroughs/Easy/Tcpdump_The_Basics.md)
+- [Nmap: The Basics](../../Walkthroughs/Easy/Nmap_The_Basics.md)
