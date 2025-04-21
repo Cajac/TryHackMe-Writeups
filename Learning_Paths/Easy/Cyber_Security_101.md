@@ -51,3 +51,5 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 
 - [Networking Concepts](../../Walkthroughs/Easy/Networking_Concepts.md)
 - [Networking Essentials](../../Walkthroughs/Easy/Networking_Essentials.md)
+- [Networking Core Protocols](../../Walkthroughs/Easy/Networking_Core_Protocols.md)
+- [Networking Secure Protocols](../../Walkthroughs/Easy/Networking_Secure_Protocols.md)

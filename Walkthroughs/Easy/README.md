@@ -16,7 +16,9 @@
 - [How Websites Work](How_Websites_Work.md)
 - [HTTP in Detail](HTTP_in_Detail.md)
 - [Networking Concepts](Networking_Concepts.md)
+- [Networking Core Protocols](Networking_Core_Protocols.md)
 - [Networking Essentials](Networking_Essentials.md)
+- [Networking Secure Protocols](Networking_Secure_Protocols.md)
 - [Putting it all together](Putting_it_all_together.md)
 
 ## Scripting and Programming

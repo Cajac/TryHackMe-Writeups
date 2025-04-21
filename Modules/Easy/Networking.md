@@ -16,3 +16,5 @@ Web link: [https://tryhackme.com/module/networking](https://tryhackme.com/module
 
 - [Networking Concepts](../../Walkthroughs/Easy/Networking_Concepts.md)
 - [Networking Essentials](../../Walkthroughs/Easy/Networking_Essentials.md)
+- [Networking Core Protocols](../../Walkthroughs/Easy/Networking_Core_Protocols.md)
+- [Networking Secure Protocols](../../Walkthroughs/Easy/Networking_Secure_Protocols.md)
