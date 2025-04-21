@@ -43,4 +43,4 @@ I'm not a native English speaker so please forgive any spelling mistakes or gram
 
 Some of the solutions were inspired by writeups and walkthroughs from these guys:
 
-- [XXX](https://www.youtube.com/@XXX)
+- [Z3pH7](https://medium.com/@Z3pH7)

@@ -6,11 +6,17 @@
 - [Offensive Security Intro](Offensive_Security_Intro.md)
 - [Search Skills](Search_Skills.md)
 
+## Linux
+
+- [Linux Shells](Linux_Shells.md)
+
 ## Networking
 
 - [DNS in detail](DNS_in_detail.md)
 - [How Websites Work](How_Websites_Work.md)
 - [HTTP in Detail](HTTP_in_Detail.md)
+- [Networking Concepts](Networking_Concepts.md)
+- [Networking Essentials](Networking_Essentials.md)
 - [Putting it all together](Putting_it_all_together.md)
 
 ## Scripting and Programming

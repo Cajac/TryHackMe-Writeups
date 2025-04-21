@@ -1,5 +1,13 @@
 # Pre Security Learning Path
 
+```text
+Description:
+Cyber security is often thought to be a magical process that can only be done by the 
+elite, and TryHackMe is here to show you that's not the case. Anyone, with any 
+experience level, can learn cyber security and this Pre-Security learning path is the 
+place to start.
+```
+
 Web link: [https://tryhackme.com/path/outline/presecurity](https://tryhackme.com/path/outline/presecurity)
 
 ## Included rooms

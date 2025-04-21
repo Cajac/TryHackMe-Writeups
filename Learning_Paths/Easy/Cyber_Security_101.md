@@ -1,5 +1,23 @@
 # Cyber Security 101 Learning Path
 
+```text
+Description:
+This beginner-friendly path aims to give a solid introduction to the different areas in 
+Computer Security. This path covers the fundamental concepts and applications in the 
+following:
+
+ * Computer networking and cryptography
+ * MS Windows, Active Directory, and Linux basics
+ * Offensive security tools and system exploitation
+ * Defensive security solutions and tools
+ * Cyber security careers
+
+Prerequisites:
+
+No Prior Knowledge
+ * You need no prerequisite to start this pathway! Just enthusiasm and excitement to learn!
+```
+
 Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackme.com/path/outline/cybersecurity101)
 
 ## Included rooms
@@ -27,3 +45,9 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 
 - [Windows Command Line](../../Walkthroughs/Easy/Windows_Command_Line.md)
 - [Windows PowerShell](../../Walkthroughs/Easy/Windows_PowerShell.md)
+- [Linux Shells](../../Walkthroughs/Easy/Linux_Shells.md)
+
+## Networking
+
+- [Networking Concepts](../../Walkthroughs/Easy/Networking_Concepts.md)
+- [Networking Essentials](../../Walkthroughs/Easy/Networking_Essentials.md)
