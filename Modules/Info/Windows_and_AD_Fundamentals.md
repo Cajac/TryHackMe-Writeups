@@ -1,6 +1,8 @@
 # Windows and AD Fundamentals Module
 
 ```text
+Type: Module
+Difficulty: Info
 Description:
 Get hands-on access to Windows and it's security controls. These basics will help you in 
 identifying, exploiting and defending Windows.

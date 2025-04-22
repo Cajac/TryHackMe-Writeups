@@ -1,6 +1,8 @@
 # Networking Module
 
 ```text
+Type: Module
+Difficulty: Easy
 Description:
 Learn about the OSI model and TCP/IP networking layers. Explore the different plaintext and secure 
 networking protocols that we use every day.

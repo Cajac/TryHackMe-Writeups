@@ -1,6 +1,8 @@
 # Pre Security Learning Path
 
 ```text
+Type: Learning Path
+Difficulty: Easy
 Description:
 Cyber security is often thought to be a magical process that can only be done by the 
 elite, and TryHackMe is here to show you that's not the case. Anyone, with any 

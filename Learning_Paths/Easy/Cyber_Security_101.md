@@ -1,6 +1,8 @@
 # Cyber Security 101 Learning Path
 
 ```text
+Type: Learning Path
+Difficulty: Easy
 Description:
 This beginner-friendly path aims to give a solid introduction to the different areas in 
 Computer Security. This path covers the fundamental concepts and applications in the 
@@ -56,3 +58,8 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 - [Wireshark: The Basics](../../Walkthroughs/Easy/Wireshark_The_Basics.md)
 - [Tcpdump: The Basics](../../Walkthroughs/Easy/Tcpdump_The_Basics.md)
 - [Nmap: The Basics](../../Walkthroughs/Easy/Nmap_The_Basics.md)
+
+## Cryptography
+
+- [Cryptography Basics](../../Walkthroughs/Easy/Cryptography_Basics.md)
+- [Public Key Cryptography Basics](../../Walkthroughs/Easy/Public_Key_Cryptography_Basics.md)
