@@ -63,3 +63,5 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 
 - [Cryptography Basics](../../Walkthroughs/Easy/Cryptography_Basics.md)
 - [Public Key Cryptography Basics](../../Walkthroughs/Easy/Public_Key_Cryptography_Basics.md)
+- [Hashing Basics](../../Walkthroughs/Easy/Hashing_Basics.md)
+- [John the Ripper: The Basics](../../Walkthroughs/Easy/John_the_Ripper_The_Basics.md)

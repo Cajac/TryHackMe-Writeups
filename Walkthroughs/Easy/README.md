@@ -3,6 +3,8 @@
 ## Cryptography
 
 - [Cryptography Basics](Cryptography_Basics.md)
+- [Hashing Basics](Hashing_Basics.md)
+- [John the Ripper: The Basics](John_the_Ripper_The_Basics.md)
 - [Public Key Cryptography Basics](Public_Key_Cryptography_Basics.md)
 
 ## Fundamentals
