@@ -71,3 +71,9 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 - [Moniker Link (CVE-2024-21413)](../../Walkthroughs/Easy/Moniker_Link.md)
 - [Metasploit: Introduction](../../Walkthroughs/Easy/Metasploit_Introduction.md)
 - [Metasploit: Exploitation](../../Walkthroughs/Easy/Metasploit_Exploitation.md)
+- [Metasploit: Meterpreter](../../Walkthroughs/Easy/Metasploit_Meterpreter.md)
+- [Blue](../../Walkthroughs/Easy/Blue.md)
+
+## Web Hacking
+
+- [Web Application Basics](../../Walkthroughs/Easy/Web_Application_Basics.md)

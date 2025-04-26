@@ -9,8 +9,10 @@
 
 ## Exploitation
 
+- [Blue](Blue.md)
 - [Metasploit: Exploitation](Metasploit_Exploitation.md)
 - [Metasploit: Introduction](Metasploit_Introduction.md)
+- [Metasploit: Meterpreter](Metasploit_Meterpreter.md)
 - [Moniker Link (CVE-2024-21413)](Moniker_Link.md)
 
 ## Fundamentals
@@ -42,6 +44,10 @@
 - [Hacking with PowerShell](Hacking_with_PowerShell.md)
 - [Python Basics](Python_Basics.md)
 - [Python for Pentesters](Python_for_Pentesters.md)
+
+## Web
+
+- [Web Application Basics](Web_Application_Basics.md)
 
 ## Windows
 

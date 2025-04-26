@@ -4,6 +4,11 @@
 
 - [Cryptography](Cryptography.md)
 
+## Exploitation
+
+- [Exploitation Basics](Exploitation_Basics.md)
+- [Metasploit](Metasploit.md)
+
 ## Networking
 
 - [Networking](Networking.md)
