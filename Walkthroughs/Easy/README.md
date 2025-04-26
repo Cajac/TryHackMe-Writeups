@@ -7,6 +7,12 @@
 - [John the Ripper: The Basics](John_the_Ripper_The_Basics.md)
 - [Public Key Cryptography Basics](Public_Key_Cryptography_Basics.md)
 
+## Exploitation
+
+- [Metasploit: Exploitation](Metasploit_Exploitation.md)
+- [Metasploit: Introduction](Metasploit_Introduction.md)
+- [Moniker Link (CVE-2024-21413)](Moniker_Link.md)
+
 ## Fundamentals
 
 - [Defensive Security Intro](Defensive_Security_Intro.md)

@@ -65,3 +65,9 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 - [Public Key Cryptography Basics](../../Walkthroughs/Easy/Public_Key_Cryptography_Basics.md)
 - [Hashing Basics](../../Walkthroughs/Easy/Hashing_Basics.md)
 - [John the Ripper: The Basics](../../Walkthroughs/Easy/John_the_Ripper_The_Basics.md)
+
+## Exploitation Basics
+
+- [Moniker Link (CVE-2024-21413)](../../Walkthroughs/Easy/Moniker_Link.md)
+- [Metasploit: Introduction](../../Walkthroughs/Easy/Metasploit_Introduction.md)
+- [Metasploit: Exploitation](../../Walkthroughs/Easy/Metasploit_Exploitation.md)
