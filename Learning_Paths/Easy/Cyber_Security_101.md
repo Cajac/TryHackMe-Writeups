@@ -77,3 +77,5 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 ## Web Hacking
 
 - [Web Application Basics](../../Walkthroughs/Easy/Web_Application_Basics.md)
+- [JavaScript Essentials](../../Walkthroughs/Easy/JavaScript_Essentials.md)
+- [SQL Fundamentals](../../Walkthroughs/Easy/SQL_Fundamentals.md)

@@ -19,3 +19,5 @@ Web link: [https://tryhackme.com/module/web-hacking](https://tryhackme.com/modul
 ## Included rooms
 
 - [Web Application Basics](../../Walkthroughs/Easy/Web_Application_Basics.md)
+- [JavaScript Essentials](../../Walkthroughs/Easy/JavaScript_Essentials.md)
+- [SQL Fundamentals](../../Walkthroughs/Easy/SQL_Fundamentals.md)

@@ -20,6 +20,7 @@
 - [Defensive Security Intro](Defensive_Security_Intro.md)
 - [Offensive Security Intro](Offensive_Security_Intro.md)
 - [Search Skills](Search_Skills.md)
+- [SQL Fundamentals](SQL_Fundamentals.md)
 
 ## Linux
 
@@ -47,6 +48,7 @@
 
 ## Web
 
+- [JavaScript Essentials](JavaScript_Essentials.md)
 - [Web Application Basics](Web_Application_Basics.md)
 
 ## Windows

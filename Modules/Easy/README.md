@@ -9,6 +9,10 @@
 - [Exploitation Basics](Exploitation_Basics.md)
 - [Metasploit](Metasploit.md)
 
+## Fundamentals
+
+- [Introduction to Cyber Security](Introduction_to_Cyber_Security.md)
+
 ## Networking
 
 - [Networking](Networking.md)
@@ -17,3 +21,7 @@
 
 - [Command Line](Command_Line.md)
 - [Scripting for Pentesters](Scripting_for_Pentesters.md)
+
+## Web
+
+- [Web Hacking](Web_Hacking.md)

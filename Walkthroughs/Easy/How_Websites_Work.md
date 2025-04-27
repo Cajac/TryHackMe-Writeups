@@ -149,7 +149,6 @@ or other sensitive data shown in HTML or JavaScript.
 #### View the website on this link. What is the password hidden in the source code?
 
 ```html
-
 <!DOCTYPE html>
 <html>
 <head>
