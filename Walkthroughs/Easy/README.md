@@ -40,6 +40,11 @@
 - [Tcpdump: The Basics](Tcpdump_The_Basics.md)
 - [Wireshark: The Basics](Wireshark_The_Basics.md)
 
+## Offensive Security
+
+- [Gobuster: The Basics](Gobuster_The_Basics.md)
+- [Hydra](Hydra.md)
+
 ## Scripting and Programming
 
 - [Hacking with PowerShell](Hacking_with_PowerShell.md)
@@ -49,6 +54,7 @@
 ## Web
 
 - [JavaScript Essentials](JavaScript_Essentials.md)
+- [OWASP Top 10 - 2021](OWASP_Top_10_2021.md)
 - [Web Application Basics](Web_Application_Basics.md)
 
 ## Windows

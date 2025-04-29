@@ -81,3 +81,8 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 - [SQL Fundamentals](../../Walkthroughs/Easy/SQL_Fundamentals.md)
 - [Burp Suite: The Basics](../../Walkthroughs/Info/Burp_Suite_The_Basics.md)
 - [OWASP Top 10 - 2021](../../Walkthroughs/Easy/OWASP_Top_10_2021.md)
+
+## Offensive Security Tooling
+
+- [Hydra](../../Walkthroughs/Easy/Hydra.md)
+- [Gobuster: The Basics](../../Walkthroughs/Easy/Gobuster_The_Basics.md)

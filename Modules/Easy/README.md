@@ -17,6 +17,10 @@
 
 - [Networking](Networking.md)
 
+## Offensive Security
+
+- [Offensive Security Tooling](Offensive_Security_Tooling.md)
+
 ## Scripting and Programming
 
 - [Command Line](Command_Line.md)
@@ -24,4 +28,5 @@
 
 ## Web
 
+- [How The Web Works](How_The_Web_Works.md)
 - [Web Hacking](Web_Hacking.md)
