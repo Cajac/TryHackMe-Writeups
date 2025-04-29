@@ -18,6 +18,10 @@
 - [Packets & Frames](Packets_and_Frames.md)
 - [What is Networking?](What_is_Networking.md)
 
+## Web
+
+- [Burp Suite: The Basics](Burp_Suite_The_Basics.md)
+
 ## Windows
 
 - [Windows Fundamentals Part 1](Windows_Fundamentals_Part_1.md)

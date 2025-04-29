@@ -21,3 +21,5 @@ Web link: [https://tryhackme.com/module/web-hacking](https://tryhackme.com/modul
 - [Web Application Basics](../../Walkthroughs/Easy/Web_Application_Basics.md)
 - [JavaScript Essentials](../../Walkthroughs/Easy/JavaScript_Essentials.md)
 - [SQL Fundamentals](../../Walkthroughs/Easy/SQL_Fundamentals.md)
+- [Burp Suite: The Basics](../../Walkthroughs/Info/Burp_Suite_The_Basics.md)
+- [OWASP Top 10 - 2021](../../Walkthroughs/Easy/OWASP_Top_10_2021.md)
