@@ -111,7 +111,7 @@ Hint: Use shodan.io
 
 From `https://www.shodan.io/search?query=lighttpd`
 
-Answer: socket statistics
+Answer: United States
 
 #### What does BitDefenderFalx detect the file with the hash 2de70ca737c1f4602517c555ddd54165432cf231ffc0e21fb2e23b9dd14e7fb4 as?
 
