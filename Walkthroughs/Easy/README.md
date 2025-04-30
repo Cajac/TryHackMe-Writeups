@@ -44,6 +44,8 @@
 
 - [Gobuster: The Basics](Gobuster_The_Basics.md)
 - [Hydra](Hydra.md)
+- [Shells Overview](Shells_Overview.md)
+- [SQLMap: The Basics](SQLMap_The_Basics.md)
 
 ## Scripting and Programming
 

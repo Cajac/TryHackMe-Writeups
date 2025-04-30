@@ -19,3 +19,5 @@ Web link: [https://tryhackme.com/module/offensive-security-tooling](https://tryh
 
 - [Hydra](../../Walkthroughs/Easy/Hydra.md)
 - [Gobuster: The Basics](../../Walkthroughs/Easy/Gobuster_The_Basics.md)
+- [Shells Overview](../../Walkthroughs/Easy/Shells_Overview.md)
+- [SQLMap: The Basics](../../Walkthroughs/Easy/SQLMap_The_Basics.md)
