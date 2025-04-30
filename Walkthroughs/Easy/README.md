@@ -7,6 +7,10 @@
 - [John the Ripper: The Basics](John_the_Ripper_The_Basics.md)
 - [Public Key Cryptography Basics](Public_Key_Cryptography_Basics.md)
 
+## Defensive Security
+
+- [SOC Fundamentals](SOC_Fundamentals.md)
+
 ## Exploitation
 
 - [Blue](Blue.md)

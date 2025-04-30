@@ -92,3 +92,4 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 ## Defensive Security
 
 - [Defensive Security Intro](../../Walkthroughs/Easy/Defensive_Security_Intro.md)
+- [SOC Fundamentals](../../Walkthroughs/Easy/SOC_Fundamentals.md)
