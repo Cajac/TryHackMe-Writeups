@@ -9,6 +9,9 @@
 
 ## Defensive Security
 
+- [Digital Forensics Fundamentals](Digital_Forensics_Fundamentals.md)
+- [Incident Response Fundamentals](Incident_Response_Fundamentals.md)
+- [Logs Fundamentals](Logs_Fundamentals.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
 
 ## Exploitation

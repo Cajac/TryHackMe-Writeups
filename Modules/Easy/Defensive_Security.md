@@ -21,3 +21,6 @@ Web link: [https://tryhackme.com/module/defensive-security](https://tryhackme.co
 
 - [Defensive Security Intro](../../Walkthroughs/Easy/Defensive_Security_Intro.md)
 - [SOC Fundamentals](../../Walkthroughs/Easy/SOC_Fundamentals.md)
+- [Digital Forensics Fundamentals](../../Walkthroughs/Easy/Digital_Forensics_Fundamentals.md)
+- [Incident Response Fundamentals](../../Walkthroughs/Easy/Incident_Response_Fundamentals.md)
+- [Logs Fundamentals](../../Walkthroughs/Easy/Logs_Fundamentals.md)

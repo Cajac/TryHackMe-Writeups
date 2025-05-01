@@ -29,7 +29,7 @@ In total you will find more than XX room solutions here.
 ## No spoilers
 
 The solutions contain step-by-step walkthroughs but doesn't display the flags in plain text.  
-Instead, the flags are displayd as `e<REDACTED>g` with only the first and last characters visible for verification purposes.
+Instead, the flags are displayd as `THM{<REDACTED>}` or something similar.
 
 ## Support my work
 
