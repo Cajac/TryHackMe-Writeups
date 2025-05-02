@@ -21,3 +21,5 @@ Web link: [https://tryhackme.com/module/security-solutions](https://tryhackme.co
 
 - [Introduction to SIEM](../../Walkthroughs/Easy/Introduction_to_SIEM.md)
 - [Firewall Fundamentals](../../Walkthroughs/Easy/Firewall_Fundamentals.md)
+- [IDS Fundamentals](../../Walkthroughs/Easy/IDS_Fundamentals.md)
+- [Vulnerability Scanner Overview](../../Walkthroughs/Easy/Vulnerability_Scanner_Overview.md)

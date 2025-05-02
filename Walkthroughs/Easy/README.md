@@ -11,10 +11,12 @@
 
 - [Digital Forensics Fundamentals](Digital_Forensics_Fundamentals.md)
 - [Firewall Fundamentals](Firewall_Fundamentals.md)
+- [IDS Fundamentals](IDS_Fundamentals.md)
 - [Incident Response Fundamentals](Incident_Response_Fundamentals.md)
 - [Introduction to SIEM](Introduction_to_SIEM.md)
 - [Logs Fundamentals](Logs_Fundamentals.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
+- [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
 
 ## Exploitation
 
