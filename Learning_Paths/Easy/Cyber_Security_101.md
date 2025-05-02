@@ -96,3 +96,8 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 - [Digital Forensics Fundamentals](../../Walkthroughs/Easy/Digital_Forensics_Fundamentals.md)
 - [Incident Response Fundamentals](../../Walkthroughs/Easy/Incident_Response_Fundamentals.md)
 - [Logs Fundamentals](../../Walkthroughs/Easy/Logs_Fundamentals.md)
+
+## Security Solutions
+
+- [Introduction to SIEM](../../Walkthroughs/Easy/Introduction_to_SIEM.md)
+- [Firewall Fundamentals](../../Walkthroughs/Easy/Firewall_Fundamentals.md)

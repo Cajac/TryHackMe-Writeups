@@ -4,6 +4,11 @@
 
 - [Cryptography](Cryptography.md)
 
+## Defensive Security
+
+- [Defensive Security](Defensive_Security.md)
+- [Security Solutions](Security_Solutions.md)
+
 ## Exploitation
 
 - [Exploitation Basics](Exploitation_Basics.md)
