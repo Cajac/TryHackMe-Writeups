@@ -406,6 +406,7 @@ For additional information, please see the references below.
 
 - [cat - Linux manual page](https://man7.org/linux/man-pages/man1/cat.1.html)
 - [Event Viewer - Wikipedia](https://en.wikipedia.org/wiki/Event_Viewer)
+- [Firewall (computing) - Wikipedia](https://en.wikipedia.org/wiki/Firewall_(computing))
 - [Get-NetFirewallPortFilter - Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/netsecurity/get-netfirewallportfilter?view=windowsserver2019-ps)
 - [Get-NetFirewallRule - Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/netsecurity/get-netfirewallrule?view=windowsserver2019-ps)
 - [grep - Linux manual page](https://man7.org/linux/man-pages/man1/grep.1.html)
