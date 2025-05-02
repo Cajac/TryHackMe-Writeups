@@ -103,3 +103,8 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 - [Firewall Fundamentals](../../Walkthroughs/Easy/Firewall_Fundamentals.md)
 - [IDS Fundamentals](../../Walkthroughs/Easy/IDS_Fundamentals.md)
 - [Vulnerability Scanner Overview](../../Walkthroughs/Easy/Vulnerability_Scanner_Overview.md)
+
+## Defensive Security Tooling
+
+- [CyberChef: The Basics](../../Walkthroughs/Easy/CyberChef_The_Basics.md)
+- [CAPA: The Basics](../../Walkthroughs/Easy/CAPA_The_Basics.md)
