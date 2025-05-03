@@ -10,6 +10,7 @@
 ## Defensive Security
 
 - [CAPA: The Basics](CAPA_The_Basics.md)
+- [Defensive Security Intro](Defensive_Security_Intro.md)
 - [Digital Forensics Fundamentals](Digital_Forensics_Fundamentals.md)
 - [Firewall Fundamentals](Firewall_Fundamentals.md)
 - [FlareVM: Arsenal of Tools](FlareVM_Arsenal_of_Tools.md)
@@ -32,9 +33,8 @@
 ## Fundamentals
 
 - [CyberChef: The Basics](CyberChef_The_Basics.md)
-- [Defensive Security Intro](Defensive_Security_Intro.md)
-- [Offensive Security Intro](Offensive_Security_Intro.md)
 - [Search Skills](Search_Skills.md)
+- [Security Principles](Security_Principles.md)
 - [SQL Fundamentals](SQL_Fundamentals.md)
 
 ## Linux
@@ -59,6 +59,7 @@
 
 - [Gobuster: The Basics](Gobuster_The_Basics.md)
 - [Hydra](Hydra.md)
+- [Offensive Security Intro](Offensive_Security_Intro.md)
 - [Shells Overview](Shells_Overview.md)
 - [SQLMap: The Basics](SQLMap_The_Basics.md)
 

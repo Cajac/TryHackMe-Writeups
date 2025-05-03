@@ -110,3 +110,8 @@ Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackm
 - [CAPA: The Basics](../../Walkthroughs/Easy/CAPA_The_Basics.md)
 - [REMnux: Getting Started](../../Walkthroughs/Easy/REMnux_Getting_Started.md)
 - [FlareVM: Arsenal of Tools](../../Walkthroughs/Easy/FlareVM_Arsenal_of_Tools.md)
+
+## Build Your Cyber Security Career
+
+- [Security Principles](../../Walkthroughs/Easy/Security_Principles.md)
+- [Careers in Cyber](../../Walkthroughs/Info/Careers_in_Cyber.md)
