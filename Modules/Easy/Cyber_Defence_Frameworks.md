@@ -19,3 +19,6 @@ Web link: [https://tryhackme.com/module/cyber-defence-frameworks](https://tryhac
 
 - [Junior Security Analyst Intro](../../Walkthroughs/Easy/Junior_Security_Analyst_Intro.md)
 - [Pyramid Of Pain](../../Walkthroughs/Easy/Pyramid_Of_Pain.md)
+- [Cyber Kill Chain](../../Walkthroughs/Easy/Cyber_Kill_Chain.md)
+- [Unified Kill Chain](../../Walkthroughs/Easy/Unified_Kill_Chain.md)
+- [Diamond Model](../../Walkthroughs/Easy/Diamond_Model.md)

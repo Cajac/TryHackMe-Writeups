@@ -10,7 +10,9 @@
 ## Defensive Security
 
 - [CAPA: The Basics](CAPA_The_Basics.md)
+- [Cyber Kill Chain](Cyber_Kill_Chain.md)
 - [Defensive Security Intro](Defensive_Security_Intro.md)
+- [Diamond Model](Diamond_Model.md)
 - [Digital Forensics Fundamentals](Digital_Forensics_Fundamentals.md)
 - [Firewall Fundamentals](Firewall_Fundamentals.md)
 - [FlareVM: Arsenal of Tools](FlareVM_Arsenal_of_Tools.md)
@@ -22,6 +24,7 @@
 - [Pyramid Of Pain](Pyramid_Of_Pain.md)
 - [REMnux: Getting Started](REMnux_Getting_Started.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
+- [Unified Kill Chain](Unified_Kill_Chain.md)
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
 
 ## Exploitation
