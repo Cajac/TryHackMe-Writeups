@@ -7,6 +7,7 @@
 ## Defensive Security
 
 - [Defensive Security](Defensive_Security.md)
+- [Defensive Security Tooling](Defensive_Security_Tooling.md)
 - [Security Solutions](Security_Solutions.md)
 
 ## Exploitation

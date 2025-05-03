@@ -21,3 +21,5 @@ Web link: [https://tryhackme.com/module/defensive-security-tooling](https://tryh
 
 - [CyberChef: The Basics](../../Walkthroughs/Easy/CyberChef_The_Basics.md)
 - [CAPA: The Basics](../../Walkthroughs/Easy/CAPA_The_Basics.md)
+- [REMnux: Getting Started](../../Walkthroughs/Easy/REMnux_Getting_Started.md)
+- [FlareVM: Arsenal of Tools](../../Walkthroughs/Easy/FlareVM_Arsenal_of_Tools.md)

@@ -12,10 +12,12 @@
 - [CAPA: The Basics](CAPA_The_Basics.md)
 - [Digital Forensics Fundamentals](Digital_Forensics_Fundamentals.md)
 - [Firewall Fundamentals](Firewall_Fundamentals.md)
+- [FlareVM: Arsenal of Tools](FlareVM_Arsenal_of_Tools.md)
 - [IDS Fundamentals](IDS_Fundamentals.md)
 - [Incident Response Fundamentals](Incident_Response_Fundamentals.md)
 - [Introduction to SIEM](Introduction_to_SIEM.md)
 - [Logs Fundamentals](Logs_Fundamentals.md)
+- [REMnux: Getting Started](REMnux_Getting_Started.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
 
