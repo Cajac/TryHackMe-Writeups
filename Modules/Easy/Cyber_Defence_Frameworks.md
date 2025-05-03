@@ -22,3 +22,5 @@ Web link: [https://tryhackme.com/module/cyber-defence-frameworks](https://tryhac
 - [Cyber Kill Chain](../../Walkthroughs/Easy/Cyber_Kill_Chain.md)
 - [Unified Kill Chain](../../Walkthroughs/Easy/Unified_Kill_Chain.md)
 - [Diamond Model](../../Walkthroughs/Easy/Diamond_Model.md)
+- [MITRE](../../Walkthroughs/Medium/MITRE.md)
+- [Summit](../../Challenges/Easy/Summit.md)
