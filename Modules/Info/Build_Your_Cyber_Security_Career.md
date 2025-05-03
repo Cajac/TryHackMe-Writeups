@@ -18,3 +18,4 @@ Web link: [https://tryhackme.com/module/building-your-cyber-security-career](htt
 
 - [Security Principles](../../Walkthroughs/Easy/Security_Principles.md)
 - [Careers in Cyber](../../Walkthroughs/Info/Careers_in_Cyber.md)
+- [Training Impact on Teams](../../Walkthroughs/Info/Training_Impact_on_Teams.md)
