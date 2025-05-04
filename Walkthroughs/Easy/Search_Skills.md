@@ -141,7 +141,7 @@ From `https://nvd.nist.gov/vuln/detail/CVE-2024-3094`
 
 Answer: xz
 
-### Task 6 -  Technical Documentation
+### Task 6 - Technical Documentation
 
 One vital skill to acquire is to look up official documentation. We will cover a few examples of official documentation pages.
 
@@ -176,7 +176,7 @@ From `https://learn.microsoft.com/en-us/windows-server/administration/windows-co
 
 Answer: -b
 
-### Task 7 -  Social Media
+### Task 7 - Social Media
 
 There are billions of users registered on social media platforms such as [Facebook](https://www.facebook.com/), [Twitter](https://twitter.com/), and [LinkedIn](https://www.linkedin.com/). We expect you to be familiar with popular platforms. However, if you are aware of any platform you are not familiar with, we recommend that you check it out and learn about it. Ideally, one would want to explore a platform without creating an account; however, this severely limits your experience. Instead, one recommendation is to use a temporary email address to discover these platforms without linking them to your real email addresses; once done, you can terminate the accounts and associated email addresses. One reason for not using your primary account is that you don’t want your contacts to start connecting with you there when you are only temporarily exploring a platform.
 
