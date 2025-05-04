@@ -24,3 +24,4 @@ Web link: [https://tryhackme.com/module/web-hacking-1](https://tryhackme.com/mod
 - [Burp Suite: The Basics](../../Walkthroughs/Info/Burp_Suite_The_Basics.md)
 - [OWASP Top 10 - 2021](../../Walkthroughs/Easy/OWASP_Top_10_2021.md)
 - [OWASP Juice Shop](../../Walkthroughs/Easy/OWASP_Juice_Shop.md)
+- [Upload Vulnerabilities](../../Walkthroughs/Easy/Upload_Vulnerabilities.md)

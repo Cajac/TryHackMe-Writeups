@@ -36,3 +36,4 @@
 
 - [How The Web Works](How_The_Web_Works.md)
 - [Web Hacking](Web_Hacking.md)
+- [Web Hacking Fundamentals](Web_Hacking_Fundamentals.md)
