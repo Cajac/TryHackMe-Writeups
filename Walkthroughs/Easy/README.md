@@ -14,6 +14,7 @@
 - [Defensive Security Intro](Defensive_Security_Intro.md)
 - [Diamond Model](Diamond_Model.md)
 - [Digital Forensics Fundamentals](Digital_Forensics_Fundamentals.md)
+- [Eviction](Eviction.md)
 - [Firewall Fundamentals](Firewall_Fundamentals.md)
 - [FlareVM: Arsenal of Tools](FlareVM_Arsenal_of_Tools.md)
 - [IDS Fundamentals](IDS_Fundamentals.md)

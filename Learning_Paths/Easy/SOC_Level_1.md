@@ -21,3 +21,4 @@ Web link: [https://tryhackme.com/path/outline/soclevel1](https://tryhackme.com/p
 - [Diamond Model](../../Walkthroughs/Easy/Diamond_Model.md)
 - [MITRE](../../Walkthroughs/Medium/MITRE.md)
 - [Summit](../../Challenges/Easy/Summit.md)
+- [Eviction](../../Walkthroughs/Easy/Eviction.md)

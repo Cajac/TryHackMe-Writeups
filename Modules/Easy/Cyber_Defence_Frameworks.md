@@ -24,3 +24,4 @@ Web link: [https://tryhackme.com/module/cyber-defence-frameworks](https://tryhac
 - [Diamond Model](../../Walkthroughs/Easy/Diamond_Model.md)
 - [MITRE](../../Walkthroughs/Medium/MITRE.md)
 - [Summit](../../Challenges/Easy/Summit.md)
+- [Eviction](../../Walkthroughs/Easy/Eviction.md)
