@@ -22,3 +22,8 @@ Web link: [https://tryhackme.com/path/outline/soclevel1](https://tryhackme.com/p
 - [MITRE](../../Walkthroughs/Medium/MITRE.md)
 - [Summit](../../Challenges/Easy/Summit.md)
 - [Eviction](../../Walkthroughs/Easy/Eviction.md)
+
+### Cyber Threat Intelligence
+
+- [Intro to Cyber Threat Intel](../../Walkthroughs/Easy/Intro_to_Cyber_Threat_Intel.md)
+- [Threat Intelligence Tools](../../Walkthroughs/Easy/Threat_Intelligence_Tools.md)
