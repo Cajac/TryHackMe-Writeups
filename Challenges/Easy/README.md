@@ -12,6 +12,7 @@
 - [LazyAdmin](LazyAdmin.md)
 - [Library](Library.md)
 - [Madness](Madness.md)
+- [Pickle Rick](Pickle_Rick.md)
 - [Simple CTF](Simple_CTF.md)
 - [Thompson](Thompson.md)
 - [ToolsRus](ToolsRus.md)
