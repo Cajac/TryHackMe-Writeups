@@ -23,12 +23,14 @@
 - [Introduction to SIEM](Introduction_to_SIEM.md)
 - [Junior Security Analyst Intro](Junior_Security_Analyst_Intro.md)
 - [Logs Fundamentals](Logs_Fundamentals.md)
+- [OpenCTI](OpenCTI.md)
 - [Pyramid Of Pain](Pyramid_Of_Pain.md)
 - [REMnux: Getting Started](REMnux_Getting_Started.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
 - [Threat Intelligence Tools](Threat_Intelligence_Tools.md)
 - [Unified Kill Chain](Unified_Kill_Chain.md)
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
+- [Yara](Yara.md)
 
 ## Exploitation
 

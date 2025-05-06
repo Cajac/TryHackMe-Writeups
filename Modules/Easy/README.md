@@ -6,6 +6,7 @@
 
 ## Defensive Security
 
+- [Cyber Threat Intelligence](Cyber_Threat_Intelligence.md)
 - [Defensive Security](Defensive_Security.md)
 - [Defensive Security Tooling](Defensive_Security_Tooling.md)
 - [Security Solutions](Security_Solutions.md)

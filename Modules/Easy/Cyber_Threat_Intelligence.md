@@ -23,3 +23,5 @@ Web link: [https://tryhackme.com/module/cyber-threat-intelligence](https://tryha
 
 - [Intro to Cyber Threat Intel](../../Walkthroughs/Easy/Intro_to_Cyber_Threat_Intel.md)
 - [Threat Intelligence Tools](../../Walkthroughs/Easy/Threat_Intelligence_Tools.md)
+- [Yara](../../Walkthroughs/Easy/Yara.md)
+- [OpenCTI](../../Walkthroughs/Easy/OpenCTI.md)
