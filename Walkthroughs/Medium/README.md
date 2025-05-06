@@ -3,6 +3,7 @@
 ## Defensive Security
 
 - [MITRE](MITRE.md)
+- [OpenCTI](OpenCTI.md)
 
 ## Scripting and Programming
 
