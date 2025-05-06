@@ -1033,7 +1033,7 @@ Answer: zepto
 
 Hint: Examine thor-webshell.yar and search for the rule name
 
-Note: Very unclear what yara rule they are referring to probably `Webshell_b374k_rule1`
+Note: Very unclear what yara rule they are referring to, but it is probably `Webshell_b374k_rule1`
 
 ```bash
 cmnatic@thm-yara:~/tools/Loki/signature-base/yara$ grep -i Webshell_b374k_rule1 *
