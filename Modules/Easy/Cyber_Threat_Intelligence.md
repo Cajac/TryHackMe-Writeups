@@ -25,3 +25,6 @@ Web link: [https://tryhackme.com/module/cyber-threat-intelligence](https://tryha
 - [Threat Intelligence Tools](../../Walkthroughs/Easy/Threat_Intelligence_Tools.md)
 - [Yara](../../Walkthroughs/Easy/Yara.md)
 - [OpenCTI](../../Walkthroughs/Medium/OpenCTI.md)
+- [MISP](../../Walkthroughs/Medium/MISP.md)
+- [Friday Overtime](../../Challenges/Medium/Friday_Overtime.md)
+- [Trooper](../../Walkthroughs/Easy/Trooper.md)
