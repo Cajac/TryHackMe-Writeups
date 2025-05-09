@@ -32,3 +32,8 @@ Web link: [https://tryhackme.com/path/outline/soclevel1](https://tryhackme.com/p
 - [MISP](../../Walkthroughs/Medium/MISP.md)
 - [Friday Overtime](../../Challenges/Medium/Friday_Overtime.md)
 - [Trooper](../../Walkthroughs/Easy/Trooper.md)
+
+### Network Security and Traffic Analysis
+
+- [Traffic Analysis Essentials](../../Walkthroughs/Easy/Traffic_Analysis_Essentials.md)
+- [Snort](../../Walkthroughs/Medium/Snort.md)

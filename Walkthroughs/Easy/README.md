@@ -28,6 +28,7 @@
 - [REMnux: Getting Started](REMnux_Getting_Started.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
 - [Threat Intelligence Tools](Threat_Intelligence_Tools.md)
+- [Traffic Analysis Essentials](Traffic_Analysis_Essentials.md)
 - [Trooper](Trooper.md)
 - [Unified Kill Chain](Unified_Kill_Chain.md)
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
