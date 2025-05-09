@@ -2009,6 +2009,7 @@ This section manages the outputs of the IDS/IPS actions, such as logging and ale
 #### Navigate to the "Step #7: Customise your ruleset" section
 
 | TAG NAME | INFO | EXAMPLE |
+|----|----|----|
 |`# site specific rules`|Hardcoded local and user-generated rules path.|include $RULE_PATH/local.rules|
 |`#include $RULE_PATH/`|Hardcoded default/downloaded rules path.|include $RULE_PATH/rulename|
 
