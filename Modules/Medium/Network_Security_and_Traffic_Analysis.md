@@ -20,3 +20,5 @@ Web link: [https://tryhackme.com/module/network-security-and-traffic-analysis](h
 
 - [Traffic Analysis Essentials](../../Walkthroughs/Easy/Traffic_Analysis_Essentials.md)
 - [Snort](../../Walkthroughs/Medium/Snort.md)
+- [Snort Challenge - The Basics](../../Walkthroughs/Medium/Snort_Challenge-The_Basics.md)
+- [Snort Challenge - Live Attacks](../../Walkthroughs/Medium/Snort_Challenge-Live_Attacks.md)
