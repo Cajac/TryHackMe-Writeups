@@ -346,13 +346,13 @@ We verify this with the snort log file
 ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-3 (FTP)$ sudo snort -r snort.log.1746781941 -X 2> /dev/null | grep 530 -A1 
 0x0040: CB 91 35 33 30 20 55 73 65 72 20 74 65 73 74 20  ..530 User test 
 0x0050: 63 61 6E 6E 6F 74 20 6C 6F 67 20 69 6E 2E 0D 0A  cannot log in...
---
+-
 0x0040: CB 91 35 33 30 20 55 73 65 72 20 74 65 73 74 20  ..530 User test 
 0x0050: 63 61 6E 6E 6F 74 20 6C 6F 67 20 69 6E 2E 0D 0A  cannot log in...
---
+-
 0x0040: CB 91 35 33 30 20 55 73 65 72 20 61 64 6D 69 6E  ..530 User admin
 0x0050: 20 63 61 6E 6E 6F 74 20 6C 6F 67 20 69 6E 2E 0D   cannot log in..
---
+-
 0x0040: CB 91 35 33 30 20 55 73 65 72 20 61 64 6D 69 6E  ..530 User admin
 0x0050: 20 63 61 6E 6E 6F 74 20 6C 6F 67 20 69 6E 2E 0D   cannot log in..
 <---snip--->
@@ -412,9 +412,10 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-3 (FTP)$ tcpdump -r ftp-pn
 reading from file ftp-png-gif.pcap, link-type EN10MB (Ethernet)
 10:19:34.205230 IP ip-192-168-75-1.eu-west-1.compute.internal.18158 > ip-192-168-75-132.eu-west-1.compute.internal.ftp: Flags [P.], seq 13:24, ack 62, win 16636, options [nop,nop,TS val 7457681 ecr 13957], length 11: FTP: PASS anon
 10:19:34.214659 IP ip-192-168-75-1.eu-west-1.compute.internal.18165 > ip-192-168-75-132.eu-west-1.compute.internal.ftp: Flags [P.], seq 1:13, ack 28, win 16645, options [nop,nop,TS val 7457682 ecr 13956], length 12: FTP: USER admin
---
+-
 10:19:34.546056 IP ip-192-168-75-132.eu-west-1.compute.internal.ftp > ip-192-168-75-1.eu-west-1.compute.internal.18164: Flags [P.], seq 198:233, ack 84, win 64157, options [nop,nop,TS val 13961 ecr 7457703], length 35: FTP: 230 User Administrator logged in.
 10:19:34.548900 IP ip-192-168-75-1.eu-west-1.compute.internal.18164 > ip-192-168-75-132.eu-west-1.compute.internal.ftp: Flags [F.], seq 84, ack 233, win 16594, options [nop,nop,TS val 7457715 ecr 13961], length 0
+<---snip--->
 ```
 
 The status message is of the form `User <user> logged in`.
@@ -429,7 +430,6 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-3 (FTP)$ cat local.rules
 # This file intentionally does not come with signatures.  Put your local
 # additions here.
 alert tcp any 21 <> any any (msg: "FTP Successful login"; content:"230 User "; sid: 200004; rev:1;)
-
 ```
 
 #### What is the number of detected packets?
@@ -688,7 +688,8 @@ Answer: GIF89a
 
 Let's create IDS Rules for torrent metafiles in the traffic!
 
-Research the [Torrent file](https://en.wikipedia.org/wiki/Torrent_file) format but there doesn't seem to be any magic bytes headers. Instead, a torrent file "just" contains metadata about the files and folders to be distributed.
+Research the [Torrent file](https://en.wikipedia.org/wiki/Torrent_file) format but there doesn't seem to be any magic bytes headers.  
+Instead, a torrent file "just" contains metadata about the files and folders to be distributed.
 
 The hint suggests though: Torrent metafiles have a common name extension (.torrent). Try to filter the given pattern in the TCP traffic.
 
@@ -780,7 +781,7 @@ TCP TTL:128 TOS:0x0 ID:22748 IpLen:20 DgmLen:390 DF
 <---snip--->
 ```
 
-I really didn't get this question and solved it with a lot of trial-and-error!?
+I really didn't get this question's answer and solved it with a lot of trial-and-error!?
 
 Answer: bittorrent
 
@@ -1158,7 +1159,7 @@ TCP TTL:128 TOS:0x0 ID:575 IpLen:20 DgmLen:117 DF
 <---snip--->
 ```
 
-Answer: \\192.168.116.138\IPC$
+Answer: `\\192.168.116.138\IPC$`
 
 #### What is the CVSS v2 score of the MS17-010 vulnerability?
 
