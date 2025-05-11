@@ -58,10 +58,10 @@ While both are called IDS/NIDS, it is good to know the cons and pros of each too
 
 | Tool | Zeek | Snort |
 |----|----|----|
-|Capabilities|NSM and IDS framework. It is heavily focused on network analysis. It is more focused on specific threats to trigger alerts. The detection mechanism is focused on events.|An IDS/IPS system. It is heavily focused on signatures to detect vulnerabilities. The detection mechanism is focused on signature patterns and packets.|
-|Cons|Hard to use.<br>The analysis is done out of the Zeek, manually or by automation.|Hard to detect complex threats.|
-|Pros|It provides in-depth traffic visibility.<br>Useful for threat hunting.<br>Ability to detect complex threats.<br>It has a scripting language and supports event correlation.<br>Easy to read logs.|Easy to write rules.<br>Cisco supported rules.<br>Community support.|
-|Common Use Case|Network monitoring.<br>In-depth traffic investigation.<br>Intrusion detecting in chained events.|Intrusion detection and prevention.<br>Stop known attacks/threats.|
+|**Capabilities**|NSM and IDS framework. It is heavily focused on network analysis. It is more focused on specific threats to trigger alerts. The detection mechanism is focused on events.|An IDS/IPS system. It is heavily focused on signatures to detect vulnerabilities. The detection mechanism is focused on signature patterns and packets.|
+|**Cons**|Hard to use.<br>The analysis is done out of the Zeek, manually or by automation.|Hard to detect complex threats.|
+|**Pros**|It provides in-depth traffic visibility.<br>Useful for threat hunting.<br>Ability to detect complex threats.<br>It has a scripting language and supports event correlation.<br>Easy to read logs.|Easy to write rules.<br>Cisco supported rules.<br>Community support.|
+|**Common Use Case**|Network monitoring.<br>In-depth traffic investigation.<br>Intrusion detecting in chained events.|Intrusion detection and prevention.<br>Stop known attacks/threats.|
 
 #### Zeek Architecture
 
@@ -511,7 +511,7 @@ Now let's dig more into the Zeek signatures. The below table provides the most c
 | Condition Field | Available Filters |
 |----|----|
 |**Header**|**src-ip**: Source IP.<br>**dst-ip**: Destination IP.<br>**src-port**: Source port.<br>**dst-port**: Destination port.<br>**ip-proto**: Target protocol. Supported protocols; TCP, UDP, ICMP, ICMP6, IP, IP6|
-|Content|**payload**: Packet payload.<br>**http-request**: Decoded HTTP requests.<br>**http-request-header**: Client-side HTTP headers.<br>**http-request-body**: Client-side HTTP request bodys.<br>**http-reply-header**: Server-side HTTP headers.<br>**http-reply-body**: Server-side HTTP request bodys.<br>**ftp**: Command line input of FTP sessions.|
+|**Content**|**payload**: Packet payload.<br>**http-request**: Decoded HTTP requests.<br>**http-request-header**: Client-side HTTP headers.<br>**http-request-body**: Client-side HTTP request bodys.<br>**http-reply-header**: Server-side HTTP headers.<br>**http-reply-body**: Server-side HTTP request bodys.<br>**ftp**: Command line input of FTP sessions.|
 |**Context**|**same-ip**: Filtering the source and destination addresses for duplication.|
 |**Action**|**event**: Signature match message.|
 
@@ -1652,11 +1652,13 @@ For additional information, please see the references below.
 ## References
 
 - [Frameworks - Zeek Docs](https://docs.zeek.org/en/master/index.html)
+- [grep - Linux manual page](https://man7.org/linux/man-pages/man1/grep.1.html)
 - [head - Linux manual page](https://man7.org/linux/man-pages/man1/head.1.html)
 - [Log Files - Zeek Docs](https://docs.zeek.org/en/current/script-reference/log-files.html)
 - [Script Reference - Zeek Docs](https://docs.zeek.org/en/current/script-reference/index.html)
 - [Signature Framework - Zeek Docs](https://docs.zeek.org/en/master/frameworks/signatures.html)
 - [sort - Linux manual page](https://man7.org/linux/man-pages/man1/sort.1.html)
+- [uniq - Linux manual page](https://man7.org/linux/man-pages/man1/uniq.1.html)
 - [wc - Linux manual page](https://man7.org/linux/man-pages/man1/wc.1.html)
 - [Zeek - Documentation](https://docs.zeek.org/en/master/index.html)
 - [Zeek - GitHub](https://github.com/zeek/zeek)
