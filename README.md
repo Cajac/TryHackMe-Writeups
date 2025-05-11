@@ -10,6 +10,7 @@ In total you will find more than XX room solutions here.
 ## Challenges (CTF)
 
 - [Easy Challenges](Challenges/Easy/README.md)
+- [Medium Challenges](Challenges/Medium/README.md)
 
 ## Learning Paths
 
@@ -28,8 +29,10 @@ In total you will find more than XX room solutions here.
 
 ## No spoilers
 
-The solutions contain step-by-step walkthroughs but doesn't display the flags in plain text.  
+The solutions contain step-by-step guides but doesn't display the flags for the challenges in plain text.  
 Instead, the flags are displayd as `THM{<REDACTED>}` or something similar.
+
+Answers for walktroughs are usually provided unless they are flag-like.
 
 ## Support my work
 
@@ -43,6 +46,7 @@ I'm not a native English speaker so please forgive any spelling mistakes or gram
 
 Some of the solutions were inspired by writeups and walkthroughs from these guys:
 
+- [igor_sec](https://medium.com/@huglertomgaw)
 - [jcm3](https://medium.com/@jcm3)
 - [Motasem Hamdan](https://www.youtube.com/@MotasemHamdan)
 - [Z3pH7](https://medium.com/@Z3pH7)

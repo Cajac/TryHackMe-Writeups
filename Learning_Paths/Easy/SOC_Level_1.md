@@ -39,3 +39,5 @@ Web link: [https://tryhackme.com/path/outline/soclevel1](https://tryhackme.com/p
 - [Snort](../../Walkthroughs/Medium/Snort.md)
 - [Snort Challenge - The Basics](../../Walkthroughs/Medium/Snort_Challenge-The_Basics.md)
 - [Snort Challenge - Live Attacks](../../Walkthroughs/Medium/Snort_Challenge-Live_Attacks.md)
+- [NetworkMiner](../../Walkthroughs/Easy/NetworkMiner.md)
+- [Zeek](../../Walkthroughs/Medium/Zeek.md)

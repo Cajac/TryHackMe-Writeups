@@ -23,6 +23,7 @@
 - [Introduction to SIEM](Introduction_to_SIEM.md)
 - [Junior Security Analyst Intro](Junior_Security_Analyst_Intro.md)
 - [Logs Fundamentals](Logs_Fundamentals.md)
+- [NetworkMiner](NetworkMiner.md)
 - [OpenCTI](OpenCTI.md)
 - [Pyramid Of Pain](Pyramid_Of_Pain.md)
 - [REMnux: Getting Started](REMnux_Getting_Started.md)
