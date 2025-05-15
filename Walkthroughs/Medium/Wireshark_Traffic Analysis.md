@@ -273,7 +273,7 @@ Use the "**Desktop/exercise-pcaps/arp/Exercise.pcapng**" file.
 
 Hint: Only requests made by the attacker are relevant to this question!
 
-Start by setting a display filter of `arp` and add two columns for `Send MAC address` and `Target MAC address`.  
+Start by setting a display filter of `arp.duplicate-address-detected || arp.duplicate-address-frame` and add two columns for `Send MAC address` and `Target MAC address`.  
 The attacker seems to be `00:0c:29:98:c7:a8`. Filter for ARP reqests from this machine with `eth.src == 00:0c:29:e2:18:b4 && arp.opcode==1`.  
 Then check the status bar value for `Displayed`.
 
@@ -328,9 +328,9 @@ Answer: Nice work!
 
 
 
+
+
 ![Wireshark Go to Packet](Images/Wireshark_Go_to_Packet.png)
-
-
 
 #### Search the "r4w" string in packet details. What is the name of artist 1?
 
