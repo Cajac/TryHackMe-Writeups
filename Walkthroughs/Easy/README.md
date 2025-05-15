@@ -20,6 +20,7 @@
 - [IDS Fundamentals](IDS_Fundamentals.md)
 - [Incident Response Fundamentals](Incident_Response_Fundamentals.md)
 - [Intro to Cyber Threat Intel](Intro_to_Cyber_Threat_Intel.md)
+- [Intro to Logs](Intro_to_Logs.md)
 - [Introduction to SIEM](Introduction_to_SIEM.md)
 - [Junior Security Analyst Intro](Junior_Security_Analyst_Intro.md)
 - [Logs Fundamentals](Logs_Fundamentals.md)
@@ -66,6 +67,7 @@
 - [Nmap: The Basics](Nmap_The_Basics.md)
 - [Putting it all together](Putting_it_all_together.md)
 - [Tcpdump: The Basics](Tcpdump_The_Basics.md)
+- [Wireshark: Packet Operations](Wireshark_Packet_Operations.md)
 - [Wireshark: The Basics](Wireshark_The_Basics.md)
 
 ## Offensive Security

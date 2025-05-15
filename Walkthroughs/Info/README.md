@@ -19,6 +19,11 @@
 - [Packets & Frames](Packets_and_Frames.md)
 - [What is Networking?](What_is_Networking.md)
 
+## Offensive Security
+
+- [Polkit: CVE-2021-3560](Polkit_CVE-2021-3560.md)
+- [Pwnkit: CVE-2021-4034](Pwnkit_CVE-2021-4034.md)
+
 ## Web
 
 - [Burp Suite: The Basics](Burp_Suite_The_Basics.md)

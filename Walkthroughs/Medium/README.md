@@ -2,6 +2,7 @@
 
 ## Defensive Security
 
+- [Logless Hunt](Logless_Hunt.md)
 - [MISP](MISP.md)
 - [MITRE](MITRE.md)
 - [OpenCTI](OpenCTI.md)
