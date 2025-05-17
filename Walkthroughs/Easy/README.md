@@ -50,6 +50,7 @@
 - [Search Skills](Search_Skills.md)
 - [Security Principles](Security_Principles.md)
 - [SQL Fundamentals](SQL_Fundamentals.md)
+- [Toolbox: Vim](Toolbox_Vim.md)
 
 ## Linux
 
@@ -77,6 +78,7 @@
 - [Offensive Security Intro](Offensive_Security_Intro.md)
 - [Shells Overview](Shells_Overview.md)
 - [SQLMap: The Basics](SQLMap_The_Basics.md)
+- [Writing Pentest Reports](Writing_Pentest_Reports.md)
 
 ## Scripting and Programming
 
