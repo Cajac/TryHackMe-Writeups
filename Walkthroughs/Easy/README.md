@@ -36,6 +36,12 @@
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
 - [Yara](Yara.md)
 
+## Digital Forensics
+
+- [DFIR: An Introduction](DFIR_An_Introduction.md)
+- [Memory Acquisition](Memory_Acquisition.md)
+- [Memory Analysis Introduction](Memory_Analysis_Introduction.md)
+
 ## Exploitation
 
 - [Blue](Blue.md)
