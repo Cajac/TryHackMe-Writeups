@@ -79,6 +79,7 @@
 
 ## Offensive Security
 
+- [Enumeration & Brute Force](Enumeration_and_Brute_Force.md)
 - [Gobuster: The Basics](Gobuster_The_Basics.md)
 - [Hydra](Hydra.md)
 - [Offensive Security Intro](Offensive_Security_Intro.md)
@@ -89,6 +90,7 @@
 ## Scripting and Programming
 
 - [Hacking with PowerShell](Hacking_with_PowerShell.md)
+- [Intro PoC Scripting](Intro_PoC_Scripting.md)
 - [Python Basics](Python_Basics.md)
 - [Python for Pentesters](Python_for_Pentesters.md)
 
@@ -99,6 +101,7 @@
 - [OWASP Top 10 - 2021](OWASP_Top_10_2021.md)
 - [Upload Vulnerabilities](Upload_Vulnerabilities.md)
 - [Web Application Basics](Web_Application_Basics.md)
+- [Web Enumeration](Web_Enumeration.md)
 
 ## Windows
 
