@@ -18,3 +18,5 @@ Web link: [https://tryhackme.com/module/log-analysis](https://tryhackme.com/modu
 ## Included rooms
 
 - [Intro to Logs](../../Walkthroughs/Easy/Intro_to_Logs.md)
+- [Log Operations](../../Walkthroughs/Easy/Log_Operations.md)
+- [Intro to Log Analysis](../../Walkthroughs/Easy/Intro_to_Log_Analysis.md)
