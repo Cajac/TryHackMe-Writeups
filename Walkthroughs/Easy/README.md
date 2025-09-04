@@ -85,6 +85,7 @@
 - [Gobuster: The Basics](Gobuster_The_Basics.md)
 - [Hydra](Hydra.md)
 - [Offensive Security Intro](Offensive_Security_Intro.md)
+- [Pentesting Fundamentals](Pentesting_Fundamentals.md)
 - [Shells Overview](Shells_Overview.md)
 - [SQLMap: The Basics](SQLMap_The_Basics.md)
 - [Writing Pentest Reports](Writing_Pentest_Reports.md)

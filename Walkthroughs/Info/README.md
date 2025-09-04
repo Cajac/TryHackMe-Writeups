@@ -9,6 +9,7 @@
 ## Miscellaneous
 
 - [Careers in Cyber](Careers_in_Cyber.md)
+- [Principles of Security](Principles_of_Security.md)
 - [Training Impact on Teams](Training_Impact_on_Teams.md)
 
 ## Networking
