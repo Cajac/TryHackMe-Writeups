@@ -108,5 +108,6 @@
 ## Windows
 
 - [Active Directory Basics](Active_Directory_Basics.md)
+- [AD: Basic Enumeration](AD_Basic_Enumeration.md)
 - [Windows Command Line](Windows_Command_Line.md)
 - [Windows PowerShell](Windows_PowerShell.md)

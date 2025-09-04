@@ -26,3 +26,4 @@ Web link: [https://tryhackme.com/module/network-security-and-traffic-analysis](h
 - [Zeek](../../Walkthroughs/Medium/Zeek.md)
 - [Wireshark: The Basics](../../Walkthroughs/Easy/Wireshark_The_Basics.md)
 - [Wireshark: Packet Operations](../../Walkthroughs/Easy/Wireshark_Packet_Operations.md)
+- [Wireshark: Traffic Analysis](../../Walkthroughs/Medium/Wireshark_Traffic_Analysis.md)
