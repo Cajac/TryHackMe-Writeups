@@ -310,7 +310,7 @@ Going through the HTML form data the following likely credentials are found:
 |uname=client986|clientnothere!|
 |uname=tourist-audt|pass=captainciso|
 
-Maybe the `uuname` and `upass` was something else because 6 (rather than 7) was the accepted answer.
+We have 6 unique combinations of username and password (`test_THM_test:insecurepw` appear twice).
 
 Answer: 6
 
@@ -787,7 +787,7 @@ Hypertext Transfer Protocol (HTTP) is a cleartext-based, request-response and cl
 
 HTTP analysis in a nutshell:
 
-Global search  
+Global searches  
 `http`  
 `http2`
 
@@ -1051,7 +1051,7 @@ Answer: `237`
 
 #### What is the packet number where "empty password" was submitted?
 
-Set a display filter of `ftp.request.command == "PASS"` and add a column the `ftp.request.arg` field.  
+Set a display filter of `ftp.request.command == "PASS"` and add a column for the `ftp.request.arg` field.  
 Scroll down the list until you find the packet with the empty password.
 
 Answer: `170`
