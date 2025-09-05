@@ -449,6 +449,7 @@ For additional information, please see the references below.
 - [Apache Tomcat - Wikipedia](https://en.wikipedia.org/wiki/Apache_Tomcat)
 - [Gobuster - GitHub](https://github.com/OJ/gobuster/)
 - [Gobuster - Kali Tools](https://www.kali.org/tools/gobuster/)
+- [gpg - Linux manual page](https://linux.die.net/man/1/gpg)
 - [GNU Privacy Guard - Wikipedia](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)
 - [John the Ripper - Homepage](https://www.openwall.com/john/)
 - [john - Kali Tools](https://www.kali.org/tools/john/)
