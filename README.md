@@ -2,19 +2,21 @@
 
 ![TryHackMe Logo](TryHackMe_logo.png)
 
-Welcome to my writeups for [TryHackMe](https://tryhackme.com/) challenges and walkthroughs.  
+Welcome to [my](https://tryhackme.com/p/Cajac) writeups for [TryHackMe](https://tryhackme.com/) [challenges](https://tryhackme.com/hacktivities/challenges) and [walkthroughs](https://tryhackme.com/hacktivities/search?page=1&kind=rooms&searchText=&roomType=walkthrough).  
 These writeups are mainly a documentation for myself but I hope others will benefit from them as well.  
 
 In total you will find more than XX room solutions here.
 
 ## Challenges (CTF)
 
+- [Info Challenges](Challenges/Info/README.md)
 - [Easy Challenges](Challenges/Easy/README.md)
 - [Medium Challenges](Challenges/Medium/README.md)
 
 ## Learning Paths
 
 - [Easy Learning Paths](Learning_Paths/Easy/README.md)
+- [Medium Learning Paths](Learning_Paths/Medium/README.md)
 
 ## Modules
 
@@ -27,7 +29,7 @@ In total you will find more than XX room solutions here.
 - [Easy Walkthroughs](Walkthroughs/Easy/README.md)
 - [Medium Walkthroughs](Walkthroughs/Medium/README.md)
 
-## No spoilers
+## No flag spoilers
 
 The solutions contain step-by-step guides but doesn't display the flags for the challenges in plain text.  
 Instead, the flags are displayd as `THM{<REDACTED>}` or something similar.

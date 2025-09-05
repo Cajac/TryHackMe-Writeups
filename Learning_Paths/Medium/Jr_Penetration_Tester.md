@@ -14,7 +14,7 @@ of the different areas of cyber security to complete this pathway. If you do not
 these prerequisites, complete the Pre-Security Pathway and Cyber Security 101 Pathway.
 ```
 
-Web link: [https://tryhackme.com/path/outline/cybersecurity101](https://tryhackme.com/path/outline/cybersecurity101)
+Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryhackme.com/path/outline/jrpenetrationtester)
 
 ## Included rooms
 
