@@ -172,7 +172,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.91 seconds
            Raw packets sent: 5 (196B) | Rcvd: 66 (16.200KB)
 ```
 
-and find hidden web page called `/sup3r_s3cr3t_fl4g.php`.
+and find a hidden web page called `/sup3r_s3cr3t_fl4g.php`.
 
 ### Investigate the hidden web page
 
@@ -230,7 +230,7 @@ We download the `Hot_Babe.png` file for further analysis.
 
 ### Analyse the image file
 
-We run different checks on the image file
+We then run different checks on the image file
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/Year_of_the_Rabbit]
@@ -328,7 +328,7 @@ Now we have FTP credentials: `ftpuser:5iez1wGXKfPKQ`
 
 ### Analyse the FTP-server
 
-Now we login via FTP and check the contents
+We login via FTP and check the contents
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/Year_of_the_Rabbit]
@@ -456,7 +456,7 @@ eli@year-of-the-rabbit:~$ find / -name '*s3cr3t*' 2>/dev/null
 eli@year-of-the-rabbit:~$ 
 ```
 
-We have the PHP-file we found earlier and a new directory (`/usr/games/s3cr3t`).
+We find the PHP-file we found earlier and a new directory (`/usr/games/s3cr3t`).
 
 ```bash
 eli@year-of-the-rabbit:~$ ls -la /usr/games/s3cr3t/
