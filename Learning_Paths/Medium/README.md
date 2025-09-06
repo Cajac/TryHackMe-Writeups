@@ -1,5 +1,5 @@
 # Medium Learning Paths
 
-## Fundamentals
+## Offensive Security
 
 - [Jr Penetration Tester](Jr_Penetration_Tester.md)

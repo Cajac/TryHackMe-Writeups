@@ -7,6 +7,7 @@
 - [Basic Pentesting](Basic_Pentesting.md)
 - [Blueprint](Blueprint.md)
 - [Dav](Dav.md)
+- [Fowsniff CTF](Fowsniff_CTF.md)
 - [HeartBleed](HeartBleed.md)
 - [Ignite](Ignite.md)
 - [Jack-of-All-Trades](Jack-of-All-Trades.md)
@@ -19,6 +20,7 @@
 - [tomghost](tomghost.md)
 - [ToolsRus](ToolsRus.md)
 - [Wgel CTF](Wgel_CTF.md)
+- [Year of the Rabbit](Year_of_the_Rabbit.md)
 
 ## Other Rooms
 
