@@ -495,8 +495,6 @@ printf "
 .ohdddddddddddddho:                  Delivering Solutions\n\n"
 ```
 
-We get another set of credentials (`merlin:asuyusdoiuqoilkda312j31k2j123j1g23g12k3g12kj3gk12jg3k12j3kj123j`)
-
 ### Create a reverse shell
 
 We update the script to be a reverse shell
