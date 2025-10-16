@@ -32,3 +32,4 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 ### Introduction to Web Hacking
 
 - [Walking An Application](../../Walkthroughs/Easy/Walking_An_Application.md)
+- [Content Discovery](../../Walkthroughs/Easy/Content_Discovery.md)
