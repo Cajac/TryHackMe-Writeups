@@ -11,7 +11,8 @@ Type: Walkthrough
 Difficulty: Easy
 OS: N/A
 Subscription type: Premium
-Description: Learn the various ways of discovering hidden or private content on a webserver that could lead to new vulnerabilities.
+Description:
+Learn the various ways of discovering hidden or private content on a webserver that could lead to new vulnerabilities.
 ```
 
 Room link: [https://tryhackme.com/room/contentdiscovery](https://tryhackme.com/room/contentdiscovery)
@@ -293,7 +294,7 @@ Check the framework homepage
 </body> 
 ```
 
-No flag. But the page contains links to both a documentation page and the changelog.  
+No flag. But the page contains links to both a documentation page and the change log.  
 Let's check the documentation first
 
 ```bash
