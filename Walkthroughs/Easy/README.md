@@ -103,6 +103,7 @@
 - [JavaScript Essentials](JavaScript_Essentials.md)
 - [OWASP Juice Shop](OWASP_Juice_Shop.md)
 - [OWASP Top 10 - 2021](OWASP_Top_10_2021.md)
+- [Subdomain Enumeration](Subdomain_Enumeration.md)
 - [Upload Vulnerabilities](Upload_Vulnerabilities.md)
 - [Web Application Basics](Web_Application_Basics.md)
 - [Web Enumeration](Web_Enumeration.md)

@@ -33,3 +33,4 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 
 - [Walking An Application](../../Walkthroughs/Easy/Walking_An_Application.md)
 - [Content Discovery](../../Walkthroughs/Easy/Content_Discovery.md)
+- [Subdomain Enumeration](../../Walkthroughs/Easy/Subdomain_Enumeration.md)
