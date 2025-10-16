@@ -359,7 +359,7 @@ We have changed your smb password after system malfunction.
 Password: )s{A&2Z=F^n_E.B`
 ```
 
-No subjec #1
+No subject #1
 
 ```text
 01100010 01100001 01101100 01101100 01110011 00100000 01101000 01100001 01110110
@@ -372,7 +372,7 @@ No subjec #1
 00100000 01110100 01101111
 ```
 
-No subjec #2
+No subject #2
 
 ```text
 i can i i everything else . . . . . . . . . . . . . .
