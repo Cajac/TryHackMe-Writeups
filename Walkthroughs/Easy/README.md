@@ -99,6 +99,7 @@
 
 ## Web
 
+- [Authentication Bypass](Authentication_Bypass.md)
 - [Content Discovery](Content_Discovery.md)
 - [JavaScript Essentials](JavaScript_Essentials.md)
 - [OWASP Juice Shop](OWASP_Juice_Shop.md)
