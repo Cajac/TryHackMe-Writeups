@@ -160,11 +160,11 @@ The above command should have revealed two positive results that we haven't come
 
 #### What is the first subdomain discovered?
 
-Find out the size to filter
+Use the `-ac` parameter for automatic filtering instead of using `-fs`
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Walkthroughs/Easy/Subdomain_Enumeration]
-└─$ ffuf -w /usr/share/seclists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.44.56 | head -n 15
+└─$ ffuf -w /usr/share/seclists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.44.56 -ac        
 
         /'___\  /'___\           /'___\       
        /\ \__/ /\ \__/  __  __  /\ \__/       
@@ -181,64 +181,19 @@ ________________________________________________
  :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/DNS/namelist.txt
  :: Header           : Host: FUZZ.acmeitsupport.thm
  :: Follow redirects : false
- :: Calibration      : false
+ :: Calibration      : true
  :: Timeout          : 10
  :: Threads          : 40
  :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
 ________________________________________________
 
-0                       [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 44ms]
-11                      [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 44ms]
-3                       [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 46ms]
-03                      [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 46ms]
-02                      [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 46ms]
-01                      [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 45ms]
-1                       [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 45ms]
-aacelearning            [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 48ms]
-10                      [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 48ms]
-3com                    [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 48ms]
-a02                     [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 48ms]
-4                       [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 48ms]
-aaaowa                  [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 50ms]
-aaapi                   [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 49ms]
-16                      [Status: 200, Size: 2395, Words: 503, Lines: 52, Duration: 50ms]
-```
-
-A size of `2395` should be filtered. Then we scan for virtual hosts
-
-```bash
-┌──(kali㉿kali)-[/mnt/…/TryHackMe/Walkthroughs/Easy/Subdomain_Enumeration]
-└─$ ffuf -w /usr/share/seclists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.44.56 -fs 2395
-
-        /'___\  /'___\           /'___\       
-       /\ \__/ /\ \__/  __  __  /\ \__/       
-       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
-        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
-         \ \_\   \ \_\  \ \____/  \ \_\       
-          \/_/    \/_/   \/___/    \/_/       
-
-       v2.1.0-dev
-________________________________________________
-
- :: Method           : GET
- :: URL              : http://10.10.44.56
- :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/DNS/namelist.txt
- :: Header           : Host: FUZZ.acmeitsupport.thm
- :: Follow redirects : false
- :: Calibration      : false
- :: Timeout          : 10
- :: Threads          : 40
- :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
- :: Filter           : Response size: 2395
-________________________________________________
-
-api                     [Status: 200, Size: 31, Words: 4, Lines: 1, Duration: 49ms]
+api                     [Status: 200, Size: 31, Words: 4, Lines: 1, Duration: 43ms]
 delta                   [Status: 200, Size: 51, Words: 7, Lines: 1, Duration: 46ms]
-yellow                  [Status: 200, Size: 56, Words: 8, Lines: 1, Duration: 59ms]
-:: Progress: [151265/151265] :: Job [1/1] :: 796 req/sec :: Duration: [0:03:31] :: Errors: 0 ::
+yellow                  [Status: 200, Size: 56, Words: 8, Lines: 1, Duration: 43ms]
+:: Progress: [151265/151265] :: Job [1/1] :: 847 req/sec :: Duration: [0:03:06] :: Errors: 0 ::
 ```
 
-Things have changed on the machine since the room was released because the correct answer is `delta`
+Things have changed on the machine since the room was released so the wanted answers differ from the real result.
 
 Answer: `delta`
 
