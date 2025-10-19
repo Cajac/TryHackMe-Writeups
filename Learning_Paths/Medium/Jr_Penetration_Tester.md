@@ -36,3 +36,4 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 - [Subdomain Enumeration](../../Walkthroughs/Easy/Subdomain_Enumeration.md)
 - [Authentication Bypass](../../Walkthroughs/Easy/Authentication_Bypass.md)
 - [IDOR](../../Walkthroughs/Easy/IDOR.md)
+- [File Inclusion](../../Walkthroughs/Medium/File_Inclusion.md)
