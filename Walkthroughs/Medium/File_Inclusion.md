@@ -270,7 +270,7 @@ Answer: `file_get_contents`
 
 #### Try out Lab #6 and check what is the directory that has to be in the input field?
 
-The answer is given in the "help text" for the `File Name` text box `For example: THM-prfile/tryhackme.txt`.
+The answer is given in the "help text" for the `File Name` text box `For example: THM-profile/tryhackme.txt`.
 
 However, entering only `cajac.txt` in the text box gives us this error message:
 
