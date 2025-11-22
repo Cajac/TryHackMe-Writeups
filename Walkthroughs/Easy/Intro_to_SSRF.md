@@ -184,8 +184,8 @@ Viewing the page source of the avatar form, you'll see the currently set avatar 
 
 Go to `http://10.10.78.217/customers/signup` and create a new user:
 
-Username: Cajac
-Password: `cajac@thm.com`
+Username: Cajac  
+E-mail: `cajac@thm.com`  
 Password: ssrf4fun
 
 Then navigate to `http://10.10.78.217/customers/new-account-page` and note that the source contains paths to the images
