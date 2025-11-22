@@ -37,3 +37,5 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 - [Authentication Bypass](../../Walkthroughs/Easy/Authentication_Bypass.md)
 - [IDOR](../../Walkthroughs/Easy/IDOR.md)
 - [File Inclusion](../../Walkthroughs/Medium/File_Inclusion.md)
+- [Intro to SSRF](../../Walkthroughs/Easy/Intro_to_SSRF.md)
+- [Intro to Cross-site Scripting](../../Walkthroughs/Easy/Intro_to_Cross-site_Scripting.md)

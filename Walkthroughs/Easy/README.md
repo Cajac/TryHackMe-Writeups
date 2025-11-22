@@ -102,6 +102,8 @@
 - [Authentication Bypass](Authentication_Bypass.md)
 - [Content Discovery](Content_Discovery.md)
 - [IDOR](IDOR.md)
+- [Intro to Cross-site Scripting](Intro_to_Cross-site_Scripting.md)
+- [Intro to SSRF](Intro_to_SSRF.md)
 - [JavaScript Essentials](JavaScript_Essentials.md)
 - [OWASP Juice Shop](OWASP_Juice_Shop.md)
 - [OWASP Top 10 - 2021](OWASP_Top_10_2021.md)
