@@ -367,8 +367,8 @@ Note that HTTP was used (instead of HTTPS) to access the machine.
 
 Click on the **Customers** tab on the top navigation bar and click the **Signup here** link to create an account.
 
-Username: cajac
-Password: `cajac@thm.com`
+Username: cajac  
+E-mail: `cajac@thm.com`  
 Password: xss4fun
 
 Once your account gets set up, click the **Support Tickets** tab, which is the feature we will investigate for weaknesses.
