@@ -100,6 +100,7 @@
 ## Web
 
 - [Authentication Bypass](Authentication_Bypass.md)
+- [Command Injection](Command_Injection.md)
 - [Content Discovery](Content_Discovery.md)
 - [IDOR](IDOR.md)
 - [Intro to Cross-site Scripting](Intro_to_Cross-site_Scripting.md)
