@@ -41,3 +41,4 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 - [Intro to Cross-site Scripting](../../Walkthroughs/Easy/Intro_to_Cross-site_Scripting.md)
 - [Race Conditions](../../Walkthroughs/Medium/Race_Conditions.md)
 - [Command Injection](../../Walkthroughs/Easy/Command_Injection.md)
+- [SQL Injection](../../Walkthroughs/Medium/SQL_Injection.md)
