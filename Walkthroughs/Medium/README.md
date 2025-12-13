@@ -17,6 +17,7 @@
 
 ## Web
 
+- [Burp Suite: Intruder](Burp_Suite_Intruder.md)
 - [File Inclusion](File_Inclusion.md)
 - [Race Conditions](Race_Conditions.md)
 - [SQL Injection](SQL_Injection.md)

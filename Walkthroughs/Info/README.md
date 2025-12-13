@@ -27,6 +27,7 @@
 
 ## Web
 
+- [Burp Suite: Repeater](Burp_Suite_Repeater.md)
 - [Burp Suite: The Basics](Burp_Suite_The_Basics.md)
 
 ## Windows

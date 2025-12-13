@@ -42,3 +42,9 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 - [Race Conditions](../../Walkthroughs/Medium/Race_Conditions.md)
 - [Command Injection](../../Walkthroughs/Easy/Command_Injection.md)
 - [SQL Injection](../../Walkthroughs/Medium/SQL_Injection.md)
+
+### Burp Suite
+
+- [Burp Suite: The Basics](../../Walkthroughs/Info/Burp_Suite_The_Basics.md)
+- [Burp Suite: Repeater](../../Walkthroughs/Info/Burp_Suite_Repeater.md)
+- [Burp Suite: Intruder](../../Walkthroughs/Medium/Burp_Suite_Intruder.md)
