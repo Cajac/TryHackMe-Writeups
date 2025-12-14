@@ -50,3 +50,7 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 - [Burp Suite: Intruder](../../Walkthroughs/Medium/Burp_Suite_Intruder.md)
 - [Burp Suite: Other Modules](../../Walkthroughs/Easy/Burp_Suite_Other_Modules.md)
 - [Burp Suite: Extensions](../../Walkthroughs/Easy/Burp_Suite_Extensions.md)
+
+### Network Security
+
+- [Passive Reconnaissance](../../Walkthroughs/Easy/Passive_Reconnaissance.md)
