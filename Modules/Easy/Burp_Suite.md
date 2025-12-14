@@ -20,3 +20,5 @@ Web link: [https://tryhackme.com/module/learn-burp-suite](https://tryhackme.com/
 - [Burp Suite: The Basics](../../Walkthroughs/Info/Burp_Suite_The_Basics.md)
 - [Burp Suite: Repeater](../../Walkthroughs/Info/Burp_Suite_Repeater.md)
 - [Burp Suite: Intruder](../../Walkthroughs/Medium/Burp_Suite_Intruder.md)
+- [Burp Suite: Other Modules](../../Walkthroughs/Easy/Burp_Suite_Other_Modules.md)
+- [Burp Suite: Extensions](../../Walkthroughs/Easy/Burp_Suite_Extensions.md)
