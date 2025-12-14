@@ -11,6 +11,10 @@
 - [Snort Challenge - The Basics](Snort_Challenge-The_Basics.md)
 - [Zeek](Zeek.md)
 
+## Networking
+
+- [Nmap Live Host Discovery](Nmap_Live_Host_Discovery.md)
+
 ## Scripting and Programming
 
 - [PowerShell for Pentesters](PowerShell_for_Pentesters.md)

@@ -54,3 +54,6 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 ### Network Security
 
 - [Passive Reconnaissance](../../Walkthroughs/Easy/Passive_Reconnaissance.md)
+- [Active Reconnaissance](../../Walkthroughs/Easy/Active_Reconnaissance.md)
+- [Nmap Live Host Discovery](../../Walkthroughs/Medium/Nmap_Live_Host_Discovery.md)
+- [Nmap Basic Port Scans](../../Walkthroughs/Easy/Nmap_Basic_Port_Scans.md)

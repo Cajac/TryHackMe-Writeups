@@ -66,6 +66,7 @@
 
 ## Networking
 
+- [Active Reconnaissance](Active_Reconnaissance.md)
 - [DNS in detail](DNS_in_detail.md)
 - [How Websites Work](How_Websites_Work.md)
 - [HTTP in Detail](HTTP_in_Detail.md)
@@ -74,6 +75,8 @@
 - [Networking Essentials](Networking_Essentials.md)
 - [Networking Secure Protocols](Networking_Secure_Protocols.md)
 - [Nmap: The Basics](Nmap_The_Basics.md)
+- [Nmap Basic Port Scans](Nmap_Basic_Port_Scans.md)
+- [Passive Reconnaissance](Passive_Reconnaissance.md)
 - [Putting it all together](Putting_it_all_together.md)
 - [Tcpdump: The Basics](Tcpdump_The_Basics.md)
 - [Wireshark: Packet Operations](Wireshark_Packet_Operations.md)
@@ -100,6 +103,8 @@
 ## Web
 
 - [Authentication Bypass](Authentication_Bypass.md)
+- [Burp Suite: Other Modules](Burp_Suite_Other_Modules.md)
+- [Burp Suite: Extensions](Burp_Suite_Extensions.md)
 - [Command Injection](Command_Injection.md)
 - [Content Discovery](Content_Discovery.md)
 - [IDOR](IDOR.md)
