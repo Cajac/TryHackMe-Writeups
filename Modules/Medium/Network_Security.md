@@ -23,3 +23,5 @@ Web link: [https://tryhackme.com/module/network-security](https://tryhackme.com/
 - [Active Reconnaissance](../../Walkthroughs/Easy/Active_Reconnaissance.md)
 - [Nmap Live Host Discovery](../../Walkthroughs/Medium/Nmap_Live_Host_Discovery.md)
 - [Nmap Basic Port Scans](../../Walkthroughs/Easy/Nmap_Basic_Port_Scans.md)
+- [Nmap Advanced Port Scans](../../Walkthroughs/Medium/Nmap_Advanced_Port_Scans.md)
+- [Nmap Post Port Scans](../../Walkthroughs/Medium/Nmap_Post_Port_Scans.md)

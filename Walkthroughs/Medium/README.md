@@ -13,7 +13,9 @@
 
 ## Networking
 
+- [Nmap Advanced Port Scans](Nmap_Advanced_Port_Scans.md)
 - [Nmap Live Host Discovery](Nmap_Live_Host_Discovery.md)
+- [Nmap Post Port Scans](Nmap_Post_Port_Scans.md)
 
 ## Scripting and Programming
 
