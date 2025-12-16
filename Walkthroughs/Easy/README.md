@@ -77,6 +77,7 @@
 - [Nmap: The Basics](Nmap_The_Basics.md)
 - [Nmap Basic Port Scans](Nmap_Basic_Port_Scans.md)
 - [Passive Reconnaissance](Passive_Reconnaissance.md)
+- [Protocols and Servers](Protocols_and_Servers.md)
 - [Putting it all together](Putting_it_all_together.md)
 - [Tcpdump: The Basics](Tcpdump_The_Basics.md)
 - [Wireshark: Packet Operations](Wireshark_Packet_Operations.md)

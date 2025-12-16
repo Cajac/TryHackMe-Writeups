@@ -25,3 +25,6 @@ Web link: [https://tryhackme.com/module/network-security](https://tryhackme.com/
 - [Nmap Basic Port Scans](../../Walkthroughs/Easy/Nmap_Basic_Port_Scans.md)
 - [Nmap Advanced Port Scans](../../Walkthroughs/Medium/Nmap_Advanced_Port_Scans.md)
 - [Nmap Post Port Scans](../../Walkthroughs/Medium/Nmap_Post_Port_Scans.md)
+- [Protocols and Servers](../../Walkthroughs/Easy/Protocols_and_Servers.md)
+- [Protocols and Servers 2](../../Walkthroughs/Medium/Protocols_and_Servers_2.md)
+- [Net Sec Challenge](../../Challenges/Medium/Net_Sec_Challenge.md)
