@@ -62,3 +62,9 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 - [Protocols and Servers](../../Walkthroughs/Easy/Protocols_and_Servers.md)
 - [Protocols and Servers 2](../../Walkthroughs/Medium/Protocols_and_Servers_2.md)
 - [Net Sec Challenge](../../Challenges/Medium/Net_Sec_Challenge.md)
+
+### Vulnerability Research
+
+- [Vulnerabilities 101](../../Walkthroughs/Easy/Vulnerabilities_101.md)
+- [Exploit Vulnerabilities](../../Walkthroughs/Easy/Exploit_Vulnerabilities.md)
+- [Vulnerability Capstone](../../Challenges/Easy/Vulnerability_Capstone.md)

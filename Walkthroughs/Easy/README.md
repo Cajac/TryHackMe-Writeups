@@ -47,10 +47,12 @@
 ## Exploitation
 
 - [Blue](Blue.md)
+- [Exploit Vulnerabilities](Exploit_Vulnerabilities.md)
 - [Metasploit: Exploitation](Metasploit_Exploitation.md)
 - [Metasploit: Introduction](Metasploit_Introduction.md)
 - [Metasploit: Meterpreter](Metasploit_Meterpreter.md)
 - [Moniker Link (CVE-2024-21413)](Moniker_Link.md)
+- [Vulnerabilities 101](Vulnerabilities_101.md)
 
 ## Fundamentals
 
