@@ -53,6 +53,7 @@
 - [Metasploit: Meterpreter](Metasploit_Meterpreter.md)
 - [Moniker Link (CVE-2024-21413)](Moniker_Link.md)
 - [Vulnerabilities 101](Vulnerabilities_101.md)
+- [What the Shell?](What_the_Shell.md)
 
 ## Fundamentals
 

@@ -16,6 +16,7 @@
 
 - [Exploitation Basics](Exploitation_Basics.md)
 - [Metasploit](Metasploit.md)
+- [Vulnerability Research](Vulnerability_Research.md)
 
 ## Fundamentals
 

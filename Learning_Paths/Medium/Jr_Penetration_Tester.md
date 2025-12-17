@@ -68,3 +68,13 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 - [Vulnerabilities 101](../../Walkthroughs/Easy/Vulnerabilities_101.md)
 - [Exploit Vulnerabilities](../../Walkthroughs/Easy/Exploit_Vulnerabilities.md)
 - [Vulnerability Capstone](../../Challenges/Easy/Vulnerability_Capstone.md)
+
+### Metasploit
+
+- [Metasploit: Introduction](../../Walkthroughs/Easy/Metasploit_Introduction.md)
+- [Metasploit: Exploitation](../../Walkthroughs/Easy/Metasploit_Exploitation.md)
+- [Metasploit: Meterpreter](../../Walkthroughs/Easy/Metasploit_Meterpreter.md)
+
+### Privilege Escalation
+
+- [What the Shell?](../../Walkthroughs/Easy/What_the_Shell.md)
