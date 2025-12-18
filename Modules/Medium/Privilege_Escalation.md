@@ -20,3 +20,4 @@ Web link: [https://tryhackme.com/module/privilege-escalation](https://tryhackme.
 ## Included rooms
 
 - [What the Shell?](../../Walkthroughs/Easy/What_the_Shell.md)
+- [Linux Privilege Escalation](../../Walkthroughs/Medium/Linux_Privilege_Escalation.md)

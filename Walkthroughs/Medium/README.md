@@ -11,6 +11,10 @@
 - [Snort Challenge - The Basics](Snort_Challenge-The_Basics.md)
 - [Zeek](Zeek.md)
 
+## Exploitation
+
+- [Linux Privilege Escalation](Linux_Privilege_Escalation.md)
+
 ## Networking
 
 - [Nmap Advanced Port Scans](Nmap_Advanced_Port_Scans.md)
