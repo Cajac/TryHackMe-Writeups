@@ -79,3 +79,4 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 
 - [What the Shell?](../../Walkthroughs/Easy/What_the_Shell.md)
 - [Linux Privilege Escalation](../../Walkthroughs/Medium/Linux_Privilege_Escalation.md)
+- [Windows Privilege Escalation](../../Walkthroughs/Medium/Windows_Privilege_Escalation.md)
