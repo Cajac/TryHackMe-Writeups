@@ -22,7 +22,7 @@ Web link: [https://tryhackme.com/module/web-hacking-1](https://tryhackme.com/mod
 - [How Websites Work](../../Walkthroughs/Easy/How_Websites_Work.md)
 - [HTTP in Detail](../../Walkthroughs/Easy/HTTP_in_Detail.md)
 - [Burp Suite: The Basics](../../Walkthroughs/Info/Burp_Suite_The_Basics.md)
-- [OWASP Top 10 - 2021](../../Walkthroughs/Easy/OWASP_Top_10_2021.md)
+- [OWASP API Security Top 10 - 1](../../Walkthroughs/Medium/OWASP_API_Security_Top_10_Part_1.md)
 - [OWASP Juice Shop](../../Walkthroughs/Easy/OWASP_Juice_Shop.md)
 - [Upload Vulnerabilities](../../Walkthroughs/Easy/Upload_Vulnerabilities.md)
 - [Pickle Rick](../../Challenges/Easy/Pickle_Rick.md)
