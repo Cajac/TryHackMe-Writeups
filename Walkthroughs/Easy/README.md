@@ -117,6 +117,8 @@
 - [JavaScript Essentials](JavaScript_Essentials.md)
 - [OWASP Juice Shop](OWASP_Juice_Shop.md)
 - [OWASP Top 10 - 2021](OWASP_Top_10_2021.md)
+- [OWASP Top 10 2025: IAAA Failures](OWASP_Top_10_2025-IAAA_Failures.md)
+- [OWASP Top 10 2025: Application Design Flaws](OWASP_Top_10_2025-Application_Design_Flaws.md)
 - [Subdomain Enumeration](Subdomain_Enumeration.md)
 - [Upload Vulnerabilities](Upload_Vulnerabilities.md)
 - [Web Application Basics](Web_Application_Basics.md)
