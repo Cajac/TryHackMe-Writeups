@@ -58,3 +58,13 @@ Web link: [https://tryhackme.com/path/outline/web](https://tryhackme.com/path/ou
 - [Burp Suite: Intruder](../../Walkthroughs/Medium/Burp_Suite_Intruder.md)
 - [Burp Suite: Other Modules](../../Walkthroughs/Easy/Burp_Suite_Other_Modules.md)
 - [Burp Suite: Extensions](../../Walkthroughs/Easy/Burp_Suite_Extensions.md)
+
+### Web Hacking Fundamentals
+
+- [How Websites Work](../../Walkthroughs/Easy/How_Websites_Work.md)
+- [HTTP in Detail](../../Walkthroughs/Easy/HTTP_in_Detail.md)
+- [Burp Suite: The Basics](../../Walkthroughs/Info/Burp_Suite_The_Basics.md)
+- [OWASP API Security Top 10 - 1](../../Walkthroughs/Medium/OWASP_API_Security_Top_10_Part_1.md)
+- [OWASP Juice Shop](../../Walkthroughs/Easy/OWASP_Juice_Shop.md)
+- [Upload Vulnerabilities](../../Walkthroughs/Easy/Upload_Vulnerabilities.md)
+- [Pickle Rick](../../Challenges/Easy/Pickle_Rick.md)

@@ -41,5 +41,6 @@
 - [Burp Suite](Burp_Suite.md)
 - [How The Web Works](How_The_Web_Works.md)
 - [Introduction to Web Hacking](Introduction_to_Web_Hacking.md)
+- [OWASP Top 10 (2025)](OWASP_Top_10_(2025).md)
 - [Web Hacking](Web_Hacking.md)
 - [Web Hacking Fundamentals](Web_Hacking_Fundamentals.md)
