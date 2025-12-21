@@ -413,7 +413,7 @@ In the code, we especially note the following AES-configuration
     const KEY_SIZE = 128;
 ```
 
-and the use of the atob()-function which tells us that Base64-encoding is used
+and the use of the [atob()](https://developer.mozilla.org/en-US/docs/Web/API/Window/atob)-function which tells us that Base64-encoding is used
 
 ```javascript
     const decoded = atob(data);
@@ -591,6 +591,8 @@ For additional information, please see the references below.
 - [A04:2025 - Cryptographic Failures - OWASP Top 10](https://owasp.org/Top10/2025/A04_2025-Cryptographic_Failures/)
 - [A06:2025 - Insecure Design - OWASP Top 10](https://owasp.org/Top10/2025/A06_2025-Insecure_Design/)
 - [Advanced Encryption Standard - Wikipedia](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+- [atob() method - JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/atob)
+- [Base64 - Wikipedia](https://en.wikipedia.org/wiki/Base64)
 - [curl - Homepage](https://curl.se/)
 - [curl - Linux manual page](https://man7.org/linux/man-pages/man1/curl.1.html)
 - [cURL - Wikipedia](https://en.wikipedia.org/wiki/CURL)
