@@ -38,11 +38,11 @@ A VM is attached to this room. You don't need SSH or RDP; the room provides a "*
 
 Network monitoring is a set of management actions to watch/continuously overview and optionally save the network traffic for further investigation. This action aims to detect and reduce network problems, improve performance, and in some cases, increase overall productivity. It is a main part of the daily IT/SOC operations and differs from Network Security Monitoring (NSM) in its purpose.
 
-Network Monitoring
+**Network Monitoring**
 
 Network monitoring is highly focused on IT assets like uptime (availability), device health and connection quality (performance), and network traffic balance and management (configuration). Monitoring and visualising the network traffic, troubleshooting, and root cause analysis are also part of the Network Monitoring process. This model is helpful for network administrators and usually doesn't cover identifying non-asset in-depth vulnerabilities and significant security concerns like internal threats and zero-day vulnerabilities. Usually, Network Monitoring is not within the SOC scope. It is linked to the enterprise IT/Network management team.
 
-Network Security Monitoring
+**Network Security Monitoring**
 
 Network Security Monitoring is focused on network anomalies like rogue hosts, encrypted traffic, suspicious service and port usage, and malicious/suspicious traffic patterns in an intrusion/anomaly detection and response approach. Monitoring and visualising the network traffic and investigating suspicious events is a core part of Network Security Monitoring. This model is helpful for security analysts/incident responders, security engineers and threat hunters and covers identifying threats, vulnerabilities and security issues with a set of rules, signatures and patterns. Network Security Monitoring is part of the SOC, and the actions are separated between tier 1-2-3 analyst levels.
 
@@ -56,7 +56,7 @@ Zeek differs from known monitoring and IDS/IPS tools by providing a wide range o
 
 While both are called IDS/NIDS, it is good to know the cons and pros of each tool and use them in a specific manner. While there are some overlapping functionalities, they have different purposes for usage.
 
-| Tool | Zeek | Snort |
+|Tool|Zeek|Snort|
 |----|----|----|
 |**Capabilities**|NSM and IDS framework. It is heavily focused on network analysis. It is more focused on specific threats to trigger alerts. The detection mechanism is focused on events.|An IDS/IPS system. It is heavily focused on signatures to detect vulnerabilities. The detection mechanism is focused on signature patterns and packets.|
 |**Cons**|Hard to use.<br>The analysis is done out of the Zeek, manually or by automation.|Hard to detect complex threats.|
@@ -147,7 +147,7 @@ root@ubuntu$ ls -l
 
 Main Zeek command line parameters are explained below;
 
-| Parameter | Description |
+|Parameter|Description|
 |----|----|
 |`-r`|Reading option, read/process a pcap file.|
 |`-C`|Ignoring checksum errors.|
@@ -167,7 +167,7 @@ ubuntu@ip-10-10-145-187:~/Desktop/Exercise-Files/TASK-2$ zeek -v
 zeek version 4.2.1
 ```
 
-Answer: 4.2.1
+Answer: `4.2.1`
 
 #### What is the version of the ZeekControl module?
 
@@ -184,7 +184,7 @@ Type "help" for help.
 [ZeekControl] > exit
 ```
 
-Answer: 2.4.0
+Answer: `2.4.0`
 
 #### Investigate the "sample.pcap" file. What is the number of generated alert files?
 
@@ -209,7 +209,7 @@ ubuntu@ip-10-10-145-187:~/Desktop/Exercise-Files/TASK-2$ ls -1 *.log | wc -l
 ubuntu@ip-10-10-145-187:~/Desktop/Exercise-Files/TASK-2$ 
 ```
 
-Answer: 8
+Answer: `8`
 
 ### Task 3 - Zeek Logs
 
@@ -223,7 +223,7 @@ Each log output consists of multiple fields, and each field holds a different pa
 
 Zeek logs in a nutshell;
 
-| Category | Description | Log Files |
+|Category|Description|Log Files|
 |----|----|----|
 |**Network**|Network protocol logs.|conn.log, dce_rpc.log, dhcp.log, dnp3.log, dns.log, ftp.log, http.log, irc.log, kerberos.log, modbus.log, modbus_register_change.log, mysql.log, ntlm.log, ntp.log, radius.log, rdp.log, rfb.log, sip.log, smb_cmd.log, smb_files.log, smb_mapping.log, smtp.log, snmp.log, socks.log, ssh.log, ssl.log, syslog.log, tunnel.log.|
 |**Files**|File analysis result logs.|files.log, ocsp.log, pe.log, x509.log.|
@@ -235,7 +235,7 @@ Zeek logs in a nutshell;
 
 Please refer to [Zeek's official documentation](https://docs.zeek.org/en/current/script-reference/log-files.html) and [Corelight log cheat sheet](https://corelight.com/about-zeek/zeek-data) for more information. Although there are multiple log files, some log files are updated daily, and some are updated in each session. Some of the most commonly used logs are explained in the given table.
 
-| Update Frequency | Log Name | Description |
+|Update Frequency|Log Name|Description|
 |----|----|----|
 |**Daily**|known_hosts.log|List of hosts that completed TCP handshakes.|
 |**Daily**|known_services.log|List of services used by hosts.|
@@ -249,7 +249,7 @@ This is too much protocol and log information! Yes, it is true; a difficulty of 
 
 Brief log usage primer table;
 
-| Overall Info | Protocol Based | Detection | Observation |
+|Overall Info|Protocol Based|Detection|Observation|
 |----|----|----|----|
 |conn.log|http.log|notice.log|known_host.log|
 |files.log|dns.log|signatures.log|known_services.log|
@@ -279,7 +279,7 @@ The above image shows that reading the logs with tools is not enough to spot an 
 
 In addition to Linux command-line tools, one auxiliary program called `zeek-cut` reduces the effort of extracting specific columns from log files. Each log file provides "field names" in the beginning. This information will help you while using `zeek-cut`. Make sure that you use the "fields" and not the "types".
 
-| Tool/Auxilary Name | Purpose |
+|Tool/Auxilary Name|Purpose|
 |----|----|
 |**Zeek-cut**|Cut specific columns from zeek logs.|
 
@@ -324,7 +324,7 @@ Microknoppix
 Microknoppix
 ```
 
-Answer: Microknoppix
+Answer: `Microknoppix`
 
 #### Investigate the dns.log file. What is the number of unique DNS queries?
 
@@ -347,7 +347,7 @@ ubuntu@ip-10-10-6-43:~/Desktop/Exercise-Files/TASK-3$ cat dns.log | zeek-cut que
 2
 ```
 
-Answer: 2
+Answer: `2`
 
 #### Investigate the conn.log file. What is the longest connection duration?
 
@@ -376,7 +376,7 @@ ubuntu@ip-10-10-6-43:~/Desktop/Exercise-Files/TASK-3$ cat conn.log | zeek-cut du
 300.183120
 ```
 
-Answer: 332.319364
+Answer: `332.319364`
 
 ### Task 4 - CLI Kung-Fu Recall: Processing Zeek Logs
 
@@ -500,7 +500,7 @@ Zeek supports signatures to have rules and event correlations to find noteworthy
 
 Zeek signatures are composed of three logical paths; signature id, conditions and action. The signature breakdown is shown in the table below;
 
-| Component | Description |
+|Component|Description|
 |----|----|
 |**Signature id**|**Unique** signature name.|
 |**Conditions**|**Header**: Filtering the packet headers for specific source and destination addresses, protocol and port numbers.<br>**Content**: Filtering the packet payload for specific value/pattern.|
@@ -508,7 +508,7 @@ Zeek signatures are composed of three logical paths; signature id, conditions an
 
 Now let's dig more into the Zeek signatures. The below table provides the most common conditions and filters for the Zeek signatures.
 
-| Condition Field | Available Filters |
+|Condition Field|Available Filters|
 |----|----|
 |**Header**|**src-ip**: Source IP.<br>**dst-ip**: Destination IP.<br>**src-port**: Source port.<br>**dst-port**: Destination port.<br>**ip-proto**: Target protocol. Supported protocols; TCP, UDP, ICMP, ICMP6, IP, IP6|
 |**Content**|**payload**: Packet payload.<br>**http-request**: Decoded HTTP requests.<br>**http-request-header**: Client-side HTTP headers.<br>**http-request-body**: Client-side HTTP request bodys.<br>**http-reply-header**: Server-side HTTP headers.<br>**http-reply-body**: Server-side HTTP request bodys.<br>**ftp**: Command line input of FTP sessions.|
@@ -692,7 +692,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-5/http$ cat signatures.log 
 10.10.57.178
 ```
 
-Answer: 10.10.57.178
+Answer: `10.10.57.178`
 
 #### What is the source port of the second event?
 
@@ -704,7 +704,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-5/http$ cat signatures.log 
 10.10.57.178    38712
 ```
 
-Answer: 38712
+Answer: `38712`
 
 #### Investigate the conn.log. What is the total number of the sent and received packets from source port 38706?
 
@@ -736,7 +736,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-5/http$ cat conn.log | zeek
 38706    11    9
 ```
 
-Answer: 20
+Answer: `20`
 
 #### Create the global rule shown in the task and investigate the ftp.pcap file. Investigate the notice.log. What is the number of unique events?
 
@@ -772,7 +772,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-5/ftp$ cat notice.log | zee
 1413
 ```
 
-Answer: 1413
+Answer: `1413`
 
 #### What is the number of ftp-brute signature matches?
 
@@ -792,7 +792,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-5/ftp$ cat signatures.log |
 1410
 ```
 
-Answer: 1410
+Answer: `1410`
 
 ### Task 6 - Zeek Scripts | Fundamentals
 
@@ -886,7 +886,7 @@ vinlap01    -    astaro_vineyard
 ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-6/smallflow$ 
 ```
 
-Answer: astaro_vineyard
+Answer: `astaro_vineyard`
 
 #### Investigate the bigFlows.pcap file. Investigate the dhcp.log file. What is the number of identified unique hostnames?
 
@@ -917,9 +917,9 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-6/bigflow$ cat dhcp.log | z
 18
 ```
 
-**Note**: the first like doesn't have a host_name.
+**Note**: the first match doesn't have a host_name.
 
-Answer: 17
+Answer: `17`
 
 #### Investigate the dhcp.log file. What is the identified domain value?
 
@@ -929,7 +929,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-6/bigflow$ cat dhcp.log | z
 jaalam.net
 ```
 
-Answer: jaalam.net
+Answer: `jaalam.net`
 
 ### Task 7 - Zeek Scripts | Scripts and Signatures
 
@@ -1100,7 +1100,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-7/101$ zeek -C -r sample.pc
 87
 ```
 
-Answer: 87
+Answer: `87`
 
 Go to folder **TASK-7/201**.
 
@@ -1127,7 +1127,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-7/201$ zeek -C -r ftp.pcap 
 1401
 ```
 
-Answer: 1401
+Answer: `1401`
 
 #### Investigate the signatures.log file. What is the total number of "administrator" username detections?
 
@@ -1150,7 +1150,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-7/201$ cat signatures.log |
 731
 ```
 
-Answer: 731
+Answer: `731`
 
 #### Investigate the ftp.pcap file with all local scripts, and investigate the loaded_scripts.log file. What is the total number of loaded scripts?
 
@@ -1183,7 +1183,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-7/201$ cat loaded_scripts.l
 498
 ```
 
-Answer: 498
+Answer: `498`
 
 Go to folder **TASK-7/202**.
 
@@ -1211,7 +1211,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-7/202$ cat notice.log | zee
 2
 ```
 
-Answer: 2
+Answer: `2`
 
 ### Task 8 - Zeek Scripts | Frameworks
 
@@ -1371,7 +1371,7 @@ smart-fax.com    DNS::IN_REQUEST
 smart-fax.com    HTTP::IN_HOST_HEADER
 ```
 
-Answer: IN_HOST_HEADER
+Answer: `IN_HOST_HEADER`
 
 #### Investigate the http.log file. What is the name of the downloaded .exe file?
 
@@ -1396,7 +1396,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-8$ cat http.log | zeek-cut 
 /knr.exe    -    -    -    application/x-dosexec
 ```
 
-Answer: knr.exe
+Answer: `knr.exe`
 
 Investigate the `case1.pcap` file with `hash-demo.zeek` script.
 
@@ -1425,7 +1425,7 @@ FB5o2Hcauv7vpQ8y3    -    application/msword    b5243ec1df7d1d5304189e7db2744128
 FOghls3WpIjKpvXaEl    -    application/x-dosexec    cc28e40b46237ab6d5282199ef78c464
 ```
 
-Answer: cc28e40b46237ab6d5282199ef78c464
+Answer: `cc28e40b46237ab6d5282199ef78c464`
 
 Investigate the `case1.pcap` file with `file-extract-demo.zeek` script.
 
@@ -1451,7 +1451,7 @@ Microsoft NCSI
 ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-8/extract_files$ 
 ```
 
-Answer: Microsoft NCSI
+Answer: `Microsoft NCSI`
 
 ### Task 9 - Zeek Scripts | Packages
 
@@ -1461,7 +1461,7 @@ Zeek Package Manager helps users install third-party scripts and plugins to exte
 
 Basic usage of zkg;
 
-| Command | Description |
+|Command|Description|
 |----|----|
 |`zkg install package_path`|Install a package. Example (zkg install zeek/j-gras/zeek-af_packet-plugin).|
 |`zkg install git_url`|Install package. Example (zkg install `https://github.com/corelight/ztest`).|
@@ -1560,7 +1560,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-9/cleartext-pass$ cat notic
       2 Password found for user ZeekBro
 ```
 
-Answer: BroZeek
+Answer: `BroZeek`
 
 Investigate the `case2.pcap` file with `geoip-conn` module.
 
@@ -1584,7 +1584,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-9/geoip-conn$ head conn.log
 -    Chicago
 ```
 
-Answer: Chicago
+Answer: `Chicago`
 
 #### Which IP address is associated with the identified City?
 
@@ -1594,7 +1594,7 @@ Chicago    23.77.86.54
 Chicago    23.77.86.54
 ```
 
-Answer: 23.77.86.54
+Answer: `23.77.86.54`
 
 Investigate the `case2.pcap` file with `sumstats-counttable.zeek` script.
 
@@ -1639,7 +1639,7 @@ ubuntu@ip-10-10-29-118:~/Desktop/Exercise-Files/TASK-9/geoip-conn$ zeek -C -r ca
 4
 ```
 
-Answer: 4
+Answer: `4`
 
 ### Task 10 - Conclusion
 

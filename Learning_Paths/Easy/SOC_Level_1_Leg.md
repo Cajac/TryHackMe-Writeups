@@ -46,6 +46,7 @@ Web link: [https://tryhackme.com/path/outline/soclevel1legacy](https://tryhackme
 - [Snort Challenge - Live Attacks](../../Walkthroughs/Medium/Snort_Challenge-Live_Attacks.md)
 - [NetworkMiner](../../Walkthroughs/Easy/NetworkMiner.md)
 - [Zeek](../../Walkthroughs/Medium/Zeek.md)
+- [Zeek Exercises](../../Challenges/Medium/Zeek_Exercises.md)
 - [Wireshark: The Basics](../../Walkthroughs/Easy/Wireshark_The_Basics.md)
 - [Wireshark: Packet Operations](../../Walkthroughs/Easy/Wireshark_Packet_Operations.md)
 - [Wireshark: Traffic Analysis](../../Walkthroughs/Medium/Wireshark_Traffic_Analysis.md)
