@@ -33,7 +33,7 @@ The essential concern of Network Security focuses on two core concepts: authenti
 
 Base Network Security Control Levels:
 
-| Security Control | Description |
+|Security Control|Description|
 |----|----|
 |Physical|Physical security controls prevent unauthorised physical access to networking devices, cable boards, locks, and all linked components.|
 |Technical|Data security controls prevent unauthorised access to network data, like installing tunnels and implementing security layers.|
@@ -50,7 +50,7 @@ Access Control
 
 The key elements of Access Control:
 
-| Element | Description |
+|Element|Description|
 |----|----|
 |Firewall Protection|Controls incoming and outgoing network traffic with predetermined security rules. Designed to block suspicious/malicious traffic and application-layer threats while allowing legitimate and expected traffic.|
 |Network Access Control (NAC)|Controls the devices' suitability before access to the network. Designed to verify device specifications and conditions are compliant with the predetermined profile before connecting to the network.|
@@ -64,7 +64,7 @@ Threat Control
 
 The key elements of Threat Control:
 
-| Element | Description |
+|Element|Description|
 |----|----|
 |Intrusion Detection and Prevention (IDS/IPS)|Inspects the traffic and creates alerts (IDS) or resets the connection (IPS) when detecting an anomaly/threat.|
 |Data Loss Prevention (DLP)|Inspects the traffic (performs content inspection and contextual analysis of the data on the wire) and blocks the extraction of sensitive data.|
@@ -108,17 +108,19 @@ Not every organisation has enough resources to create dedicated groups for speci
 - **Incident Response**: An organised approach to addressing and managing a security breach. It contains a set of actions to identify, contain, and eliminate incidents.
 - **Behavioural Analysis**: An organised approach to addressing system and user behaviours, creating baselines and traffic profiles for specific patterns to detect anomalies, threats, vulnerabilities, and attacks.
 
+---------------------------------------------------------------------------------------
+
 #### Which Security Control Level covers contain creating security policies?
 
-Answer: Administrative
+Answer: `Administrative`
 
 #### Which Access Control element works with data metrics to manage data flow?
 
-Answer: Load Balancing
+Answer: `Load Balancing`
 
 #### Which technology helps correlate different tool outputs and data sources?
 
-Answer: SOAR
+Answer: `SOAR`
 
 ### Task 3: Traffic Analysis
 
@@ -161,6 +163,8 @@ Benefits of the Traffic Analysis:
 The widespread usage of security tools/services and an increasing shift to cloud computing force attackers to modify their tactics and techniques to avoid detection. Network data is a pure and rich data source. Even if it is encoded/encrypted, it still provides a value by pointing to an odd, weird or unexpected pattern/situation. Therefore traffic analysis is still a must-to-have skill for any security analyst who wants to detect and respond to advanced threats.
 
 Now you know what Traffic Analysis is and how it operates. Now use the static site to simulate a traffic analysis operation and find the flags.
+
+---------------------------------------------------------------------------------------
 
 #### Level-1 is simulating the identification and filtering of malicious IP addresses. What is the flag?
 
