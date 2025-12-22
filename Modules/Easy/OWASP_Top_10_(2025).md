@@ -19,3 +19,4 @@ Web link: [https://tryhackme.com/module/owasp-top-10-2025](https://tryhackme.com
 
 - [OWASP Top 10 2025: IAAA Failures](../../Walkthroughs/Easy/OWASP_Top_10_2025-IAAA_Failures.md)
 - [OWASP Top 10 2025: Application Design Flaws](../../Walkthroughs/Easy/OWASP_Top_10_2025-Application_Design_Flaws.md)
+- [OWASP Top 10 2025: Insecure Data Handling](../../Walkthroughs/Easy/OWASP_Top_10_2025-Insecure_Data_Handling.md)

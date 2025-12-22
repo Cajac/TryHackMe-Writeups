@@ -68,3 +68,9 @@ Web link: [https://tryhackme.com/path/outline/web](https://tryhackme.com/path/ou
 - [OWASP Juice Shop](../../Walkthroughs/Easy/OWASP_Juice_Shop.md)
 - [Upload Vulnerabilities](../../Walkthroughs/Easy/Upload_Vulnerabilities.md)
 - [Pickle Rick](../../Challenges/Easy/Pickle_Rick.md)
+
+### OWASP Top 10 (2025)
+
+- [OWASP Top 10 2025: IAAA Failures](../../Walkthroughs/Easy/OWASP_Top_10_2025-IAAA_Failures.md)
+- [OWASP Top 10 2025: Application Design Flaws](../../Walkthroughs/Easy/OWASP_Top_10_2025-Application_Design_Flaws.md)
+- [OWASP Top 10 2025: Insecure Data Handling](../../Walkthroughs/Easy/OWASP_Top_10_2025-Insecure_Data_Handling.md)
