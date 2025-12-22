@@ -6,9 +6,14 @@ Difficulty: Easy
 Description:
 This path will introduce a wide array of tools and real-life analysis scenarios, enabling 
 you to become a successful Junior Security Analyst.
+
+This path is now considered legacy and will soon be replaced by a new path. The refreshed 
+path is a major upgrade and includes a deeper dive into endpoint and network threats, 
+better explains security operations and SIEM triage, and omits some forensic topics rarely 
+observed in SOC routines.
 ```
 
-Web link: [https://tryhackme.com/path/outline/soclevel1](https://tryhackme.com/path/outline/soclevel1)
+Web link: [https://tryhackme.com/path/outline/soclevel1legacy](https://tryhackme.com/path/outline/soclevel1legacy)
 
 ## Included rooms
 
