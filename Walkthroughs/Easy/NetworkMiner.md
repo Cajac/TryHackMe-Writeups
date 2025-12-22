@@ -63,7 +63,7 @@ NetworkMiner is capable of processing and handling both packet pictures (PCAP) a
 
 #### NetworkMiner in a Nutshell
 
-| Capability | Description |
+|Capability|Description|
 |----|----|
 |**Traffic sniffing**|It can intercept the traffic, sniff it, and collect and log packets that pass through the network.|
 |**Parsing PCAP files**|It can parse pcap files and show the content of the packets in detail.|
@@ -109,7 +109,7 @@ NetworkMiner and Wireshark have similar base features, but they separate in use 
 
 The best practice is to record the traffic for offline analysis, quickly overview the pcap with NetworkMiner and go deep with Wireshark for further investigation.
 
-| Feature | NetworkMiner | Wireshark |
+|Feature|NetworkMiner|Wireshark|
 |----|----|----|
 |Purpose|Quick overview, traffic mapping, and data extraction|In-Depth analysis|
 |GUI|✅|✅|
@@ -231,6 +231,8 @@ The right-click menu is helpful in this part as well. You can easily copy the us
 
 ![NetworkMiner Credentials Tab](Images/NetworkMiner_Credentials_Tab.png)
 
+---------------------------------------------------------------------------------------
+
 **Use mx-3.pcap**
 
 #### What is the total number of frames?
@@ -239,7 +241,7 @@ Check the metadata of the PCAP-file
 
 ![NetworkMiner Mx-3 Metadata](Images/NetworkMiner_Mx-3_Metadata.png)
 
-Answer: 460
+Answer: `460`
 
 #### How many IP addresses use the same MAC address with host 145.253.2.203?
 
@@ -247,7 +249,7 @@ Check the IP under the `Hosts` tab
 
 ![NetworkMiner IP 145.253.2.203](Images/NetworkMiner_IP_145.253.2.203.png)
 
-Answer: 2
+Answer: `2`
 
 #### How many packets were sent from host 65.208.228.223?
 
@@ -255,7 +257,7 @@ Check the IP under the `Hosts` tab
 
 ![NetworkMiner IP 65.208.228.223](Images/NetworkMiner_IP_65.208.228.223.png)
 
-Answer: 72
+Answer: `72`
 
 #### What is the name of the webserver banner under host 65.208.228.223?
 
@@ -263,7 +265,7 @@ Check the IP under the `Hosts` tab
 
 ![NetworkMiner IP 65.208.228.223 2](Images/NetworkMiner_IP_65.208.228.223_2.png)
 
-Answer: Apache
+Answer: `Apache`
 
 **Use mx-4.pcap**
 
@@ -372,6 +374,8 @@ The anomalies tab shows detected anomalies in the processed pcap. Note that Netw
 
 ![NetworkMiner Anomalies Tab](Images/NetworkMiner_Anomalies_Tab.png)
 
+---------------------------------------------------------------------------------------
+
 **Use mx-7.pcap**
 
 #### What is the name of the Linux distro mentioned in the file associated with frame 63075?
@@ -382,7 +386,7 @@ Check the `Parameters` tab and search for or scroll down to the frame number
 
 ![NetworkMiner_Parameters_Frame_63075](Images/NetworkMiner_Parameters_Frame_63075.png)
 
-Answer: CentOS
+Answer: `CentOS`
 
 #### What is the header of the page associated with frame 75942?
 
@@ -396,7 +400,7 @@ Right click and choose `Open File` and the HTML-file is opened in a browser
 
 ![NetworkMiner Opened_File Frame 75942](Images/NetworkMiner_Opened_File_Frame_75942.png)
 
-Answer: Password-Ned AB
+Answer: `Password-Ned AB`
 
 #### What is the source address of the image "ads.bmp.2E5F0FD9.bmp"?
 
@@ -410,7 +414,7 @@ Finally, press `Apply` to search
 
 Check the `Source host` column for the source IP.
 
-Answer: 80.239.178.187
+Answer: `80.239.178.187`
 
 #### What is the frame number of the possible TLS anomaly?
 
@@ -422,7 +426,7 @@ Check the `Anomalies` tab were we find two TLS anomalies!?
 
 The first frame number was accepted.
 
-Answer: 36255
+Answer: `36255`
 
 **Use mx-9.pcap**
 
@@ -433,7 +437,7 @@ No password reset e-mails can be found and the closest is message #2 about impor
 
 ![NetworkMiner Messages Facebook Mail](Images/NetworkMiner_Messages_Facebook_Mail.png)
 
-Answer: Facebook
+Answer: `Facebook`
 
 #### What is the email address of Branson Matheson?
 
@@ -455,35 +459,49 @@ Since there are some significant differences between the versions, the given VM 
 
 NetworkMiner versions after version 2 can process MAC address specific correlation as shown in the picture below. This option will help you identify if there is a MAC Address conflict. This feature is not available before version 2.
 
+![NetworkMiner Mac Address Processing 1](Images/NetworkMiner_Mac_Address_Processing_1.png)
+
 NetworkMiner versions up to version 1.6. can handle packets in much detail. These options will help you investigate the sent/received packets in a more detailed format. This feature is not available after version 1.6.
+
+![NetworkMiner Mac Address Processing 2](Images/NetworkMiner_Mac_Address_Processing_2.png)
 
 #### Frame Processing
 
 NetworkMiner versions up to version 1.6. can handle frames. This option provides the number of frames and essential details about the frames. This feature is not available after version 1.6.
 
+![NetworkMiner Frame Processing](Images/NetworkMiner_Frame_Processing.png)
+
 #### Parameter Processing
 
 NetworkMiner versions after version 2 can handle parameters in a much more extensive form. Therefore version 1.6.xx catches fewer parameters than version 2.
+
+![NetworkMiner Parameter Processing](Images/NetworkMiner_Parameter_Processing.png)
 
 #### Cleartext Processing
 
 NetworkMiner versions up to version 1.6. can handle cleartext data. This option provides all extracted cleartext data in a single tab; it is beneficial to investigate cleartext data about the traffic data. However, it is impossible to match the cleartext data and packets. This feature is not available after version 1.6.
 
+![NetworkMiner Cleartext Processing](Images/NetworkMiner_Cleartext_Processing.png)
+
+---------------------------------------------------------------------------------------
+
 #### Which version can detect duplicate MAC addresses?
 
-Answer: 2.7
+Answer: `2.7`
 
 #### Which version can handle frames?
 
-Answer: 1.6
+Answer: `1.6`
 
 #### Which version can provide more details on packet details?
 
-Answer: 1.6
+Answer: `1.6`
 
 ### Task 7: Exercises
 
 You've learned what NetworkMiner is and how to use it. Let's put this into practice!
+
+---------------------------------------------------------------------------------------
 
 **Use case1.pcap**
 
@@ -493,7 +511,7 @@ Check the OS fingerprinting details of the IP in the `Hosts` tab and select the 
 
 ![NetworkMiner IP 131.151.37.122](Images/NetworkMiner_IP_131.151.37.122.png)
 
-Answer: Windows - Windows NT 4
+Answer: `Windows - Windows NT 4`
 
 Investigate the hosts 131.151.37.122 and 131.151.32.91.
 
@@ -505,7 +523,7 @@ Check the Incoming sessions of the IP and double check destination IP and direct
 
 ![NetworkMiner IP 131.151.37.122 2](Images/NetworkMiner_IP_131.151.37.122_2.png)
 
-Answer: 192
+Answer: `192`
 
 Investigate the hosts 131.151.37.122 and 131.151.32.21.
 
@@ -518,7 +536,7 @@ More or less exactly the same as the question above.
 However, there is likely a cut-and-paste error in the question and it outght to be:  
 How many data bytes were **sent** from host 131.151.37.122 to host 131.151.32.21 through port 143?
 
-Answer: 20769
+Answer: `20769`
 
 #### What is the sequence number of frame 9?
 
@@ -528,7 +546,7 @@ Switch to version 1.6 for this question and check the `Frames` Tab.
 
 ![NetworkMiner Frame 9](Images/NetworkMiner_Frame_9.png)
 
-Answer: 2AD77400
+Answer: `2AD77400`
 
 #### What is the number of the detected "content types"?
 
@@ -546,7 +564,7 @@ We can see two content types:
 The question was a bit unclear and perhaps a better phrased question would have been:  
 `How many "content types" are there?` or `How many "content types" were identified?`
 
-Answer: 2
+Answer: `2`
 
 Use **case2.pcap** and investigate the files.
 
@@ -564,7 +582,7 @@ Right-click on the HTML-file and select `File Details`
 
 And check the HTML-page's `<title>`.
 
-Answer: ASIX
+Answer: `ASIX`
 
 #### What is the name of the phone model?
 
@@ -580,7 +598,7 @@ Switch to the `Files` tab and search for `Lumia` and we get two hits
 
 ![NetworkMiner Files Lumia](Images/NetworkMiner_Files_Lumia.png)
 
-Answer: Lumia 535
+Answer: `Lumia 535`
 
 #### What is the source IP of the fish image?
 
@@ -588,16 +606,16 @@ Go to the `Files` tab and search for `fish`. Then check the `Source host` column
 
 ![NetworkMiner Files Fish](Images/NetworkMiner_Files_Fish.png)
 
-Answer: 50.22.95.9
+Answer: `50.22.95.9`
 
-#### What is the password of the "homer.pwned.se@gmx.com"?
+#### What is the password of the `homer.pwned.se@gmx.com`?
 
 Check the `Credentials` tab and sort by the `Password` column by clicking on it.  
 Scroll all the way down to find the entries with passwords.
 
 ![NetworkMiner_Credentials_Passwords](Images/NetworkMiner_Credentials_Passwords.png)
 
-Answer: spring2015
+Answer: `spring2015`
 
 #### What is the DNS Query of frame 62001?
 
@@ -605,7 +623,7 @@ Go to the `DNS` tab, search for the frame number and check the `DNS Query` colum
 
 ![NetworkMiner_DNS_Frame_62001](Images/NetworkMiner_DNS_Frame_62001.png)
 
-Answer: pop.gmx.com
+Answer: `pop.gmx.com`
 
 ### Task 8: Conclusion
 

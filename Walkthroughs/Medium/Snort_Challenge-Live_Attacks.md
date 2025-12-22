@@ -184,11 +184,11 @@ TCP Options (5) => MSS: 8961 SackOK TS: 4119692356 1884584927 NOP WS: 7
 
 The traffic is to and from **port 22** so the service under attack ought to be **SSH**.
 
-Answer: SSH
+Answer: `SSH`
 
 #### What is the used protocol/port in the attack?
 
-Answer: tcp/22
+Answer: `tcp/22`
 
 #### Stop the attack and get the flag (which will appear on your Desktop)
 
@@ -500,13 +500,13 @@ ubuntu@ip-10-10-76-216:~$
 
 The traffic is to TCP-port 4444 on more than one IP.
 
-Answer: tcp/4444
+Answer: `tcp/4444`
 
 #### Which tool is highly associated with this specific port number?
 
 Port 4444 is the default port of Metasploit's Meterpreter.
 
-Answer: Metasploit
+Answer: `Metasploit`
 
 #### Stop the attack and get the flag (which will appear on your Desktop)
 
