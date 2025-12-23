@@ -2,6 +2,7 @@
 
 ## Defensive Security
 
+- [Brim](Brim.md)
 - [Logless Hunt](Logless_Hunt.md)
 - [MISP](MISP.md)
 - [MITRE](MITRE.md)
