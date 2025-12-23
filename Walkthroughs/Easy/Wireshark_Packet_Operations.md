@@ -80,7 +80,7 @@ Hint: "Resolved Addresses" can help.
 
 Select `Resolved Addresses` from the `Statistics` menu and search for `bbc`.
 
-Answer: 199.232.24.81
+Answer: `199.232.24.81`
 
 #### What is the number of IPv4 conversations?
 
@@ -88,7 +88,7 @@ Hint: "Conversations" can help.
 
 Select `Conversations` from the `Statistics` menu. Note the numbers in the tabs and especially the `IPv4`tab.
 
-Answer: 435
+Answer: `435`
 
 #### How many bytes (k) were transferred from the "Micro-St" MAC address?
 
@@ -98,7 +98,7 @@ Select `Endpoints` from the `Statistics` menu. Select the `Ethernet` tab and ena
 Look for the entry starting with `Micro-St` and note the value in the `Tx Bytes` column.  
 However, in this case the value that is accepted is `Bytes` (i.e. traffic transferred **to** and **from**)!?
 
-Answer: 7474
+Answer: `7474`
 
 #### What is the number of IP addresses linked with "Kansas City"?
 
@@ -107,7 +107,7 @@ Hint: "Endpoints" can help.
 Select `Endpoints` from the `Statistics` menu and choose the `IPv4` tab.  
 Click the `City` header to sort on that column and scroll down to Kansas.
 
-Answer: 4
+Answer: `4`
 
 #### Which IP address is linked with "Blicnet" AS Organisation?
 
@@ -118,7 +118,7 @@ Scroll to the right and click the `AS Organization` to sort on the column.
 Scroll up/down to the `Blinet` entry and select it.  
 Then scroll left to see the IP-address.
 
-Answer: 188.246.82.7
+Answer: `188.246.82.7`
 
 ### Task 3: Statistics | Protocol Details
 
@@ -150,7 +150,7 @@ Select `IPv4 Statistics` from the `Statistics` menu and then `Destinations and P
 Click on the `Count` header (twice) to sort on this column descending.  
 Note the IP-address on top.
 
-Answer: 10.100.1.33
+Answer: `10.100.1.33`
 
 #### What is the max service request-response time of the DNS packets?
 
@@ -158,7 +158,7 @@ Hint: "DNS Statistics" can help.
 
 Select `DNS` from the `Statistics` menu. Then look for the `Service Stats` "header" and note the max value for the `request-response time (secs)` entry.
 
-Answer: 0.467897
+Answer: `0.467897`
 
 #### What is the number of HTTP Requests accomplished by "rad[.]msn[.]com?
 
@@ -168,7 +168,7 @@ Select `HTTP` from the `Statistics` menu and then `Requests` in the sub-menu.
 Scroll down until you find the `rad.msn.com` "header".  
 Select the entry and scroll to the right and note the value in the `Count` column.
 
-Answer: 39
+Answer: `39`
 
 ### Task 4: Packet Filtering | Principles
 
@@ -210,11 +210,11 @@ Wireshark has a built-in option (Display Filter Expression) that stores all supp
 
 ![Wireshark Display Filters Quick Reference](Images/Wireshark_Display_Filters_Quick_Reference.png)
 
-Comparison Operators
+**Comparison Operators**
 
 You can create display filters by using different comparison operators to find the event of interest. The primary operators are shown in the table below.
 
-| English | C-Like | Description | Example |
+|English|C-Like|Description|Example|
 |----|----|----|----|
 |eq|==|Equal|`ip.src == 10.10.10.100`|
 |ne|!=|Not equal|`ip.src != 10.10.10.100`|
@@ -225,17 +225,17 @@ You can create display filters by using different comparison operators to find t
 
 **Note**: Wireshark supports decimal and hexadecimal values in filtering. You can use any format you want according to the search you will conduct.
 
-Logical Expressions
+**Logical Expressions**
 
 Wireshark supports boolean syntax. You can create display filters by using logical operators as well.
 
-| English | C-Like | Description | Example |
+|English|C-Like|Description|Example|
 |----|----|----|----|
 |and|&&|Logical AND|`(ip.src == 10.10.10.100) && (ip.src == 10.10.10.111)`|
 |or|\||Logical OR|`(ip.src == 10.10.10.100) \|\| (ip.src == 10.10.10.111)`|
 |not|!|Logical NOT|`!(ip.src == 10.10.10.222)`<br>**Note**: Usage of `!= value` is deprecated; using it could provide inconsistent results. Using the `!(value)` style is suggested for more consistent results.|
 
-Packet Filter Toolbar
+**Packet Filter Toolbar**
 
 The filter toolbar is where you create and apply your display filters. It is a smart toolbar that helps you create valid display filters with ease. Before starting to filter packets, here are a few tips:
 
@@ -267,7 +267,7 @@ IP filters help analysts filter the traffic according to the IP level informatio
 
 The common filters are shown in the given table.
 
-| Filter | Description |
+|Filter|Description|
 |----|----|
 |`ip`|Show all IP packets.|
 |`ip.addr == 10.10.10.111`|Show all packets containing IP address 10.10.10.111.|
@@ -281,7 +281,7 @@ The common filters are shown in the given table.
 
 TCP filters help analysts filter the traffic according to protocol-level information from the packets (Transport layer of the OSI model). These filters filter transport protocol level information like source and destination ports, sequence number, acknowledgement number, windows size, timestamps, flags, length and protocol errors.
 
-| Filter | Description |
+|Filter|Description|
 |----|----|
 |`tcp.port == 80`|Show all TCP packets with port 80|
 |`udp.port == 53`|Show all UDP packets with port 53|
@@ -294,7 +294,7 @@ TCP filters help analysts filter the traffic according to protocol-level informa
 
 Application-level protocol filters help analysts filter the traffic according to application protocol level information from the packets (Application layer of the OSI model ). These filters filter application-specific information, like payload and linked data, depending on the protocol type.
 
-| Filter | Description |
+|Filter|Description|
 |----|----|
 |`http`|Show all HTTP packets|
 |`http.response.code == 200`|Show all packets with HTTP response code "200"|
@@ -321,31 +321,31 @@ It is impossible to memorise all details of the display filters for each protoco
 
 Set a display filter of `ip` and check the status bar value for `Displayed`
 
-Answer: 81420
+Answer: `81420`
 
 #### What is the number of packets with a "TTL value less than 10"?
 
 Set a display filter of `ip.ttl < 10` and check the status bar value for `Displayed`
 
-Answer: 66
+Answer: `66`
 
 #### What is the number of packets which uses "TCP port 4444"?
 
 Set a display filter of `tcp.port == 4444` and check the status bar value for `Displayed`
 
-Answer: 632
+Answer: `632`
 
 #### What is the number of "HTTP GET" requests sent to port "80"?
 
 Set a display filter of `tcp.dstport == 80 && http.request.method == "GET"` and check the status bar value for `Displayed`
 
-Answer: 527
+Answer: `527`
 
 #### What is the number of "type A DNS Queries"?
 
 Set a display filter of `dns && dns.qry.type == 1 && dns.flags.response == 0` and check the status bar value for `Displayed`
 
-Answer: 51
+Answer: `51`
 
 ### Task 6: Advanced Filtering
 
@@ -353,7 +353,7 @@ Answer: 51
 
 So far, you have learned the basics of packet filtering operations. Now it is time to focus on specific packet details for the event of interest. Besides the operators and expressions covered in the previous room, Wireshark has advanced operators and functions. These advanced filtering options help the analyst conduct an in-depth analysis of an event of interest.
 
-Filter: "contains"
+Filter: "**contains**"
 
 - **Filter**: `contains`
 - **Type**: Comparison Operator
@@ -362,7 +362,7 @@ Filter: "contains"
 - **Workflow**: List all HTTP packets where packets' "server" field contains the "Apache" keyword.
 - **Usage**: `http.server contains "Apache"`
 
-Filter: "matches"
+Filter: "**matches**"
 
 - **Filter**: `matches`
 - **Type**: Comparison Operator
@@ -371,7 +371,7 @@ Filter: "matches"
 - **Workflow**: List all HTTP packets where packets' "host" fields match keywords ".php" or ".html".
 - **Usage**: `http.host matches "\.(php|html)"`
 
-Filter: "in"
+Filter: "**in**"
 
 - **Filter**: `in`
 - **Type**: Set Membership
@@ -380,7 +380,7 @@ Filter: "in"
 - **Workflow**: List all TCP packets where packets' "port" fields have values 80, 443 or 8080.
 - **Usage**: `tcp.port in {80 443 8080}`
 
-Filter: "upper"
+Filter: "**upper**"
 
 - **Filter**: `upper`
 - **Type**: Function
@@ -389,7 +389,7 @@ Filter: "upper"
 - **Workflow**: Convert all HTTP packets' "server" fields to uppercase and list packets that contain the "APACHE" keyword.
 - **Usage**: `upper(http.server) contains "APACHE"`
 
-Filter: "lower"
+Filter: "**lower**"
 
 - **Filter**: `lower`
 - **Type**: Function
@@ -398,7 +398,7 @@ Filter: "lower"
 - **Workflow**: Convert all HTTP packets' "server" fields info to lowercase and list packets that contain the "apache" keyword.
 - **Usage**: `lower(http.server) contains "apache"`
 
-Filter: "string"
+Filter: "**string**"
 
 - **Filter**: `string`
 - **Type**: Function
@@ -433,7 +433,7 @@ Hint: "contains" operator can help.
 
 Set a display filter of `http.server contains "Microsoft-IIS" && !(tcp.srcport == 80)` and check the status bar value for `Displayed`.
 
-Answer: 21
+Answer: `21`
 
 #### Find all Microsoft IIS servers. What is the number of packets that have "version 7.5"?
 
@@ -441,7 +441,7 @@ Hint: "matches" operator can help.
 
 Set a display filter of `http.server contains "Microsoft-IIS/7.5"` and check the status bar value for `Displayed`.
 
-Answer: 71
+Answer: `71`
 
 #### What is the total number of packets that use ports 3333, 4444 or 9999?
 
@@ -449,7 +449,7 @@ Hint: "in" operator can help.
 
 Set a display filter of `tcp.port in {3333 4444 9999} || udp.port in {3333 4444 9999}` and check the status bar value for `Displayed`.
 
-Answer: 2235
+Answer: `2235`
 
 #### What is the number of packets with "even TTL numbers"?
 
@@ -457,7 +457,7 @@ Hint: "string" and "matches" operators can help. Convert the TTL field to string
 
 Set a display filter of `string(ip.ttl) matches "[02468]$"` and check the status bar value for `Displayed`.
 
-Answer: 77289
+Answer: `77289`
 
 #### Change the profile to "Checksum Control". What is the number of "Bad TCP Checksum" packets?
 
@@ -467,7 +467,7 @@ Use the "Packet List Pane" details or the "Display Filter Expression" menu to cr
 Select the new profile and set a display filter of `tcp.checksum_bad.expert`.  
 Then check the status bar value for `Displayed`.
 
-Answer: 34185
+Answer: `34185`
 
 #### Use the existing filtering button to filter the traffic. What is the number of displayed packets?
 
@@ -476,7 +476,7 @@ Hint: The button is available in the "Checksum Control" profile.
 Click the filter button `gif/jpeg with http-200` which sets a display filter of `(http.response.code == 200 ) && (http.content_type matches "image(gif||jpeg)")`.  
 Then check the status bar value for `Displayed`.
 
-Answer: 261
+Answer: `261`
 
 ### Task 7: Conclusion
 

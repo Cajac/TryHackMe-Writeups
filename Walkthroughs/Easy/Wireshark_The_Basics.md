@@ -24,13 +24,15 @@ Wireshark is an open-source, cross-platform network packet analyser tool capable
 
 There are two capture files given in the VM. You can use the `http1.pcapng` file to simulate the actions shown in the screenshots. Please note that you need to use the `Exercise.pcapng` file to answer the questions.
 
+---------------------------------------------------------------------------------------
+
 #### Which file is used to simulate the screenshots?
 
-Answer: http1.pcapng
+Answer: `http1.pcapng`
 
 #### Which file is used to answer the questions?
 
-Answer: Exercise.pcapng
+Answer: `Exercise.pcapng`
 
 ### Task 2: Tool Overview
 
@@ -48,7 +50,7 @@ Note: Wireshark is not an Intrusion Detection System (IDS). It only allows analy
 
 Wireshark GUI opens with a single all-in-one page, which helps users investigate the traffic in multiple ways. At first glance, five sections stand out.
 
-| Section | Description |
+|Section|Description|
 |----|----|
 |Toolbar|The main toolbar contains multiple menus and shortcuts for packet sniffing and processing, including filtering, sorting, summarising, exporting and merging.|
 |Display Filter Bar|The main query and filtering section.|
@@ -68,7 +70,7 @@ The above picture shows Wireshark's empty interface. The only available informat
 
 Now, we can see the processed filename, detailed number of packets and packet details. Packet details are shown in three different panes, which allow us to discover them in different formats.
 
-| Pane | Description |
+|Pane|Description|
 |----|----|
 |Packet List Pane|Summary of each packet (source and destination addresses, protocol, and packet info). You can click on the list to choose a packet for further investigation. Once you select a packet, the details will appear in the other panels.|
 |Packet Details Pane|Detailed protocol breakdown of the selected packet.|
@@ -78,7 +80,9 @@ Now, we can see the processed filename, detailed number of packets and packet de
 
 Along with quick packet information, Wireshark also colour packets in order of different conditions and the protocol to spot anomalies and protocols in captures quickly (this explains why almost everything is green in the given screenshots). This glance at packet information can help track down exactly what you're looking for during analysis. You can create custom colour rules to spot events of interest by using display filters, and we will cover them in the next room. Now let's focus on the defaults and understand how to view and use the represented data details.
 
-Wireshark has two types of packet colouring methods: temporary rules that are only available during a program session and permanent rules that are saved under the preference file (profile) and available for the next program session. You can use the "right-click menu" or "View --> Coloring Rules" menu to create permanent colouring rules. The "Colourise Packet List" menu activates/deactivates the colouring rules. Temporary packet colouring is done with the "right-click menu" or "View --> Conversation Filter" menu, which is covered in TASK-5.
+Wireshark has two types of packet colouring methods: temporary rules that are only available during a program session and permanent rules that are saved under the preference file (profile) and available for the next program session. You can use the "right-click menu" or "**View --> Coloring Rules**" menu to create permanent colouring rules. The "Colourise Packet List" menu activates/deactivates the colouring rules. Temporary packet colouring is done with the "right-click menu" or "**View --> Conversation Filter**" menu, which is covered in TASK-5.
+
+![Wireshark Colouring Packets](Images/Wireshark_Colouring_Packets.svg)
 
 #### Traffic Sniffing
 
@@ -96,21 +100,23 @@ Knowing the file details is helpful. Especially when working with multiple pcap 
 
 ![Wireshark File Details](Images/Wireshark_File_Details.png)
 
+---------------------------------------------------------------------------------------
+
 Use the "Exercise.pcapng" file to answer the questions.
 
 #### Read the "capture file comments". What is the flag?
 
-Answer: TryHackMe_Wireshark_Demo
+Answer: `TryHackMe_Wireshark_Demo`
 
 #### What is the total number of packets?
 
-Answer: 58620
+Answer: `58620`
 
 #### What is the SHA256 hash value of the capture file?
 
 Hint: File details can help.
 
-Answer: f446de335565fb0b0ee5e5a3266703c778b2f3dfad7efeaeccb2da5641a6d6eb
+Answer: `f446de335565fb0b0ee5e5a3266703c778b2f3dfad7efeaeccb2da5641a6d6eb`
 
 ### Task 3: Packet Dissection
 
@@ -134,33 +140,35 @@ We can see seven distinct layers to the packet: frame/packet, source [MAC], sour
 
 Now that we understand what a general packet is composed of, let's look at various application protocols and their specific details.
 
+---------------------------------------------------------------------------------------
+
 #### View packet number 38. Which markup language is used under the HTTP protocol?
 
 Hint: Packet numbers are shown in the left column at the packet list pane.
 
-Answer: eXtensible Markup Language
+Answer: `eXtensible Markup Language`
 
 #### What is the arrival date of the packet? (Answer format: Month/Day/Year)
 
 Hint: The packet details pane and frame section can help.
 
-Answer: 05/13/2004
+Answer: `05/13/2004`
 
 #### What is the TTL value?
 
 Hint: The packet details pane and IP protocol section can help.
 
-Answer: 47
+Answer: `47`
 
 #### What is the TCP payload size?
 
 Hint: The packet details pane and protocol section can help.
 
-Answer: 424
+Answer: `424`
 
 #### What is the e-tag value?
 
-Answer: 9a01a-4696-7e354b00
+Answer: `9a01a-4696-7e354b00`
 
 ### Task 4: Packet Navigation
 
@@ -218,7 +226,7 @@ Wireshark lists the packets as they are captured, so investigating the default f
 
 Wireshark also detects specific states of protocols to help analysts easily spot possible anomalies and problems. Note that these are only suggestions, and there is always a chance of having false positives/negatives. Expert info can provide a group of categories in three different severities. Details are shown in the table below.
 
-| Severity | Colour | Info |
+|Severity|Colour|Info|
 |----|----|----|
 |Chat|Blue|Information on usual workflow.|
 |Note|Cyan|Notable events like application error codes.|
@@ -227,7 +235,7 @@ Wireshark also detects specific states of protocols to help analysts easily spot
 
 Frequently encountered information groups are listed in the table below. You can refer to Wireshark's official documentation for more information on the expert information entries.
 
-| Group | Info | Group | Info |
+|Group|Info|Group|Info|
 |----|----|----|----|
 |Checksum|Checksum errors.|Deprecated|Deprecated protocol usage.|
 |Comment|Packet comment detection.|Malformed|Malformed packet detection.|
@@ -236,23 +244,25 @@ You can use the "lower left bottom section" in the status bar or `Analyse` --> `
 
 ![Wireshark Expert Info](Images/Wireshark_Expert_Info.png)
 
+---------------------------------------------------------------------------------------
+
 #### Search the "r4w" string in packet details. What is the name of artist 1?
 
-Answer: r4w8173
+Answer: `r4w8173`
 
 #### Go to packet 12 and read the comments. What is the answer?
 
 Hint: Use the "Right-click --> Packet Comment" menu to view the comments. If the comment is long, you can scroll down to follow the rest of the paragraph. Remember, you can also use the "Statistics --> Capture File Properties" to view the available comments.
 
-Answer: 911cd574a42865a956ccde2d04495ebf
+Answer: `911cd574a42865a956ccde2d04495ebf`
 
 #### There is a ".txt" file inside the capture file. Find the file and read it; what is the alien's name?
 
-Answer: PACKETMASTER
+Answer: `PACKETMASTER`
 
 #### Look at the expert info section. What is the number of warnings?
 
-Answer: 1636
+Answer: `1636`
 
 ### Task 5: Packet Filtering
 
@@ -296,21 +306,29 @@ You can use the"right-click menu" or "Analyse --> Follow TCP/UDP/HTTP Stream" me
 
 Once you follow a stream, Wireshark automatically creates and applies the required filter to view the specific stream. Remember, once a filter is applied, the number of the viewed packets will change. You will need to use the "**X button**" located on the right upper side of the display filter bar to remove the display filter and view all available packets in the capture file.
 
+---------------------------------------------------------------------------------------
+
 #### Go to packet number 4. Right-click on the "Hypertext Transfer Protocol" and apply it as a filter. Now, look at the filter pane. What is the filter query?
 
-Answer: http
+Answer: `http`
 
 #### What is the number of displayed packets?
 
-Answer: 1089
+Answer: `1089`
 
 #### Go to packet number 33790 and follow the stream. What is the total number of artists?
 
-Answer: 3
+Answer: `3`
 
 #### What is the name of the second artist?
 
-Answer: Blad3
+Answer: `Blad3`
+
+### Task 6: Conclusion
+
+**Congratulations**! You just finished the "Wireshark: The Basics" room. In this room, we covered Wireshark, what it is, how it operates, and how to use it to investigate traffic captures.
+
+Want to learn more? We invite you to complete the [Wireshark: Packet Operations room](https://tryhackme.com/jr/wiresharkpacketoperations) to improve your Wireshark skills by investigating packets in-depth.
 
 For additional information, please see the references below.
 

@@ -41,7 +41,7 @@ It is essential to know how Nmap scans work to spot scan activity on the network
 
 TCP flags in a nutshell.
 
-| Notes | Wireshark Filters |
+|Notes|Wireshark Filters|
 |----|----|
 |Global search.|`tcp` or `udp`|
 |Only SYN flag.|`tcp.flags == 2`|
@@ -66,14 +66,14 @@ TCP Connect Scan in a nutshell:
 - Used by non-privileged users (only option for a non-root user).
 - Usually has a windows size larger than 1024 bytes as the request expects some data due to the nature of the protocol.
 
-Open TCP Port
+**Open** TCP Port (Connect)
 
 - SYN -->
 - <-- SYN, ACK
 - ACK -->
 - RST, ACK -->
 
-Closed TCP Port
+**Closed** TCP Port (Connect)
 
 - SYN -->
 - <-- RST, ACK
@@ -101,13 +101,13 @@ TCP SYN Scan in a nutshell:
 - Used by privileged users.
 - Usually have a size less than or equal to 1024 bytes as the request is not finished and it doesn't expect to receive data.
 
-Open TCP Port
+**Open** TCP Port (SYN)
 
 - SYN -->
 - <-- SYN,ACK
 - RST-->
 
-Close TCP Port
+**Closed** TCP Port (SYN)
 
 - SYN -->
 - <-- RST,ACK
@@ -133,11 +133,11 @@ UDP Scan in a nutshell:
 - ICMP error message for close ports
 - Usually conducted with `nmap -sU` command.
 
-Open UDP Port
+**Open** UDP Port
 
 - UDP packet -->
 
-Closed UDP Port
+**Closed** UDP Port
 
 - UDP packet -->
 - <-- ICMP Type 3, Code 3 message. (Destination unreachable, port unreachable)
@@ -166,19 +166,19 @@ Use the "**Desktop/exercise-pcaps/nmap/Exercise.pcapng**" file.
 
 Set a display filter of `tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size > 1024` and check the status bar value for `Displayed`.
 
-Answer: 1000
+Answer: `1000`
 
 #### Which scan type is used to scan the TCP port 80?
 
 Set a display filter of `tcp.port == 80` and check the involved packets.
 
-Answer: TCP Connect
+Answer: `TCP Connect`
 
 #### How many "UDP close port" messages are there?
 
 Set a display filter of `icmp.type==3 && icmp.code==3` and check the status bar value for `Displayed`.
 
-Answer: 1083
+Answer: `1083`
 
 #### Which UDP port in the 55-70 port range is open?
 
@@ -187,7 +187,7 @@ Hint: Remember, half of the traffic analysis is done by hand when using Wireshar
 Set a display filter of `udp.dstport in {55 .. 70}` and add a column for `Destination Port`. Sort on the `Destination Port` column.  
 There are connection requests sent to ports 67, 68 and 69 and two ICMP `Destination unreachable` answers for ports 67 and 69.
 
-Answer: 68
+Answer: `68`
 
 ### Task 3: ARP Poisoning & Man In The Middle
 
@@ -208,7 +208,7 @@ ARP analysis in a nutshell:
 
 Before investigating the traffic, let's review some legitimate and suspicious ARP packets. The legitimate requests are similar to the shown picture: a broadcast request that asks if any of the available hosts use an IP address and a reply from the host that uses the particular IP address.
 
-| Notes | Wireshark filter |
+|Notes|Wireshark filter|
 |----|----|
 |Global search|`arp`|
 |Opcode 1: ARP requests.|`arp.opcode == 1`|
@@ -225,7 +225,7 @@ A suspicious situation means having two different ARP responses (conflict) for a
 
 Here, knowing the network architecture and inspecting the traffic for a specific time frame can help detect the anomaly. As an analyst, you should take notes of your findings before going further. This will help you be organised and make it easier to correlate the further findings. Look at the given picture; there is a conflict; the MAC address that ends with "b4" crafted an ARP request with the "192.168.1.25" IP address, then claimed to have the "192.168.1.1" IP address.
 
-| Notes | Detection Notes | Findings |
+|Notes|Detection Notes|Findings|
 |----|----|----|
 |Possible IP address match.|1 IP address announced from a MAC address.|MAC: 00:0c:29:e2:18:b4, IP: 192.168.1.25|
 |Possible ARP spoofing attempt.|2 MAC addresses claimed the same IP address (192.168.1.1). The " 192.168.1.1" IP address is a possible gateway address.|MAC 1: 50:78:b3:f3:cd:f4, MAC 2: 00:0c:29:e2:18:b4|
@@ -237,7 +237,7 @@ Let's keep inspecting the traffic to spot any other anomalies. Note that the cas
 
 At this point, it is evident that there is an anomaly. A security analyst cannot ignore a flood of ARP requests. This could be malicious activity, scan or network problems. There is a new anomaly; the MAC address that ends with "b4" crafted multiple ARP requests with the "192.168.1.25" IP address. Let's focus on the source of this anomaly and extend the taken notes.
 
-| Notes | Detection Notes | Findings |
+|Notes|Detection Notes|Findings|
 |----|----|----|
 |Possible IP address match.|1 IP address announced from a MAC address.|MAC: 00:0c:29:e2:18:b4, IP: 192.168.1.25|
 |Possible ARP spoofing attempt.|2 MAC addresses claimed the same IP address (192.168.1.1). The "192.168.1.1" IP address is a possible gateway address.|MAC 1: 50:78:b3:f3:cd:f4, MAC 2: 00:0c:29:e2:18:b4|
@@ -254,7 +254,7 @@ There is HTTP traffic, and everything looks normal at the IP level, so there is 
 
 One more anomaly! The MAC address that ends with "b4" is the destination of all HTTP packets! It is evident that there is a MITM attack, and the attacker is the host with the MAC address that ends with "b4". All traffic linked to "192.168.1.12" IP addresses is forwarded to the malicious host. Let's summarise the findings before concluding the investigation.
 
-| Notes | Detection Notes | Findings |
+|Notes|Detection Notes|Findings|
 |----|----|----|
 |IP to MAC matches.|3 IP to MAC address matches.|MAC: 00:0c:29:e2:18:b4 = IP: 192.168.1.25, MAC: 50:78:b3:f3:cd:f4 = IP: 192.1681.1, MAC: 00:0c:29:98:c7:a8 = IP: 192.168.1.12|
 |Attacker|The attacker created noise with ARP packets.|MAC: 00:0c:29:e2:18:b4 = IP: 192.168.1.25|
@@ -279,13 +279,13 @@ Start by setting a display filter of `arp.duplicate-address-detected || arp.dupl
 The attacker seems to be `00:0c:29:98:c7:a8`. Filter for ARP reqests from this machine with `eth.src == 00:0c:29:e2:18:b4 && arp.opcode==1`.  
 Then check the status bar value for `Displayed`.
 
-Answer: 284
+Answer: `284`
 
 #### What is the number of HTTP packets received by the attacker?
 
 Set a display filter of `eth.dst == 00:0c:29:e2:18:b4 && http` and check the status bar value for `Displayed`.
 
-Answer: 90
+Answer: `90`
 
 #### What is the number of sniffed username&password entries?
 
@@ -300,7 +300,7 @@ There are 10 reuests to 3 URI:s
 
 Going through the HTML form data the following likely credentials are found:
 
-| Username | Password |
+|Username|Password|
 |----|----|
 |uname=test|pass=test|
 |uuname=test_THM_test|upass=insecurepw, upass2=insecurepw|
@@ -312,19 +312,19 @@ Going through the HTML form data the following likely credentials are found:
 
 We have 6 unique combinations of username and password (`test_THM_test:insecurepw` appear twice).
 
-Answer: 6
+Answer: `6`
 
 #### What is the password of the "Client986"?
 
 From table above
 
-Answer: clientnothere!
+Answer: `clientnothere!`
 
 #### What is the comment provided by the "Client354"?
 
 Hint: Special characters are displayed in HEX format. Make sure that you convert them to ASCII.
 
-Answer: Nice work!
+Answer: `Nice work!`
 
 ### Task 4: Identifying Hosts: DHCP, NetBIOS and Kerberos
 
@@ -455,7 +455,7 @@ Hint: "nbns.flags.opcode == 5" filter can help.
 
 Set a display filter of `nbns.flags.opcode == 5 && nbns.name contains "LIVALJM"` and check the status bar value for `Displayed`.
 
-Answer: 16
+Answer: `16`
 
 #### Which host requested the IP address "172.16.13.85"?
 
