@@ -644,4 +644,7 @@ For additional information, please see the references below.
 
 ## References
 
+- [Domain Name System - Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
+- [HTML - Wikipedia](https://en.wikipedia.org/wiki/HTML)
 - [NetworkMiner - Homepage](https://www.netresec.com/?page=NetworkMiner)
+- [pcap - Wikipedia](https://en.wikipedia.org/wiki/Pcap)
