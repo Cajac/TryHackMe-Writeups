@@ -71,8 +71,6 @@
 
 - [Active Reconnaissance](Active_Reconnaissance.md)
 - [DNS in detail](DNS_in_detail.md)
-- [How Websites Work](How_Websites_Work.md)
-- [HTTP in Detail](HTTP_in_Detail.md)
 - [Networking Concepts](Networking_Concepts.md)
 - [Networking Core Protocols](Networking_Core_Protocols.md)
 - [Networking Essentials](Networking_Essentials.md)
@@ -83,6 +81,7 @@
 - [Protocols and Servers](Protocols_and_Servers.md)
 - [Putting it all together](Putting_it_all_together.md)
 - [Tcpdump: The Basics](Tcpdump_The_Basics.md)
+- [TShark: The Basics](TShark_The_Basics.md)
 - [Wireshark: Packet Operations](Wireshark_Packet_Operations.md)
 - [Wireshark: The Basics](Wireshark_The_Basics.md)
 
@@ -111,6 +110,8 @@
 - [Burp Suite: Extensions](Burp_Suite_Extensions.md)
 - [Command Injection](Command_Injection.md)
 - [Content Discovery](Content_Discovery.md)
+- [How Websites Work](How_Websites_Work.md)
+- [HTTP in Detail](HTTP_in_Detail.md)
 - [IDOR](IDOR.md)
 - [Intro to Cross-site Scripting](Intro_to_Cross-site_Scripting.md)
 - [Intro to SSRF](Intro_to_SSRF.md)

@@ -51,3 +51,5 @@ Web link: [https://tryhackme.com/path/outline/soclevel1legacy](https://tryhackme
 - [Wireshark: The Basics](../../Walkthroughs/Easy/Wireshark_The_Basics.md)
 - [Wireshark: Packet Operations](../../Walkthroughs/Easy/Wireshark_Packet_Operations.md)
 - [Wireshark: Traffic Analysis](../../Walkthroughs/Medium/Wireshark_Traffic_Analysis.md)
+- [TShark: The Basics](../../Walkthroughs/Easy/TShark_The_Basics.md)
+- [TShark: CLI Wireshark Features](../../Walkthroughs/Medium/TShark_CLI_Wireshark_Features.md)
