@@ -303,7 +303,7 @@ IP Protocol Types  43                                                0.0014     
 
 Having the summary of the hosts in a single view is useful as well. Especially when you are working with large captures, viewing all hosts with a single command can help you to detect an anomalous host at a glance. You can filter all IP addresses using the parameters given below.
 
-**IPv4**: `-z ip_hosts,tree -q`
+**IPv4**: `-z ip_hosts,tree -q`  
 **IPv6**: `-z ipv6_hosts,tree -q`
 
 ```bash
@@ -320,7 +320,7 @@ All Addresses     43                                                 0.0014     
 
 For complex cases and in-depth analysis, you will need to correlate the finding by focusing on the source and destination addresses. You can filter all source and destination addresses using the parameters given below.
 
-**IPv4**: `-z ip_srcdst,tree -q`
+**IPv4**: `-z ip_srcdst,tree -q`  
 **IPv6**: `-z ipv6_srcdst,tree -q`
 
 ```bash
@@ -342,7 +342,7 @@ Destination IPv4 Addresses       43                                             
 
 In some cases, you will need to focus on the outgoing traffic to spot the used services and ports. You can filter all outgoing traffic by using the parameters given below.
 
-**IPv4**: `-z dests,tree -q`
+**IPv4**: `-z dests,tree -q`  
 **IPv6**: `-z ipv6_dests,tree -q`
 
 ```bash
@@ -386,10 +386,10 @@ Total Packets                  2                                             0.0
 
 This option provides statistics on HTTP packets by summarising the load distribution, requests, packets, and status info. You can filter the packets and view the details using the parameters given below.
 
-**Packet and status counter for HTTP**: `-z http,tree -q`
-**Packet and status counter for HTTP2**: `-z http2,tree -q`
-**Load distribution**: `-z http_srv,tree -q`
-**Requests**: `-z http_req,tree -q`
+**Packet and status counter for HTTP**: `-z http,tree -q`  
+**Packet and status counter for HTTP2**: `-z http2,tree -q`  
+**Load distribution**: `-z http_srv,tree -q`  
+**Requests**: `-z http_req,tree -q`  
 **Requests and responses**: `-z http_seq,tree -q`
 
 ```bash
@@ -517,8 +517,8 @@ This option helps analysts to follow traffic streams similar to Wireshark. The q
 
 **Note**: Streams start from "0". You can filter the packets and follow the streams by using the parameters given below.
 
-- **TCP Streams**: `-z follow,tcp,ascii,0 -q`
-- **UDP Streams**: `-z follow,udp,ascii,0 -q`
+- **TCP Streams**: `-z follow,tcp,ascii,0 -q`  
+- **UDP Streams**: `-z follow,udp,ascii,0 -q`  
 - **HTTP Streams**: `-z follow,http,ascii,0 -q`
 
 ```bash
