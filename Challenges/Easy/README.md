@@ -35,3 +35,5 @@
 - [OhSINT](OhSINT.md)
 - [Reversing ELF](Reversing_ELF.md)
 - [Summit](Summit.md)
+- [TShark Challenge I: Teamwork](TShark_Challenge_I_Teamwork.md)
+- [TShark Challenge II: Directory](TShark_Challenge_II_Directory.md)
