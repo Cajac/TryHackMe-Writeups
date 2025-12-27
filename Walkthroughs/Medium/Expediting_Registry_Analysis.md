@@ -426,6 +426,8 @@ Answer: `suspicious`
 
 #### What is the Password Reset Date of this account?
 
+From the .txt result file of RegRipper:
+
 ```text
 Username        : suspicious [1009]
 Full Name       : Suspicious user
@@ -445,6 +447,8 @@ Embedded RID    : 1009
 Answer: `2024-03-03 11:51:04Z`
 
 #### What is the RID of the account 4n6lab?
+
+From the .txt result file of RegRipper:
 
 ```text
 Username        : 4n6lab [1008]
@@ -648,6 +652,7 @@ For additional information, please see the references below.
 - [Eric Zimmerman's Tools - GitHub](https://ericzimmerman.github.io/)
 - [FTK Imager - Homepage](https://www.exterro.com/ftk-imager)
 - [KAPE (Kroll Artifact Parser And Extractor) - Homepage](https://www.kroll.com/en/services/cyber/incident-response-recovery/kroll-artifact-parser-and-extractor-kape)
+- [RECmd - GitHub](https://github.com/EricZimmerman/RECmd)
 - [RegRipper - GitHub](https://github.com/keydet89/RegRipper3.0)
 - [Regripper - Kali Tools](https://www.kali.org/tools/regripper/)
 - [Windows Registry - Wikipedia](https://en.wikipedia.org/wiki/Windows_Registry)
