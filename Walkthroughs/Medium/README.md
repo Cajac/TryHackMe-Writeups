@@ -3,7 +3,7 @@
 ## Defensive Security
 
 - [Atomic Red Team](Atomic_Red_Team.md)
-- [Brim](Brim.md)
+- [Expediting Registry Analysis](Expediting_Registry_Analysis.md)
 - [Logless Hunt](Logless_Hunt.md)
 - [MISP](MISP.md)
 - [MITRE](MITRE.md)
@@ -12,7 +12,6 @@
 - [Snort](Snort.md)
 - [Snort Challenge - Live Attacks](Snort_Challenge-Live_Attacks.md)
 - [Snort Challenge - The Basics](Snort_Challenge-The_Basics.md)
-- [Zeek](Zeek.md)
 
 ## Exploitation
 
@@ -21,11 +20,13 @@
 
 ## Networking
 
+- [Brim](Brim.md)
 - [Nmap Advanced Port Scans](Nmap_Advanced_Port_Scans.md)
 - [Nmap Live Host Discovery](Nmap_Live_Host_Discovery.md)
 - [Nmap Post Port Scans](Nmap_Post_Port_Scans.md)
 - [Protocols and Servers 2](Protocols_and_Servers_2.md)
 - [TShark: CLI Wireshark Features](TShark_CLI_Wireshark_Features.md)
+- [Zeek](Zeek.md)
 
 ## Scripting and Programming
 
