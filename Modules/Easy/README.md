@@ -6,6 +6,7 @@
 
 ## Defensive Security
 
+- [Cyber Defence Frameworks](Cyber_Defence_Frameworks.md)
 - [Cyber Threat Intelligence](Cyber_Threat_Intelligence.md)
 - [Defensive Security](Defensive_Security.md)
 - [Defensive Security Tooling](Defensive_Security_Tooling.md)
@@ -26,6 +27,7 @@
 ## Networking
 
 - [Networking](Networking.md)
+- [Wireshark](Wireshark.md)
 
 ## Offensive Security
 
