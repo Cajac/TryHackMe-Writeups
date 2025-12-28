@@ -2,10 +2,11 @@
 
 ![TryHackMe Logo](TryHackMe_logo.png)
 
-Welcome to [my](https://tryhackme.com/p/Cajac) writeups for [TryHackMe](https://tryhackme.com/) [challenges](https://tryhackme.com/hacktivities/challenges) and [walkthroughs](https://tryhackme.com/hacktivities/search?page=1&kind=rooms&searchText=&roomType=walkthrough).  
+Welcome to [my](https://tryhackme.com/p/Cajac) writeups for [TryHackMe](https://tryhackme.com/) [challenges](https://tryhackme.com/hacktivities/challenges) and [walkthroughs](https://tryhackme.com/hacktivities/search?page=1&kind=rooms&searchText=&roomType=walkthrough).
+
 These writeups are mainly a documentation for myself but I hope others will benefit from them as well.  
 
-In total you will find more than XX room solutions here.
+In total you will find more than **180 room solutions** here.
 
 ## Challenges (CTF)
 
