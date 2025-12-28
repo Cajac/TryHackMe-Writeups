@@ -39,9 +39,10 @@
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
 - [Yara](Yara.md)
 
-## Digital Forensics
+## Digital Forensics and Incident Response
 
 - [DFIR: An Introduction](DFIR_An_Introduction.md)
+- [Lessons Learned](Lessons_Learned.md)
 - [Memory Acquisition](Memory_Acquisition.md)
 - [Memory Analysis Introduction](Memory_Analysis_Introduction.md)
 
