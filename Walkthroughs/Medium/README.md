@@ -1,13 +1,16 @@
 # Medium Walkthroughs
 
+## Cyber Threat Intelligence
+
+- [MISP](MISP.md)
+- [OpenCTI](OpenCTI.md)
+
 ## Defensive Security
 
 - [Atomic Red Team](Atomic_Red_Team.md)
 - [Expediting Registry Analysis](Expediting_Registry_Analysis.md)
 - [Logless Hunt](Logless_Hunt.md)
-- [MISP](MISP.md)
 - [MITRE](MITRE.md)
-- [OpenCTI](OpenCTI.md)
 - [Redline](Redline.md)
 - [Snort](Snort.md)
 - [Snort Challenge - Live Attacks](Snort_Challenge-Live_Attacks.md)
