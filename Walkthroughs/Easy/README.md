@@ -14,7 +14,9 @@
 - [Intro to Cyber Threat Intel](Intro_to_Cyber_Threat_Intel.md)
 - [Pyramid Of Pain](Pyramid_Of_Pain.md)
 - [Threat Intelligence Tools](Threat_Intelligence_Tools.md)
+- [Trooper](Trooper.md)
 - [Unified Kill Chain](Unified_Kill_Chain.md)
+- [Yara](Yara.md)
 
 ## Defensive Security
 
@@ -32,12 +34,11 @@
 - [Junior Security Analyst Intro](Junior_Security_Analyst_Intro.md)
 - [Log Operations](Log_Operations.md)
 - [Logs Fundamentals](Logs_Fundamentals.md)
+- [Osquery: The Basics](Osquery_The_Basics.md)
 - [REMnux: Getting Started](REMnux_Getting_Started.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
 - [Traffic Analysis Essentials](Traffic_Analysis_Essentials.md)
-- [Trooper](Trooper.md)
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
-- [Yara](Yara.md)
 
 ## Digital Forensics and Incident Response
 
