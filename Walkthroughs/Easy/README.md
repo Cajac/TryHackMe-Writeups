@@ -9,6 +9,7 @@
 
 ## Defensive Security
 
+- [Advanced ELK Queries](Advanced_ELK_Queries.md)
 - [CAPA: The Basics](CAPA_The_Basics.md)
 - [Cyber Kill Chain](Cyber_Kill_Chain.md)
 - [Defensive Security Intro](Defensive_Security_Intro.md)
