@@ -1,5 +1,24 @@
 # Easy Walkthroughs
 
+**Categories**:
+
+- [Cryptography](#cryptography)
+- [Cyber Threat Intelligence](#cyber-threat-intelligence)
+- [Defensive Security](#defensive-security)
+- [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
+- [Exploitation](#exploitation)
+- [Fundamentals](#fundamentals)
+- [Networking](#networking)
+- [Offensive Security](#offensive-security)
+- [Scripting and Programming](#scripting-and-programming)
+- [Web](#web)
+- [Windows](#windows)
+
+Notes:
+
+- The categorization is my own and not THM's.
+- Rooms can be placed in more than one category.
+
 ## Cryptography
 
 - [Cryptography Basics](Cryptography_Basics.md)
@@ -65,14 +84,11 @@
 ## Fundamentals
 
 - [CyberChef: The Basics](CyberChef_The_Basics.md)
+- [Linux Shells](Linux_Shells.md)
 - [Search Skills](Search_Skills.md)
 - [Security Principles](Security_Principles.md)
 - [SQL Fundamentals](SQL_Fundamentals.md)
 - [Toolbox: Vim](Toolbox_Vim.md)
-
-## Linux
-
-- [Linux Shells](Linux_Shells.md)
 
 ## Networking
 

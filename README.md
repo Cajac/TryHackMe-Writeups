@@ -39,6 +39,17 @@ In total you will find more than **180 room solutions** here.
   - [Web](Walkthroughs/Info/README.md#web)
   - [Windows](Walkthroughs/Info/README.md#windows)
 - [Easy Walkthroughs](Walkthroughs/Easy/README.md)
+  - [Cryptography](Walkthroughs/Easy/README.md#cryptography)
+  - [Cyber Threat Intelligence](Walkthroughs/Easy/README.md#cyber-threat-intelligence)
+  - [Defensive Security](Walkthroughs/Easy/README.md#defensive-security)
+  - [Digital Forensics and Incident Response](Walkthroughs/Easy/README.md#digital-forensics-and-incident-response)
+  - [Exploitation](Walkthroughs/Easy/README.md#exploitation)
+  - [Fundamentals](Walkthroughs/Easy/README.md#fundamentals)
+  - [Networking](Walkthroughs/Easy/README.md#networking)
+  - [Offensive Security](Walkthroughs/Easy/README.md#offensive-security)
+  - [Scripting and Programming](Walkthroughs/Easy/README.md#scripting-and-programming)
+  - [Web](Walkthroughs/Easy/README.md#web)
+  - [Windows](Walkthroughs/Easy/README.md#windows)
 - [Medium Walkthroughs](Walkthroughs/Medium/README.md)
 
 ## No flag spoilers

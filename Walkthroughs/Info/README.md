@@ -1,6 +1,6 @@
 # Info Walkthroughs
 
-Categories:
+**Categories**:
 
 - [Exploitation](#exploitation)
 - [Linux](#linux)
