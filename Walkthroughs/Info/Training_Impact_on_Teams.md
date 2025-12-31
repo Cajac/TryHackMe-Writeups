@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: N/A
+Tags: -
 Subscription type: Free
 Description: Discover the impact of training on teams and organisations.
 ```
@@ -32,9 +32,11 @@ Centralised training creates a common baseline within an organisation to assess 
 
 Finally, training can be fun and can foster teamwork. For instance, the experience of being part of a team playing a CTF (Capture the Flag) challenge builds incredible friendships, which will help when needed.
 
+---------------------------------------------------------------------------------------
+
 #### What is the most efficient way to ramp up the skills of a junior hire in cyber security?
 
-Answer: Training
+Answer: `Training`
 
 ### Task 2 - Cyber Security Training for Large Organisations
 
@@ -42,9 +44,11 @@ For smaller teams, off-the-shelf training would be the most logical choice. Howe
 
 Large corporations don’t want a standalone solution but need it integrated into their existing software landscape. They usually look for a training solution that supports SSO (Single Sign-On) and has well-documented APIs. Such functionalities ensure training with existing systems seamlessly.
 
+---------------------------------------------------------------------------------------
+
 #### What is the name of the dashboard that TryHackMe offers for companies to create customised training paths?
 
-Answer: Content Studio
+Answer: `Content Studio`
 
 ### Task 3 - Write a Cyber Security Training Investment Proposal
 
@@ -68,6 +72,8 @@ It is easy now to show that the Return On Investment (ROI) is 640% ($32,000/$5,0
 
 At TryHackMe, we’ve seen many proposals and learned what works and what doesn’t. Consider downloading the attached proposal, Cost savings by investing in Cyber Security training. It should increase the likelihood of obtaining the budget.
 
+---------------------------------------------------------------------------------------
+
 Consider the following scenario and answer the following questions.
 
 - **Situation**: A cyber security team has **20** employees
@@ -78,13 +84,13 @@ Consider the following scenario and answer the following questions.
 
 Hint: `20 * 4% * $50,000`
 
-Answer: 40000
+Answer: `40000`
 
 #### Assuming that training costs $500 per employee, what is the Return on Investment?
 
 Hint: Divide the previous answer by (20 * $500) and multiply by 100 to get the answer as a percentage. Write your answer in the format nnn%.
 
-Answer: 400%
+Answer: `400%`
 
 ### Task 4 - Vendor Selection
 

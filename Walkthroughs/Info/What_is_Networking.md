@@ -9,9 +9,10 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: N/A
+Tags: -
 Subscription type: Free
-Description: Begin learning the fundamentals of computer networking in this bite-sized and interactive module.
+Description: 
+Begin learning the fundamentals of computer networking in this bite-sized and interactive module.
 ```
 
 Room link: [https://tryhackme.com/room/whatisnetworking](https://tryhackme.com/room/whatisnetworking)
@@ -29,7 +30,7 @@ Networks are simply things connected. Networks can be found in all walks of life
 
 #### What is the key term for devices that are connected together?
 
-Answer: Network
+Answer: `Network`
 
 ### Task 2 - What is the Internet?
 
@@ -41,7 +42,7 @@ sharing information, just like it is today.
 
 #### Who invented the World Wide Web?
 
-Answer: Tim Berners-Lee
+Answer: `Tim Berners-Lee`
 
 ### Task 3 - Identifying Devices on a Network
 
@@ -61,37 +62,49 @@ into two's and separated by a colon.
 
 #### What does the term "IP" stand for?
 
-Answer: Internet Protocol
+Answer: `Internet Protocol`
 
 #### What is each section of an IP address called?
 
-Answer: Octet
+Answer: `Octet`
 
 #### How many sections (in digits) does an IPv4 address have?
 
-Answer: 4
+Answer: `4`
 
 #### What does the term "MAC" stand for?
 
-Answer: Media Access Control
+Answer: `Media Access Control`
+
+Deploy the interactive lab using the "View Site" button and spoof your MAC address to access the site.
+
+#### What is the flag?
+
+Answer: `THM{<REDACTED>}`
 
 ### Task 4 - Ping (ICMP)
 
-Ping is one of the most fundamental network tools available to us. Ping uses ICMP (Internet Control Message  
-Protocol) packets to determine the performance of a connection between devices, for example, if the connection  
-exists or is reliable.
+Ping is one of the most fundamental network tools available to us. Ping uses **ICMP** (**I**nternet **C**ontrol **M**essage **P**rotocol) packets to determine the performance of a connection between devices, for example, if the connection exists or is reliable.
+
+The time taken for ICMP packets travelling between devices is measured by ping, such as in the screenshot below. This measuring is done using ICMP's echo packet and then ICMP's echo reply from the target device.
+
+Pings can be performed against devices on a network, such as your home network or resources like websites. This tool can be easily used and comes installed on Operating Systems (OSs) such as Linux and Windows. The syntax to do a simple ping is `ping IP address or website`.
 
 #### What protocol does ping use?
 
-Answer: ICMP
+Answer: `ICMP`
 
 #### What is the syntax to ping 10.10.10.10?
 
-Answer: ping 10.10.10.10
+Answer: `ping 10.10.10.10`
 
 #### What flag do you get when you ping 8.8.8.8?
 
 Answer: `THM{<REDACTED>}`
+
+### Task 5 - Continue Your Learning: Intro to LAN
+
+Continue your learning by joining the "[Intro to LAN](https://tryhackme.com/room/introtolan)" room.
 
 For additional information, please see the references below.
 
