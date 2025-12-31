@@ -32,6 +32,12 @@ In total you will find more than **180 room solutions** here.
 ## Walkthroughs
 
 - [Info Walkthroughs](Walkthroughs/Info/README.md)
+  - [Exploitation](Walkthroughs/Info/README.md#exploitation)
+  - [Linux](Walkthroughs/Info/README.md#linux)
+  - [Miscellaneous](Walkthroughs/Info/README.md#miscellaneous)
+  - [Networking](Walkthroughs/Info/README.md#networking)
+  - [Web](Walkthroughs/Info/README.md#web)
+  - [Windows](Walkthroughs/Info/README.md#windows)
 - [Easy Walkthroughs](Walkthroughs/Easy/README.md)
 - [Medium Walkthroughs](Walkthroughs/Medium/README.md)
 

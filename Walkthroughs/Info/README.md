@@ -1,5 +1,19 @@
 # Info Walkthroughs
 
+Categories:
+
+- [Exploitation](#exploitation)
+- [Linux](#linux)
+- [Miscellaneous](#miscellaneous)
+- [Networking](#networking)
+- [Web](#web)
+- [Windows](#windows)
+
+Notes:
+
+- The categorization is my own and not THM's.
+- Rooms can be placed in more than one category.
+
 ## Exploitation
 
 - [Dirty Pipe: CVE-2022-0847](Dirty_Pipe_CVE-2022-0847.md)
