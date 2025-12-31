@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: N/A
+Tags: -
 Subscription type: Free
 Description: Learn about the different careers in cyber security.
 ```

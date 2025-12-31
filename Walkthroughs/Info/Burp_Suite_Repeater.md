@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: Linux
+Tags: Linux
 Subscription type: Free
 Description:
 Learn how to use Repeater to duplicate requests in Burp Suite.

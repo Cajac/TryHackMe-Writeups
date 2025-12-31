@@ -9,9 +9,10 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: N/A
+Tags: -
 Subscription type: Premium
-Description: An introduction to using Burp Suite for web application pentesting.
+Description:
+An introduction to using Burp Suite for web application pentesting.
 ```
 
 Room link: [https://tryhackme.com/room/burpsuitebasics](https://tryhackme.com/room/burpsuitebasics)
@@ -165,7 +166,7 @@ Here's how the navigation works:
 
 Burp Suite also provides keyboard shortcuts for quick navigation to key tabs. By default, the following shortcuts are available:
 
-| Shortcut | Tab |
+|Shortcut|Tab|
 |----|----|
 |`Ctrl + Shift + D`|Dashboard|
 |`Ctrl + Shift + T`|Target tab|
