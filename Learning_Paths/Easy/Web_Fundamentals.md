@@ -1,4 +1,4 @@
-# Web Fundamentals Path
+# Web Fundamentals Learning Path
 
 ```text
 Type: Learning Path
