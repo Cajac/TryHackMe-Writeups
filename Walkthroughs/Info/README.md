@@ -1,5 +1,11 @@
 # Info Walkthroughs
 
+## Exploitation
+
+- [Dirty Pipe: CVE-2022-0847](Dirty_Pipe_CVE-2022-0847.md)
+- [Polkit: CVE-2021-3560](Polkit_CVE-2021-3560.md)
+- [Pwnkit: CVE-2021-4034](Pwnkit_CVE-2021-4034.md)
+
 ## Linux
 
 - [Linux Fundamentals Part 1](Linux_Fundamentals_Part_1.md)
@@ -19,11 +25,6 @@
 - [OSI Model](OSI_Model.md)
 - [Packets & Frames](Packets_and_Frames.md)
 - [What is Networking?](What_is_Networking.md)
-
-## Offensive Security
-
-- [Polkit: CVE-2021-3560](Polkit_CVE-2021-3560.md)
-- [Pwnkit: CVE-2021-4034](Pwnkit_CVE-2021-4034.md)
 
 ## Web
 
