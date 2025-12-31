@@ -9,9 +9,10 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: N/A
+Tags: -
 Subscription type: Premium
-Description: Introduction to hands-on network monitoring and threat detection with Zeek (formerly Bro).
+Description:
+Introduction to hands-on network monitoring and threat detection with Zeek (formerly Bro).
 ```
 
 Room link: [https://tryhackme.com/room/zeekbro](https://tryhackme.com/room/zeekbro)

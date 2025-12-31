@@ -9,9 +9,10 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: N/A
+Tags: -
 Subscription type: Premium
-Description: Learn the basics of traffic analysis with Wireshark and how to find anomalies on your network!
+Description:
+Learn the basics of traffic analysis with Wireshark and how to find anomalies on your network!
 ```
 
 Room link: [https://tryhackme.com/room/wiresharktrafficanalysis](https://tryhackme.com/room/wiresharktrafficanalysis)

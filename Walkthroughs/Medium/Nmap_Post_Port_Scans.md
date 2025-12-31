@@ -290,7 +290,7 @@ http-open-redirect.nse
 
 You can specify to use any or a group of these installed scripts; moreover, you can install other user’s scripts and use them for your scans. Let’s begin with the default scripts. You can choose to run the scripts in the default category using `--script=default` or simply adding `-sC`. In addition to [default](https://nmap.org/nsedoc/categories/default.html), categories include auth, broadcast, brute, default, discovery, dos, exploit, external, fuzzer, intrusive, malware, safe, version, and vuln. A brief description is shown in the following table.
 
-| Script Category | Description |
+|Script Category|Description|
 |----|----|
 |**auth**|Authentication related scripts|
 |**broadcast**|Discover hosts by sending broadcast messages|
@@ -645,7 +645,7 @@ Answer: `172.17.20.147`
 
 In this room, we learned how to detect the running services and their versions along with the host operating system. We learned how to enable traceroute and we covered selecting one or more scripts to aid in penetration testing. Finally, we covered the different formats to save the scan results for future reference. The table below summarizes the most important options we covered in this room.
 
-| Option | Meaning |
+|Option|Meaning|
 |----|----|
 |`-sV`|determine service/version info on open ports|
 |`-sV --version-light`|try the most likely probes (2)|

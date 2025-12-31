@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: N/A
+Tags: -
 Subscription type: Premium
 Description: Put your snort skills into practice and defend against a live attack
 ```

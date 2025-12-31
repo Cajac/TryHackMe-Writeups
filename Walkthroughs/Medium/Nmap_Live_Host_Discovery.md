@@ -561,7 +561,7 @@ Answer: `-R`
 
 You have learned how ARP, ICMP, TCP, and UDP can detect live hosts by completing this room. Any response from a host is an indication that it is online. Below is a quick summary of the command-line options for Nmap that we have covered.
 
-| Scan Type | Example Command |
+|Scan Type|Example Command|
 |----|----|
 |ARP Scan|`sudo nmap -PR -sn MACHINE_IP/24`|
 |ICMP Echo Scan|`sudo nmap -PE -sn MACHINE_IP/24`|
@@ -573,7 +573,7 @@ You have learned how ARP, ICMP, TCP, and UDP can detect live hosts by completing
 
 Remember to add `-sn` if you are only interested in host discovery without port-scanning. Omitting `-sn` will let Nmap default to port-scanning the live hosts.
 
-| Option | Purpose |
+|Option|Purpose|
 |----|----|
 |`-n`|no DNS lookup|
 |`-R`|reverse-DNS lookup for all hosts|

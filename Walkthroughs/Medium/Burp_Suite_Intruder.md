@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: Linux
+Tags: Linux
 Subscription type: Premium
 Description:
 Learn how to use Intruder to automate requests in Burp Suite.
@@ -176,7 +176,7 @@ In this example, we have two positions defined for the `username` and `password`
 
 Assuming we have a wordlist with three words: `burp`, `suite`, and `intruder`, Intruder would generate six requests:
 
-| Request Number | Request Body |
+|Request Number|Request Body|
 |----|----|
 |1|`username=burp&password=Expl01ted`|
 |2|`username=suite&password=Expl01ted`|
@@ -226,7 +226,7 @@ username=§pentester§&password=§Expl01ted§
 
 Using the Battering Ram attack type with the same wordlist from before (`burp`, `suite`, and `intruder`), Intruder would generate three requests:
 
-| Request Number | Request Body |
+|Request Number|Request Body|
 |----|----|
 |1|`username=burp&password=burp`|
 |2|`username=suite&password=suite`|
@@ -260,7 +260,7 @@ To better understand Pitchfork, let us revisit our brute-force example, but this
 
 We can use these two lists to perform a Pitchfork attack on the login form. Each request made during the attack would look like this:
 
-| Request Number | Request Body |
+|Request Number|Request Body|
 |----|----|
 |1|`username=joel&password=J03l`|
 |2|`username=harriet&password=Emma1815`|
@@ -289,7 +289,7 @@ To illustrate the Cluster bomb attack type, let's use the same wordlists as befo
 
 In this example, let's assume that we don't know which password belongs to which user. We have three users and three passwords, but the mappings are unknown. In this case, we can use a Cluster bomb attack to try every combination of values. The request table for our username and password positions would look like this:
 
-| Request Number | Request Body |
+|Request Number|Request Body|
 |----|----|
 |1|`username=joel&password=J03l`|
 |2|`username=harriet&password=J03l`|

@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: N/A
+Tags: -
 Subscription type: Premium
 Description: Provide an understanding of the OpenCTI Project
 ```
@@ -67,7 +67,7 @@ The highlight services include:
 
 According to OpenCTI, connectors fall under the following classes:
 
-| Class | Description | Examples |
+|Class|Description|Examples|
 |----|----|----|
 |External Input Connector|Ingests information from external sources|CVE, MISP, TheHive, MITRE|
 |Stream Connector|Consumes platform data stream|History, Tanium|

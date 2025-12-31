@@ -636,7 +636,7 @@ Answer: `syn-ack`
 
 This room covered the following types of scans.
 
-| Port Scan Type | Example Command |
+|Port Scan Type|Example Command|
 |----|----|
 |TCP Null Scan|`sudo nmap -sN 10.64.142.139`|
 |TCP FIN Scan|`sudo nmap -sF 10.64.142.139`|
@@ -652,14 +652,14 @@ This room covered the following types of scans.
 |Fragment IP data into 8 bytes|`-f`|
 |Fragment IP data into 16 bytes|`-ff`|
 
-| Option | Purpose |
+|Option|Purpose|
 |----|----|
 |`--source-port PORT_NUM`|specify source port number|
 |`--data-length NUM`|append random data to reach given length|
 
 These scan types rely on setting TCP flags in unexpected ways to prompt ports for a reply. Null, FIN, and Xmas scan provoke a response from closed ports, while Maimon, ACK, and Window scans provoke a response from open and closed ports.
 
-| Option | Purpose |
+|Option|Purpose|
 |----|----|
 |`--reason`|explains how Nmap made its conclusion|
 |`-v`|verbose|

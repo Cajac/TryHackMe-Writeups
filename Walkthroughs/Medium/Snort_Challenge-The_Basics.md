@@ -9,9 +9,10 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: N/A
+Tags: -
 Subscription type: Premium
-Description: Put your snort skills into practice and write snort rules to analyse live capture network traffic.
+Description: 
+Put your snort skills into practice and write snort rules to analyse live capture network traffic.
 ```
 
 Room link: [https://tryhackme.com/room/snortchallenges1](https://tryhackme.com/room/snortchallenges1)

@@ -41,7 +41,7 @@ Vulnerabilities can originate from many factors, including a poor design of an a
 
 We will come on to discuss the various types of vulnerabilities in a later room. However, for now, we should know that there are arguably five main categories of vulnerabilities:
 
-| Vulnerability | Description |
+|Vulnerability|Description|
 |----|----|
 |Operating System|These types of vulnerabilities are found within Operating Systems (OSs) and often result in privilege escalation.|
 |(Mis)Configuration-based|These types of vulnerability stem from an incorrectly configured application or service. For example, a website exposing customer details.|
@@ -86,7 +86,7 @@ First introduced in 2005, the Common Vulnerability Scoring System (or CVSS) is a
 
 In fact, there are so many variables that you have to use a [calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator) to figure out the score using this framework. A vulnerability is given a classification (out of five) depending on the score that is has been assigned. I have put the Qualitative Severity Rating Scale and their score ranges into the table below.
 
-| Rating | Score |
+|Rating|Score|
 |----|----|
 |**None**|0|
 |**Low**|0.1 - 3.9|
@@ -96,7 +96,7 @@ In fact, there are so many variables that you have to use a [calculator](https:/
 
 However, CVSS is not a magic bullet. Let's analyse some of the advantages and disadvantages of CVSS in the table below:
 
-| Advantages of CVSS | Disadvantages of CVSS |
+|Advantages of CVSS|Disadvantages of CVSS|
 |----|----|
 |CVSS has been around for a long time.|CVSS was never designed to help prioritise vulnerabilities, instead, just assign a value of severity.|
 |CVSS is popular in organisations.|CVSS heavily assesses vulnerabilities on an exploit being available. However, only 20% of all vulnerabilities have an exploit available ([Tenable., 2020](https://www.tenable.com/research)).|
@@ -110,7 +110,7 @@ Unlike CVSS, VPR scoring takes into account the relevancy of a vulnerability. Fo
 
 VPR uses a similar scoring range as CVSS, which I have also put into the table below. However, two notable differences are that VPR does not have a "None/Informational" category, and because VPR uses a different scoring method, the same vulnerability will have a different score using VPR than when using CVSS.
 
-| Rating | Score |
+|Rating|Score|
 |----|----|
 |**Low**|0.0 - 3.9|
 |**Medium**|4.0 - 6.9|
@@ -119,7 +119,7 @@ VPR uses a similar scoring range as CVSS, which I have also put into the table b
 
 Let's recap some of the advantages and disadvantages of using the VPR framework in the table below.
 
-| Advantages of VPR | Disadvantages of VPR |
+|Advantages of VPR|Disadvantages of VPR|
 |----|----|
 |VPR is a modern framework that is real-world.|VPR is not open-source like some other vulnerability management frameworks.|
 |VPR considers over 150 factors when calculating risk.|VPR can only be adopted apart of a commercial platform.|
@@ -159,7 +159,7 @@ Thankfully for us, there are resources on the internet that keep track of vulner
 
 Before we dive into these two resources, let's ensure that our understanding of some fundamental key terms is on the same page:
 
-| Term | Definition |
+|Term|Definition|
 |----|----|
 |Vulnerability|A vulnerability is defined as a weakness or flaw in the design, implementation or behaviours of a system or application.|
 |Exploit|An exploit is something such as an action or behaviour that utilises a vulnerability on a system or application.|

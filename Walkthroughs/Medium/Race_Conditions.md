@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-Tags: <None>
+Tags: -
 Subscription type: Premium
 Description:
 Learn about race conditions and how they affect web application security.

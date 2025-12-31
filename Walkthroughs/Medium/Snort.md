@@ -9,10 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: N/A
+Tags: -
 Subscription type: Free
-Description: Learn how to use Snort to detect real-time threats, analyse recorded traffic files 
-and identify anomalies.
+Description: 
+Learn how to use Snort to detect real-time threats, analyse recorded traffic files and 
+identify anomalies.
 ```
 
 Room link: [https://tryhackme.com/room/snort](https://tryhackme.com/room/snort)

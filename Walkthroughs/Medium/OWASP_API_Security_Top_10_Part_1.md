@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: Linux
+Tags: Linux
 Subscription type: Premium
 Description:
 Learn the basic concepts for secure API development (Part 1).

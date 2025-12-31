@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: N/A
+Tags: -
 Subscription type: Free
 Description: Provide an understanding of the OpenCTI Project
 ```
@@ -52,9 +52,9 @@ While our IT team is recovering the critical servers, can you look at our old HR
 
 Before moving forward, start the lab by clicking the **Start Machine** button. It will take around 2 minutes to load. The VM will be accessible on the right side of the split screen. Alternatively, you can connect directly to the machine using the following information via RDP:
 
-- Username: Administrator
-- Password: Admin123
-- IP-address: 10.10.234.247
+- Username: `Administrator`
+- Password: `Admin123`
+- IP-address: `10.10.234.247`
 
 After launching the VM, open Event Viewer.
 
@@ -299,7 +299,7 @@ Answer: Web Shell
 
 PowerShell logs are often underrated, although they can provide vital insights into threat actors' activity. EDR solutions tend to block common malware, and simple CMD is not powerful enough for exploitation needs. PowerShell is becoming increasingly popular, mainly because of the popularity of so-called fileless attacks. There are three core PowerShell logging sources:
 
-Console History File
+**Console History File**
 
 PowerShell analogue of `~/.bash_history` in Linux. Enabled by default, it logs every command interactively entered in the PowerShell window but does not log window-less commands that occur during web shell usage or RCE exploitation. The image below shows how interactively-entered PowerShell commands are logged to the history text file:
 
@@ -307,7 +307,7 @@ PowerShell analogue of `~/.bash_history` in Linux. Enabled by default, it logs e
 
 ![Logless Hunt PowerShell Console History](Images/Logless_Hunt_PowerShell_Console_History.png)
 
-Windows PowerShell Event Channel
+**Windows PowerShell Event Channel**
 
 Enabled by default, it generates event ID 600 every time the PowerShell provider is launched and puts launch arguments in the "HostApplication" field. In contrast to the ConsoleHost_history, it logs only the creation of the PowerShell console but won't show any other commands launched within the same PowerShell session. Below, you can see how a launch of PowerShell engine and its launch arguments will be logged with the event ID 600:
 
@@ -315,7 +315,7 @@ Event Viewer -> Applications and Services Logs -> Windows PowerShell
 
 ![Logless Hunt Windows PowerShell Example](Images/Logless_Hunt_Windows_PowerShell_Example.png)
 
-PowerShell ScriptBlock Logging
+**PowerShell ScriptBlock Logging**
 
 While disabled by default, you may follow [Microsoft's Documentation](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logging_windows#enabling-script-block-logging), enable script block logging, and see valuable event ID **4104** that logs every PowerShell command in full and decoded form. This event ID combines the power of basic PowerShell logging and ConsoleHost_history, as it detects commands entered through script files, interactively, or obfuscated via Base64. Below, you can see how **4104** logs expose the content of PowerShell scripts:
 
@@ -660,7 +660,7 @@ Answer: 2025-01-23 17:05:37
 
 #### What is the task's "Trigger" value as shown in Task Scheduler GUI?
 
-```text
+```bat
 PS C:\Apache24\logs> schtasks.exe /query /tn 'Apache Proxy' /v /fo list
 
 Folder: \
@@ -790,7 +790,7 @@ Hint: Time to get back to PowerShell logs!
 
 From the file `C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt`
 
-```text
+```bat
 cd ../../
 cd .\Apache24\bin\mimi\
 ls
@@ -826,3 +826,5 @@ For additional information, please see the references below.
 ## References
 
 - [Event Viewer - Wikipedia](https://en.wikipedia.org/wiki/Event_Viewer)
+- [Mimikatz - GitHub](https://github.com/gentilkiwi/mimikatz)
+- [Mimikatz - Wiki](https://github.com/gentilkiwi/mimikatz/wiki)

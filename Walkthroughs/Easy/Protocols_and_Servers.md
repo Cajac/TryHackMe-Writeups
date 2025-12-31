@@ -549,7 +549,7 @@ This room covered various protocols, their usage, and how they work under the ho
 
 It is good to remember the default port number for common protocols. Below is a summary of the protocols we covered, sorted in alphabetical order, along with their default port numbers.
 
-| Protocol | TCP Port | Application(s) | Data Security |
+|Protocol|TCP Port|Application(s)|Data Security|
 |----|----|----|----|
 |FTP|21|File Transfer|Cleartext|
 |HTTP|80|Worldwide Web|Cleartext|

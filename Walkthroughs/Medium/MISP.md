@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: N/A
+Tags: -
 Subscription type: Premium
 Description: Walkthrough on the use of MISP as a Threat Sharing Platform
 ```

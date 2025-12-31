@@ -87,7 +87,7 @@ The first query type we'll learn is the SELECT query used to retrieve data from 
 
 `select * from users;`
 
-| id | username | password |
+|id|username|password|
 |---|---|---|
 |1|jon|pass123|
 |2|admin|p4ssword|
@@ -99,7 +99,7 @@ The next query is similar to the above, but this time, instead of using the * to
 
 `select username,password from users;`
 
-| username | password |
+|username|password|
 |----|----|
 |jon|pass123|
 |admin|p4ssword|
@@ -109,7 +109,7 @@ The following query, like the first, returns all the columns by using the * sele
 
 `select * from users LIMIT 1;`
 
-| id | username | password |
+|id|username|password|
 |----|----|----|
 |1|jon|pass123|
 
@@ -117,7 +117,7 @@ Lastly, we're going to utilise the where clause; this is how we can finely pick 
 
 `select * from users where username='admin';`
 
-| id | username | password |
+|id|username|password|
 |----|----|----|
 |2|admin|p4ssword|
 
@@ -125,7 +125,7 @@ This will only return the rows where the username is equal to admin.
 
 `select * from users where username != 'admin';`
 
-| id | username | password |
+|id|username|password|
 |----|----|----|
 |1|jon|pass123|
 |3|martin|secret123|
@@ -134,7 +134,7 @@ This will only return the rows where the username is **NOT** equal to admin.
 
 `select * from users where username='admin' or username='jon';`
 
-| id | username | password |
+|id|username|password|
 |----|----|----|
 |1|jon|pass123|
 |2|admin|p4ssword|
@@ -143,7 +143,7 @@ This will only return the rows where the username is either equal to **admin** o
 
 `select * from users where username='admin' and password='p4ssword';`
 
-| id | username | password |
+|id|username|password|
 |----|----|----|
 |2|admin|p4ssword|
 
@@ -153,7 +153,7 @@ Using the like clause allows you to specify data that isn't an exact match but i
 
 `select * from users where username like 'a%';`
 
-| id | username | password |
+|id|username|password|
 |----|----|----|
 |2|admin|p4ssword|
 
@@ -161,7 +161,7 @@ This returns any rows with a username beginning with the letter a.
 
 `select * from users where username like '%n';`
 
-| id | username | password |
+|id|username|password|
 |---|---|---|
 |1|jon|pass123|
 |2|admin|p4ssword|
@@ -171,7 +171,7 @@ This returns any rows with a username ending with the letter n.
 
 `select * from users where username like '%mi%';`
 
-| id | username | password |
+|id|username|password|
 |----|----|----|
 |2|admin|p4ssword|
 
@@ -181,7 +181,7 @@ This returns any rows with a username containing the characters **mi** within th
 
 The UNION statement combines the results of two or more SELECT statements to retrieve data from either single or multiple tables; the rules to this query are that the UNION statement must retrieve the same number of columns in each SELECT statement, the columns have to be of a similar data type, and the column order has to be the same. This might sound not very clear, so let's use the following analogy. Say a company wants to create a list of addresses for all customers and suppliers to post a new catalogue. We have one table called customers with the following contents:
 
-| id | name | address | city | postcode |
+|id|name|address|city|postcode|
 |----|----|----|----|----|
 |1|Mr John Smith|123 Fake Street|Manchester|M2 3FJ|
 |2|Mrs Jenny Palmer|99 Green Road|Birmingham|B2 4KL|
@@ -189,7 +189,7 @@ The UNION statement combines the results of two or more SELECT statements to ret
 
 And another called suppliers with the following contents:
 
-| id | company | address | city | postcode |
+|id|company|address|city|postcode|
 |----|----|----|----|----|
 |1|Widgets Ltd|Unit 1a, Newby Estate|Bristol|BS19 4RT|
 |2|The Tool Company|75 Industrial Road|Norwich|N22 3DR|
@@ -199,7 +199,7 @@ Using the following SQL Statement, we can gather the results from the two tables
 
 `SELECT name,address,city,postcode from customers UNION SELECT company,address,city,postcode from suppliers;`
 
-| name | address | city | postcode |
+|name|address|city|postcode|
 |----|----|----|----|
 |Mr John Smith|123 Fake Street|Manchester|M2 3FJ|
 |Mrs Jenny Palmer|99 Green Road|Birmingham|B2 4KL|
@@ -214,7 +214,7 @@ The **INSERT** statement tells the database we wish to insert a new row of data 
 
 `insert into users (username,password) values ('bob','password123');`
 
-| id | username | password |
+|id|username|password|
 |----|----|----|
 |1|jon|pass123|
 |2|admin|p4ssword|
@@ -227,7 +227,7 @@ The **UPDATE** statement tells the database we wish to update one or more rows o
 
 `update users SET username='root',password='pass123' where username='admin';`
 
-| id | username | password |
+|id|username|password|
 |----|----|----|
 |1|jon|pass123|
 |2|root|pass123|
@@ -240,7 +240,7 @@ The **DELETE** statement tells the database we wish to delete one or more rows o
 
 `delete from users where username='martin';`
 
-| id | username | password |
+|id|username|password|
 |----|----|----|
 |1|jon|pass123|
 |2|root|pass123|
@@ -250,7 +250,7 @@ The **DELETE** statement tells the database we wish to delete one or more rows o
 
 Because no WHERE clause was being used in the query, all the data was deleted from the table.
 
-| id | username | password |
+|id|username|password|
 |----|----|----|
 
 ---------------------------------------------------------------------------------------

@@ -166,7 +166,7 @@ Because of the close relation between SSL and TLS, one might be used instead of 
 
 An existing cleartext protocol can be upgraded to use encryption via SSL/TLS. We can use TLS to upgrade HTTP, FTP, SMTP, POP3, and IMAP, to name a few. The following table lists the protocols we have covered and their default ports before and after the encryption upgrade via SSL/TLS. The list is not exhaustive; however, the purpose is to help us better understand the process.
 
-| Protocol | Default Port | Secured Protocol | Default Port with TLS |
+|Protocol|Default Port|Secured Protocol|Default Port with TLS|
 |----|----|----|----|
 |HTTP|80|HTTPS|443|
 |FTP|21|FTPS|990|
@@ -475,7 +475,7 @@ Many other attacks can be conducted against specific servers and protocols. We w
 
 It is good to remember the default port number for common protocols. For convenience, the services we covered are listed in the following table sorted by alphabetical order.
 
-| Protocol | TCP Port | Application(s) | Data Security |
+|Protocol|TCP Port|Application(s)|Data Security|
 |----|----|----|----|
 |FTP|21|File Transfer|Cleartext|
 |FTPS|990|File Transfer|Encrypted|
@@ -493,7 +493,7 @@ It is good to remember the default port number for common protocols. For conveni
 
 Hydra remains a very efficient tool that you can launch from the terminal to try the different passwords. We summarize its main options in the following table.
 
-| Option | Explanation |
+|Option|Explanation|
 |----|----|
 |`-l username`|Provide the login name|
 |`-P WordList.txt`|Specify the password list to use|
@@ -509,6 +509,8 @@ For additional information, please see the references below.
 ## References
 
 - [DNS over TLS](https://en.wikipedia.org/wiki/DNS_over_TLS)
+- [Hydra - GitHub](https://github.com/vanhauser-thc/thc-hydra)
+- [Hydra - Kali Tools](https://www.kali.org/tools/hydra/)
 - [Man-in-the-middle attack - Wikipedia](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)
 - [RFC 6101 - The Secure Sockets Layer (SSL) Protocol Version 3.0](https://datatracker.ietf.org/doc/html/rfc6101)
 - [Sniffing attack - Wikipedia](https://en.wikipedia.org/wiki/Sniffing_attack)

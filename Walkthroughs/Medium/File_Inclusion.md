@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: Linux
+Tags: Linux
 Subscription type: Premium
 Description:
 This room introduces file inclusion vulnerabilities, including Local File Inclusion (LFI), 
@@ -84,7 +84,7 @@ The same concept applies here as with Linux operating systems, where we climb up
 
 Sometimes, developers will add filters to limit access to only certain files or directories. Below are some common OS files you could use when testing.
 
-| Location | Description |
+|Location|Description|
 |----|----|
 |`/etc/issue`|contains a message or system identification to be printed before the login prompt.|
 |`/etc/profile`|controls system-wide default variables, such as Export variables, File creation mask (umask), Terminal types, Mail messages to indicate when new mail has arrived|

@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-OS: N/A
+Tags: -
 Subscription type: Premium
 Description: This room will discuss the various resources MITRE has made available for 
 the cybersecurity community.
