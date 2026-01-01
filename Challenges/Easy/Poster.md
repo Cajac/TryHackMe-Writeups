@@ -721,7 +721,7 @@ User alison may run the following commands on ubuntu:
 alison@ubuntu:~$ 
 ```
 
-Ah, we can run **every*** command as root!
+Ah, we can run **every** command as root!
 
 ### Get the root flag
 
