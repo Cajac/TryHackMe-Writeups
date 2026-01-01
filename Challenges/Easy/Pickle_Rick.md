@@ -9,9 +9,10 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: Linux
 Subscription type: Free
-Description: A Rick and Morty CTF. Help turn Rick back into a human!
+Description:
+A Rick and Morty CTF. Help turn Rick back into a human!
 ```
 
 Room link: [https://tryhackme.com/room/picklerick](https://tryhackme.com/room/picklerick)
@@ -179,7 +180,7 @@ listening on [any] 12345 ...
 
 Next, we try to execute some commands and see if we can get a reverse shell running
 
-| Command | Output | Comment |
+|Command|Output|Comment|
 |----|----|----|
 |which nc|/bin/nc|So netcat is installed|
 |which bash|/bin/bash|And so is bash|

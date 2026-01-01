@@ -9,7 +9,7 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: Linux
 Subscription type: Free
 Description: boot2root machine for FIT and bsides guatemala CTF
 ```

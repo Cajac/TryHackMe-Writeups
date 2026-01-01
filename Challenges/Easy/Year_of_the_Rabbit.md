@@ -9,7 +9,7 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: -
 Subscription type: Free
 Description: Time to enter the warren...
 ```

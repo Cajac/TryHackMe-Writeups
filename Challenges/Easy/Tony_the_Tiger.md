@@ -9,9 +9,10 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: Linux, Web
 Subscription type: Free
-Description: Learn how to use a Java Serialisation attack in this boot-to-root
+Description: 
+Learn how to use a Java Serialisation attack in this boot-to-root
 ```
 
 Room link: [https://tryhackme.com/room/tonythetiger](https://tryhackme.com/room/tonythetiger)
