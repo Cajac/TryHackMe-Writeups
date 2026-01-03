@@ -8,6 +8,7 @@
 ## Defensive Security
 
 - [Atomic Red Team](Atomic_Red_Team.md)
+- [Basic Malware RE](Basic_Malware_RE.md)
 - [Expediting Registry Analysis](Expediting_Registry_Analysis.md)
 - [Logless Hunt](Logless_Hunt.md)
 - [MITRE](MITRE.md)
