@@ -9,9 +9,10 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
 Subscription type: Free
-Description: This room is an introduction to CyberChef, the Swiss Army knife for cyber security professionals.
+Description:
+This room is an introduction to CyberChef, the Swiss Army knife for cyber security professionals.
 ```
 
 Room link: [https://tryhackme.com/room/cyberchefbasics](https://tryhackme.com/room/cyberchefbasics)
@@ -69,7 +70,7 @@ This is a practical and comprehensive repository of all the diverse operations t
 
 Below are some operations you might use throughout your cyber security journey.
 
-| Operations | Description | Examples |
+|Operations|Description|Examples|
 |----|----|----|
 |From Morse Code|Translates Morse Code into (upper case) alphanumeric characters.|`- .... .-. . .- - ...` becomes `THREATS` when used with default parameters|
 |URL Encode|Encodes problematic characters into percent-encoding, a format supported by URIs/URLs.|`https://tryhackme.com/r/room/cyberchefbasics` becomes `https%3A%2F%2Ftryhackme%2Ecom%2Fr%2Froom%2Fcyberchefbasics` when used with the parameter “Encode all special chars”|
@@ -127,13 +128,15 @@ Features include:
 - **Replace input with output**: This feature allows users to quickly overwrite the input data based on the operations' results.
 - **Maximise output pane**: This feature maximises the output pane to maximum size.
 
+---------------------------------------------------------------------------------------
+
 #### In which area can you find "From Base64"?
 
-Answer: Operations
+Answer: `Operations`
 
 #### Which area is considered the heart of the tool?
 
-Answer: Recipe
+Answer: `Recipe`
 
 ### Task 4 - Before Anything Else
 
@@ -153,9 +156,15 @@ The third step is to select the **Operations** you want to use. This can be tric
 
 Lastly, check the output to see if it is the intended result. This begs the question, "**Have we achieved our objective?**". In our example, it would mean, were we able to decode the gibberish string we found? If yes, then that's it! If not, we may need to repeat the steps that we have taken.
 
+To provide visual clarity to our example, see the figure below:
+
+![CyberChef Process Example](Images/CyberChef_Process_Example.png)
+
+---------------------------------------------------------------------------------------
+
 #### At which step would you determine, "What do I want to accomplish?
 
-Answer: 1
+Answer: `1`
 
 ### Task 5 - Practice, Practice, Practice
 
@@ -165,7 +174,7 @@ We want you to be as prepared as possible. Therefore, we will explore some of th
 
 The specific operations mentioned in the table below fall under the `Extractors` category.
 
-| Specific | Description |
+|Specific|Description|
 |----|----|
 |Extract IP addresses|Extracts all IPv4 and IPv6 addresses.|
 |Extract URLs|Extracts Uniform Resource Locators (URLs) from the input. The protocol (HTTP, FTP, etc.) is required, otherwise there will be far too many false positives.|
@@ -181,7 +190,7 @@ The `Extract email addresses` extracts any strings and characters with this form
 
 The specific operations in the table below fall under the Date / Time category.
 
-| Specific | Description |
+|Specific|Description|
 |----|----|
 |From UNIX Timestamp|Converts a UNIX timestamp to a datetime string.|
 |To UNIX Timestamp|Parses a datetime string in UTC and returns the corresponding UNIX timestamp.|
@@ -192,7 +201,7 @@ A UNIX timestamp is a 32-bit value representing the number of seconds since Janu
 
 The specific operations in the table below fall under the Data format category.
 
-| Operations | Description | Examples |
+|Operations|Description|Examples|
 |----|----|----|
 |From Base64|This operation decodes data from an ASCII Base64 string back into its raw format.|`V2VsY29tZSB0byB0cnloYWNrbWUh` becomes `Welcome to tryhackme!`|
 |URL Decode|Converts URI/URL percent-encoded characters back to their raw values.|`https%3A%2F%2Fgchq%2Egithub%2Eio%2FCyberChef%2F` becomes `https://gchq.github.io/CyberChef/`|
@@ -208,7 +217,9 @@ Click on the **Download Task Files** button at the top of this task to download 
 
 Once downloaded, you can open the file, copy and paste the content into the input field, or use the `Open file as input` feature to upload the file.
 
-Note: Use the specific operations under the Extractors category for the first two questions. It's best to try to answer the questions first without using the hints.
+**Note**: Use the specific operations under the Extractors category for the first two questions. It's best to try to answer the questions first without using the hints.
+
+---------------------------------------------------------------------------------------
 
 #### What is the hidden email address?
 
@@ -220,25 +231,25 @@ Answer: `hidden@hotmail.com`
 
 Hint: Use the operation "Extract IP addresses".
 
-Answer: 102.20.11.232
+Answer: `102.20.11.232`
 
 #### Which domain address starts with the letter "T"?
 
 Hint: Use the operation "Extract domains".
 
-Answer: TryHackMe.com
+Answer: `TryHackMe.com`
 
 #### What is the binary value of the decimal number 78?
 
 Hint: Combine the operations "From Decimal" and "To Binary".
 
-Answer: 01001110
+Answer: `01001110`
 
-#### What is the URL encoded value of https://tryhackme.com/r/careers?
+#### What is the URL encoded value of `https://tryhackme.com/r/careers`?
 
 Hint: Use the "URL Encode" operation with the "Encode all special chars" checkbox enabled.
 
-Answer: https%3A%2F%2Ftryhackme%2Ecom%2Fr%2Fcareers
+Answer: `https%3A%2F%2Ftryhackme%2Ecom%2Fr%2Fcareers`
 
 ### Task 6 -  Your First Official Cook
 
@@ -248,19 +259,21 @@ Now, this is the time that you truly shine! You are going for your first cook ev
 
 Ready? Let's get our hands dirty, then!
 
-Note: It's best to try to answer the questions first without using the hints.
+**Note**: It's best to try to answer the questions first without using the hints.
+
+---------------------------------------------------------------------------------------
 
 #### Using the file you downloaded in Task 5, which IP starts and ends with "10"?
 
 Hint: Use the operation "Extract IP addresses" and check the "IPv4" checkbox.
 
-Answer: 10.10.2.10
+Answer: `10.10.2.10`
 
 #### What is the base64 encoded value of the string "Nice Room!"?
 
 Hint: Use the operation "To Base64".
 
-Answer: TmljZSBSb29tIQ==
+Answer: `TmljZSBSb29tIQ==`
 
 #### What is the URL decoded value for https%3A%2F%2Ftryhackme%2Ecom%2Fr%2Froom%2Fcyberchefbasics?
 
@@ -272,13 +285,13 @@ Answer: `https://tryhackme.com/r/room/cyberchefbasics`
 
 Hint: Use the operation "From UNIX Timestamp" with default parameters.
 
-Answer: Sun 1 September 2024 00:40:58 UTC
+Answer: `Sun 1 September 2024 00:40:58 UTC`
 
 #### What is the Base85 decoded string of the value <+oue+DGm>Ap%u7?
 
 Hint: Use the operation "From Base85" with default parameters.
 
-Answer: This is fun!
+Answer: `This is fun!`
 
 ### Task 7 -  Conclusion
 
