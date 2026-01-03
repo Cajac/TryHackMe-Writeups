@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
 Subscription type: Premium
 Description: Learn to use CAPA to identify malicious capabilities.
 ```
@@ -75,7 +75,7 @@ loading : 100%|████████████████████| 485
 
 In addition to the `-h` command, which gives us more information about the parameters available with the tool, we will use two (2) most used parameters, which is the `-v` and `-vv`, which will give us a more detailed result. However, this will increase the processing time. We will have a discussion about the results of these options in the coming tasks.
 
-| Option | Description | Sample Syntax |
+|Option|Description|Sample Syntax|
 |----|----|----|
 |`-h` or `--help`|Show this help message and exit.|`capa -h`|
 |`-v` or `--verbose`|Enable verbose result document.|`capa.exe .\cryptbot.bin -v`|
@@ -176,21 +176,23 @@ So, that's it! We are done!
 
 But wait, what are those results? How can we interpret this?
 
+---------------------------------------------------------------------------------------
+
 #### What command-line option would you use if you need to check what other parameters you can use with the tool? Use the shortest format
 
-Answer: -h
+Answer: `-h`
 
 #### What command-line options are used to find detailed information on the malware's capabilities? Use the shortest format
 
-Answer: -v
+Answer: `-v`
 
 #### What command-line options do you use to find very verbose information about the malware's capabilities? Use the shortest format
 
-Answer: -vv
+Answer: `-vv`
 
 #### What PowerShell command will you use to read the content of a file?
 
-Answer: Get-Content
+Answer: `Get-Content`
 
 ### Task 3 - Dissecting CAPA Results Part 1: General Information, MITRE and MAEC
 
@@ -223,7 +225,7 @@ The MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) framewo
 
 CAPA uses this format for the output. Note that some results may or may not contain the Technique and Sub-technique Identifier.
 
-| Format | Sample | Explanation |
+|Format|Sample|Explanation|
 |----|----|----|
 |ATT&CK Tactic::ATT&CK Technique::Technique Identifier|Defense Evasion::Obfuscated Files or Information::T1027|DEFENSE EVASION = ATT&CK Tactic, Obfuscated Files or Information = ATT&CK Technique, T1027 = Technique Identifier|
 |ATT&CK Tactic::ATT&CK Technique::ATT&CK Sub-Technique::Technique Identifier[.]Sub-technique|Identifier    Defense Evasion::Obfuscated Files or Information::Indicator Removal from Tools T1027.005|DEFENSE EVASION = ATT&CK Tactic, Obfuscated Files or Information = ATT&CK Technique, Indicator Removal from Tools = ATT&CK Sub-Technique, T1027 = Technique Identifier, 005 = Sub-Technique Identifier|
@@ -260,7 +262,7 @@ In CAPA's final output, they referenced the MITRE Framework. This helps analysts
 
 Let’s check the table below to see the most commonly used MAEC values by CAPA: **Downloader** and **Launcher**.
 
-| MAEC Value | Description |
+|MAEC Value|Description|
 |----|----|
 |Launcher|Exhibits behaviours that trigger specific actions similar to malware behaviour.|
 |Downloader|Exhibits behaviours wherein it downloads and executes other files, usually seen on more complex malware.|
@@ -281,6 +283,8 @@ Additionally, when CAPA tags a file with a “**Downloader**” MAEC value, it i
 - executing secondary stages
 - retrieving configuration files
 
+---------------------------------------------------------------------------------------
+
 #### What is the sha256 of cryptbot.bin?
 
 ```text
@@ -296,7 +300,7 @@ Additionally, when CAPA tags a file with a “**Downloader**” MAEC value, it i
 └─────────────┴────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-Answer: ae7bc6b6f6ecb206a7b957e4bb86e0d11845c5b2d9f7a00a482bef63b567ce4c
+Answer: `ae7bc6b6f6ecb206a7b957e4bb86e0d11845c5b2d9f7a00a482bef63b567ce4c`
 
 #### What is the Technique Identifier of Obfuscated Files or Information?
 
@@ -320,19 +324,19 @@ Answer: ae7bc6b6f6ecb206a7b957e4bb86e0d11845c5b2d9f7a00a482bef63b567ce4c
  ------------------------+------------------------------------------------------------------------------------
 ```
 
-Answer: T1027
+Answer: `T1027`
 
 #### What is the Sub-Technique Identifier of Obfuscated Files or Information::Indicator Removal from Tools?
 
-Answer: T1027.005
+Answer: `T1027.005`
 
 #### When CAPA tags a file with this MAEC value, it indicates that it demonstrates behaviour similar to, but not limited to, Activating persistence mechanisms?
 
-Answer: launcher
+Answer: `launcher`
 
 #### When CAPA tags a file with this MAEC value, it indicates that the file demonstrates behaviour similar to, but not limited to, Fetching additional payloads or resources from the internet?
 
-Answer: Downloader
+Answer: `Downloader`
 
 ### Task 4 - Dissecting CAPA Results Part 2: Malware Behavior Catalogue
 
@@ -388,7 +392,7 @@ MBC is designed to support various aspects of malware analysis, such as labellin
 
 The content of MBC below can be represented in two formats.
 
-| Format | Sample | Explanation |
+|Format|Sample|Explanation|
 |----|----|----|
 |OBJECTIVE::Behavior::Method[Identifier]|ANTI-STATIC ANALYSIS::Executable Code Obfuscation::Argument Obfuscation [B0032.020]|Anti-static Analysis = OBJECTIVE, Executable Code Obfuscation = BEHAVIOR, Argument Obfuscation = METHOD, BOO32.020 = IDENTIFIER|
 |OBJECTIVE::Behavior::[Identifier]|COMMUNICATION::HTTP Communication:: [C0002]|COMMUNICATION = OBJECTIVE, HTTP Communication = BEHAVIOR, C0002 = IDENTIFIER|
@@ -401,7 +405,7 @@ We must also discuss the Objective, Behavior, and Methods to better understand t
 
 The Objective are based on ATT&CK tactics in the context of malware behaviour, though not all are included. Furthermore, MBC has Anti-Behavioral and Anti-Static Analysis. These objectives are tailored for malware analysis with the use case of characterizing malware. See the table below for an explanation of each.
 
-| Objective | Explanation |
+|Objective|Explanation|
 |----|----|
 |Anti-Behavioral Analysis|Malware attempts to avoid detection by hindering behavioural analysis using tools like sandboxes or debuggers.|
 |Anti-Static Analysis|Malware attempts to obstruct or add complexity to static analysis, making it more challenging for security professionals to identify and understand its malicious behaviours and intentions.|
@@ -421,7 +425,7 @@ The Objective are based on ATT&CK tactics in the context of malware behaviour, t
 
 Micro-objectives are associated with micro-behaviors, which refer to an action or actions exhibited by potentially malicious software that isn't necessarily malicious and may serve various objectives. Example binaries are such as those in messaging apps. However, it's important to **note that these behaviours are typically abused**. That's why CAPA might have flagged this behaviour.
 
-| Micro-Objective | Description |
+|Micro-Objective|Description|
 |----|----|
 |PROCESS|exhibiting behaviours related to processes such as but not limited to Creating Process, Setting Thread Context, Terminating Process, and Checking Mutex.|
 |MEMORY|exhibiting behaviours such as, but not limited to, Allocating Memory, Changing Memory Protection, and Freeing Memory.|
@@ -434,7 +438,7 @@ The column MBC Behaviors contains behaviours and Micro-behaviors with or without
 
 Below is a compiled version of Behaviors/Micro-behaviors and its Identifier.
 
-| Objective | Behavior | Identifiers | Explanation |
+|Objective|Behavior|Identifiers|Explanation|
 |----|----|----|----|
 |ANTI-BEHAVIORAL ANALYSIS|Virtual Machine Detection|B0009|The malware checks to see if it is running in a virtual environment. During its system reconnaissance, the malware examines various user and system artifacts.|
 |ANTI-STATIC ANALYSIS|Executable Code Obfuscation|B0032|Executable code has been intentionally obscured to prevent static code analysis. This is a specific behavior related to the executable code of a malware sample, including its data and text sections.|
@@ -446,7 +450,7 @@ Below is a compiled version of Behaviors/Micro-behaviors and its Identifier.
 
 The term "low-level behaviors" in malware analysis refers to actions exhibited by malware that aren't necessarily malicious and may serve various objectives. These behaviors are often documented as "micro-behaviors" in the Malware Behavior Characteristics (MBC) analysis. Examples of such low-level behaviors include the creation of TCP sockets and evaluating specific conditions within strings. It's important to **note that just because a behavior is categorized as low-level does not mean it is harmless**, as it may still be part of a larger malicious scheme.
 
-| Micro-Objective | Micro-Behaviors | Identifiers | Explanation |
+|Micro-Objective|Micro-Behaviors|Identifiers|Explanation|
 |----|----|----|----|
 |MEMORY|Allocate Memory|C0007|Malware frequently utilizes memory allocation as part of its strategy to unpack itself and execute its malicious activities.|
 |PROCESS|Create Process|C0017|Malware creates a process via WMI or shellcode. It can also create a suspended process.|
@@ -464,7 +468,7 @@ Note that in the final output of CAPA, Behavior and Micro-Behavior are shown onl
 
 Lastly, let’s check the **METHODS**. Below are some methods included in the results from the previous sample. Methods are tied to behaviors; therefore, to fully see all methods, please refer to each specific behavior/micro behavior of interest.
 
-| Behavior | Methods or sub-technique | Identifier | Explanation |
+|Behavior|Methods or sub-technique|Identifier|Explanation|
 |----|----|----|----|
 |Executable Code Obfuscation|Argument Obfuscation|B0032.020|Simple number or string arguments to API calls are calculated at runtime, making analysis more difficult.|
 |Executable Code Obfuscation|Stack Strings|B0032.017|Build and decrypt strings on the stack at each use, then discard to avoid obvious references.|
@@ -485,7 +489,7 @@ Now that we have a good overview and understanding of the MBC's contents, we sho
 
 Here's the explanation for the above result. See the table below.
 
-| Label | Value | Explanation |
+|Label|Value|Explanation|
 |----|----|----|
 |MBC Objective|DATA|exhibiting behaviors such as, but not limited to, checking strings, compressing, decoding, and encoding data.|
 |MBC Behavior|Encode Data|Malware has the capability to encode data using base64 and XOR.|
@@ -494,35 +498,37 @@ Here's the explanation for the above result. See the table below.
 
 Knowing this information, you may simply say this file can use the base64 encoding scheme!
 
+---------------------------------------------------------------------------------------
+
 #### What serves as a catalogue of malware objectives and behaviours?
 
 Hint: MBC
 
-Answer: Malware Behavior Catalogue
+Answer: `Malware Behavior Catalogue`
 
 #### Which field is based on ATT&CK tactics in the context of malware behaviour?
 
-Answer: Objective
+Answer: `Objective`
 
 #### What is the Identifier of "Create Process" micro-behavior?
 
-Answer: C0017
+Answer: `C0017`
 
 #### What is the behaviour with an Identifier of B0009?
 
-Answer: Virtual Machine Detection
+Answer: `Virtual Machine Detection`
 
 #### Malware can be used to obfuscate data using base64 and XOR. What is the related micro-behavior for this?
 
 Hint: Look for Identifer C0026
 
-Answer: Encode Data
+Answer: `Encode Data`
 
 #### Which micro-behavior refers to "Malware is capable of initiating HTTP communications"?
 
 Hint: Check for an Identifier with C0002
 
-Answer: HTTP Communication
+Answer: `HTTP Communication`
 
 ### Task 5 - Dissecting CAPA Results Part 3: Namespaces
 
@@ -563,7 +569,7 @@ Below, you will find the `capa.exe` output. Note that this can also be viewed in
 
 The content of this block is represented in the below format.
 
-| Format | Sample | Explanation |
+|Format|Sample|Explanation|
 |----|----|----|
 |Capability(Rule Name)::TLN(Top-Level Namespace)/Namespace|reference anti-VM strings::Anti-Analysis/anti-vm/vm-detection|Reference anti-VM strings = Capability(Rule Name), Anti-Analysis = TLN or Top-Level Namespace, anti-vm/vm-detection = Namespace|
 
@@ -571,7 +577,7 @@ The content of this block is represented in the below format.
 
 CAPA uses namespaces to group items with the same purpose.
 
-| Top-Level Namespace (TLN) | Explanation |
+|Top-Level Namespace (TLN)|Explanation|
 |----|----|
 |anti-analysis|contains a set of rules specifically designed to detect behaviours exhibited by malware to evade analysis. These behaviours include obfuscation, packing, and anti-debugging techniques.|
 |collection|contains a set of data-related rules that malware may enumerate and collect for exfiltration or other purposes. Think of it as the “data-gathering” aspect of malware behaviour.|
@@ -593,10 +599,10 @@ CAPA uses namespaces to group items with the same purpose.
 
 Let’s see how this works by checking the table below.
 
-| Top-Level Namespace (TLN) | Namespaces | Rule YAML File | Explanation |
+|Top-Level Namespace (TLN)|Namespaces|Rule YAML File|Explanation|
 |----|----|----|----|
 |Anti-Analysis|anti-vm/vm-detection|reference-anti-vm-strings-targeting-virtualbox.yml, reference-anti-vm-strings-targeting-virtualpc.yml|“anti-vm/vm-detection” namespace contains rules to detect virtual machine (VM) environments. These rules focus on identifying specific strings or patterns commonly used by malware to detect VMs while running. Using these rules, CAPA can identify if malware searches for VMware-specific registry keys, the presence of VMware tools, or other VM-related elements.|
-| |obfuscation|obfuscated-with-dotfuscator.yml, obfuscated-with-smartassembly.yml|Malware often uses obfuscation techniques to make analysis more difficult. These include methods such as String Encryption, Code Obfuscation, Packing, and Anti-Debugging Tricks. The obfuscation namespace addresses these techniques, which conceal or obscure the true purpose of the code.|
+||obfuscation|obfuscated-with-dotfuscator.yml, obfuscated-with-smartassembly.yml|Malware often uses obfuscation techniques to make analysis more difficult. These include methods such as String Encryption, Code Obfuscation, Packing, and Anti-Debugging Tricks. The obfuscation namespace addresses these techniques, which conceal or obscure the true purpose of the code.|
 
 For this, we only used **Anti-Analysis** as the TLN or Top-Level Namespace. Under this TLN, we have grouped namespaces, such as **anti-vm/vm-detection** and **obfuscation**. Each namespace has a collection of rules inside them that are also grouped together. For **anti-vm/vm-detection**, we have rules, and it's config file, such as:
 
@@ -618,27 +624,29 @@ In addition to what was mentioned in the above table, there are still a few more
 
 Use [this link](https://github.com/MBCProject/capa-rules-1?tab=readme-ov-file#namespace-organization) if you are interested in the other TLN or Top-Level Namespaces, such as collection, compiler, persistence, linking, and impact.
 
+---------------------------------------------------------------------------------------
+
 #### Which top-level Namespace contains a set of rules specifically designed to detect behaviours, including obfuscation, packing, and anti-debugging techniques exhibited by malware to evade analysis?
 
-Answer: anti-analysis
+Answer: `anti-analysis`
 
 #### Which namespace contains rules to detect virtual machine (VM) environments? Note that this is not the TLN or Top-Level Namespace
 
-Answer: anti-vm/vm-detection
+Answer: `anti-vm/vm-detection`
 
 #### Which Top-Level Namespace contains rules related to behaviours associated with maintaining access or persistence within a compromised system?
 
-Answer: persistence
+Answer: `persistence`
 
 #### Which namespace addresses techniques such as String Encryption, Code Obfuscation, Packing, and Anti-Debugging Tricks, which conceal or obscure the true purpose of the code?
 
-Answer: obfuscation
+Answer: `obfuscation`
 
 #### Which Top-Level Namespace Is a staging ground for rules that are not quite polished?
 
-Answer: nursery
+Answer: `nursery`
 
-### Task 6 -  Dissecting CAPA Results Part 4: Capability
+### Task 6 - Dissecting CAPA Results Part 4: Capability
 
 In this task, we will continue the discussion from the previous task.
 
@@ -646,7 +654,7 @@ In this task, we will continue the discussion from the previous task.
 
 Below is a table with the Capability and its related TLN, namespace, and the rules associated with the yaml file. Please have a good look.
 
-| Capability | Top-Level Namespace (TLN) | Namespaces | Rule YAML file | Notes |
+|Capability|Top-Level Namespace (TLN)|Namespaces|Rule YAML file|Notes|
 |----|----|----|----|----|
 |reference anti-VM strings|[Anti-Analysis](https://github.com/MBCProject/capa-rules-1/tree/master/anti-analysis)|anti-vm/vm-detection|reference-anti-vm-strings.yml|To check all rules under this namespace, click [here](https://github.com/MBCProject/capa-rules-1/tree/master/anti-analysis/anti-vm/vm-detection)|
 |reference anti-VM strings targeting VMWare|[Anti-Analysis](https://github.com/MBCProject/capa-rules-1/tree/master/anti-analysis)|anti-vm/vm-detection|reference-anti-vm-strings-targeting-vmware.yml|To check all rules under this namespace, click [here](https://github.com/MBCProject/capa-rules-1/tree/master/anti-analysis/anti-vm/vm-detection)|
@@ -688,7 +696,7 @@ Now that we have a good overview and understanding of the Capability and Namespa
 
 Here's the explanation for the above result. See the table below.
 
-| Label | Value | Explanation |
+|Label|Value|Explanation|
 |----|----|----|
 |Capability|**reference base64 string**|Malware has the capability to encode data using a base64 scheme.|
 |Top-Level Namespace|**data-manipulation**|contains a set of rules that govern the behaviors involved in altering data within executable files. This aspect can be considered the “data transformation” component of malware behaviour, encompassing actions such as String Encryption and Data Encoding.|
@@ -699,29 +707,31 @@ Knowing this information, you may say this file can use the base64 encoding sche
 
 Now we’re done dissecting the results from the sample run from the previous task!
 
+---------------------------------------------------------------------------------------
+
 #### What rule yaml file was matched if the Capability or rule name is check HTTP status code?
 
-Answer: check-http-status-code.yml
+Answer: `check-http-status-code.yml`
 
 #### What is the name of the Capability if the rule YAML file is reference-anti-vm-strings.yml?
 
-Answer: reference anti-VM strings
+Answer: `reference anti-VM strings`
 
 #### Which TLN or Top-Level Namespace includes the Capability or rule name run PowerShell expression?
 
-Answer: load-code
+Answer: `load-code`
 
 #### Check the conditions inside the check-for-windows-sandbox-via-registry.yml rule file from this [link](https://github.com/MBCProject/capa-rules-1/blob/master/anti-analysis/anti-vm/vm-detection/check-for-windows-sandbox-via-registry.yml). What is the value of the API that ends in Ex is it looking for?
 
-Answer: RegOpenKeyEx
+Answer: `RegOpenKeyEx`
 
-### Task 7 -  More Information, more fun
+### Task 7 - More Information, more fun
 
 Aren't you curious about what precisely within the rule was matched? Well, I am!
 
 In this task, we will seek to determine the reason for triggering the rules and the conditions involved. We will use the parameter `-vv` or **very verbose** to achieve this.
 
-| Option | Description | Sample Syntax |
+|Option|Description|Sample Syntax|
 |----|----|----|
 |`-v` or `--verbose`|Enable verbose result document.|`capa.exe .\cryptbot.bin -v`|
 |`-vv` or `--vverbose`|Enable a very verbose result document.|`capa.exe .\cryptbot.bin -vv`|
@@ -858,19 +868,21 @@ We could quickly examine this overwhelming information using CAPA Web Explorer c
 
 Feel free to explore more!
 
+---------------------------------------------------------------------------------------
+
 #### Which parameter allows you to output the result of CAPA into a .json file?
 
-Answer: -j
+Answer: `-j`
 
 #### What tool allows you to interactively explore CAPA results in your web browser?
 
-Answer: Capa Web Explorer
+Answer: `Capa Web Explorer`
 
 #### Which feature of this CAPA Web Explorer allows you to filter options or results?
 
-Answer: Global Search Box
+Answer: `Global Search Box`
 
-### Task 8 -  Conclusion
+### Task 8 - Conclusion
 
 In this room, we discussed how CAPA is leveraged and plays a critical role in cyber security by analyzing potentially malicious or dangerous software and proactively searching for potential threats using static analysis. It achieves this by automating the process of detecting intricate functionalities within executable files and presenting the findings in an easily understandable format for security experts. This simplification of complex reverse engineering concepts aids in swiftly comprehending potentially harmful software, ultimately strengthening incident response and defensive strategies.
 

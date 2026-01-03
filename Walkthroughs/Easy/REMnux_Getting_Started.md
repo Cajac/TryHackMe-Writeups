@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
 Subscription type: Premium
 Description: Learn how you can use the tools inside the REMnux VM.
 ```
@@ -35,7 +35,7 @@ The REMnux VM is a specialised Linux distro. It already includes tools like Vola
 
 Familiarity with the CyberChef tool is recommended but not mandatory before starting the course. You can check the room associated with it.
 
-- CyberChef: The Basics
+- [CyberChef: The Basics](https://tryhackme.com/jr/cyberchefbasics)
 
 ### Task 2 - Machine Access
 
@@ -134,25 +134,27 @@ To summarize, when the document `agenttesla.xlsm` is opened, a Macro will run! T
 
 Kudos to you for figuring it out!
 
+---------------------------------------------------------------------------------------
+
 #### What Python tool analyzes OLE2 files, commonly called Structured Storage or Compound File Binary Format?
 
-Answer: oledump.py
+Answer: `oledump.py`
 
 #### What tool parameter we used in this task allows you to select a particular data stream of the file we are using it with?
 
-Answer: -s
+Answer: `-s`
 
 #### During our analysis, we were able to decode a PowerShell script. What command is commonly used for downloading files from the internet?
 
-Answer: Invoke-WebRequest
+Answer: `Invoke-WebRequest`
 
 #### What file was being downloaded using the PowerShell script?
 
-Answer: Doc-3737122pdf.exe
+Answer: `Doc-3737122pdf.exe`
 
 #### During our analysis of the PowerShell script, we noted that a file would be downloaded. Where will the file being downloaded be stored?
 
-Answer: $TempFile
+Answer: `$TempFile`
 
 #### Using the tool, scan another file named possible_malicious.docx located in the /home/ubuntu/Desktop/tasks/agenttesla/ directory. How many data streams were presented for this file?
 
@@ -176,11 +178,11 @@ ubuntu@ip-10-10-180-204:~/Desktop/tasks/agenttesla$ oledump.py possible_maliciou
  16:      4096 'WordDocument'
 ```
 
-Answer: 16
+Answer: `16`
 
 #### Using the tool, scan another file named possible_malicious.docx located in the /home/ubuntu/Desktop/tasks/agenttesla/ directory. At what data stream number does the tool indicate a macro present?
 
-Answer: 8
+Answer: `8`
 
 ### Task 4 - Fake Network to Aid Analysis
 
@@ -370,6 +372,8 @@ ubuntu@ip-10-10-180-204:~$
 
 These are the logs when the tool was running. We can see the connections made to the URL, the protocol, and the method it's using. We can also see the fake file that was downloaded.
 
+---------------------------------------------------------------------------------------
+
 Download and scan the file named flag.txt from the terminal using the command `sudo wget https://10.10.180.204/flag.txt --no-check-certificate`
 
 #### What is the flag?
@@ -406,7 +410,7 @@ Time difference on startup : none
 ===
 ```
 
-Answer: GET
+Answer: `GET`
 
 ### Task 5 - Memory Investigation: Evidence Preprocessing
 
@@ -741,17 +745,19 @@ The strings command extracts printable ASCII text. The `-e l` option tells strin
 
 Now, this is ready for analysis, but remember, our goal here in this task is to preprocess the evidence so that any analyst who will investigate this can expedite searches and analysis.
 
+---------------------------------------------------------------------------------------
+
 #### What plugin lists processes in a tree based on their parent process ID?
 
-Answer: PsTree
+Answer: `PsTree`
 
 #### What plugin is used to list all currently active processes in the machine?
 
-Answer: PsList
+Answer: `PsList`
 
 #### What Linux utility tool can extract the ASCII, 16-bit little-endian, and 16-bit big-endian strings?
 
-Answer: strings
+Answer: `strings`
 
 #### By running vol3 with the Malfind parameter, what is the first (1st) process identified suspected of having an injected code?
 
@@ -772,15 +778,15 @@ ff ee ff ee 08 70 00 00    .....p..
 00 00 00 00 00 00 00 00    ........
 ```
 
-Answer: csrss.exe
+Answer: `csrss.exe`
 
 #### Continuing from the previous question (Question 6), what is the second (2nd) process identified suspected of having an injected code?
 
-Answer: winlogon.exe
+Answer: `winlogon.exe`
 
-#### By running vol3 with the DllList parameter, what is the file path or directory of the binary @WanaDecryptor@.exe?
+#### By running vol3 with the DllList parameter, what is the file path or directory of the binary `@WanaDecryptor@.exe`?
 
-Hint: run vol3 with dlllist parameter then grep for @WanaDecryptor@.exe
+Hint: run vol3 with dlllist parameter then grep for `@WanaDecryptor@.exe`
 
 ```bash
 root@ip-10-10-180-204:/home/ubuntu/Desktop/tasks/Wcry_memory_image# vol3 -f wcry.mem windows.dlllist.DllList | grep '@WanaDecryptor@.exe'

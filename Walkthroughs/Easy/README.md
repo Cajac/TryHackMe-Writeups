@@ -56,7 +56,6 @@ Notes:
 - [Osquery: The Basics](Osquery_The_Basics.md)
 - [REMnux: Getting Started](REMnux_Getting_Started.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
-- [Traffic Analysis Essentials](Traffic_Analysis_Essentials.md)
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
 
 ## Digital Forensics and Incident Response
@@ -105,6 +104,7 @@ Notes:
 - [Protocols and Servers](Protocols_and_Servers.md)
 - [Putting it all together](Putting_it_all_together.md)
 - [Tcpdump: The Basics](Tcpdump_The_Basics.md)
+- [Traffic Analysis Essentials](Traffic_Analysis_Essentials.md)
 - [TShark: The Basics](TShark_The_Basics.md)
 - [Wireshark: Packet Operations](Wireshark_Packet_Operations.md)
 - [Wireshark: The Basics](Wireshark_The_Basics.md)

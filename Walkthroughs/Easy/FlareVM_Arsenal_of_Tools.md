@@ -9,7 +9,7 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
 Subscription type: Premium
 Description: Learn the arsenal of investigative tools in FlareVM.
 ```
@@ -40,9 +40,9 @@ Click on the **Start Machine** button. This should initialize an instance on Fla
 
 We will use the tool inside the machine attached to this task. The machine will start in a split-screen view. If you opt to access the machine via Remote Desktop (RDP), you may also use the following credentials below.
 
-- Username: Administrator
-- Password: letmein123!
-- IP Address: 10.10.70.226
+- Username: `Administrator`
+- Password: `letmein123!`
+- IP Address: `10.10.70.226`
 
 Almost all the files we will use in this room are located in the `C:\Users\Administrator\Desktop\Sample` folder.
 
@@ -125,31 +125,33 @@ Have you checked all the categories? There are a lot, right? Worry not, as we wo
 
 In the next task, we will discuss the standard tools used for investigation
 
+---------------------------------------------------------------------------------------
+
 #### Which tool is an Open-source debugger for binaries in x64 and x32 formats?
 
-Answer: x64dbg
+Answer: `x64dbg`
 
 #### What tool is designed to analyze and edit Portable Executable (PE) files?
 
-Answer: CFF Explorer
+Answer: `CFF Explorer`
 
 #### WWhich tool is considered a sophisticated memory editor and process watcher?
 
-Answer: Process Hacker
+Answer: `Process Hacker`
 
 #### Which tool is used for Disc image acquisition and analysis for forensic use?
 
-Answer: FTK Imager
+Answer: `FTK Imager`
 
 #### What tool can be used to view and edit a binary file?
 
-Answer: HxD
+Answer: `HxD`
 
 ### Task 3 - Commonly Used Tools for Investigation: Overview
 
 Let's examine the tools we will focus on in this room. These tools are the basic ones used for initial investigations. See the list below.
 
-| Tool | Investigative Value |
+|Tool|Investigative Value|
 |----|----|
 |Procmon|A helpful tool for tracking system activity, especially regarding malware research, troubleshooting, and forensic investigations.|
 |Process Explorer|Allows you to see the Process of the Parent-child relationship, DLLs loaded, and its path.|
@@ -300,45 +302,47 @@ msvcrt.dll
 
 In the example above, FLOSS extracted **189 static strings** from the binary, which may contain hardcoded information such as **file paths**, **URLs** (likely for command-and-control servers), **IP addresses**, **API calls**, **error messages**, **registry**, **encryption keys**, and **configuration data**. However, no decoded strings were identified, suggesting that FLOSS did not detect or decode dynamically generated or obfuscated strings during this analysis. Malware frequently uses obfuscated strings to conceal its malicious behavior.
 
+---------------------------------------------------------------------------------------
+
 #### Which tool was formerly known as FLARE Obfuscated String Solver?
 
-Answer: FLOSS
+Answer: `FLOSS`
 
 #### Which tool offers in-depth insights into the active processes running on your computer?
 
-Answer: Process Explorer
+Answer: `Process Explorer`
 
 #### By using the Process Explorer (procexp) tool, under what process can we find smss.exe?
 
-Answer: System
+Answer: `System`
 
 #### Which powerful Windows tool is designed to help you record issues with your system's apps?
 
-Answer: Procmon
+Answer: `Procmon`
 
 #### Which tool can be used for Static analysis or studying executable file properties without running the files?
 
-Answer: PEStudio
+Answer: `PEStudio`
 
 #### Using the tool PEStudio to open the file cryptominer.bin in the Desktop\Sample folder, what is the sha256 value of the file?
 
-Answer: E9627EBAAC562067759681DCEBA8DDE8D83B1D813AF8181948C549E342F67C0E
+Answer: `E9627EBAAC562067759681DCEBA8DDE8D83B1D813AF8181948C549E342F67C0E`
 
 #### Using the tool PEStudio to open the file cryptominer.bin in the Desktop\Sample folder, how many functions does it have?
 
-Answer: 102
+Answer: `102`
 
 #### What tool can generate file hashes for integrity verification, authenticate the source of system files, and validate their validity?
 
-Answer: CFF Explorer
+Answer: `CFF Explorer`
 
 #### Using the tool CFF Explorer to open the file possible_medusa.txt in the Desktop\Sample folder, what is the MD5 of the file?
 
-Answer: 646698572AFBBF24F50EC5681FEB2DB7
+Answer: `646698572AFBBF24F50EC5681FEB2DB7`
 
 #### Use the CFF Explorer tool to open the file possible_medusa.txt in the Desktop\Sample folder. Then, go to the DOS Header Section. What is the e_magic value of the file?
 
-Answer: 5A4D
+Answer: `5A4D`
 
 ### Task 4 - Analyzing Malicious Files
 
@@ -421,9 +425,11 @@ This should give us a more detailed result.
 
 This confirms that the binary was indeed making a connection to an unknown IP address which is `47.120.46.210`.
 
+---------------------------------------------------------------------------------------
+
 #### Using PEStudio, open the file windows.exe. What is the entropy value of the file windows.exe?
 
-Answer: 7.999
+Answer: `7.999`
 
 #### Using PEStudio, open the file windows.exe, then go to manifest (administrator section). What is the value under requestedExecutionLevel?
 
@@ -441,37 +447,37 @@ Answer: 7.999
 </assembly>
 ```
 
-Answer: requireAdministrator
+Answer: `requireAdministrator`
 
 #### Which function allows the process to use the operating system's shell to execute other processes?
 
-Answer: set_UseShellExecute
+Answer: `set_UseShellExecute`
 
 #### Which API starts with R and indicates that the executable uses cryptographic functions?
 
-Answer: RijndaelManaged
+Answer: `RijndaelManaged`
 
 #### What is the Imphash of cobaltstrike.exe?
 
-Answer: 92EEF189FB188C541CBD83AC8BA4ACF5
+Answer: `92EEF189FB188C541CBD83AC8BA4ACF5`
 
 #### What is the defanged IP address to which the process cobaltstrike.exe is connecting?
 
 Hint: You need to provide the IP address in a defanged format, such as 192[.]168[.]3[.]77.
 
-Answer: 47[.]120[.]46[.]210
+Answer: `47[.]120[.]46[.]210`
 
 #### What is the destination port number used by cobaltstrike.exe when connecting to its C2 IP Address?
 
 Hint: Use the pcapng file in the sample folder and use the filter ip.addr == 47.120.46.210
 
-Answer: 81
+Answer: `81`
 
 #### During our analysis, we found a process called cobaltstrike.exe. What is the parent process of cobaltstrike.exe?
 
 Hint: This is the process when a user personally clicks a binary.
 
-Answer: Explorer.exe
+Answer: `Explorer.exe`
 
 ### Task 5 - Conclusion
 
