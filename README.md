@@ -45,6 +45,7 @@ In total you will find more than **180 room solutions** here.
   - [Digital Forensics and Incident Response](Walkthroughs/Easy/README.md#digital-forensics-and-incident-response)
   - [Exploitation](Walkthroughs/Easy/README.md#exploitation)
   - [Fundamentals](Walkthroughs/Easy/README.md#fundamentals)
+  - [Malware Analysis](Walkthroughs/Easy/README.md#malware-analysis)
   - [Networking](Walkthroughs/Easy/README.md#networking)
   - [Offensive Security](Walkthroughs/Easy/README.md#offensive-security)
   - [Scripting and Programming](Walkthroughs/Easy/README.md#scripting-and-programming)

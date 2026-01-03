@@ -8,6 +8,7 @@
 - [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
 - [Exploitation](#exploitation)
 - [Fundamentals](#fundamentals)
+- [Malware Analysis](#malware-analysis)
 - [Networking](#networking)
 - [Offensive Security](#offensive-security)
 - [Scripting and Programming](#scripting-and-programming)
@@ -40,11 +41,9 @@ Notes:
 ## Defensive Security
 
 - [Advanced ELK Queries](Advanced_ELK_Queries.md)
-- [CAPA: The Basics](CAPA_The_Basics.md)
 - [Defensive Security Intro](Defensive_Security_Intro.md)
 - [Eviction](Eviction.md)
 - [Firewall Fundamentals](Firewall_Fundamentals.md)
-- [FlareVM: Arsenal of Tools](FlareVM_Arsenal_of_Tools.md)
 - [IDS Fundamentals](IDS_Fundamentals.md)
 - [Intro to Endpoint Security](Intro_to_Endpoint_Security.md)
 - [Intro to Log Analysis](Intro_to_Log_Analysis.md)
@@ -54,12 +53,12 @@ Notes:
 - [Log Operations](Log_Operations.md)
 - [Logs Fundamentals](Logs_Fundamentals.md)
 - [Osquery: The Basics](Osquery_The_Basics.md)
-- [REMnux: Getting Started](REMnux_Getting_Started.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
 
 ## Digital Forensics and Incident Response
 
+- [CAPA: The Basics](CAPA_The_Basics.md)
 - [DFIR: An Introduction](DFIR_An_Introduction.md)
 - [Digital Forensics Fundamentals](Digital_Forensics_Fundamentals.md)
 - [Incident Response Fundamentals](Incident_Response_Fundamentals.md)
@@ -88,6 +87,15 @@ Notes:
 - [Security Principles](Security_Principles.md)
 - [SQL Fundamentals](SQL_Fundamentals.md)
 - [Toolbox: Vim](Toolbox_Vim.md)
+
+## Malware Analysis
+
+- [CAPA: The Basics](CAPA_The_Basics.md)
+- [CyberChef: The Basics](CyberChef_The_Basics.md)
+- [Introduction to Antivirus](Introduction_to_Antivirus.md)
+- [FlareVM: Arsenal of Tools](FlareVM_Arsenal_of_Tools.md)
+- [REMnux: Getting Started](REMnux_Getting_Started.md)
+- [Yara](Yara.md)
 
 ## Networking
 

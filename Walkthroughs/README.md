@@ -14,6 +14,7 @@
   - [Digital Forensics and Incident Response](Easy/README.md#digital-forensics-and-incident-response)
   - [Exploitation](Easy/README.md#exploitation)
   - [Fundamentals](Easy/README.md#fundamentals)
+  - [Malware Analysis](Easy/README.md#malware-analysis)
   - [Networking](Easy/README.md#networking)
   - [Offensive Security](Easy/README.md#offensive-security)
   - [Scripting and Programming](Easy/README.md#scripting-and-programming)
