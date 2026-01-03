@@ -411,6 +411,7 @@ For additional information, please see the references below.
 - [sudo - Linux manual page](https://man7.org/linux/man-pages/man8/sudo.8.html)
 - [sudo - Wikipedia](https://en.wikipedia.org/wiki/Sudo)
 - [type - Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/type)
+- [Umbraco - Wikipedia](https://en.wikipedia.org/wiki/Umbraco)
 - [WhatWeb - Homepage](https://morningstarsecurity.com/research/whatweb)
 - [WhatWeb - Kali Tools](https://www.kali.org/tools/whatweb/)
 - [where - Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/where)
