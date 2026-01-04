@@ -48,6 +48,7 @@ Notes:
 - [Intro to Endpoint Security](Intro_to_Endpoint_Security.md)
 - [Intro to Log Analysis](Intro_to_Log_Analysis.md)
 - [Intro to Logs](Intro_to_Logs.md)
+- [Introduction to Antivirus](Introduction_to_Antivirus.md)
 - [Introduction to SIEM](Introduction_to_SIEM.md)
 - [Junior Security Analyst Intro](Junior_Security_Analyst_Intro.md)
 - [Log Operations](Log_Operations.md)
@@ -92,8 +93,9 @@ Notes:
 
 - [CAPA: The Basics](CAPA_The_Basics.md)
 - [CyberChef: The Basics](CyberChef_The_Basics.md)
-- [Introduction to Antivirus](Introduction_to_Antivirus.md)
 - [FlareVM: Arsenal of Tools](FlareVM_Arsenal_of_Tools.md)
+- [Introduction to Antivirus](Introduction_to_Antivirus.md)
+- [MAL: Malware Introductory](MAL_Malware_Introductory.md)
 - [REMnux: Getting Started](REMnux_Getting_Started.md)
 - [Yara](Yara.md)
 
