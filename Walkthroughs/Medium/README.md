@@ -13,6 +13,7 @@
 - [Expediting Registry Analysis](Expediting_Registry_Analysis.md)
 - [Intro to Malware Analysis](Intro_to_Malware_Analysis.md)
 - [Logless Hunt](Logless_Hunt.md)
+- [MalDoc: Static Analysis](MalDoc_Static_Analysis.md)
 - [MITRE](MITRE.md)
 - [Redline](Redline.md)
 - [Snort](Snort.md)
