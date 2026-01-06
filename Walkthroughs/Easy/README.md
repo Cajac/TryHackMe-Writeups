@@ -96,6 +96,7 @@ Notes:
 - [FlareVM: Arsenal of Tools](FlareVM_Arsenal_of_Tools.md)
 - [Introduction to Antivirus](Introduction_to_Antivirus.md)
 - [MAL: Malware Introductory](MAL_Malware_Introductory.md)
+- [MAL: REMnux - The Redux](MAL_REMnux_The_Redux.md)
 - [MAL: Strings](MAL_Strings.md)
 - [Malware Classification](Malware_Classification.md)
 - [REMnux: Getting Started](REMnux_Getting_Started.md)
