@@ -11,6 +11,7 @@
 - [Defensive Security](Defensive_Security.md)
 - [Defensive Security Tooling](Defensive_Security_Tooling.md)
 - [Log Analysis](Log_Analysis.md)
+- [Malware Analysis](Malware_Analysis.md)
 - [Security Solutions](Security_Solutions.md)
 
 ## Exploitation
