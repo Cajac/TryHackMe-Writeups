@@ -1,4 +1,4 @@
-# SOC Level 1 Learning Path
+# SOC Level 1 (Legacy) Learning Path
 
 ```text
 Type: Learning Path
@@ -55,3 +55,9 @@ Web link: [https://tryhackme.com/path/outline/soclevel1legacy](https://tryhackme
 - [TShark: CLI Wireshark Features](../../Walkthroughs/Medium/TShark_CLI_Wireshark_Features.md)
 - [TShark Challenge I: Teamwork](../../Challenges/Easy/TShark_Challenge_I_Teamwork.md)
 - [TShark Challenge II: Directory](../../Challenges/Easy/TShark_Challenge_II_Directory.md)
+
+### Endpoint Security Monitoring
+
+- [Intro to Endpoint Security](../../Walkthroughs/Easy/Intro_to_Endpoint_Security.md)
+- [Core Windows Processes](../../Walkthroughs/Easy/Core_Windows_Processes.md)
+- [Sysinternals](../../Walkthroughs/Easy/Sysinternals.md)
