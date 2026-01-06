@@ -29,6 +29,7 @@ Notes:
 ## Miscellaneous
 
 - [Careers in Cyber](Careers_in_Cyber.md)
+- [History of Malware](History_of_Malware.md)
 - [Principles of Security](Principles_of_Security.md)
 - [Training Impact on Teams](Training_Impact_on_Teams.md)
 
