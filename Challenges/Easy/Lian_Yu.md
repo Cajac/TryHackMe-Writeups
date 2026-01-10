@@ -373,6 +373,7 @@ But the password `password` did!
 We extract the hidden zip-file
 
 ```bash
+┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/Lian_Yu]
 └─$ steghide extract -sf aa.jpg
 Enter passphrase: 
 wrote extracted data to "ss.zip".
