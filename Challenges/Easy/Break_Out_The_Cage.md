@@ -67,7 +67,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 13.93 seconds
 ```
 
-We have four services running:
+We have three services running:
 
 - vsftpd 3.0.2 running on port 21
 - OpenSSH 6.7p1 running on port 22
