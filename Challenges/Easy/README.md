@@ -13,9 +13,11 @@
 - [Ignite](Ignite.md)
 - [Jack-of-All-Trades](Jack-of-All-Trades.md)
 - [LazyAdmin](LazyAdmin.md)
+- [Lian_Yu](Lian_Yu.md)
 - [Library](Library.md)
 - [Madness](Madness.md)
 - [Pickle Rick](Pickle_Rick.md)
+- [Poster](Poster.md)
 - [Simple CTF](Simple_CTF.md)
 - [Skynet](Skynet.md)
 - [Thompson](Thompson.md)
@@ -26,16 +28,18 @@
 - [Wgel CTF](Wgel_CTF.md)
 - [Year of the Rabbit](Year_of_the_Rabbit.md)
 
+## Digital Forensics and Incident Response
+
+- [Investigating Windows](Investigating_Windows.md)
+- [Summit](Summit.md)
+- [TShark Challenge I: Teamwork](TShark_Challenge_I_Teamwork.md)
+- [TShark Challenge II: Directory](TShark_Challenge_II_Directory.md)
+
 ## Other Rooms
 
 - [c4ptur3-th3-fl4g](c4ptur3-th3-fl4g.md)
 - [Crack the hash](Crack_the_hash.md)
 - [CTF collection Vol.1](CTF_collection_Vol_1.md)
-- [Investigating Windows](Investigating_Windows.md)
 - [Ninja Skills](Ninja_Skills.md)
 - [OhSINT](OhSINT.md)
-- [Poster](Poster.md)
 - [Reversing ELF](Reversing_ELF.md)
-- [Summit](Summit.md)
-- [TShark Challenge I: Teamwork](TShark_Challenge_I_Teamwork.md)
-- [TShark Challenge II: Directory](TShark_Challenge_II_Directory.md)
