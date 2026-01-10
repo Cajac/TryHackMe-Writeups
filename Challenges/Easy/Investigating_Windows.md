@@ -9,10 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Windows
+Tags: Windows
 Subscription type: Free
-Description: A windows machine has been hacked, its your job to go investigate this windows machine 
-             and find clues to what the hacker might have done.
+Description: 
+A windows machine has been hacked, its your job to go investigate this windows machine 
+and find clues to what the hacker might have done.
 ```
 
 Room link: [https://tryhackme.com/r/room/investigatingwindows](https://tryhackme.com/r/room/investigatingwindows)
@@ -31,7 +32,7 @@ We start by connecting via RDP with `xfreerdp`
 <---snip--->
 ```
 
-Next, we open both an elevated command prompt (cmd.exe) window and a PowerShell window.
+Next, we open both an **elevated** command prompt (cmd.exe) window and a PowerShell window.
 
 ### Whats the version and year of the windows machine?
 
@@ -48,11 +49,13 @@ OS Build Type:             Multiprocessor Free
 BIOS Version:              Amazon EC2 1.0, 10/16/2017
 ```
 
+Answer: `Windows Server 2016`
+
 ### Which user logged in last?
 
-That ought to be `Administrator` since we logged in via RDP (logon type 10) very recently...
+Hint: That's you just now. But, who logged in before you?
 
-But we can get this information with `net user` in the cmd.exe window.  
+We can get this information with `net user` in the cmd.exe window.  
 First we list all local users
 
 ```text
@@ -116,7 +119,13 @@ DWM-3         9/14/2024 12:59:32 PM
 SYSTEM        9/14/2024 12:51:18 PM
 ```
 
+Answer: `Administrator`
+
 ### When did John log onto the system last?
+
+Answer format: MM/DD/YYYY H:MM:SS AM/PM
+
+Hint: Try using cmd to find this out. Please keep the answer format in mind before giving the answer.
 
 We have already seen this in question #2
 
@@ -149,6 +158,8 @@ Global Group memberships     *None
 The command completed successfully.
 ```
 
+Answer: `03/02/2019 5:48:32 PM`
+
 ### What IP does the system connect to when it first starts?
 
 We can see this in the autostart `Run` registry key.  
@@ -175,6 +186,8 @@ Name                           Property
 Run                            UpdateSvc : C:\TMP\p.exe -s \\10.34.2.3 'net user' > C:\TMP\o2.txt
 ```
 
+Answer: `10.34.2.3`
+
 ### What two accounts had administrative privileges (other than the Administrator user)?
 
 We can start by checking what users are currently in the local `Administrators` group
@@ -193,12 +206,14 @@ Jenny
 The command completed successfully.
 ```
 
+Answer: `Guest, Jenny`
+
 ### Whats the name of the scheduled task that is malicous
 
 We can check scheduled tasks with the `schtasks` command
 
-```text
-C:\Users\Administrator>schtasks
+```bat
+C:\Users\Administrator> schtasks
 
 Folder: \
 TaskName                                 Next Run Time          Status
@@ -221,8 +236,8 @@ The list is quite long but we can start checking tasks in the root folder.
 
 This task certainly looks suspicious
 
-```text
-C:\Users\Administrator>schtasks /Query /TN "Clean file system" /V /FO LIST
+```bat
+C:\Users\Administrator> schtasks /Query /TN "Clean file system" /V /FO LIST
 
 Folder: \
 HostName:                             EC2AMAZ-I8UHO76
@@ -257,19 +272,66 @@ Repeat: Stop If Still Running:        Disabled
 
 The tool running is `powercat` - a netcat clone in PowerShell.
 
+Answer: `Clean file system`
+
 ### What file was the task trying to run daily?
 
-See question above and the `Task To Run` line.
+See the schtasks listing above and the `Task To Run` line.
 
-#### What port did this file listen locally for?
+Answer: `nc.ps1`
 
-See question above and the `Task To Run` line.
+### What port did this file listen locally for?
+
+See the schtasks listing above and the `Task To Run` line.
+
+Answer: `1348`
+
+### When did Jenny last logon?
+
+As before, we use `net user` to find this out.
+
+```bat
+C:\Users\Administrator> net user jenny
+User name                    Jenny
+Full Name                    Jenny
+Comment
+User's comment
+Country/region code          000 (System Default)
+Account active               Yes
+Account expires              Never
+
+Password last set            3/2/2019 4:52:25 PM
+Password expires             Never
+Password changeable          3/2/2019 4:52:25 PM
+Password required            Yes
+User may change password     Yes
+
+Workstations allowed         All
+Logon script
+User profile
+Home directory
+Last logon                   Never
+
+Logon hours allowed          All
+
+Local Group Memberships      *Administrators       *Users
+Global Group memberships     *None
+The command completed successfully.
+```
+
+Answer: `Never`
 
 ### At what date did the compromise take place?
 
-See question above and the `Start Date` line.
+See the schtasks listing above and the `Start Date` line.
+
+Answer: `03/02/2019`
 
 ### During the compromise, at what time did Windows first assign special privileges to a new logon?
+
+Answer format: MM/DD/YYYY HH:MM:SS AM/PM
+
+Hint: 00/00/0000 0:00:49 PM
 
 We check the security event log for event IDs 4672 (Special privileges assigned to new logon) with `Get-EventLog` in the PowerShell window
 
@@ -310,12 +372,14 @@ TimeCreated                     Id LevelDisplayName Message
 
 From the hint we see that the answer is the event with a timestamp ending in `:49` seconds.
 
+Answer: `03/02/2019 4:04:49 PM`
+
 ### What tool was used to get Windows passwords?
 
 This schedule task runs the password dumping tool
 
-```text
-C:\Users\Administrator>schtasks /Query /TN "GameOver" /V /FO LIST
+```bat
+C:\Users\Administrator> schtasks /Query /TN "GameOver" /V /FO LIST
 
 Folder: \
 HostName:                             EC2AMAZ-I8UHO76
@@ -350,6 +414,8 @@ Repeat: Stop If Still Running:        Disabled
 
 If you don't recognize the tool and it's syntax you may need to do some additional Googling.  
 Or check the contents of the file `C:\TMP\mim-out.txt`.
+
+Answer: `Mimikatz`
 
 ### What was the attackers external control and command servers IP?
 
@@ -394,12 +460,14 @@ C:\Users\Administrator>type c:\Windows\System32\Drivers\etc\hosts
 76.32.97.132 www.google.com                   <-----------
 ```
 
+Answer: `76.32.97.132`
+
 ### What was the extension name of the shell uploaded via the servers website?
 
 We check the root folder of IIS
 
-```text
-C:\Users\Administrator>dir c:\inetpub\wwwroot
+```bat
+C:\Users\Administrator> dir c:\inetpub\wwwroot
  Volume in drive C has no label.
  Volume Serial Number is F078-2619
 
@@ -417,8 +485,8 @@ C:\Users\Administrator>dir c:\inetpub\wwwroot
 
 And checks the contents of the `tests.jsp` file
 
-```text
-C:\Users\Administrator>type c:\inetpub\wwwroot\tests.jsp
+```bat
+C:\Users\Administrator> type c:\inetpub\wwwroot\tests.jsp
 <%@ page import="java.util.*,java.io.*"%>
 <%
 %>
@@ -447,7 +515,11 @@ disr = dis.readLine();
 </BODY></HTML>
 ```
 
+Answer: `.jsp`
+
 ### What was the last port the attacker opened?
+
+Hint: Firewall
 
 From the hint we see that the answer is Firewall-related.
 
@@ -455,9 +527,13 @@ Let's launch the `Windows Firewall with Advanced Security` GUI, select Inbound R
 
 ![Firewall Rules on Investing Windows](Images/Firewall_Rules_on_Investigating_Windows.png)
 
+Answer: `1337`
+
 ### Check for DNS poisoning, what site was targeted?
 
 We have already seen this in the `hosts` file. See above.
+
+Answer: `google.com`
 
 For additional information, please see the references below.
 
@@ -470,11 +546,14 @@ For additional information, please see the references below.
 - [Get-Item - Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-item?view=powershell-5.1)
 - [Internet Information Services - Wikipedia](https://en.wikipedia.org/wiki/Internet_Information_Services)
 - [Mimikatz - Github](https://github.com/gentilkiwi/mimikatz)
+- [Mimikatz - MITRE ATT&CK](https://attack.mitre.org/software/S0002/)
 - [Mimikatz - Wiki](https://github.com/gentilkiwi/mimikatz/wiki)
 - [Net user - Microsoft Learn](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc771865(v=ws.11))
 - [powercat - GitHub](https://github.com/besimorhino/powercat)
 - [reg query - Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/reg-query)
+- [Registry Run Keys / Startup Folder - MITRE ATT&CK](https://attack.mitre.org/techniques/T1547/001/)
 - [Remote Desktop Protocol - Wikipedia](https://en.wikipedia.org/wiki/Remote_Desktop_Protocol)
+- [Scheduled Task - MITRE ATT&CK](https://attack.mitre.org/techniques/T1053/005/)
 - [schtasks - Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks)
 - [systeminfo - Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/systeminfo)
 - [xfreerdp - Linux manual page](https://linux.die.net/man/1/xfreerdp)
