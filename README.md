@@ -11,8 +11,18 @@ In total you will find more than **180 room solutions** here.
 ## Challenges (CTF)
 
 - [Info Challenges](Challenges/Info/README.md)
+  - [Exploitation](Challenges/Info/README.md#exploitation)
 - [Easy Challenges](Challenges/Easy/README.md)
+  - [Digital Forensics and Incident Response](Challenges/Easy/README.md#digital-forensics-and-incident-response)
+  - [Full Pwn](Challenges/Easy/README.md#full-pwn)
+  - [Jeopardy Style CTFs](Challenges/Easy/README.md#jeopardy-style-ctfs)
+  - [Miscellaneous](Challenges/Easy/README.md#miscellaneous)
 - [Medium Challenges](Challenges/Medium/README.md)
+  - [Digital Forensics and Incident Response](Challenges/Medium/README.md#digital-forensics-and-incident-response)
+  - [Exploitation](Challenges/Medium/README.md#exploitation)
+  - [Full Pwn](Challenges/Medium/README.md#full-pwn)
+  - [Jeopardy Style CTFs](Challenges/Medium/README.md#jeopardy-style-ctfs)
+  - [Miscellaneous](Challenges/Medium/README.md#miscellaneous)
 
 ## Learning Paths
 

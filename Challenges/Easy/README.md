@@ -1,6 +1,25 @@
 # Easy Challenges
 
-## Traditional Machines to Pwn
+**Categories**:
+
+- [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
+- [Full Pwn](#full-pwn)
+- [Jeopardy Style CTFs](#jeopardy-style-ctfs)
+- [Miscellaneous](#miscellaneous)
+
+Notes:
+
+- The categorization is my own and not THM's.
+- Challenges can be placed in more than one category.
+
+## Digital Forensics and Incident Response
+
+- [Investigating Windows](Investigating_Windows.md)
+- [Summit](Summit.md)
+- [TShark Challenge I: Teamwork](TShark_Challenge_I_Teamwork.md)
+- [TShark Challenge II: Directory](TShark_Challenge_II_Directory.md)
+
+## Full Pwn
 
 - [Agent Sudo](Agent_Sudo.md)
 - [Anonforce](Anonforce.md)
@@ -30,18 +49,14 @@
 - [Wgel CTF](Wgel_CTF.md)
 - [Year of the Rabbit](Year_of_the_Rabbit.md)
 
-## Digital Forensics and Incident Response
-
-- [Investigating Windows](Investigating_Windows.md)
-- [Summit](Summit.md)
-- [TShark Challenge I: Teamwork](TShark_Challenge_I_Teamwork.md)
-- [TShark Challenge II: Directory](TShark_Challenge_II_Directory.md)
-
-## Other Rooms
+## Jeopardy Style CTFs
 
 - [c4ptur3-th3-fl4g](c4ptur3-th3-fl4g.md)
-- [Crack the hash](Crack_the_hash.md)
 - [CTF collection Vol.1](CTF_collection_Vol_1.md)
+
+## Miscellaneous
+
+- [Crack the hash](Crack_the_hash.md)
 - [Ninja Skills](Ninja_Skills.md)
 - [OhSINT](OhSINT.md)
 - [Reversing ELF](Reversing_ELF.md)

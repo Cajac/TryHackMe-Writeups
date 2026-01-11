@@ -1,10 +1,31 @@
 # Medium Challenges
 
-## Traditional Machines to Pwn
+**Categories**:
 
-## Other Rooms
+- [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
+- [Exploitation](#exploitation)
+- [Full Pwn](#full-pwn)
+- [Jeopardy Style CTFs](#jeopardy-style-ctfs)
+- [Miscellaneous](#miscellaneous)
 
-- [Friday Overtime](Friday_Overtime.md)
-- [Net Sec Challenge](Net_Sec_Challenge.md)
+Notes:
+
+- The categorization is my own and not THM's.
+- Challenges can be placed in more than one category.
+
+## Digital Forensics and Incident Response
+
 - [Security Footage](Security_Footage.md)
 - [Zeek Exercises](Zeek_Exercises.md)
+
+## Exploitation
+
+- [Net Sec Challenge](Net_Sec_Challenge.md)
+
+## Full Pwn
+
+## Jeopardy Style CTFs
+
+## Miscellaneous
+
+- [Friday Overtime](Friday_Overtime.md)
