@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: Linux, Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: SSL issues are still lurking in the wild! Can you exploit this web servers OpenSSL?
+Description:
+SSL issues are still lurking in the wild! Can you exploit this web servers OpenSSL?
 ```
 
 Room link: [https://tryhackme.com/r/room/heartbleed](https://tryhackme.com/r/room/heartbleed)

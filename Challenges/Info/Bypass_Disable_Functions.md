@@ -9,7 +9,8 @@
 ```text
 Type: Challenge
 Difficulty: Info
-OS: Linux
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description: 
 Practice bypassing disabled dangerous features that run operating system commands or start processes.

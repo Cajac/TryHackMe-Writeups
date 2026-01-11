@@ -9,7 +9,8 @@
 ```text
 Type: Challenge
 Difficulty: Medium
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description: 
 Put your Zeek skills into practice and analyse network traffic.

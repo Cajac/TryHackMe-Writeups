@@ -10,8 +10,10 @@
 Type: Challenge
 Difficulty: Medium
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Practice the skills you have learned in the Network Security module.
+Description:
+Practice the skills you have learned in the Network Security module.
 ```
 
 Room link: [https://tryhackme.com/room/netsecchallenge](https://tryhackme.com/room/netsecchallenge)

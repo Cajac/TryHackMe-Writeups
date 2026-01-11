@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Sharpening up your CTF skill with the collection. The first volume is designed for beginner.
+Description:
+Sharpening up your CTF skill with the collection. The first volume is designed for beginner.
 ```
 
 Room link: [https://tryhackme.com/r/room/ctfcollectionvol1](https://tryhackme.com/r/room/ctfcollectionvol1)
@@ -273,7 +275,7 @@ This is an [esoteric programming language](https://en.wikipedia.org/wiki/Esoteri
 
 You can decode/execute Brainfuck you with online services such as [dcode.fr](https://www.dcode.fr/brainfuck-language), [copy.sh](https://copy.sh/brainfuck/), or [md5decrypt.net](https://md5decrypt.net/en/Brainfuck-translator/).
 
-### An exclusive!
+### An exclusive
 
 `Description: Exclusive strings for everyone!`
 
@@ -387,7 +389,7 @@ Then select `January 2, 2000` and select the only snapshot time available.
 
 You will be redirected to `https://web.archive.org/web/20200102131252/https://www.embeddedhacker.com/` where you will find the flag in the `THM flag` post.
 
-### Uncrackable!
+### Uncrackable
 
 `Description: Can you solve the following? By the way, I lost the key. Sorry >.<`
 

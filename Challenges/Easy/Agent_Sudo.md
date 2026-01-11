@@ -10,6 +10,7 @@
 Type: Challenge
 Difficulty: Easy
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description: 
 You found a secret server located under the deep sea. Your task is to hack inside the server and reveal the truth.

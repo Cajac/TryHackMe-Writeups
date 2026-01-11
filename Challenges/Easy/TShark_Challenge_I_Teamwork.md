@@ -10,6 +10,7 @@
 Type: Challenge
 Difficulty: Easy
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Put your TShark skills into practice and analyse some network traffic.

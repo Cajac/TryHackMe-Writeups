@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: N/A
+Tags: Windows, Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Are you able to use open source intelligence to solve this challenge?
+Description:
+Are you able to use open source intelligence to solve this challenge?
 ```
 
 Room link: [https://tryhackme.com/r/room/ohsint](https://tryhackme.com/r/room/ohsint)

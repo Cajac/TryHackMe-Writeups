@@ -10,8 +10,10 @@
 Type: Challenge
 Difficulty: Easy
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Time to enter the warren...
+Description:
+Time to enter the warren...
 ```
 
 Room link: [https://tryhackme.com/room/yearoftherabbit](https://tryhackme.com/room/yearoftherabbit)

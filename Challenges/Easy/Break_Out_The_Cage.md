@@ -10,6 +10,7 @@
 Type: Challenge
 Difficulty: Easy
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 Help Cage bring back his acting career and investigate the nefarious goings on of his agent!

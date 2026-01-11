@@ -9,7 +9,8 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description: 
 Hack this machine and get the flag. There are lots of hints along the way and is perfect for beginners!
@@ -127,7 +128,7 @@ sciana@fowsniff:f7fd98d380735e859f8b2ffbbede5a7e
 
 Using [CrackStation](https://crackstation.net/) and [Hashes.com](https://hashes.com/en/decrypt/hash) most of the hashes were cracked
 
-| E-mail | Hash | Hash type | Password |
+|E-mail|Hash|Hash type|Password|
 |----|----|----|----|
 |mauer@fowsniff|8a28a94a588a95b80163709ab4313aa4|MD5|mailcall|
 |mustikka@fowsniff|ae1644dac5b77c0cf51e0d26ad6d7e56|MD5|bilbo101|

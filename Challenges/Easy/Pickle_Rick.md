@@ -10,6 +10,7 @@
 Type: Challenge
 Difficulty: Easy
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 A Rick and Morty CTF. Help turn Rick back into a human!

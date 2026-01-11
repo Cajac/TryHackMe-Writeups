@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: A beginner level CTF challenge
+Description:
+A beginner level CTF challenge
 ```
 
 Room link: [https://tryhackme.com/r/room/c4ptur3th3fl4g](https://tryhackme.com/r/room/c4ptur3th3fl4g)
@@ -167,7 +169,7 @@ Then run the script to get the flag
 h<REDACTED>?
 ```
 
-#### Ebgngr zr 13 cynprf!
+#### Ebgngr zr 13 cynprf
 
 This is [ROT13](https://en.wikipedia.org/wiki/ROT13) and it can be solved with online services such as [CyberChef](https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)) or [dcode.fr](https://www.dcode.fr/rot-13-cipher), the `tr` command in bash, or with the codecs module in Python.
 

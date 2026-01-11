@@ -10,6 +10,7 @@
 Type: Challenge
 Difficulty: Easy
 Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description: 
 A windows machine has been hacked, its your job to go investigate this windows machine 

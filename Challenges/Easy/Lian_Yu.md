@@ -10,6 +10,7 @@
 Type: Challenge
 Difficulty: Easy
 Tags: Web, Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 A beginner level security challenge

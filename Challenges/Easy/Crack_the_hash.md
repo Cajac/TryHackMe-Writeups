@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Cracking hashes challenges
+Description:
+Cracking hashes challenges
 ```
 
 Room link: [https://tryhackme.com/r/room/crackthehash](https://tryhackme.com/r/room/crackthehash)

@@ -10,6 +10,7 @@
 Type: Challenge
 Difficulty: Easy
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 The sys admin set up a rdbms in a safe way.

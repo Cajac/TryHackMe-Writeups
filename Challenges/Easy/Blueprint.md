@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Windows
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Hack into this Windows machine and escalate your privileges to Administrator.
+Description:
+Hack into this Windows machine and escalate your privileges to Administrator.
 ```
 
 Room link: [https://tryhackme.com/r/room/blueprint](https://tryhackme.com/r/room/blueprint)

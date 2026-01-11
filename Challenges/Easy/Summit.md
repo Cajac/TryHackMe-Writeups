@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Can you chase a simulated adversary up the Pyramid of Pain until they finally back down?
+Description:
+Can you chase a simulated adversary up the Pyramid of Pain until they finally back down?
 ```
 
 Room link: [https://tryhackme.com/room/summit](https://tryhackme.com/room/summit)

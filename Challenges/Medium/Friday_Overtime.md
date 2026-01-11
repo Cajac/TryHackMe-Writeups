@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Medium
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Step into the shoes of a Cyber Threat Intelligence Analyst and put your investigation 
+Description:
+Step into the shoes of a Cyber Threat Intelligence Analyst and put your investigation 
 skills to the test.
 ```
 

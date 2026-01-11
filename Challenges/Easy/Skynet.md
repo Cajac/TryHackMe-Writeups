@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: A vulnerable Terminator themed Linux machine.
+Description:
+A vulnerable Terminator themed Linux machine.
 ```
 
 Room link: [https://tryhackme.com/room/skynet](https://tryhackme.com/room/skynet)

@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: Linux, Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Easy linux machine to practice your skills
+Description:
+Easy linux machine to practice your skills
 ```
 
 Room link: [https://tryhackme.com/r/room/lazyadmin](https://tryhackme.com/r/room/lazyadmin)

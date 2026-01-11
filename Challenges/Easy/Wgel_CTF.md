@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Can you exfiltrate the root flag?
+Description:
+Can you exfiltrate the root flag?
 ```
 
 Room link: [https://tryhackme.com/r/room/wgelctf](https://tryhackme.com/r/room/wgelctf)

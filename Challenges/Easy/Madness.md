@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Will you be consumed by Madness?
+Description:
+Will you be consumed by Madness?
 ```
 
 Room link: [https://tryhackme.com/r/room/madness](https://tryhackme.com/r/room/madness)

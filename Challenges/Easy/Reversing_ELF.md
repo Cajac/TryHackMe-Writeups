@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Room for beginner Reverse Engineering CTF players
+Description:
+Room for beginner Reverse Engineering CTF players
 ```
 
 Room link: [https://tryhackme.com/r/room/reverselfiles](https://tryhackme.com/r/room/reverselfiles)

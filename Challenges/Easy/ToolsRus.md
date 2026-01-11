@@ -9,10 +9,12 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: Linux, Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Your challenge is to use the tools listed below to enumerate a server, gathering information along the way 
-             that will eventually lead to you taking over the machine.
+Description:
+Your challenge is to use the tools listed below to enumerate a server, gathering information along the way 
+that will eventually lead to you taking over the machine.
 
 This room will introduce you to the following tools: 
  * Dirbuster

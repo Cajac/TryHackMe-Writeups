@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Boot-to-root originally designed for Securi-Tay 2020
+Description:
+Boot-to-root originally designed for Securi-Tay 2020
 ```
 
 Room link: [https://tryhackme.com/room/jackofalltrades](https://tryhackme.com/room/jackofalltrades)

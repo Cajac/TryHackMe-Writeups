@@ -10,6 +10,7 @@
 Type: Challenge
 Difficulty: Easy
 Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 Exploit a Windows machine in this beginner level challenge.

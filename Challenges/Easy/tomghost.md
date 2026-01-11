@@ -9,9 +9,10 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: 
+Description:
 Identify recent vulnerabilities to try exploit the system or read files that you should not have access to.
 ```
 

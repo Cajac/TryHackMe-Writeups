@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+OS: Linux, Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Beginner level ctf
+Description:
+Beginner level ctf
 ```
 
 Room link: [https://tryhackme.com/r/room/easyctf](https://tryhackme.com/r/room/easyctf)

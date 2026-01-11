@@ -10,8 +10,10 @@
 Type: Challenge
 Difficulty: Easy
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: boot2root machine for FIT and bsides guatemala CTF
+Description:
+boot2root machine for FIT and bsides guatemala CTF
 ```
 
 Room link: [https://tryhackme.com/r/room/bsidesgtanonforce](https://tryhackme.com/r/room/bsidesgtanonforce)

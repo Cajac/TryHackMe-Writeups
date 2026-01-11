@@ -10,6 +10,7 @@
 Type: Challenge
 Difficulty: Easy
 Tags: Linux, Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 Easy level CTF. Capture the flags and have fun!

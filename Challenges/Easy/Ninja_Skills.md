@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Practise your Linux skills and complete the challenges.
+Description:
+Practise your Linux skills and complete the challenges.
 ```
 
 Room link: [https://tryhackme.com/r/room/ninjaskills](https://tryhackme.com/r/room/ninjaskills)

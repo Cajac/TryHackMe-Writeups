@@ -9,22 +9,22 @@
 ```text
 Type: Challenge
 Difficulty: Medium
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Perform digital forensics on a network capture to recover footage from a camera.
+Description:
+Perform digital forensics on a network capture to recover footage from a camera.
 ```
 
 Room link: [https://tryhackme.com/room/securityfootage](https://tryhackme.com/room/securityfootage)
 
 ## Solution
 
-### Security Footage
-
 Someone broke into our office last night, but they destroyed the hard drives with the security footage. Can you recover the footage?
 
 Note: If you are using the AttackBox, you can find the task files inside the `/root/Rooms/securityfootage/` directory.
 
-#### Basic analysis of the file
+### Basic analysis of the file
 
 We start with some basic analysis of the given file
 
@@ -63,7 +63,7 @@ Interface #0 info:
                      Number of packets = 1109
 ```
 
-#### Get an overview of the traffic
+### Get an overview of the traffic
 
 Next, we get an overview of the protocols included in the traffic:
 
@@ -120,7 +120,7 @@ Only one HTTP GET-request...!?
 
 A failed attempt was then made to `Export Object` -> `HTTP...` but Wireshark couldn't extract anything.
 
-#### Extract image files
+### Extract image files
 
 We need to try another tool. `tcpxtract` to the rescue:
 
@@ -154,7 +154,7 @@ Looking at the .jpg images we see a small piece of the flag in each frame
 
 ![Security Footage Example Frame](Images/Security_Footage_Example_Frame.jpg)
 
-#### Get the flag
+### Get the flag
 
 The flag was manually created by looking through the images:
 
@@ -164,6 +164,7 @@ For additional information, please see the references below.
 
 ## References
 
+- [pcap - Wikipedia](https://en.wikipedia.org/wiki/Pcap)
 - [tcpxtract - Linux manual page](https://linux.die.net/man/1/tcpxtract)
 - [tshark(1) Manual Page](https://www.wireshark.org/docs/man-pages/tshark.html)
 - [Wireshark Home page](https://www.wireshark.org/)

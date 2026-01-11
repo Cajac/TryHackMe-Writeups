@@ -9,9 +9,11 @@
 ```text
 Type: Challenge
 Difficulty: Easy
-OS: Linux
+Tags: Linux, Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: A new start-up has a few issues with their web server.
+Description:
+A new start-up has a few issues with their web server.
 ```
 
 Room link: [https://tryhackme.com/r/room/ignite](https://tryhackme.com/r/room/ignite)
