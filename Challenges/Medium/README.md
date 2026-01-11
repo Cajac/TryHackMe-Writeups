@@ -15,6 +15,7 @@ Notes:
 
 ## Digital Forensics and Incident Response
 
+- [Investigating Windows 2.0](Investigating_Windows_2.0.md)
 - [Security Footage](Security_Footage.md)
 - [Zeek Exercises](Zeek_Exercises.md)
 
