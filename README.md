@@ -36,8 +36,21 @@ In total you will find more than **180 room solutions** here.
 ## Modules
 
 - [Info Modules](Modules/Info/README.md)
+  - [Fundamentals](Modules/Info/README.md#fundamentals)
+  - [Windows](Modules/Info/README.md#windows)
 - [Easy Modules](Modules/Easy/README.md)
+  - [Cryptography](Modules/Easy/README.md#cryptography)
+  - [Defensive Security](Modules/Easy/README.md#defensive-security)
+  - [Exploitation](Modules/Easy/README.md#exploitation)
+  - [Fundamentals](Modules/Easy/README.md#fundamentals)
+  - [Networking](Modules/Easy/README.md#networking)
+  - [Offensive Security](Modules/Easy/README.md#offensive-security)
+  - [Scripting and Programming](Modules/Easy/README.md#scripting-and-programming)
+  - [Web](Modules/Easy/README.md#web)
 - [Medium Modules](Modules/Medium/README.md)
+  - [Digital Forensics and Incident Response](Modules/Medium/README.md#digital-forensics-and-incident-response)
+  - [Exploitation](Modules/Medium/README.md#exploitation)
+  - [Networking](Modules/Medium/README.md#networking)
 
 ## Walkthroughs
 
@@ -85,4 +98,5 @@ Some of the solutions were inspired by writeups and walkthroughs from these guys
 - [igor_sec](https://medium.com/@huglertomgaw)
 - [jcm3](https://medium.com/@jcm3)
 - [Motasem Hamdan](https://www.youtube.com/@MotasemHamdan)
+- [RosanaFSS](https://medium.com/@RosanaFS)
 - [Z3pH7](https://medium.com/@Z3pH7)

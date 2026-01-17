@@ -1,5 +1,21 @@
 # Easy Modules
 
+**Categories**:
+
+- [Cryptography](#cryptography)
+- [Defensive Security](#defensive-security)
+- [Exploitation](#exploitation)
+- [Fundamentals](#fundamentals)
+- [Networking](#networking)
+- [Offensive Security](#offensive-security)
+- [Scripting and Programming](#scripting-and-programming)
+- [Web](#web)
+
+Notes:
+
+- The categorization is my own and not THM's.
+- Modules can be placed in more than one category.
+
 ## Cryptography
 
 - [Cryptography](Cryptography.md)
