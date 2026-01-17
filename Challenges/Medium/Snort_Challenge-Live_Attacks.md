@@ -7,11 +7,13 @@
 ## Room information
 
 ```text
-Type: Walkthrough
+Type: Challenge
 Difficulty: Medium
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Put your snort skills into practice and defend against a live attack
+Description:
+Put your snort skills into practice and defend against a live attack
 ```
 
 Room link: [https://tryhackme.com/room/snortchallenges2](https://tryhackme.com/room/snortchallenges2)

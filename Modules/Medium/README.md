@@ -3,6 +3,7 @@
 ## Digital Forensics and Incident Response
 
 - [Investigating Windows](Investigating_Windows.md)
+- [Snort](Snort.md)
 
 ## Exploitation
 

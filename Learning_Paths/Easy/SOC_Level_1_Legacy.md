@@ -42,8 +42,8 @@ Web link: [https://tryhackme.com/path/outline/soclevel1legacy](https://tryhackme
 
 - [Traffic Analysis Essentials](../../Walkthroughs/Easy/Traffic_Analysis_Essentials.md)
 - [Snort](../../Walkthroughs/Medium/Snort.md)
-- [Snort Challenge - The Basics](../../Walkthroughs/Medium/Snort_Challenge-The_Basics.md)
-- [Snort Challenge - Live Attacks](../../Walkthroughs/Medium/Snort_Challenge-Live_Attacks.md)
+- [Snort Challenge - The Basics](../../Challenges/Medium/Snort_Challenge-The_Basics.md)
+- [Snort Challenge - Live Attacks](../../Challenges/Medium/Snort_Challenge-Live_Attacks.md)
 - [NetworkMiner](../../Walkthroughs/Easy/NetworkMiner.md)
 - [Zeek](../../Walkthroughs/Medium/Zeek.md)
 - [Zeek Exercises](../../Challenges/Medium/Zeek_Exercises.md)

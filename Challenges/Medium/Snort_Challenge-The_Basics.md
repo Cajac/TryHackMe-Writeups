@@ -7,9 +7,10 @@
 ## Room information
 
 ```text
-Type: Walkthrough
+Type: Challenge
 Difficulty: Medium
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description: 
 Put your snort skills into practice and write snort rules to analyse live capture network traffic.
