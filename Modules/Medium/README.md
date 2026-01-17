@@ -1,5 +1,9 @@
 # Medium Modules
 
+## Digital Forensics and Incident Response
+
+- [Investigating Windows](Investigating_Windows.md)
+
 ## Exploitation
 
 - [Privilege Escalation](Privilege_Escalation.md)
