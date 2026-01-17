@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn about SQL injection and exploit this vulnerability through the SQLMap tool.
+Description:
+Learn about SQL injection and exploit this vulnerability through the SQLMap tool.
 ```
 
 Room link: [https://tryhackme.com/room/sqlmapthebasics](https://tryhackme.com/room/sqlmapthebasics)

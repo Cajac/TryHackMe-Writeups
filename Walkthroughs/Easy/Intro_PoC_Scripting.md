@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: Linux
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn the importance and beginner skills of crafting custom proof of concept (PoC) exploit scripts from 
+Description:
+Learn the importance and beginner skills of crafting custom proof of concept (PoC) exploit scripts from 
 many different sources.
 ```
 

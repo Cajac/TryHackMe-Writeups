@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: Linux
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Continue your learning Linux journey with part two. You will be learning how to log in to a 
+Description:
+Continue your learning Linux journey with part two. You will be learning how to log in to a 
 Linux machine using SSH, how to advance your commands, file system interaction.
 ```
 
@@ -21,7 +23,7 @@ Room link: [https://tryhackme.com/room/linuxfundamentalspart2](https://tryhackme
 
 ### Task 2 - Accessing Your Linux Machine Using SSH (Deploy)
 
-#### I've logged into the Linux Fundamentals Part 2 machine using SSH!
+#### I've logged into the Linux Fundamentals Part 2 machine using SSH
 
 Login to the machine using `ssh` with the credentials `tryhackme:tryhackme`
 

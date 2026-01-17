@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: Windows
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: In part 1 of the Windows Fundamentals module, we'll start our journey learning about the Windows desktop, 
+Description:
+In part 1 of the Windows Fundamentals module, we'll start our journey learning about the Windows desktop, 
 the NTFS file system, UAC, the Control Panel, and more.
 ```
 
@@ -110,7 +112,7 @@ The permissions are:
 - Read
 - Write
 
-| Permission | Meaning for Folders | Meaning for Files |
+|Permission|Meaning for Folders|Meaning for Files|
 |----|----|----|
 |Read|Permits viewing and listing of files and subfolders|Permits viewing or accessing of the file's contents|
 |Write|Permits adding of files and subfolders|Permits writing to a file|

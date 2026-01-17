@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows, Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn how to use Tcpdump to save, filter, and display packets.
+Description:
+Learn how to use Tcpdump to save, filter, and display packets.
 ```
 
 Room link: [https://tryhackme.com/room/tcpdump](https://tryhackme.com/room/tcpdump)
@@ -139,8 +141,8 @@ If you want to print more details about the packets, you can use `-v` to produce
 
 The table below provides a summary of the command line options that we covered.
 
- | Command | Explanation |
- |----|----|
+|Command|Explanation|
+|----|----|
 |tcpdump -i INTERFACE|Captures packets on a specific network interface|
 |tcpdump -w FILE|Writes captured packets to a file|
 |tcpdump -r FILE|Reads captured packets from a file|
@@ -239,7 +241,7 @@ Three logical operators that can be handy:
 
 The table below offers a summary of the command line options that we covered.
 
-| Command | Explanation |
+|Command|Explanation|
 |----|----|
 |`tcpdump host IP` or `tcpdump host HOSTNAME`|Filters packets by IP address or hostname|
 |`tcpdump src host IP` or|Filters packets by a specific source host|
@@ -501,7 +503,7 @@ reading from file TwoPackets.pcap, link-type EN10MB (Ethernet), snapshot length 
 
 The table below provides a summary of the command line options that we covered.
 
-| Command | Explanation |
+|Command|Explanation|
 |----|----|
 |`tcpdump -q`|Quick and quite: brief packet information|
 |`tcpdump -e`|Include MAC addresses|

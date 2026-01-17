@@ -9,10 +9,12 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn vim, a universal text editor that can be incredibly powerful when used properly. 
-From basic text editing to editing of binary files, Vim can be an important arsenal in a security toolkit.
+Description:
+Learn vim, a universal text editor that can be incredibly powerful when used properly. From basic 
+text editing to editing of binary files, Vim can be an important arsenal in a security toolkit.
 ```
 
 Room link: [https://tryhackme.com/room/toolboxvim](https://tryhackme.com/room/toolboxvim)

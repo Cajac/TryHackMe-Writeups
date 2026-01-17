@@ -9,10 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn how to use JavaScript to add interactivity to a website and understand 
-associated vulnerabilities.
+Description:
+Learn how to use JavaScript to add interactivity to a website and understand associated vulnerabilities.
 ```
 
 Room link: [https://tryhackme.com/room/javascriptessentials](https://tryhackme.com/room/javascriptessentials)

@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn how to perform basic SQL queries to retrieve and manage data in a database.
+Description:
+Learn how to perform basic SQL queries to retrieve and manage data in a database.
 ```
 
 Room link: [https://tryhackme.com/room/sqlfundamentals](https://tryhackme.com/room/sqlfundamentals)

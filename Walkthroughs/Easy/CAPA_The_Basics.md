@@ -10,8 +10,10 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn to use CAPA to identify malicious capabilities.
+Description:
+Learn to use CAPA to identify malicious capabilities.
 ```
 
 Room link: [https://tryhackme.com/room/capabasics](https://tryhackme.com/room/capabasics)

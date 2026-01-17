@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn how to use John the Ripper, a powerful and adaptable hash-cracking tool.
+Description:
+Learn how to use John the Ripper, a powerful and adaptable hash-cracking tool.
 ```
 
 Room link: [https://tryhackme.com/room/johntheripperbasics](https://tryhackme.com/room/johntheripperbasics)

@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn the basics of PowerShell and PowerShell Scripting
+Description:
+Learn the basics of PowerShell and PowerShell Scripting
 ```
 
 Room link: [https://tryhackme.com/room/powershell](https://tryhackme.com/room/powershell)

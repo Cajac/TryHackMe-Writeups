@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn about the different types of shells.
+Description:
+Learn about the different types of shells.
 ```
 
 Room link: [https://tryhackme.com/room/shellsoverview](https://tryhackme.com/room/shellsoverview)

@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Learn to use the Sysinternals tools to analyze Windows systems or applications.

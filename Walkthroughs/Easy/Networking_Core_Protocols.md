@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn about the core TCP/IP protocols.
+Description:
+Learn about the core TCP/IP protocols.
 ```
 
 Room link: [https://tryhackme.com/room/networkingcoreprotocols](https://tryhackme.com/room/networkingcoreprotocols)
@@ -122,7 +124,7 @@ Registrant Street: DomainsByProxy.com
 [...]
 ```
 
-#### When was the x.com record created? Provide the answer in YYYY-MM-DD format.
+#### When was the x.com record created? Provide the answer in YYYY-MM-DD format
 
 Hint: You can use the command line tool whois on the AttackBox. Alternatively, you can use an online WHOIS lookup service.
 
@@ -145,7 +147,7 @@ Hint: You can use the command line tool whois on the AttackBox. Alternatively, y
 
 Answer: 1993-04-02
 
-#### When was the twitter.com record created? Provide the answer in YYYY-MM-DD format.
+#### When was the twitter.com record created? Provide the answer in YYYY-MM-DD format
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Walkthroughs/Easy/Networking_Core_Protocols]
@@ -571,7 +573,7 @@ In the previous room, we discussed the TELNET protocol; this room focused on oth
 
 The table below summarizes the default port numbers of the protocols we have covered so far.
 
-| Protocol | Transport Protocol | Default Port Number |
+|Protocol|Transport Protocol|Default Port Number|
 |----|----|----|
 |TELNET|TCP|23|
 |DNS|UDP or TCP|53|

@@ -10,8 +10,10 @@
 Type: Walkthrough
 Difficulty: Info
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Discover the impact of training on teams and organisations.
+Description:
+Discover the impact of training on teams and organisations.
 ```
 
 Room link: [https://tryhackme.com/room/training](https://tryhackme.com/room/training)

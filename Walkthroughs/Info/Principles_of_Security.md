@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn the principles of information security that secures data and protects systems from abuse
+Description:
+Learn the principles of information security that secures data and protects systems from abuse
 ```
 
 Room link: [https://tryhackme.com/room/principlesofsecurity](https://tryhackme.com/room/principlesofsecurity)
@@ -129,7 +131,7 @@ The Bell-La Padula Model is used to achieve confidentiality. This model has a fe
 
 The model works by granting access to pieces of data (called objects) on a strictly need to know basis. This model uses the rule "no write down, no read up".
 
-| Advantages | Disadvantages |
+|Advantages|Disadvantages|
 |----|----|
 |Policies in this model can be replicated to real-life organisations hierarchies (and vice versa)|Even though a user may not have access to an object, they will know about its existence -- so it's not confidential in that aspect.|
 |Simple to implement and understand, and has been proven to be successful.|The model relies on a large amount of trust within the organisation.|
@@ -146,7 +148,7 @@ This model applies the rule to objects (data) and subjects (users) that can be s
 
 Let's compare some advantages and disadvantages of this model in the table below:
 
-| Advantages | Disadvantages |
+|Advantages|Disadvantages|
 |----|----|
 |This model is simple to implement.|There will be many levels of access and objects. Things can be easily overlooked when applying security controls.|
 |Resolves the limitations of the Bell-La Padula model by addressing both confidentiality and data integrity.|Often results in delays within a business. For example, a doctor would not be able to read the notes made by a nurse in a hospital with this model.|
@@ -213,7 +215,7 @@ It is, however, a complex process that needs constant review and discussion with
 
 To help with this, there are frameworks such as **STRIDE** (**S**poofing identity, **T**ampering with data, **R**epudiation threats, **I**nformation disclosure, **D**enial of Service and **E**levation of privileges) and **PASTA** (**P**rocess for **A**ttack **S**imulation and **T**hreat **A**nalysis) infosec never tasted so good!. Let's detail STRIDE below. STRIDE, authored by two Microsoft security researchers in 1999 is still very relevant today. STRIDE includes six main principles, which I have detailed in the table below:
 
-| Principle | Description |
+|Principle|Description|
 |----|----|
 |Spoofing|This principle requires you to authenticate requests and users accessing a system. Spoofing involves a malicious party falsely identifying itself as another. Access keys (such as API keys) or signatures via encryption helps remediate this threat.|
 |Tampering|By providing anti-tampering measures to a system or application, you help provide integrity to the data. Data that is accessed must be kept integral and accurate. For example, shops use seals on food products.|
@@ -230,7 +232,7 @@ Incidents are classified using a rating of urgency and impact. Urgency will be d
 
 An incident is responded to by a **C**omputer **S**ecurity **I**ncident **R**esponse **T**eam (**CSIRT**) which is prearranged group of employees with technical knowledge about the systems and/or current incident. To successfully solve an incident, these steps are often referred to as the six phases of Incident Response that takes place, listed in the table below:
 
-| Action | Description |
+|Action|Description|
 |----|----|
 |Preparation|Do we have the resources and plans in place to deal with the security incident?|
 |Identification|Has the threat and the threat actor been correctly identified in order for us to respond to?|

@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: An introduction to Security Information and Event Management.
+Description:
+An introduction to Security Information and Event Management.
 ```
 
 Room link: [https://tryhackme.com/room/introtosiem](https://tryhackme.com/room/introtosiem)

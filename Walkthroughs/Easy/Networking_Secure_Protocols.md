@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn how TLS, SSH, and VPN can secure your network traffic.
+Description:
+Learn how TLS, SSH, and VPN can secure your network traffic.
 ```
 
 Room link: [https://tryhackme.com/room/networkingsecureprotocols](https://tryhackme.com/room/networkingsecureprotocols)
@@ -131,7 +133,7 @@ Adding TLS to SMTP, POP3, and IMAP is no different than adding TLS to HTTP. Simi
 
 The insecure versions use the default TCP port numbers shown in the table below:
 
-| Protocol | Default Port Number |
+|Protocol|Default Port Number|
 |----|----|
 |HTTP|80|
 |SMTP|25|
@@ -140,7 +142,7 @@ The insecure versions use the default TCP port numbers shown in the table below:
 
 The secure versions, i.e., over TLS, use the following TCP port numbers by default:
 
-| Protocol | Default Port Number |
+|Protocol|Default Port Number|
 |----|----|
 |HTTPS|443|
 |SMTPS|465 and 587|

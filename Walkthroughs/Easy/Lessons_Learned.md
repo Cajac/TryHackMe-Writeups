@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 A look into the fifth phase of the Incident Response framework: Lessons Learned.

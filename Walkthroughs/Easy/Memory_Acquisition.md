@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows, Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn the techniques and best practices to acquire digitally sound memory.
+Description:
+Learn the techniques and best practices to acquire digitally sound memory.
 ```
 
 Room link: [https://tryhackme.com/room/memoryacquisition](https://tryhackme.com/room/memoryacquisition)
@@ -60,7 +62,7 @@ Before you acquire memory on a system, you must decide what part of the memory i
 
 In the table below, you can find an overview of the type of memory dumps you can take, their content, and use cases. Note that the `pagefile`, `Hibernation File`, and `VM Memory file` are not direct memory dumps. They are files that exist on a disk after performing a certain type of action. The pagefile is filled up with the memory of processes that are suspended or were recently terminated; the hibernation file is created as a result of the host system being put in hibernation mode, and the VM memory file is created when the VM its state is saved or snapshotted.
 
-| Type | Captures | Use Case |
+|Type|Captures|Use Case|
 |----|----|----|
 |**Full Memory Dump**|Entire physical memory (RAM)|Full forensic analysis, malware behavior, valuable for CTI as well|
 |**Process Dump** / **Core Dump**|Memory of a single process (heap, stack, code, modules)|Detect malware injection, behavior analysis|
@@ -119,7 +121,7 @@ Selecting the right tool for the right job is a key factor in determining the qu
 
 Below are some of the most commonly used tools.
 
-| Commercial tools | Free tools |
+|Commercial tools|Free tools|
 |----|----|
 |EnCase Forensic|FTK Imager|
 |CaptureGUARD (PCIe & ExpressCard)|Magnet RAM Capture|

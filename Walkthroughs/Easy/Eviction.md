@@ -10,8 +10,10 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Unearth the monster from under your bed.
+Description:
+Unearth the monster from under your bed.
 ```
 
 Room link: [https://tryhackme.com/room/eviction](https://tryhackme.com/room/eviction)

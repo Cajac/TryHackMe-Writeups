@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Discover the "Power" in PowerShell and learn the basics.
+Description:
+Discover the "Power" in PowerShell and learn the basics.
 ```
 
 Room link: [https://tryhackme.com/room/windowspowershell](https://tryhackme.com/room/windowspowershell)

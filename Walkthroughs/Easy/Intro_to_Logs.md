@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn the fundamentals of logging, data sources, collection methods and principles to step 
+Description:
+Learn the fundamentals of logging, data sources, collection methods and principles to step 
 into the log analysis world.
 ```
 
@@ -101,7 +103,7 @@ A single log entry may seem insignificant on its own. But when log data is aggre
 
 The following hypothetical scenario can illustrate this aspect. Suppose a student allegedly accessed inappropriate content on a University network. By reviewing the logs, a systems administrator could then answer the following:
 
-| Question | Answer |
+|Question|Answer|
 |----|----|
 |**What** happened?|An adversary was **confirmed** to have accessed SwiftSpend Financial's GitLab instance.|
 |**When** did it happen?|Access started at 22:10 on Wednesday, September 8th, 2023.|

@@ -10,8 +10,10 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: How it works and how can I exploit it?
+Description:
+How it works and how can I exploit it?
 ```
 
 Room link: [https://tryhackme.com/room/flask](https://tryhackme.com/room/flask)
@@ -120,7 +122,7 @@ As you might already know, web applications use different HTTP methods when acce
 
 Take a look at line 9. Here we are separating HTTP methods into GET and POST in order to instruct Flask on how to handle them. Inside the function, we can make python differently respond to an incoming GET or POST request. In this case, a POST request would invoke a function **do_the_login()** and everything else would call a **show_the_login_form()** one.
 
-Now, the Flask team has made our lives easier by creating a template rendering function inside Flask. It makes Flask automatically render HTML files into a website, making it easier to handle. 
+Now, the Flask team has made our lives easier by creating a template rendering function inside Flask. It makes Flask automatically render HTML files into a website, making it easier to handle.
 
 ![Flask Render Template](Images/Flask_Render_Template.png)
 

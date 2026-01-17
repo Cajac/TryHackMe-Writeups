@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Using a web-based code editor, learn the basics of Python and put your knowledge 
+Description:
+Using a web-based code editor, learn the basics of Python and put your knowledge 
 into practice by eventually coding a short Bitcoin investment project.
 ```
 
@@ -31,7 +33,7 @@ print("Hello World")
 
 Most operators are as expacted in Python
 
-| Operator | Syntax | Example |
+|Operator|Syntax|Example|
 |----|----|----|
 |Addition|+|1 + 1 = 2|
 |Subtraction|-|5 - 1 = 4|
@@ -78,7 +80,7 @@ print(height)
 
 Logical operators allow assignment and comparisons to be made and are used in conditional testing (such as if statements).
 
-| Logical Operation| Operator | Example |
+|Logical Operation|Operator|Example|
 |----|----|----|
 |Equivalence|==|if x == 5|
 |Less than|<|if x < 5|
@@ -89,7 +91,7 @@ Logical operators allow assignment and comparisons to be made and are used in co
 Boolean operators are used to connect and compare relationships between statements.  
 Like an if statement, conditions can be true or false.
 
-| Boolean Operation | Operator | Example |
+|Boolean Operation|Operator|Example|
 |----|----|----|
 |Both conditions must be true for the statement to be true|AND|if x >= 5 AND x <= 100Returns TRUE if x isa number between 5 and 100|
 |Only one condition of the statement needs to be true|OR|if x == 1 OR x == 10Returns TRUE if X is 1 or 10|

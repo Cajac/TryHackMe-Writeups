@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn how to use NetworkMiner to analyse recorded traffic files and practice network forensics activities.
+Description:
+Learn how to use NetworkMiner to analyse recorded traffic files and practice network forensics activities.
 ```
 
 Room link: [https://tryhackme.com/room/networkminer](https://tryhackme.com/room/networkminer)

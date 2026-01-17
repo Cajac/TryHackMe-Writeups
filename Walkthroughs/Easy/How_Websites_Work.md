@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: To exploit a website, you first need to know how they are created.
+Description:
+To exploit a website, you first need to know how they are created.
 ```
 
 Room link: [https://tryhackme.com/room/howwebsiteswork](https://tryhackme.com/room/howwebsiteswork)
@@ -46,7 +48,7 @@ Websites are primarily created using:
 HyperText Markup Language (HTML) is the language websites are written in. Elements (also known as tags) are the  
 building blocks of HTML pages and tells the browser how to display content.
 
-#### One of the images on the cat website is broken - fix it, and the image will reveal the hidden text answer!
+#### One of the images on the cat website is broken - fix it, and the image will reveal the hidden text answer
 
 ```html
 <!DOCTYPE html>
@@ -195,7 +197,7 @@ HTML Injection is a vulnerability that occurs when unfiltered user input is disp
 fails to sanitise user input (filter any "malicious" text that a user inputs into a website), and that input is  
 used on the page, an attacker can inject HTML code into a vulnerable website.
 
-#### View the website on this task and inject HTML so that a malicious link to http://hacker.com is shown.
+#### View the website on this task and inject HTML so that a malicious link to `http://hacker.com` is shown
 
 Enter the name `<a href="http://hacker.com">Click Me!</a>`
 

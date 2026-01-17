@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: Windows
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: In part 3 of the Windows Fundamentals module, learn about the built-in Microsoft tools that help keep 
+Description:
+In part 3 of the Windows Fundamentals module, learn about the built-in Microsoft tools that help keep 
 the device secure, such as Windows Updates, Windows Security, BitLocker, and more...
 ```
 

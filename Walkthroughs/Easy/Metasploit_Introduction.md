@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: An introduction to the main components of the Metasploit Framework.
+Description:
+An introduction to the main components of the Metasploit Framework.
 ```
 
 Room link: [https://tryhackme.com/room/metasploitintro](https://tryhackme.com/room/metasploitintro)
@@ -576,7 +578,7 @@ The output of the `search` command provides an overview of each returned module.
 
 Another essential piece of information returned is in the “rank” column. Exploits are rated based on their reliability. The table below provides their respective descriptions.
 
-| Ranking | Description |
+|Ranking|Description|
 |----|----|
 |ExcellentRanking|The exploit will never crash the service. This is the case for SQL Injection, CMD execution, RFI, LFI, etc. No typical memory corruption exploits should be given this ranking unless there are extraordinary circumstances ([WMF Escape()](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/browser/ms06_001_wmf_setabortproc.rb)).|
 |GreatRanking|The exploit has a default target AND either auto-detects the appropriate target or uses an application-specific return address AFTER a version check.|

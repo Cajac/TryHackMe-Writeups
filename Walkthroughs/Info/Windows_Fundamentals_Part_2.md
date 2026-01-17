@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: Windows
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: In part 2 of the Windows Fundamentals module, discover more about System Configuration, UAC Settings, 
+Description:
+In part 2 of the Windows Fundamentals module, discover more about System Configuration, UAC Settings, 
 Resource Monitoring, the Windows Registry and more.
 ```
 

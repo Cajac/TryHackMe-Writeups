@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn about the security triad and common security models and principles.
+Description:
+Learn about the security triad and common security models and principles.
 ```
 
 Room link: [https://tryhackme.com/room/securityprinciples](https://tryhackme.com/room/securityprinciples)
@@ -136,7 +138,7 @@ The Bell-LaPadula Model aims to achieve **confidentiality** by specifying three 
 - **Star Security Property**: This property is referred to as “no write down”; it states that a subject at a higher security level cannot write to an object at a lower security level. This rule prevents the disclosure of sensitive information to a subject of lower security level.
 - **Discretionary-Security Property**: This property uses an access matrix to allow read and write operations. An example access matrix is shown in the table below and used in conjunction with the first two properties.
 
-| Subjects | Object A | Object B |
+|Subjects|Object A|Object B|
 |----|----|----|
 |Subject 1|Write|No access|
 |Subject 2|Read/Write|Read|

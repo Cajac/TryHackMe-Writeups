@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Learn about a vulnerability allowing you to execute commands through a vulnerable app, and its remediations.
@@ -92,7 +93,7 @@ Command Injection can be detected in mostly one of two ways:
 
 I have defined these two methods in the table below, where the two sections underneath will explain these in greater detail.
 
-| Method | Description |
+|Method|Description|
 |----|----|
 |Blind|This type of injection is where there is no direct output from the application when testing payloads. You will have to investigate the behaviours of the application to determine whether or not your payload was successful.|
 |Verbose|This type of injection is where there is direct feedback from the application once you have tested a payload. For example, running the `whoami` command to see what user the application is running under. The web application will output the username on the page directly.|
@@ -123,7 +124,7 @@ I have compiled some valuable payloads for both Linux & Windows into the tables 
 
 **Linux**
 
-| Payload | Description |
+|Payload|Description|
 |----|----|
 |whoami|See what user the application is running under.|
 |ls|List the contents of the current directory. You may be able to find files such as configuration files, environment files (tokens and application keys), and many more valuable things.|
@@ -133,7 +134,7 @@ I have compiled some valuable payloads for both Linux & Windows into the tables 
 
 **Windows**
 
-| Payload | Description |
+|Payload|Description|
 |----|----|
 |whoami|See what user the application is running under.|
 |dir|List the contents of the current directory. You may be able to find files such as configuration files, environment files (tokens and application keys), and many more valuable things.|

@@ -9,10 +9,12 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn about the fundamental networking framework that determines the various 
-stages in which data is handled across a network
+Description:
+Learn about the fundamental networking framework that determines the various stages in 
+which data is handled across a network
 ```
 
 Room link: [https://tryhackme.com/room/osimodelzi](https://tryhackme.com/room/osimodelzi)

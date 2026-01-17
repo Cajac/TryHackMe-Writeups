@@ -9,10 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: This room focuses on an introduction to Gobuster, an offensive 
-security tool used for enumeration.
+Description:
+This room focuses on an introduction to Gobuster, an offensive security tool used for enumeration.
 ```
 
 Room link: [https://tryhackme.com/room/gobusterthebasics](https://tryhackme.com/room/gobusterthebasics)
@@ -131,12 +132,12 @@ The help page contains multiple sections:
 
 Let’s look at the flags we will often use throughout this room:
 
-| Short Flag | Long Flag | Description |
+|Short Flag|Long Flag|Description|
 |----|----|----|
 |`-t`|`--threads`|This flag configures the number of threads to use for the scan. Each of these threads sends out requests with a slight delay. The default number of threads is 10. This number may be slow when using large wordlists. You can increase or decrease the number of threads depending on the available system resources.|
 |`-w`|`--wordlist`|The flag configures a wordlist to use for iterating. Each wordlist entry is attached to the URL you included in the command.|
-| |`--delay`|This flag defines the amount of time to wait between sending requests. Some web servers include mechanisms to detect enumeration by looking at how many requests are received in a certain period of time. We can increase the delay between subsequent requests to make it look like normal web traffic.|
-| |`--debug`|This flag helps us to troubleshoot when our command gives unexpected errors.|
+||`--delay`|This flag defines the amount of time to wait between sending requests. Some web servers include mechanisms to detect enumeration by looking at how many requests are received in a certain period of time. We can increase the delay between subsequent requests to make it look like normal web traffic.|
+||`--debug`|This flag helps us to troubleshoot when our command gives unexpected errors.|
 |`-o`|`--output`|This flag writes the enumeration results to a file we choose.|
 
 #### Example
@@ -182,7 +183,7 @@ If you want a complete overview of what the Gobuster `dir` command can offer, yo
 
 Many flags are used to fine-tune the `gobuster dir` command. It is out of scope to go over each one of them, but in the table below, we have listed the flags that cover most of the scenarios:
 
-| Flag | Long Flag | Description |
+|Flag|Long Flag|Description|
 |----|----|----|
 |`-c`|`--cookies`|This flag configures a cookie to pass along each request, such as a session ID.|
 |`-x`|`--extensions`|This flag specifies which file extensions you want to scan for. E.g., .php, .js|
@@ -226,7 +227,7 @@ This command will look for directories located at `http://example.thm` using the
 
 Answer: --no-tls-validation
 
-#### Enumerate the directories of www.offensivetools.thm. Which directory catches your attention?
+#### Enumerate the directories of `www.offensivetools.thm`. Which directory catches your attention?
 
 Hint: Use the directory-list-2.3-medium.txt wordlist for enumeration. The directory in question starts with an “s”.
 
@@ -323,7 +324,7 @@ If you want a complete overview of what the Gobuster `dns` command can offer, yo
 
 The `dns` mode offers fewer flags than the `dir` mode. But these are more than enough to cover most DNS subdomain enumeration scenarios. Let us have a look at some of the commonly used flags:
 
-| Flag | Long Flag | Description |
+|Flag|Long Flag|Description|
 |----|----|----|
 |`-c`|`--show-cname`|Show CNAME Records (cannot be used with the -i flag).|
 |`-i`|`--show-ips`|Including this flag shows IP addresses that the domain and subdomains resolve to.|
@@ -425,13 +426,13 @@ If you want a complete overview of what the Gobuster `vhost` command can offer, 
 
 The `vhost` mode offers flags similar to those of the dir mode. Let us have a look at some of the commonly used flags:
 
-| Short Flag | Long Flag | Description |
+|Short Flag|Long Flag|Description|
 |----|----|----|
 |`-u`|`--url`|Specifies the base URL (target domain) for brute-forcing virtual hostnames.|
-| |`--append-domain`|Appends the base domain to each word in the wordlist (e.g., word.example.com).|
+||`--append-domain`|Appends the base domain to each word in the wordlist (e.g., word.example.com).|
 |`-m`|`--method`|Specifies the HTTP method to use for the requests (e.g., GET, POST).|
-| |`--domain`|Appends a domain to each wordlist entry to form a valid hostname (useful if not provided explicitly).|
-| |`--exclude-length`|Excludes results based on the length of the response body (useful to filter out unwanted responses).|
+||`--domain`|Appends a domain to each wordlist entry to form a valid hostname (useful if not provided explicitly).|
+||`--exclude-length`|Excludes results based on the length of the response body (useful to filter out unwanted responses).|
 |`-r`|`--follow-redirect`|Follows HTTP redirects (useful for cases where subdomains may redirect).|
 
 #### How To Use vhost Mode

@@ -9,10 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Discover how public key ciphers such as RSA work and explore their role 
-in applications such as SSH.
+Description:
+Discover how public key ciphers such as RSA work and explore their role in applications such as SSH.
 ```
 
 Room link: [https://tryhackme.com/room/publickeycrypto](https://tryhackme.com/room/publickeycrypto)
@@ -113,7 +114,7 @@ If you send the instructions in a locked box to your friend, they can unlock it 
 
 In this metaphor, the secret code represents a symmetric encryption cipher and key, the lock represents the server’s public key, and the key represents the server’s private key.
 
-| Analogy | Cryptographic System |
+|Analogy|Cryptographic System|
 |----|----|
 |Secret Code|Symmetric Encryption Cipher and Key|
 |Lock|Public Key|
@@ -396,7 +397,7 @@ Some articles use terms such as electronic signature and digital signature inter
 
 In this task, we use the term digital signature to refer to signing a document using a private key or a certificate. This process is similar to the image shown above, where Bob encrypts a hash of his document and shares it with Alice, along with the original document. Alice can decrypt the encrypted hash and compare it with the hash of the file she received. This approach proves the document’s integrity, unlike pasting a fancy image of a signature. We will cover hashing in the [Hashing Basics room](https://tryhackme.com/r/room/hashingbasics).
 
-#### Certificates: Prove Who You Are!
+#### Certificates: Prove Who You Are
 
 Certificates are an essential application of public key cryptography, and they are also linked to digital signatures. A common place where they’re used is for HTTPS. How does your web browser know that the server you’re talking to is the real tryhackme.com?
 

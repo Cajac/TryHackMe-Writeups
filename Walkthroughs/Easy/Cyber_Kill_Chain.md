@@ -9,10 +9,12 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: The Cyber Kill Chain framework is designed for identification and prevention of the 
-network intrusions. You will learn what the adversaries need to do in order to achieve their goals.
+Description:
+The Cyber Kill Chain framework is designed for identification and prevention of the network 
+intrusions. You will learn what the adversaries need to do in order to achieve their goals.
 ```
 
 Room link: [https://tryhackme.com/room/cyberkillchainzmt](https://tryhackme.com/room/cyberkillchainzmt)
@@ -210,7 +212,7 @@ On December 19th, 2013, Target released a statement confirming the breach, stati
 
 How did the data breach happen? **Deploy the static site** attached to this task and apply your skills to **build the Cyber Kill Chain of this scenario**. Here are some tips to help you complete the practical:
 
-1. Add each item on the list in the correct Kill Chain entry-form on the Static Site Lab:
+**Step 1** - Add each item on the list in the correct Kill Chain entry-form on the Static Site Lab:
 
 - exploit public-facing application
 - data from local system
@@ -219,7 +221,7 @@ How did the data breach happen? **Deploy the static site** attached to this task
 - spearphishing attachment
 - fallback channels
 
-2. Use the ‘Check answers’ button to verify whether the answers are correct (where wrong answers will be underlined in red).
+**Step 2** - Use the ‘Check answers’ button to verify whether the answers are correct (where wrong answers will be underlined in red).
 
 #### What is the flag after you complete the static site?
 

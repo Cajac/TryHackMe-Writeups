@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 Learn about A04, A05, and A08 as they related to insecure data handling.

@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn about how you request content from a web server using the HTTP protocol
+Description:
+Learn about how you request content from a web server using the HTTP protocol
 ```
 
 Room link: [https://tryhackme.com/room/httpindetail](https://tryhackme.com/room/httpindetail)
@@ -182,7 +184,7 @@ server handling the request.
 
 #### Common HTTP Status Codes
 
-| Status code | Description |
+|Status code|Description|
 |----|----|
 |200 - OK|The request was completed successfully.|
 |201 - Created|A resource has been created (for example a new user or new blog post).|

@@ -10,8 +10,10 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn the arsenal of investigative tools in FlareVM.
+Description:
+Learn the arsenal of investigative tools in FlareVM.
 ```
 
 Room link: [https://tryhackme.com/room/flarevmarsenaloftools](https://tryhackme.com/room/flarevmarsenaloftools)

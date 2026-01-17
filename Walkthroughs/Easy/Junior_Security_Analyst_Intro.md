@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Play through a day in the life of a Junior Security Analyst, their responsibilities and 
+Description:
+Play through a day in the life of a Junior Security Analyst, their responsibilities and 
 qualifications needed to land a role as an analyst.
 ```
 

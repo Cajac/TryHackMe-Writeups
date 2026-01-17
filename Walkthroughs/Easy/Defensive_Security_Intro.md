@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: N/A
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Introducing defensive security and related topics, such as Threat Intelligence, 
+Description:
+Introducing defensive security and related topics, such as Threat Intelligence, 
 SOC, DFIR, Malware Analysis, and SIEM.
 ```
 

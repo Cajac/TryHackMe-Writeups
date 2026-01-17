@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn about the ISO OSI model and the TCP/IP protocol suite.
+Description:
+Learn about the ISO OSI model and the TCP/IP protocol suite.
 ```
 
 Room link: [https://tryhackme.com/room/networkingconcepts](https://tryhackme.com/room/networkingconcepts)
@@ -106,7 +108,7 @@ The application layer is the top layer, and you might have encountered many of i
 
 Reading about the ISO OSI model for the first time can be intimidating; however, it becomes easier as you progress in your study of networking protocols. To help with your studies, we have summarised the ISO OSI layers in the table below.
 
-| Layer Number | Layer Name | Main Function | Example Protocols and Standards |
+|Layer Number|Layer Name|Main Function|Example Protocols and Standards|
 |----|----|----|----|
 |Layer 7|Application layer|Providing services and interfaces to applications|HTTP, FTP, DNS, POP3, SMTP, IMAP|
 |Layer 6|Presentation layer|Data encoding, encryption, and compression|Unicode, MIME, JPEG, PNG, MPEG|
@@ -153,15 +155,15 @@ In our presentation of the ISO OSI model, we went from bottom to top, from layer
 
 The table below shows how the TCP/IP model layers map to the ISO/OSI model layers.
 
-| Layer Number | ISO OSI Model | TCP/IP Model (RFC 1122) | Protocols |
+|Layer Number|ISO OSI Model|TCP/IP Model (RFC 1122)|Protocols|
 |----|----|----|----|
 |7|Application Layer|Application Layer|HTTP, HTTPS, FTP, POP3, SMTP, IMAP, Telnet, SSH,|
-|6|Presentation Layer| | |
-|5|Session Layer| | |
+|6|Presentation Layer|||
+|5|Session Layer|||
 |4|Transport Layer|Transport Layer|TCP, UDP|
 |3|Network Layer|Internet Layer|IP, ICMP, IPSec|
 |2|Data Link Layer|Link Layer|Ethernet 802.3, WiFi 802.11|
-|1|Physical Layer| | |
+|1|Physical Layer|||
 
 Many modern networking textbooks show the TCP/IP model as five layers instead of four. For example, in Computer Networking: A Top-Down Approach 8th Edition, Kurose and Ross describe the following five-layer Internet protocol stack by including the physical layer:
 

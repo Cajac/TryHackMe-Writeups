@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn how to use Nmap to discover live hosts, find open ports, and detect service versions.
+Description:
+Learn how to use Nmap to discover live hosts, find open ports, and detect service versions.
 ```
 
 Room link: [https://tryhackme.com/room/nmap](https://tryhackme.com/room/nmap)
@@ -181,7 +183,7 @@ Nmap scans the most common 1,000 ports by default. However, this might not be wh
 
 #### Summary
 
-| Option | Explanation |
+|Option|Explanation|
 |----|----|
 |`-sT`|TCP connect scan – complete three-way handshake|
 |`-sS`|TCP SYN – only first step of the three-way handshake|
@@ -276,7 +278,7 @@ When we run our port scan, such as using `-sS`, there is a possibility that the 
 
 #### Summary
 
-| Option | Explanation |
+|Option|Explanation|
 |----|----|
 |`-O`|OS detection|
 |`-sV`|Service and version detection|
@@ -309,7 +311,7 @@ Running your scan at its normal speed might trigger an IDS or other security sol
 
 In the Nmap scans below, we launch a SYN scan targeting the 100 most common TCP ports, `nmap -sS 10.10.74.24 -F`. We repeated the scan with different timings: T0, T1, T2, T3, and T4. In our lab setup, Nmap took different amounts of time to scan the 100 ports. The table below should give you an idea, but you will get different results depending on the network setup and target system.
 
-| Timing | Total Duration | Time Between Tries |
+|Timing|Total Duration|Time Between Tries|
 |----|----|----|
 |T0 (paranoid)|9.8 hours|5 min between ports|
 |T1 (sneaky)|27.53 minutes|15 sec between ports|
@@ -432,31 +434,31 @@ It is worth noting that it is best to run Nmap with `sudo` privileges so that we
 
 Nmap is a very rich tool, and we only covered the most common and essential features in this room. In the Network Security module, four rooms are dedicated exclusively to Nmap. The table below lists most of the options we explained in this room to help you review and remember them.
 
-| Option | Explanation |
+|Option|Explanation|
 |----|----|
 |`-sL`|List scan – list targets without scanning|
-|**Host Discovery**| |
+|**Host Discovery**||
 |`-sn`|Ping scan – host discovery only|
-|**Port Scanning**| |
+|**Port Scanning**||
 |`-sT`|TCP connect scan – complete three-way handshake|
 |`-sS`|TCP SYN – only first step of the three-way handshake|
 |`-sU`|UDP Scan|
 |`-F`|Fast mode – scans the 100 most common ports|
 |`-p[range]`|Specifies a range of port numbers – `-p-` scans all the ports|
 |`-Pn`|Treat all hosts as online – scan hosts that appear to be down|
-|**Service Detection**| |
+|**Service Detection**||
 |`-O`|OS detection|
 |`-sV`|Service version detection|
 |`-A`|OS detection, version detection, and other additions|
-|**Timing**| |
+|**Timing**||
 |`-T<0-5>`|Timing template – paranoid (0), sneaky (1), polite (2), normal (3), aggressive (4), and insane (5)|
 |`--min-parallelism <numprobes>` and `--max-parallelism <numprobes>`|Minimum and maximum number of parallel probes|
 |`--min-rate <number>` and `--max-rate <number>`|Minimum and maximum rate (packets/second)|
 |`--host-timeout`|Maximum amount of time to wait for a target host|
-|**Real-time output**| |
+|**Real-time output**||
 |`-v`|Verbosity level – for example, `-vv` and `-v4`|
 |`-d`|Debugging level – for example `-d` and `-d9`|
-|**Report**| |
+|**Report**||
 |`-oN <filename>`|Normal output|
 |`-oX <filename>`|XML output|
 |`-oG <filename>`|grep-able output|

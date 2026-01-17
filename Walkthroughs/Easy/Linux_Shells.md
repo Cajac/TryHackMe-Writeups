@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: Linux
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn about scripting and the different types of Linux shells.
+Description:
+Learn about scripting and the different types of Linux shells.
 ```
 
 Room link: [https://tryhackme.com/room/linuxshells](https://tryhackme.com/room/linuxshells)
@@ -176,7 +178,7 @@ Z Shell (`Zsh`) is not installed by default in most Linux distributions. It is c
 - It offers extensive customization that may make it slower than other shells.
 - It also provides tab completion, command history functionality, and several other features.
 
-| Feature | Bash | Fish | Zsh |
+|Feature|Bash|Fish|Zsh|
 |----|----|----|----|
 |Full Name|The full form of Bash is Bourne Again Shell.|The full form of Fish is Friendly Interactive Shell.|The full form of Zsh is Z Shell.|
 |Scripting|It offers widely compatible scripting with extensive documentation available.|It has limited scripting features as compared to the other two shells.|It offers an excellent level of scripting, combining the traditional capabilities of Bash shell with some extra features.|

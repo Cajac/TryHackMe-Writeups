@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows, Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn about firewalls and get hands-on with Windows and Linux built-in firewalls.
+Description:
+Learn about firewalls and get hands-on with Windows and Linux built-in firewalls.
 ```
 
 Room link: [https://tryhackme.com/room/firewallfundamentals](https://tryhackme.com/room/firewallfundamentals)
@@ -67,7 +69,7 @@ This is the most advanced type of firewall that operates from layer 3 to layer 7
 
 The table below lists each firewall’s characteristics, which will help you choose the most suitable firewall for different use cases.
 
-| Firewalls | Characteristics |
+|Firewalls|Characteristics|
 |----|----|
 |Stateless firewalls|Basic filtering, No track of previous connections, Efficient for high-speed networks|
 |Stateful firewalls|Recognize traffic by patterns, Complex rules can be applicable, Monitor the network connections|
@@ -111,7 +113,7 @@ A rule’s “Allow” action indicates that the particular traffic defined insi
 
 For example, let’s create a rule with an action to allow all the outgoing traffic from our network for port 80 (used for HTTP traffic to the Internet).
 
-| Action | Source | Destination | Protocol | Port | Direction |
+|Action|Source|Destination|Protocol|Port|Direction|
 |----|----|----|----|----|----|
 |Allow|192.168.1.0/24|Any|TCP|80|Outbound|
 
@@ -121,7 +123,7 @@ A rule’s “Deny” action means that the traffic defined inside the rule woul
 
 For example, let’s create a rule with an action to deny all the incoming traffic on port 22 (used for remotely connecting to a machine via SSH) of our critical server.
 
-| Action | Source | Destination | Protocol | Port | Direction |
+|Action|Source|Destination|Protocol|Port|Direction|
 |----|----|----|----|----|----|
 |Deny|Any|192.168.1.0/24|TCP|22|Inbound|
 
@@ -131,7 +133,7 @@ The action “Forward” redirects traffic to a different network segment using 
 
 For example, let’s create a rule with an action to forward all the incoming traffic on port 80 (used for HTTP traffic) to the web server `192.168.1.8`.
 
-| Action | Source | Destination | Protocol | Port | Direction |
+|Action|Source|Destination|Protocol|Port|Direction|
 |----|----|----|----|----|----|
 |Forward|Any|192.168.1.8|TCP|80|Inbound|
 

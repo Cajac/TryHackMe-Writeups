@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Learn in-depth how nmap TCP connect scan, TCP SYN port scan, and UDP port scan work.
@@ -371,7 +372,7 @@ Answer: `-T0`
 
 This room covered three types of scans.
 
-| Port Scan Type | Example Command |
+|Port Scan Type|Example Command|
 |----|----|
 |TCP Connect Scan|`nmap -sT 10.65.137.250`|
 |TCP SYN Scan|`sudo nmap -sS 10.65.137.250`|
@@ -379,7 +380,7 @@ This room covered three types of scans.
 
 These scan types should get you started discovering running TCP and UDP services on a target host.
 
-| Option | Purpose |
+|Option|Purpose|
 |----|----|
 |`-p-`|all ports|
 |`-p1-1023`|scan ports 1 to 1023|

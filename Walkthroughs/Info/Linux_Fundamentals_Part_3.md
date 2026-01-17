@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: Linux
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Power-up your Linux skills and get hands-on with some common utilities that you are likely to use day-to-day!
+Description:
+Power-up your Linux skills and get hands-on with some common utilities that you are likely to use day-to-day!
 ```
 
 Room link: [https://tryhackme.com/room/linuxfundamentalspart3](https://tryhackme.com/room/linuxfundamentalspart3)
@@ -20,7 +22,7 @@ Room link: [https://tryhackme.com/room/linuxfundamentalspart3](https://tryhackme
 
 ### Task 2 - Accessing Your Linux Machine Using SSH (Deploy)
 
-#### I've logged into the Linux Fundamentals Part 3 machine using SSH and have deployed the AttackBox successfully!
+#### I've logged into the Linux Fundamentals Part 3 machine using SSH and have deployed the AttackBox successfully
 
 Login to the machine using `ssh` with the credentials `tryhackme:tryhackme`
 
@@ -110,7 +112,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 
 ```
 
-#### Download the file http://10.10.224.80:8000/.flag.txt onto the TryHackMe AttackBox. What are the contents?
+#### Download the file `http://10.10.224.80:8000/.flag.txt` onto the TryHackMe AttackBox. What are the contents?
 
 ```bash
 root@ip-10-10-153-108:~# curl http://10.10.224.80:8000/.flag.txt

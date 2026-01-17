@@ -9,7 +9,8 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Learn how to find and exploit IDOR vulnerabilities in a web application giving you access to data 

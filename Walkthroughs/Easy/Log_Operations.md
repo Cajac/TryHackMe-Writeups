@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn the operation process details.
+Description:
+Learn the operation process details.
 ```
 
 Room link: [https://tryhackme.com/room/logoperations](https://tryhackme.com/room/logoperations)
@@ -187,7 +189,7 @@ Answer: operational and security requirements
 
 Logging is a critical aspect of the cyber-security and IT operations. It is a process that is as burdensome as functional and requires active resource utilisation. Therefore, it is crucial to implement a proper logging operation and ensure its effectiveness and efficiency. There are multiple principles which help achieve the mentioned goal. The table below highlights some of the essentials.
 
-| Principle | Aspects |
+|Principle|Aspects|
 |----|----|
 |**Collection**|Define the logging purpose.<br>Collect what you will need and use.<br>Do not collect irrelevant data.<br>Avoid log noise.|
 |**Format**|Log at the correct level and detail.<br>Implement a consistent log format.<br>Ensure that timestamps in logs are accurate and synchronised.|
@@ -200,7 +202,7 @@ Logging is a critical aspect of the cyber-security and IT operations. It is a pr
 
 Challenges are as much a part of log management as principles. However, most of them can be addressed in the planning section. The table below highlights the main challenges of logging.
 
-| Challenge | Aspects |
+|Challenge|Aspects|
 |----|----|
 |**Data Volume and Noise**|Having multiple data sources to deal with.<br>Differences in the log volumes created by applications.<br>Some applications generate an insufficient amount of logs.<br>Large-scale applicants could generate massive log volumes.<br>Some logs can provide non-essential data and make the identifying process difficult.|
 |**System Performance and Collection**|Log collection can slow down the system's performance.<br>Systems are not always "state of the art".<br>Some "sensitive" or "ancient" systems are impossible to touch.<br>Deployment and optimisation challenges.<br>Managing system and agent version updates and synchronisation in large-scale networks is overwhelming.|
@@ -265,7 +267,7 @@ Common Mistakes and Best Practices
 
 First, you should use consultancy services if you are short on time and need a solution that directly fits your systems. Tailored-up solutions require comprehensive risk assessment practices, as highlighted in the previous tasks. However, avoiding some known pain points and deadlock cases is possible by considering the "dos" and "don'ts" in the planning and implementation steps. Therefore, the main point of this section is understanding "what does work" and "what doesn't".
 
-| Mistakes "don'ts" | Best Practices "dos" |
+|Mistakes "don'ts"|Best Practices "dos"|
 |----|----|
 |Logging sensitive information!|Create a suitable log configuration and plan according to your systems.|
 |Creating logs by yourself.|Implement testing on scale, functionality, and operational stability.|
@@ -275,8 +277,8 @@ First, you should use consultancy services if you are short on time and need a s
 |Having systems that lack the planned/required log configuration.|Focus on having insights on actionable and impactful results.|
 |Skipping the scale, testing, and functionality analysis.|Train your analysts and enhance their skills.|
 |Focusing on edges and skipping the internal systems in analysis.|Update/maintain your operation plans and components/assets as needed.|
-|"Searching for what you want to find" and "Not investigating what you see".| |
-|Forgetting that the process takes the form of proper planning, management, and analysis.| |
+|"Searching for what you want to find" and "Not investigating what you see".||
+|Forgetting that the process takes the form of proper planning, management, and analysis.||
 
 ---------------------------------------------------------------
 
@@ -288,7 +290,7 @@ Answer: Mistake
 
 ### Task 7 - Conclusion
 
-#### Congratulations!
+#### Congratulations
 
 You just finished the "Log Operations" room.
 

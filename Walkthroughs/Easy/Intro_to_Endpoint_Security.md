@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 Learn about fundamentals, methodology, and tooling for endpoint security monitoring.

@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn about the SOC team and their processes.
+Description:
+Learn about the SOC team and their processes.
 ```
 
 Room link: [https://tryhackme.com/room/socfundamentals](https://tryhackme.com/room/socfundamentals)
@@ -111,7 +113,7 @@ Following are some questions that need to be answered during the triage of an al
 
 **Alert**: Malware detected on Host: GEORGE PC
 
-| 5 Ws | Answers |
+|5 Ws|Answers|
 |----|----|
 |What?|A malicious file was detected on one of the hosts inside the organization’s network.|
 |When?|The file was detected at 13:20 on June 5, 2024.|

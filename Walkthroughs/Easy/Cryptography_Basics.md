@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn the basics of cryptography and symmetric encryption.
+Description:
+Learn the basics of cryptography and symmetric encryption.
 ```
 
 Room link: [https://tryhackme.com/room/cryptographybasics](https://tryhackme.com/room/cryptographybasics)
@@ -184,7 +186,7 @@ The building blocks of modern cryptography lie in mathematics. To demonstrate so
 
 XOR, short for “exclusive OR”, is a logical operation in binary arithmetic that plays a crucial role in various computing and cryptographic applications. In binary, XOR compares two bits and returns 1 if the bits are different and 0 if they are the same, as shown in the truth table below. This operation is often represented by the symbol ⊕ or ^.
 
-| A | B | A ⊕ B |
+|A|B|A ⊕ B|
 |----|----|----|
 |0|0|0|
 |0|1|1|

@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Info
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description: 
 Embark on the journey of learning the fundamentals of Linux. 

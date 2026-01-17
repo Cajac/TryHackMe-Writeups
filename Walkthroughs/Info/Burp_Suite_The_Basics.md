@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Info
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 An introduction to using Burp Suite for web application pentesting.

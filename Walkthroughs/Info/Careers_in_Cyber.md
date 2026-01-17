@@ -10,8 +10,10 @@
 Type: Walkthrough
 Difficulty: Info
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn about the different careers in cyber security.
+Description:
+Learn about the different careers in cyber security.
 ```
 
 Room link: [https://tryhackme.com/room/careersincyber](https://tryhackme.com/room/careersincyber)

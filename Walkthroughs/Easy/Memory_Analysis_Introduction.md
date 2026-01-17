@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows, Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn how memory analysis helps detect threats during live investigations.
+Description:
+Learn how memory analysis helps detect threats during live investigations.
 ```
 
 Room link: [https://tryhackme.com/room/memoryanalysisintroduction](https://tryhackme.com/room/memoryanalysisintroduction)
@@ -139,7 +141,7 @@ In some cases, the system’s hibernation file (hiberfil.sys) can also be parsed
 
 Acquiring a clean and reliable memory dump comes with several challenges. Attackers may deploy anti-forensics techniques to tamper with memory capture tools or hide their presence in RAM. Common examples include:
 
-| Challenge | Description |
+|Challenge|Description|
 |----|----|
 |Unlinked or hidden modules|Malware may unlink itself from process lists, making it invisible to tools relying on typical OS queries.|
 |DKOM (Direct Kernel Object Manipulation)|Alters kernel structures to hide processes, threads, or drivers from standard system tools.|

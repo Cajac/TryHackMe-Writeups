@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows, Active Directory
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn how to enumerate an Active Directory network and get initial access.
+Description:
+Learn how to enumerate an Active Directory network and get initial access.
 ```
 
 Room link: [https://tryhackme.com/room/adbasicenumeration](https://tryhackme.com/room/adbasicenumeration)
@@ -143,7 +145,7 @@ We can also use Nmap in ping scan mode (`-sn`) to probe the entire subnet:
 
 Once we've discovered live hosts, we must identify which one is the Domain Controller (DC) to determine which critical AD-related services are being used and can be exploited. These are some common Active Directory ports and protocols:
 
-| Port | Protocol | What it Means |
+|Port|Protocol|What it Means|
 |----|----|----|
 |88|Kerberos|Potential for Kerberos-based enumeration|
 |135|MS-RPC|Potential for RPC enumeration (null sessions)|

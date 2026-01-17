@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn the applications and language that is Yara for everything threat intelligence, 
+Description:
+Learn the applications and language that is Yara for everything threat intelligence, 
 forensics, and threat hunting!
 ```
 
@@ -49,7 +51,7 @@ We could write a Yara rule to search for "hello world" in every program on our o
 
 Malware, just like our "Hello World" application, uses strings to store textual data. Here are a few examples of the data that various malware types store within strings:
 
-| Type | Data | Description |
+|Type|Data|Description|
 |----|----|----|
 |Ransomware|12t9YDPgwueZ9NyMgw519p7AA8isjr6SMw|Bitcoin Wallet for ransom payments|
 |Botnet|12.34.56.7|The IP address of the Command and Control (C&C) server|

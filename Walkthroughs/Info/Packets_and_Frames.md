@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Info
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Understand how data is divided into smaller pieces and transmitted across a network to another device
+Description:
+Understand how data is divided into smaller pieces and transmitted across a network to another device
 ```
 
 Room link: [https://tryhackme.com/room/packetsframes](https://tryhackme.com/room/packetsframes)
@@ -59,7 +61,7 @@ the Three-way handshake.
 
 The Three-way handshake communicates using a few special messages - the table below highlights the main ones:
 
-| Step | Message | Description |
+|Step|Message|Description|
 |----|----|----|
 |1|SYN|A SYN message is the initial packet sent by a client during the handshake.|
 |2|SYN/ACK|This packet is sent by the receiving device (server) to acknowledge the synchronisation attempt from the client.|

@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn how DNS works and how it helps you access internet services.
+Description:
+Learn how DNS works and how it helps you access internet services.
 ```
 
 Room link: [https://tryhackme.com/room/dnsindetail](https://tryhackme.com/room/dnsindetail)
@@ -120,7 +122,7 @@ What happens when you make a DNS request?
    answer, starting with the internet's root DNS servers.
 
 3. The root servers act as the DNS backbone of the internet; their job is to redirect you to the correct Top  
-   Level Domain Server, depending on your request. If, for example, you request www.tryhackme.com, the root  
+   Level Domain Server, depending on your request. If, for example, you request `www.tryhackme.com`, the root  
    server will recognise the Top Level Domain of .com and refer you to the correct TLD server that deals with  
    .com addresses.
 
@@ -165,7 +167,7 @@ Answer: THM{7012BBA60997F35A9516C2E16D2944FF}
 
 Answer: 30
 
-#### What is the IP address for the A record of www.website.thm?
+#### What is the IP address for the A record of `www.website.thm`?
 
 Answer: 10.10.10.10
 

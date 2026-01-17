@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn about hashing functions and their uses in password verification and file integrity checking.
+Description:
+Learn about hashing functions and their uses in password verification and file integrity checking.
 ```
 
 Room link: [https://tryhackme.com/room/hashingbasics](https://tryhackme.com/room/hashingbasics)
@@ -233,7 +235,7 @@ There’s just one problem with this. What if two users have the same password? 
 
 A **Rainbow Table** is a lookup table of hashes to plaintexts, so you can quickly find out what password a user had just from the hash. A rainbow table trades the time to crack a hash for hard disk space, but it takes time to create. Here’s a quick example to get an idea of what a rainbow table looks like.
 
-| Hash | Password |
+|Hash|Password|
 |----|----|
 |02c75fb22c75b23dc963c7eb91a062cc|zxcvbnm|
 |b0baee9d279d34fa1dfd71aadb908c3f|11111|
@@ -300,7 +302,7 @@ The encrypted password field contains the hashed passphrase with four components
 
 Here’s a quick table of some of the most common Unix-style password prefixes you might encounter. They are listed in the order of decreasing strength. You can read more about them by checking the man page with `man 5 crypt`.
 
-| Prefix | Algorithm |
+|Prefix|Algorithm|
 |----|----|
 |`$y$`|yescrypt is a scalable hashing scheme and is the default and recommended choice in new systems|
 |`$gy$`|gost-yescrypt uses the GOST R 34.11-2012 hash function and the yescrypt hashing method|

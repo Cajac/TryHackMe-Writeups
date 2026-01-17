@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Tutorial room exploring some basic file-upload vulnerabilities in websites
+Description:
+Tutorial room exploring some basic file-upload vulnerabilities in websites
 ```
 
 Room link: [https://tryhackme.com/room/uploadvulns](https://tryhackme.com/room/uploadvulns)

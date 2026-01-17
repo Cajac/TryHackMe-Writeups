@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Introducing cyber threat intelligence and related topics, such as relevant standards and frameworks.
+Description:
+Introducing cyber threat intelligence and related topics, such as relevant standards and frameworks.
 ```
 
 Room link: [https://tryhackme.com/room/cyberthreatintel](https://tryhackme.com/room/cyberthreatintel)
@@ -173,7 +175,7 @@ Developed by Lockheed Martin, the Cyber Kill Chain breaks down adversary actions
 
 ![Cyber Kill Chain](Images/Cyber_Kill_Chain.png)
 
-| Technique | Purpose | Examples |
+|Technique|Purpose|Examples|
 |----|----|----|
 |Reconnaissance|Obtain information about the victim and the tactics used for the attack.|Harvesting emails, OSINT, and social media, network scans|
 |Weaponisation|Malware is engineered based on the needs and intentions of the attack.|Exploit with a backdoor, malicious office document|

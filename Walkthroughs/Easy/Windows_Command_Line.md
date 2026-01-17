@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn the essential Windows commands.
+Description:
+Learn the essential Windows commands.
 ```
 
 Room link: [https://tryhackme.com/room/windowscommandline](https://tryhackme.com/room/windowscommandline)

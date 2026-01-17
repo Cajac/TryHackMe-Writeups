@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn how to perform Incident Response in cyber security.
+Description:
+Learn how to perform Incident Response in cyber security.
 ```
 
 Room link: [https://tryhackme.com/room/incidentresponsefundamentals](https://tryhackme.com/room/incidentresponsefundamentals)
@@ -100,7 +102,7 @@ SANS and NIST are popular organizations contributing to cyber security. SANS has
 
 The SANS incident Response framework has 6 phases, which can be called 'PICERL' to remember them easily.
 
-| Phase | Explanation | Example |
+|Phase|Explanation|Example|
 |----|----|----|
 |Preparation|This is the first phase. The preparation phase includes building the necessary resources to handle an incident. These resources include developing incident response teams, having a proper incident response plan in place, and deploying necessary security solutions to combat the incidents.|Conducting awareness training for employees on phishing emails. Phishing emails are fraudulent emails sent by malicious attackers that can trick you into performing actions that can lead you to an incident.|
 |Identification|The identification phase refers to looking for any abnormal behavior that may indicate an incident. This involves using various security solutions and techniques to monitor abnormal events.|The security team notices a huge amount of data being sent out from one of the hosts. Upon analysis, it was found to be compromised after a malicious file was downloaded from a phishing email attachment.|

@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: The Unified Kill Chain is a framework which establishes the phases of an attack, 
+Description:
+The Unified Kill Chain is a framework which establishes the phases of an attack, 
 and a means of identifying and mitigating risk to IT assets.
 ```
 
@@ -75,7 +77,7 @@ Some large benefits of the UKC over traditional cybersecurity kill chain framewo
 
 ![Unified Kill Chain Phases](Images/Unified_Kill_Chain_Phases.png)
 
-| Benefits of the Unified Kill Chain (UKC) Framework | How do Other Frameworks Compare? |
+|Benefits of the Unified Kill Chain (UKC) Framework|How do Other Frameworks Compare?|
 |----|----|
 |Modern (released in 2017, updated in 2022).|Some frameworks, such as MITRE’s were released in 2013, when the cybersecurity landscape was very different.|
 |The UKC is extremely detailed (18 phases).|Other frameworks often have a small handful of phases.|

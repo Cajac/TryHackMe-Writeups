@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn the fundamentals of IDS, along with the experience of working with Snort.
+Description:
+Learn the fundamentals of IDS, along with the experience of working with Snort.
 ```
 
 Room link: [https://tryhackme.com/room/idsfundamentals](https://tryhackme.com/room/idsfundamentals)
@@ -73,7 +75,7 @@ Snort is one of the most widely used open-source IDS solutions developed in 1998
 
 #### Modes of Snort
 
-| Mode | Description | Use Case |
+|Mode|Description|Use Case|
 |----|----|----|
 |Packet sniffer mode|This mode reads and displays network packets without performing any analysis on them. The packet sniffer mode of Snort does not directly relate to IDS capabilities, but it can be helpful in network monitoring and troubleshooting. In some cases, system administrators might need to read the traffic flow without performing any detection to diagnose specific issues. In this case, they can utilize the packet sniffer mode of Snort. This mode allows you to display the network traffic on the console or even output it in a file.|The network team observes some network performance issues. To diagnose the issue, they need detailed insights into the network traffic. For this purpose, they can utilize Snort’s packet sniffer mode.|
 |Packet logging mode|Snort performs detection on the network traffic in real-time and displays the detections as alerts on the console for the security administrators to take action. However, in some cases, the network traffic needs to be logged for later analysis. The packet logging mode of Snort allows you to log the network traffic as a PCAP (standard packet capture format) file. This includes all the network traffic and any detections from it. Forensic investigators can use these Snort log files to perform the root cause analysis of previous attacks.|The security team needs to initiate a forensic investigation of a network attack. They would need the traffic logs to perform the root cause analysis. The network traffic logged through Snort’s packet logging mode can help them.|

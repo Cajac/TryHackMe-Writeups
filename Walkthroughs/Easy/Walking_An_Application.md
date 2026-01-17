@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Manually review a web application for security issues using only your browsers developer tools. 
+Description:
+Manually review a web application for security issues using only your browsers developer tools. 
 Hacking with just your browser, no tools or scripts.
 ```
 
@@ -43,7 +45,7 @@ Finding interactive portions of the website can be as easy as spotting a login f
 
 An example site review for the Acme IT Support website would look something like this:
 
-| Feature | URL | Summary |
+|Feature|URL|Summary|
 |----|----|----|
 |Home Page|/|This page contains a summary of what Acme IT Support does with a company photo of their staff.|
 |Latest News|/news|This page contains a list of recently published news articles by the company, and each news article has a link with an id number, i.e. /news/article?id=1|

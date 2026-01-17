@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 Learn about A01, A07, and A09 in how they related to failures in the applied IAAA model.

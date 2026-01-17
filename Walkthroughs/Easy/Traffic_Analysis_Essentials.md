@@ -9,10 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn Network Security and Traffic Analysis foundations and take a step into 
-probing network anomalies.
+Description:
+Learn Network Security and Traffic Analysis foundations and take a step into probing network anomalies.
 ```
 
 Room link: [https://tryhackme.com/room/trafficanalysisessentials](https://tryhackme.com/room/trafficanalysisessentials)

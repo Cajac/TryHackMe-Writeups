@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 This room is an introduction to CyberChef, the Swiss Army knife for cyber security professionals.

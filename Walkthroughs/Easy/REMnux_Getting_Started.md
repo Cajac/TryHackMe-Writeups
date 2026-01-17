@@ -10,8 +10,10 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn how you can use the tools inside the REMnux VM.
+Description:
+Learn how you can use the tools inside the REMnux VM.
 ```
 
 Room link: [https://tryhackme.com/room/remnuxgettingstarted](https://tryhackme.com/room/remnuxgettingstarted)

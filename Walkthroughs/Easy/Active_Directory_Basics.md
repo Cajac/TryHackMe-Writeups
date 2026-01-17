@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: Windows
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: This room will introduce the basic concepts and functionality provided by Active Directory.
+Description:
+This room will introduce the basic concepts and functionality provided by Active Directory.
 ```
 
 Room link: [https://tryhackme.com/room/winadbasics](https://tryhackme.com/room/winadbasics)
@@ -95,7 +97,7 @@ Groups can have both users and machines as members. If needed, groups can includ
 
 Several groups are created by default in a domain that can be used to grant specific privileges to users. As an example, here are some of the most important groups in a domain:
 
-| Security Group | Description |
+|Security Group|Description|
 |----|----|
 |Domain Admins|Users of this group have administrative privileges over the entire domain. By default, they can administer any computer on the domain, including the DCs.|
 |Server Operators|Users in this group can administer Domain Controllers. They cannot change any administrative group memberships.|

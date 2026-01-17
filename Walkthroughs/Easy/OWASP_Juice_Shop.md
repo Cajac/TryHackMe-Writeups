@@ -9,10 +9,12 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: This room uses the Juice Shop vulnerable web application to learn how to identify 
-and exploit common web application vulnerabilities.
+Description:
+This room uses the Juice Shop vulnerable web application to learn how to identify and 
+exploit common web application vulnerabilities.
 ```
 
 Room link: [https://tryhackme.com/room/owaspjuiceshop](https://tryhackme.com/room/owaspjuiceshop)
@@ -105,7 +107,7 @@ Answer: Star Trek
 
 This task will be focusing on injection vulnerabilities. Injection vulnerabilities are quite dangerous to a company as they can potentially cause downtime and/or loss of data. Identifying injection points within a web application is usually quite simple, as most of them will return an error. There are many types of injection attacks, some of them are:
 
-| Injection Type | Description |
+|Injection Type|Description|
 |----|----|
 |SQL Injection|SQL Injection is when an attacker enters a malicious or malformed query to either retrieve or tamper data from a database. And in some cases, log into accounts.|
 |Command Injection|Command Injection is when web applications take input or user-controlled data and run them as system commands. An attacker may tamper with this data to execute their own system commands. This can be seen in applications that perform misconfigured ping tests.|
@@ -283,7 +285,7 @@ Modern-day systems will allow for multiple users to have access to different pag
 
 When Broken Access Control exploits or bugs are found, it will be categorised into one of **two types**:
 
-| Type of Privilege Escalation | Description |
+|Type of Privilege Escalation|Description|
 |----|----|
 |**Horizontal** Privilege Escalation|Occurs when a user can perform an action or access data of another user with the **same** level of permissions.|
 |**Vertical** Privilege Escalation|Occurs when a user can perform an action or access data of another user with a **higher** level of permissions.|
@@ -352,7 +354,7 @@ Flag: 50c97bcce0b895e446d61c83a21df371ac2266ef
 
 There are three major types of XSS attacks:
 
-| Type of XSS | Description |
+|Type of XSS|Description|
 |----|----|
 |DOM (Special)|**DOM XSS** (Document Object Model-based Cross-site Scripting) uses the HTML environment to execute malicious javascript. This type of attack commonly uses the `<script></script>` HTML tag.|
 |Persistent (Server-side)|**Persistent XSS** is javascript that is run when the server loads the page containing it. These can occur when the server does not sanitise the user data when it is **uploaded** to a page. These are commonly found on blog posts.|

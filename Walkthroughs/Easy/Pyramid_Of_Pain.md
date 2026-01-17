@@ -9,11 +9,13 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn what is the Pyramid of Pain and how to utilize this model to determine the level 
-of difficulty it will cause for an adversary to change the indicators associated with them, and 
-their campaign.
+Description:
+Learn what is the Pyramid of Pain and how to utilize this model to determine the level of 
+difficulty it will cause for an adversary to change the indicators associated with them, 
+and their campaign.
 ```
 
 Room link: [https://tryhackme.com/room/pyramidofpainax](https://tryhackme.com/room/pyramidofpainax)

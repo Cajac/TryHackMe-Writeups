@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn the basics of web applications: HTTP, URLs, request methods, response codes, and headers.
+Description:
+Learn the basics of web applications: HTTP, URLs, request methods, response codes, and headers.
 ```
 
 Room link: [https://tryhackme.com/room/webapplicationbasics](https://tryhackme.com/room/webapplicationbasics)
@@ -265,7 +267,7 @@ Request Headers allow extra information to be conveyed to the web server about t
 
 Common Request Headers
 
-| Request Header | Example | Description |
+|Request Header|Example|Description|
 |----|----|----|
 |Host|Host: tryhackme.com|Specifies the name of the web server the request is for.|
 |User-Agent|User-Agent: Mozilla/5.0|Shares information about the web browser the request is coming from.|

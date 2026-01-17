@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Explore networking protocols from automatic configuration to routing packets to the destination.
+Description:
+Explore networking protocols from automatic configuration to routing packets to the destination.
 ```
 
 Room link: [https://tryhackme.com/room/networkingessentials](https://tryhackme.com/room/networkingessentials)
@@ -227,7 +229,7 @@ Answer: 65
 
 This room introduced various protocols that we constantly use directly or indirectly. We have covered ICMP, DHCP, ARP, NAT, and routing. Although we use the Internet daily without coming across most of this room’s acronyms, these protocols are the foundation for a functional network.
 
-#### Please follow the instructions on the site to obtain the flag.
+#### Please follow the instructions on the site to obtain the flag
 
 Answer: `THM{<REDACTED>}`
 

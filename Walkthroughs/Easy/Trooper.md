@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Use Cyber Threat Intelligence knowledge and skills to identify a threat based on a report.
+Description:
+Use Cyber Threat Intelligence knowledge and skills to identify a threat based on a report.
 ```
 
 Room link: [https://tryhackme.com/room/trooper](https://tryhackme.com/room/trooper)

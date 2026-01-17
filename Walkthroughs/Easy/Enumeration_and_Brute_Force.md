@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Enumerate and brute force authentication mechanisms.
+Description:
+Enumerate and brute force authentication mechanisms.
 ```
 
 Room link: [https://tryhackme.com/room/enumerationbruteforce](https://tryhackme.com/room/enumerationbruteforce)

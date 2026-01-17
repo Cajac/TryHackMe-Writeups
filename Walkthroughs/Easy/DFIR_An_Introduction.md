@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows, Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Introductory room for the DFIR module
+Description:
+Introductory room for the DFIR module
 ```
 
 Room link: [https://tryhackme.com/room/introductoryroomdfirmodule](https://tryhackme.com/room/introductoryroomdfirmodule)

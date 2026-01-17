@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Leak user's credentials using CVE-2024-21413 to bypass Outlook's Protected View.
+Description:
+Leak user's credentials using CVE-2024-21413 to bypass Outlook's Protected View.
 ```
 
 Room link: [https://tryhackme.com/room/monikerlink](https://tryhackme.com/room/monikerlink)
@@ -26,8 +28,8 @@ The vulnerability bypasses Outlook's security mechanisms when handing a specific
 
 Details relating to the scoring of the vulnerability have been provided in the table below:
 
- |CVSS | Description |
- |----|----|
+|CVSS|Description|
+|----|----|
 |Publish date|February 13th, 2024|
 |MS article|[https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2024-21413](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2024-21413)|
 |Impact|Remote Code Execution & Credential Leak|
@@ -37,7 +39,7 @@ Details relating to the scoring of the vulnerability have been provided in the t
 
 The vulnerability is known to affect the following Office releases:
 
-| Release | Version |
+|Release|Version|
 |----|----|
 |Microsoft Office LTSC 2021|affected from 19.0.0|
 |Microsoft 365 Apps for Enterprise|affected from 16.0.1|

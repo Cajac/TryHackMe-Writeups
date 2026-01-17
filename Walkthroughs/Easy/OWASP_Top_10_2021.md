@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn about and exploit each of the OWASP Top 10 vulnerabilities; 
+Description:
+Learn about and exploit each of the OWASP Top 10 vulnerabilities; 
 the 10 most critical web security risks.
 ```
 
@@ -819,7 +821,7 @@ To see this in action, go to `http://10.10.252.245:8088` and try to register wit
 
 #### What is the flag that you found in darren's account?
 
-Registering with the username ` darren` and then logging in with the same username gives us the flag.
+Registering with the username `darren` and then logging in with the same username gives us the flag.
 
 Answer: fe86079416a21a3c99937fea8874b667
 
@@ -888,9 +890,9 @@ The correct way to insert the library in your HTML code would be to use SRI and 
 
 You can go to `https://www.srihash.org/` to generate hashes for any library if needed.
 
-#### What is the SHA-256 hash of https://code.jquery.com/jquery-1.12.4.min.js?
+#### What is the SHA-256 hash of `https://code.jquery.com/jquery-1.12.4.min.js`?
 
-Hint: Remember you can use https://www.srihash.org/ to calculate integrity hashes for SRI.
+Hint: Remember you can use `https://www.srihash.org/` to calculate integrity hashes for SRI.
 
 ```text
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>

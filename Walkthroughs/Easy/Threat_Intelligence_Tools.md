@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Explore different OSINT tools used to conduct security threat assessments and investigations.
+Description:
+Explore different OSINT tools used to conduct security threat assessments and investigations.
 ```
 
 Room link: [https://tryhackme.com/room/threatinteltools](https://tryhackme.com/room/threatinteltools)
@@ -243,7 +245,7 @@ Answer: `darkabutla@sc500.whpservers.com`
 
 Answer: `cabbagecare@hotsmail.com`
 
-#### What is the Originating IP address? Defang the IP address.
+#### What is the Originating IP address? Defang the IP address
 
 Hint: Cyberchef has a defang recipe
 

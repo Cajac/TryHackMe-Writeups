@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 Learn about A02, A03, A04, and A06 and how they related to design flaws in the application.

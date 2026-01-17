@@ -9,7 +9,8 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 Learn about the essential tools for passive reconnaissance, such as whois, nslookup, and dig.
@@ -199,7 +200,7 @@ Find the IP address of a domain name using `nslookup`, which stands for Name Ser
 - **DOMAIN_NAME** is the domain name you are looking up.
 - **SERVER** is the DNS server that you want to query. You can choose any local or public DNS server to query. Cloudflare offers `1.1.1.1` and `1.0.0.1`, Google offers `8.8.8.8` and `8.8.4.4`, and Quad9 offers `9.9.9.9` and `149.112.112.112`. There are many [more public DNS servers](https://duckduckgo.com/?q=public+dns) that you can choose from if you want alternatives to your ISP’s DNS servers.
 
-| Query type | Result |
+|Query type|Result|
 |----|----|
 |A|IPv4 Addresses|
 |AAAA|IPv6 Addresses|
@@ -376,7 +377,7 @@ Answer: `888`
 
 In this room, we focused on passive reconnaissance. In particular, we covered command-line tools, `whois`, `nslookup`, and `dig`. We also discussed two publicly available services [DNSDumpster](https://dnsdumpster.com/) and [Shodan.io](https://www.shodan.io/). The power of such tools is that you can collect information about your targets without directly connecting to them. Moreover, the trove of information you may find using such tools can be massive once you master the search options and get used to reading the results.
 
-| Purpose | Commandline Example |
+|Purpose|Commandline Example|
 |----|----|
 |Lookup WHOIS record|`whois tryhackme.com`|
 |Lookup DNS A records|`nslookup -type=A tryhackme.com`|

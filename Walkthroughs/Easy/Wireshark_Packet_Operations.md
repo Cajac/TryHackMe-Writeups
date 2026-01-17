@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn the fundamentals of packet analysis with Wireshark and how to find the needle in the haystack!
+Description:
+Learn the fundamentals of packet analysis with Wireshark and how to find the needle in the haystack!
 ```
 
 Room link: [https://tryhackme.com/room/wiresharkpacketoperations](https://tryhackme.com/room/wiresharkpacketoperations)

@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Web, Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn to efficiently search the Internet and use specialized search engines and technical docs.
+Description:
+Learn to efficiently search the Internet and use specialized search engines and technical docs.
 ```
 
 Room link: [https://tryhackme.com/room/searchskills](https://tryhackme.com/room/searchskills)

@@ -9,10 +9,12 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn about and use Hydra, a fast network logon cracker, to bruteforce 
-and obtain a website's credentials.
+Description:
+Learn about and use Hydra, a fast network logon cracker, to bruteforce and obtain
+a website's credentials.
 ```
 
 Room link: [https://tryhackme.com/room/hydra](https://tryhackme.com/room/hydra)
@@ -55,7 +57,7 @@ SSH
 
 `hydra -l <username> -P <full path to pass> 10.10.216.118 -t 4 ssh`
 
-| Option | Description |
+|Option|Description|
 |----|----|
 |`-l`|specifies the (SSH) username for login|
 |`-P`|indicates a list of passwords|
@@ -73,7 +75,7 @@ We can use Hydra to brute force web forms too. You must know which type of reque
 
 `sudo hydra <username> <wordlist> 10.10.216.118 http-post-form "<path>:<login_credentials>:<invalid_response>"`
 
-| Option | Description |
+|Option|Description|
 |----|----|
 |`-l`|the username for (web form) login|
 |`-P`|the password list to use|

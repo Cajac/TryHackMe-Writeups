@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation.
+Description:
+Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation.
 ```
 
 Room link: [https://tryhackme.com/room/meterpreter](https://tryhackme.com/room/meterpreter)

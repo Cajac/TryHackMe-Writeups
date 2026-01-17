@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Learn how all the individual components of the web work together to bring you access to your 
+Description:
+Learn how all the individual components of the web work together to bring you access to your 
 favourite web sites.
 ```
 

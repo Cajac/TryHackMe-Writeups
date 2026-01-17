@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows, Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn what logs are and how to analyze them for effective investigation.
+Description:
+Learn what logs are and how to analyze them for effective investigation.
 ```
 
 Room link: [https://tryhackme.com/room/logsfundamentals](https://tryhackme.com/room/logsfundamentals)
@@ -34,7 +36,7 @@ There are various places inside a system where the traces of an attack could be 
 
 The following are some key areas in which the logs play an integral role.
 
-| Use Case | Description |
+|Use Case|Description|
 |----|----|
 |Security Events Monitoring|Logs help us detect anomalous behavior when real-time monitoring is used.|
 |Incident Investigation and Forensics|Logs are the traces of every kind of activity. It offers detailed information on what happened during the incident. The security team utilizes the logs to perform root cause analysis of incidents.|
@@ -65,7 +67,7 @@ Here is the solution: Logs are segregated into multiple categories according to 
 
 For example, you need to investigate the successful logins from yesterday at a specific timeframe in Windows OS. Instead of looking into all the logs, you only need to see the system’s **Security Logs** to find the login information. We also have other types of logs that are useful in investigating different incidents. Let’s have a look at them.
 
-| Log Type | Usage | Example |
+|Log Type|Usage|Example|
 |----|----|----|
 |System Logs|The system logs can be helpful in troubleshooting running issues in the OS. These logs provide information on various operating system activities.|System Startup and shutdown events, Driver Loading events, System Error events, Hardware events|
 |Security Logs|The security logs help detect and investigate incidents. These logs provide information on the security-related activities in the system.|Authentication events, Authorization events, Security Policy changes events, User Account changes events, Abnormal Activity events|
@@ -101,7 +103,7 @@ To open Event Viewer, click on the Start button of Windows and type ‘Event Vie
 
 ![Event Viewer with Logs](Images/Event_Viewer_with_Logs.png)
 
-You can click ‘Windows Logs’ from the highlighted section to see the different types of logs we discussed at the beginning of this task. 
+You can click ‘Windows Logs’ from the highlighted section to see the different types of logs we discussed at the beginning of this task.
 The first highlighted portion shows the different log files. When we click one of these log files, we will see the different logs, as can be seen in the second highlighted portion. Lastly, in the third highlighted portion, we have different options for analyzing the logs.
 
 ![Event Viewer GUI](Images/Event_Viewer_GUI.png)
@@ -121,7 +123,7 @@ Numerous event IDs are available in Windows event logs. We can use these event I
 
 Here is a table of some important Event IDs in Windows Operating System.
 
-| Event ID | Description |
+|Event ID|Description|
 |----|----|
 |4624|A user account successfully logged in|
 |4625|A user account failed to login|

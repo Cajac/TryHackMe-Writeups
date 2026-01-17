@@ -9,10 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Hack your first website (legally in a safe environment) and experience 
-an ethical hacker's job.
+Description:
+Hack your first website (legally in a safe environment) and experience an ethical hacker's job.
 ```
 
 Room link: [https://tryhackme.com/room/offensivesecurityintro](https://tryhackme.com/room/offensivesecurityintro)

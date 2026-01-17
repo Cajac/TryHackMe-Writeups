@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Deploy & hack into a Windows machine, leveraging common misconfigurations issues.
+Description:
+Deploy & hack into a Windows machine, leveraging common misconfigurations issues.
 ```
 
 Room link: [https://tryhackme.com/room/blue](https://tryhackme.com/room/blue)

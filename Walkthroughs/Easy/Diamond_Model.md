@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn about the four core features of the Diamond Model of Intrusion Analysis: 
+Description:
+Learn about the four core features of the Diamond Model of Intrusion Analysis: 
 adversary, infrastructure, capability, and victim.
 ```
 

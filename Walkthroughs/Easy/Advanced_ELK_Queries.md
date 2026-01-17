@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Easy
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description: 
 Search large datasets efficiently with advanced queries in Kibana.

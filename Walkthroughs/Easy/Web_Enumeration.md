@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Learn the methodology of enumerating websites by using tools such as Gobuster, Nikto and WPScan
+Description:
+Learn the methodology of enumerating websites by using tools such as Gobuster, Nikto and WPScan
 ```
 
 Room link: [https://tryhackme.com/room/webenumerationv2](https://tryhackme.com/room/webenumerationv2)
@@ -91,7 +93,7 @@ Done.
 
 There are some useful Global flags that can be used as well. I've included them in the table below. You can review these in the main documentation as well - [here](https://github.com/OJ/gobuster).
 
-| Flag | Long Flag | Description |
+|Flag|Long Flag|Description|
 |----|----|----|
 |`-t`|`--threads`|Number of concurrent threads (default 10)|
 |`-v`|`--verbose`|Verbose output|
@@ -123,7 +125,7 @@ This is a very common, simple, and straightforward command for Gobuster. This is
 
 These flags are useful in certain scenarios.  Note that these are not all of the flag options, but some of the more common ones that you'll use in penetration tests and in capture the flag events. If you'd like the full list, you can see that [here](https://github.com/OJ/gobuster#dir-mode-options).
 
-| Flag | Long Flag | Description |
+|Flag|Long Flag|Description|
 |----|----|----|
 |`-c`|`--cookies`|Cookies to use for requests|
 |`-x`|`--extensions`|File extension(s) to search for|
@@ -171,7 +173,7 @@ This tells Gobuster to do a sub-domain scan on the domain "mydomain.thm". If the
 
 `-d` and `-w` are the main flags that you'll need for most of your scans. But there are a few others that are worth mentioning that we can go over. They are in the table below.
 
-| Flag | Long Flag | Description |
+|Flag|Long Flag|Description|
 |----|----|----|
 |`-c`|`--show-cname`|Show CNAME Records (cannot be used with '-i' option)|
 |`-i`|`--show-ips`|Show IP Addresses|
@@ -642,7 +644,7 @@ This means that some plugins and themes may be missed by our WPScan. Luckily, we
 
 #### Summary - Cheatsheet
 
-| Flag | Description | Full Example |
+|Flag|Description|Full Example|
 |----|----|----|
 |p|Enumerate Plugins|`--enumerate p`|
 |t|Enumerate Themes|`--enumerate t`|
@@ -1197,7 +1199,7 @@ Plugins further extend the capabilities of Nikto. Using information gathered fro
 
 Some interesting plugins include:
 
-| Plugin Name | Description |
+|Plugin Name|Description|
 |----|----|
 |apacheusers|Attempt to enumerate Apache HTTP Authentication Users|
 |cgi|Look for CGI scripts that we may be able to exploit|
@@ -1219,7 +1221,7 @@ We can increase the verbosity of our Nikto scan by providing the following argum
 
 Nikto has several categories of vulnerabilities that we can specify our scan to enumerate and test for. The following list is not extensive and only include the ones that you may commonly use. We can use the `-Tuning` flag and provide a value in our Nikto scan:
 
-| Category Name | Description | Tuning Option |
+|Category Name|Description|Tuning Option|
 |----|----|----|
 |File Upload|Search for anything on the web server that may permit us to upload a file. This could be used to upload a reverse shell for an application to execute.|0|
 |Misconfigurations / Default Files|Search for common files that are sensitive (and shouldn't be accessible such as configuration files) on the web server.|2|

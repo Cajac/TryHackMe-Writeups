@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Easy
-OS: N/A
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: An intro to log analysis, best practices, and essential tools for effective detection and response.
+Description:
+An intro to log analysis, best practices, and essential tools for effective detection and response.
 ```
 
 Room link: [https://tryhackme.com/room/introtologanalysis](https://tryhackme.com/room/introtologanalysis)
@@ -295,7 +297,7 @@ Answer: Path Traversal
 
 Automated analysis involves the use of tools. For example, these often include commercial tools such as XPLG or SolarWinds Loggly. Automated analysis tools allow for processing and data analysis of logs. These tools often utilize Artificial Intelligence / Machine Learning to analyze patterns and trends. As the AI landscape evolves, we expect to see more effective automated analysis solutions.
 
-| Advantages | Disadvantages |
+|Advantages|Disadvantages|
 |----|----|
 |Saves time by performing a lot of the manual work required in manual analysis|Automated analysis tools are usually commercial-only and, therefore, expensive.|
 |The use of artificial intelligence is effective at recognizing patterns and trends.|The effectiveness of artificial intelligence depends on how capable the model is. For example, the risk of false positives increases, or newer or never-seen-before events can be missed as the AI is not trained to recognize these.|
@@ -304,7 +306,7 @@ Automated analysis involves the use of tools. For example, these often include c
 
 Manual analysis is the process of examining data and artifacts without using automation tools. For example, an analyst scrolling through a web server log would be considered manual analysis. Manual analysis is essential for an analyst because automation tools cannot be relied upon.
 
-| Advantages | Disadvantages |
+|Advantages|Disadvantages|
 |----|----|
 |It is cheap and does not require expensive tooling. For example, simple Linux commands can do the trick.|It is time-consuming as the analyst has to do all of the work, including reformatting log files.|
 |Allows for a thorough investigation.|N/A|
@@ -940,7 +942,7 @@ level: medium
 
 In this Sigma rule:
 
-| Key | Value | Description |
+|Key|Value|Description|
 |----|----|----|
 |title|Failed SSH Logins|This title outlines the purpose of the Sigma rule.|
 |description|Searches sshd logs for failed SSH login attempts|This key provides a description that expands on the title.|
@@ -974,7 +976,7 @@ rule IPFinder {
 
 Let's look at the keys that make up this Yara rule:
 
-| Key | Example | Description |
+|Key|Example|Description|
 |----|----|----|
 |rule|IPFinder|This key names the rule.|
 |meta|author|This key contains metadata. For example, in this case, it is the name of the rule's author.|

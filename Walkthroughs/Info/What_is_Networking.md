@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Info
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description: 
 Begin learning the fundamentals of computer networking in this bite-sized and interactive module.
