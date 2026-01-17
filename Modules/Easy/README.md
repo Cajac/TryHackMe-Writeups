@@ -40,6 +40,7 @@ Notes:
 ## Fundamentals
 
 - [Introduction to Cyber Security](Introduction_to_Cyber_Security.md)
+- [Start Your Cyber Security Journey](Start_Your_Cyber_Security_Journey.md)
 
 ## Networking
 
