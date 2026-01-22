@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Medium
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Learn how to leverage Nmap for service and OS detection, use Nmap Scripting Engine (NSE), 

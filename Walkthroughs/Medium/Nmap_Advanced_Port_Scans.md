@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Medium
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Learn advanced techniques such as null, FIN, Xmas, and idle (zombie) scans, spoofing, 

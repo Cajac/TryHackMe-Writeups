@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-Tags: -
+Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Provide an understanding of the OpenCTI Project
+Description:
+Provide an understanding of the OpenCTI Project
 ```
 
 Room link: [https://tryhackme.com/room/opencti](https://tryhackme.com/room/opencti)

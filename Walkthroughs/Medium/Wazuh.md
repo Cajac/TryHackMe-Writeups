@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Medium
 Tags: Windows, Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 Wazuh is a free, open source and enterprise-ready security monitoring solution for threat 

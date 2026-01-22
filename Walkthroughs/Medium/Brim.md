@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Medium
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Learn and practice log investigation, pcap analysis and threat hunting with Brim.

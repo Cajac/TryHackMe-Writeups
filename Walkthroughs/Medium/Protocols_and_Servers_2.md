@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Medium
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Learn about attacks against passwords and cleartext traffic; explore options for mitigation

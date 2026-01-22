@@ -9,7 +9,8 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-Tags: -
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description: 
 Learn how to use Snort to detect real-time threats, analyse recorded traffic files and 

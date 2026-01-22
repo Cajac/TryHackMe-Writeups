@@ -9,7 +9,8 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-Tags: -
+Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Introduction to hands-on network monitoring and threat detection with Zeek (formerly Bro).

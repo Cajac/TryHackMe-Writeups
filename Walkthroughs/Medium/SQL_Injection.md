@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Medium
 Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 Learn how to detect and exploit SQL Injection vulnerabilities

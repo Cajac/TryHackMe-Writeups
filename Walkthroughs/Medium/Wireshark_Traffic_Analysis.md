@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Medium
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Learn the basics of traffic analysis with Wireshark and how to find anomalies on your network!

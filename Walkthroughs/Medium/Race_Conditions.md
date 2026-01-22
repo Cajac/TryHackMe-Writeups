@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Medium
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
 Description:
 Learn about race conditions and how they affect web application security.

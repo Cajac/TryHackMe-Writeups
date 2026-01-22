@@ -10,8 +10,10 @@
 Type: Walkthrough
 Difficulty: Medium
 Tags: -
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: Walkthrough on the use of MISP as a Threat Sharing Platform
+Description:
+Walkthrough on the use of MISP as a Threat Sharing Platform
 ```
 
 Room link: [https://tryhackme.com/room/misp](https://tryhackme.com/room/misp)

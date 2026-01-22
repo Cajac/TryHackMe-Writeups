@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-Tags: -
+Tags: Web
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
-Description: This room will discuss the various resources MITRE has made available for 
+Description:
+This room will discuss the various resources MITRE has made available for 
 the cybersecurity community.
 ```
 

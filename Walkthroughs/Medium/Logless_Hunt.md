@@ -9,9 +9,11 @@
 ```text
 Type: Walkthrough
 Difficulty: Medium
-Tags: -
+Tags: Windows
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
-Description: Provide an understanding of the OpenCTI Project
+Description:
+Provide an understanding of the OpenCTI Project
 ```
 
 Room link: [https://tryhackme.com/room/loglesshunt](https://tryhackme.com/room/loglesshunt)

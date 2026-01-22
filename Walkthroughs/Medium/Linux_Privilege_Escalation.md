@@ -10,6 +10,7 @@
 Type: Walkthrough
 Difficulty: Medium
 Tags: Linux
+Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free
 Description:
 Learn the fundamentals of Linux privilege escalation. From enumeration to exploitation, get 
