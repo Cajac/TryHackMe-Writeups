@@ -29,7 +29,7 @@ In total you will find more than **180 room solutions** here.
 - [Easy Learning Paths](Learning_Paths/Easy/README.md)
   - [Cyber Security 101](Learning_Paths/Easy/Cyber_Security_101.md)
   - [Pre Security](Learning_Paths/Easy/Pre_Security.md)
-  - [SOC Level 1 (Legacy)](Learning_Paths/Easy/SOC_Level_1_Leg.md)
+  - [SOC Level 1 (Legacy)](Learning_Paths/Easy/SOC_Level_1_Legacy.md)
   - [Web Fundamentals](Learning_Paths/Easy/Web_Fundamentals.md)
 - [Medium Learning Paths](Learning_Paths/Medium/README.md)
   - [Jr Penetration Tester](Learning_Paths/Medium/Jr_Penetration_Tester.md)
