@@ -55,6 +55,7 @@ Notes:
 - [Logs Fundamentals](Logs_Fundamentals.md)
 - [Osquery: The Basics](Osquery_The_Basics.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
+- [Sysmon](Sysmon.md)
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
 
 ## Digital Forensics and Incident Response
@@ -171,5 +172,6 @@ Notes:
 - [AD: Basic Enumeration](AD_Basic_Enumeration.md)
 - [Core Windows Processes](Core_Windows_Processes.md)
 - [Sysinternals](Sysinternals.md)
+- [Sysmon](Sysmon.md)
 - [Windows Command Line](Windows_Command_Line.md)
 - [Windows PowerShell](Windows_PowerShell.md)

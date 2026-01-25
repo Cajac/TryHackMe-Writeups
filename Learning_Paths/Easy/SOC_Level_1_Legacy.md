@@ -62,3 +62,4 @@ Web link: [https://tryhackme.com/path/outline/soclevel1legacy](https://tryhackme
 - [Core Windows Processes](../../Walkthroughs/Easy/Core_Windows_Processes.md)
 - [Sysinternals](../../Walkthroughs/Easy/Sysinternals.md)
 - [Windows Event Logs](../../Walkthroughs/Medium/Windows_Event_Logs.md)
+- [Sysmon](../../Walkthroughs/Easy/Sysmon.md)
