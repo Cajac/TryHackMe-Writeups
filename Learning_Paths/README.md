@@ -4,6 +4,7 @@
 
 - [Cyber Security 101](Easy/Cyber_Security_101.md)
 - [Pre Security](Easy/Pre_Security.md)
+- [SOC Level 1 (Legacy)](Easy/SOC_Level_1_Leg.md)
 - [Web Fundamentals](Easy/Web_Fundamentals.md)
 
 ## Medium Learning Paths
