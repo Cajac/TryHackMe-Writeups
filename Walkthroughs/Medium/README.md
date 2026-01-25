@@ -18,6 +18,7 @@
 - [Redline](Redline.md)
 - [Snort](Snort.md)
 - [Wazuh](Wazuh.md)
+- [Windows Event Logs](Windows_Event_Logs.md)
 
 ## Exploitation
 

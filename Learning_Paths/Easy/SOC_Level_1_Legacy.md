@@ -61,3 +61,4 @@ Web link: [https://tryhackme.com/path/outline/soclevel1legacy](https://tryhackme
 - [Intro to Endpoint Security](../../Walkthroughs/Easy/Intro_to_Endpoint_Security.md)
 - [Core Windows Processes](../../Walkthroughs/Easy/Core_Windows_Processes.md)
 - [Sysinternals](../../Walkthroughs/Easy/Sysinternals.md)
+- [Windows Event Logs](../../Walkthroughs/Medium/Windows_Event_Logs.md)
