@@ -2,7 +2,7 @@
 
 ## DFIR
 
-- [SOC Level 1 (Legacy)](SOC_Level_1_Leg.md)
+- [SOC Level 1 (Legacy)](SOC_Level_1_Legacy.md)
 
 ## Fundamentals
 
