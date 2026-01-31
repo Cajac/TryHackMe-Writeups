@@ -28,7 +28,7 @@ In this room, we aim to explore simple stack buffer overflows (without any mitig
 
 We have included a virtual machine with all the resources to ensure you have the correct environment and tools to follow along. To access the machine via SSH, use the following credentials:
 
-Username: `user1`
+Username: `user1`  
 Password: `user1password`
 
 -----------------------------------------------
@@ -611,7 +611,7 @@ exit
 [user1@ip-10-64-146-64 overflow-3]$ 
 ```
 
-Note that the `buffer-overflow` program is called with it's full path!
+Note that the `buffer-overflow` program is called with its full path!
 
 ### Task 9: Buffer Overflow 2
 
@@ -851,7 +851,7 @@ exit
 [user1@ip-10-64-146-64 overflow-4]$ 
 ```
 
-Again, note that the `buffer-overflow-2` program is called with it's full path!
+Again, note that the `buffer-overflow-2` program is called with its full path!
 
 For additional information, please see the references below.
 
