@@ -19,6 +19,7 @@ Notes:
 - [Dirty Pipe: CVE-2022-0847](Dirty_Pipe_CVE-2022-0847.md)
 - [Polkit: CVE-2021-3560](Polkit_CVE-2021-3560.md)
 - [Pwnkit: CVE-2021-4034](Pwnkit_CVE-2021-4034.md)
+- [Sudo Buffer Overflow](Sudo_Buffer_Overflow.md)
 - [Sudo Security Bypass](Sudo_Security_Bypass.md)
 
 ## Linux
