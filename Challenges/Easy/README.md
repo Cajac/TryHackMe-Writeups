@@ -15,6 +15,7 @@ Notes:
 ## Digital Forensics and Incident Response
 
 - [Investigating Windows](Investigating_Windows.md)
+- [Monday Monitor](Monday_Monitor.md)
 - [Summit](Summit.md)
 - [TShark Challenge I: Teamwork](TShark_Challenge_I_Teamwork.md)
 - [TShark Challenge II: Directory](TShark_Challenge_II_Directory.md)
