@@ -92,7 +92,7 @@ Answer: `\"cmd.exe\" /c \"reg add HKCU\\SOFTWARE\\ATOMIC-T1053.005 /v test /t RE
 
 ### What time is the scheduled task meant to run?
 
-The start time is rather easy to spot in the commandline but if we need so help we can consult the [schtasks create documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-create).
+The start time is rather easy to spot in the commandline but if we need some help we can consult the [schtasks create documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-create).
 
 Answer: `12:34`
 
