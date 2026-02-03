@@ -74,6 +74,7 @@ Notes:
 - [Blue](Blue.md)
 - [Buffer Overflows](Buffer_Overflows.md)
 - [Exploit Vulnerabilities](Exploit_Vulnerabilities.md)
+- [Intro To Pwntools](Intro_To_Pwntools.md)
 - [Metasploit: Exploitation](Metasploit_Exploitation.md)
 - [Metasploit: Introduction](Metasploit_Introduction.md)
 - [Metasploit: Meterpreter](Metasploit_Meterpreter.md)
@@ -139,6 +140,7 @@ Notes:
 
 - [Hacking with PowerShell](Hacking_with_PowerShell.md)
 - [Intro PoC Scripting](Intro_PoC_Scripting.md)
+- [Intro To Pwntools](Intro_To_Pwntools.md)
 - [Python Basics](Python_Basics.md)
 - [Python for Pentesters](Python_for_Pentesters.md)
 - [Windows PowerShell](Windows_PowerShell.md)
