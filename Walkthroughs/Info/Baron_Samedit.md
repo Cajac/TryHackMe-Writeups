@@ -16,7 +16,7 @@ Description:
 A tutorial room exploring CVE-2021-3156 in the Unix Sudo Program. Room Three in the SudoVulns Series
 ```
 
-Room link: [https://tryhackme.com/room/sudovulnsbof](https://tryhackme.com/room/sudovulnsbof)
+Room link: [https://tryhackme.com/room/sudovulnssamedit](https://tryhackme.com/room/sudovulnssamedit)
 
 ## Solution
 
