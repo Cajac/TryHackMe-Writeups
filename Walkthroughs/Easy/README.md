@@ -156,6 +156,7 @@ Notes:
 - [HTTP in Detail](HTTP_in_Detail.md)
 - [IDOR](IDOR.md)
 - [Intro to Cross-site Scripting](Intro_to_Cross-site_Scripting.md)
+- [Intro to GraphQL Hacking](Intro_to_GraphQL_Hacking.md)
 - [Intro to SSRF](Intro_to_SSRF.md)
 - [Introduction to Flask](Introduction_to_Flask.md)
 - [JavaScript Essentials](JavaScript_Essentials.md)
