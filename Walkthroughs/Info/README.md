@@ -16,6 +16,7 @@ Notes:
 
 ## Exploitation
 
+- [Baron Samedit](Baron_Samedit.md)
 - [Dirty Pipe: CVE-2022-0847](Dirty_Pipe_CVE-2022-0847.md)
 - [Polkit: CVE-2021-3560](Polkit_CVE-2021-3560.md)
 - [Pwnkit: CVE-2021-4034](Pwnkit_CVE-2021-4034.md)
