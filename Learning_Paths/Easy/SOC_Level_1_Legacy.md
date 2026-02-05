@@ -67,3 +67,7 @@ Web link: [https://tryhackme.com/path/outline/soclevel1legacy](https://tryhackme
 - [Wazuh](../../Walkthroughs/Medium/Wazuh.md)
 - [Monday Monitor](../../Challenges/Easy/Monday_Monitor.md)
 - [Retracted](../../Walkthroughs/Easy/Retracted.md)
+
+### Security Information and Event Management
+
+- [Introduction to SIEM](../../Walkthroughs/Easy/Introduction_to_SIEM.md)
