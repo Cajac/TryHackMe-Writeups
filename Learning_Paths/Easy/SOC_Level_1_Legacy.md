@@ -65,3 +65,5 @@ Web link: [https://tryhackme.com/path/outline/soclevel1legacy](https://tryhackme
 - [Sysmon](../../Walkthroughs/Easy/Sysmon.md)
 - [Osquery: The Basics](../../Walkthroughs/Easy/Osquery_The_Basics.md)
 - [Wazuh](../../Walkthroughs/Medium/Wazuh.md)
+- [Monday Monitor](../../Challenges/Easy/Monday_Monitor.md)
+- [Retracted](../../Walkthroughs/Easy/Retracted.md)

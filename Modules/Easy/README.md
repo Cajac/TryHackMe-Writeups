@@ -26,6 +26,7 @@ Notes:
 - [Cyber Threat Intelligence](Cyber_Threat_Intelligence.md)
 - [Defensive Security](Defensive_Security.md)
 - [Defensive Security Tooling](Defensive_Security_Tooling.md)
+- [Endpoint Security Monitoring](Endpoint_Security_Monitoring.md)
 - [Log Analysis](Log_Analysis.md)
 - [Malware Analysis](Malware_Analysis.md)
 - [Security Solutions](Security_Solutions.md)
