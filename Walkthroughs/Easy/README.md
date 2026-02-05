@@ -53,7 +53,6 @@ Notes:
 - [Junior Security Analyst Intro](Junior_Security_Analyst_Intro.md)
 - [Log Operations](Log_Operations.md)
 - [Logs Fundamentals](Logs_Fundamentals.md)
-- [Osquery: The Basics](Osquery_The_Basics.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
 - [Sysmon](Sysmon.md)
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
@@ -68,6 +67,8 @@ Notes:
 - [Memory Acquisition](Memory_Acquisition.md)
 - [Memory Analysis Introduction](Memory_Analysis_Introduction.md)
 - [NetworkMiner](NetworkMiner.md)
+- [Osquery: The Basics](Osquery_The_Basics.md)
+- [Retracted](Retracted.md)
 
 ## Exploitation
 
