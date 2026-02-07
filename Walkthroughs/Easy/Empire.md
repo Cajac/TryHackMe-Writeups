@@ -736,6 +736,7 @@ For additional information, please see the references below.
 
 ## References
 
+- [Docker (software) - Wikipedia](https://en.wikipedia.org/wiki/Docker_(software))
 - [Empire - Docker Hub](https://hub.docker.com/r/bcsecurity/empire/tags)
 - [Empire - GitHub](https://github.com/BC-SECURITY/Empire)
 - [Empire - Kali Tools](https://www.kali.org/tools/powershell-empire/)
