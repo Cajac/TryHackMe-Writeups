@@ -22,6 +22,7 @@
 
 ## Exploitation
 
+- [DLL HIJACKING](DLL_HIJACKING.md)
 - [Linux Privilege Escalation](Linux_Privilege_Escalation.md)
 - [Windows Privilege Escalation](Windows_Privilege_Escalation.md)
 
