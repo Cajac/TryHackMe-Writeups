@@ -273,7 +273,7 @@ Skipping virtualenv creation, as specified in config file.
 <---snip--->
 ```
 
-In addition of port 1337 for the Starkiller GUI, we configure to additional ports (12345, 12346) for listeners.
+In addition of port 1337 for the Starkiller GUI, we configure two additional ports (12345, 12346) for listeners.
 
 We also need an older version of Starkiller that is compatible with the older Empire version
 
