@@ -58,6 +58,7 @@ Notes:
 
 - [Introduction to Pentesting](Introduction_to_Pentesting.md)
 - [Pentesting Tools](Pentesting_Tools.md)
+- [Scripting for Pentesters](Scripting_for_Pentesters.md)
 
 ## Scripting and Programming
 
