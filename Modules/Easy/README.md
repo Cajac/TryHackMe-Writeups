@@ -23,6 +23,7 @@ Notes:
 ## Defensive Security
 
 - [Cyber Defence Frameworks](Cyber_Defence_Frameworks.md)
+- [Cyber Defence Frameworks (legacy)](Cyber_Defence_Frameworks_Legacy.md)
 - [Cyber Threat Intelligence](Cyber_Threat_Intelligence.md)
 - [Defensive Security](Defensive_Security.md)
 - [Defensive Security Tooling](Defensive_Security_Tooling.md)
