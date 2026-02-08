@@ -76,6 +76,12 @@ In total you will find more than **200 room solutions** here.
   - [Web](Walkthroughs/Easy/README.md#web)
   - [Windows](Walkthroughs/Easy/README.md#windows)
 - [Medium Walkthroughs](Walkthroughs/Medium/README.md)
+  - [Cyber Threat Intelligence](Walkthroughs/Medium/README.md#cyber-threat-intelligence)
+  - [Defensive Security](Walkthroughs/Medium/README.md#defensive-security)
+  - [Exploitation](Walkthroughs/Medium/README.md#exploitation)
+  - [Networking](Walkthroughs/Medium/README.md#networking)
+  - [Scripting and Programming](Walkthroughs/Medium/README.md#scripting-and-programming)
+  - [Web](Walkthroughs/Medium/README.md#web)
 
 ## No flag spoilers
 

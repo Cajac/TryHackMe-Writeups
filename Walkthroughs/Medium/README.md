@@ -1,5 +1,19 @@
 # Medium Walkthroughs
 
+**Categories**:
+
+- [Cyber Threat Intelligence](#cyber-threat-intelligence)
+- [Defensive Security](#defensive-security)
+- [Exploitation](#exploitation)
+- [Networking](#networking)
+- [Scripting and Programming](#scripting-and-programming)
+- [Web](#web)
+
+Notes:
+
+- The categorization is my own and not THM's.
+- Modules can be placed in more than one category.
+
 ## Cyber Threat Intelligence
 
 - [MISP](MISP.md)
