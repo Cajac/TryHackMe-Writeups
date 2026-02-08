@@ -973,7 +973,7 @@ total 56
 www-data@ubuntu:/tmp$ 
 ```
 
-Some warning, but we managed to compile the exploit.
+Some warnings, but we managed to compile the exploit.
 
 ### What is the root flag?
 
@@ -1053,6 +1053,7 @@ For additional information, please see the references below.
 - [Post Office Protocol - Wikipedia](https://en.wikipedia.org/wiki/Post_Office_Protocol)
 - [Postfix (software) - Wikipedia](https://en.wikipedia.org/wiki/Postfix_(software))
 - [Python (programming language) - Wikipedia](https://en.wikipedia.org/wiki/Python_(programming_language))
+- [Reverse Shell Generator - Homepage](https://www.revshells.com/)
 - [searchsploit - Kali Tools](https://www.kali.org/tools/exploitdb/#searchsploit)
 - [sed - Linux manual page](https://man7.org/linux/man-pages/man1/sed.1.html)
 - [sudo - Linux manual page](https://man7.org/linux/man-pages/man8/sudo.8.html)
