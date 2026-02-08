@@ -47,6 +47,7 @@ In total you will find more than **200 room solutions** here.
   - [Networking](Modules/Easy/README.md#networking)
   - [Offensive Security](Modules/Easy/README.md#offensive-security)
   - [Penetration Testing](Modules/Easy/README.md#penetration-testing)
+  - [Penetration Testing](Modules/Easy/README.md#penetration-testing)
   - [Scripting and Programming](Modules/Easy/README.md#scripting-and-programming)
   - [Web](Modules/Easy/README.md#web)
 - [Medium Modules](Modules/Medium/README.md)
