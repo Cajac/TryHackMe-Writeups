@@ -8,6 +8,7 @@
 - [Fundamentals](#fundamentals)
 - [Networking](#networking)
 - [Offensive Security](#offensive-security)
+- [Penetration Testing](#penetration-testing)
 - [Scripting and Programming](#scripting-and-programming)
 - [Web](#web)
 
@@ -52,6 +53,10 @@ Notes:
 ## Offensive Security
 
 - [Offensive Security Tooling](Offensive_Security_Tooling.md)
+
+## Penetration Testing
+
+- [Pentesting Tools](Pentesting_Tools.md)
 
 ## Scripting and Programming
 
