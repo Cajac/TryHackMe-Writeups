@@ -10,6 +10,7 @@
   - [Fundamentals](Easy/README.md#fundamentals)
   - [Networking](Easy/README.md#networking)
   - [Offensive Security](Easy/README.md#offensive-security)
+  - [Penetration Testing](Easy/README.md#penetration-testing)
   - [Scripting and Programming](Easy/README.md#scripting-and-programming)
   - [Web](Easy/README.md#web)
 - [Medium Modules](Medium/README.md)
