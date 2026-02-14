@@ -3806,7 +3806,7 @@ Looking for possible passwords inside /home/user/.nano_history
 user@debian:/home/user/tools/privesc-scripts$ 
 ```
 
-**linpeas.sh** execution:
+**lse.sh** execution:
 
 ```bash
 user@debian:/home/user/tools/privesc-scripts$ ./lse.sh
