@@ -2,6 +2,7 @@
 
 **Categories**:
 
+- [Active Directory](#active-directory)
 - [Cryptography](#cryptography)
 - [Cyber Threat Intelligence](#cyber-threat-intelligence)
 - [Defensive Security](#defensive-security)
@@ -19,6 +20,11 @@ Notes:
 
 - The categorization is my own and not THM's.
 - Rooms can be placed in more than one category.
+
+## Active Directory
+
+- [Active Directory Basics](Active_Directory_Basics.md)
+- [AD: Basic Enumeration](AD_Basic_Enumeration.md)
 
 ## Cryptography
 
