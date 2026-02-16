@@ -131,7 +131,7 @@ Remember that due to the increase of adversaries and malware creators using thes
 
 #### What is LOLBAS?
 
-![LOLBAS Logo](Images/LOLBAS_Logo.png)
+<img src="Images/LOLBAS_Logo.png" alt="LOLBAS Logo" style="width:400px;"/>
 
 LOLBAS stands for **L**iving **O**ff the **L**and **B**inaries **A**nd **S**cripts, a project's primary main goal is to gather and document the Microsoft-signed and built-in tools used as  Living Off the Land techniques, including binaries, scripts, and libraries.
 
