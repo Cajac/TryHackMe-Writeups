@@ -51,6 +51,7 @@ Notes:
 - [Introduction to Antivirus](Introduction_to_Antivirus.md)
 - [Introduction to SIEM](Introduction_to_SIEM.md)
 - [Junior Security Analyst Intro](Junior_Security_Analyst_Intro.md)
+- [Living Off the Land Attacks](Living_Off_the_Land_Attacks.md)
 - [Log Operations](Log_Operations.md)
 - [Logs Fundamentals](Logs_Fundamentals.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
