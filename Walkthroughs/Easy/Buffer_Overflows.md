@@ -22,7 +22,7 @@ Room link: [https://tryhackme.com/room/bof1](https://tryhackme.com/room/bof1)
 
 ### Task 1: Introduction
 
-![CPU](Images/CPU.png)
+<img src="Images/CPU.png" alt="CPU" style="width:200px;"/>
 
 In this room, we aim to explore simple stack buffer overflows (without any mitigations) on x86-64 linux programs. We will use [radare2](https://github.com/radare/radare2) (r2) to examine the memory layout. You are expected to be familiar with x86 and r2 for this room.
 
