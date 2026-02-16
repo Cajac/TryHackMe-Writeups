@@ -42,6 +42,7 @@ Notes:
 - [Linux Privilege Escalation](Linux_Privilege_Escalation.md)
 - [Living Off the Land](Living_Off_the_Land.md)
 - [Windows PrivEsc](Windows_PrivEsc.md)
+- [Windows PrivEsc Arena](Windows_PrivEsc_Arena.md)
 - [Windows Privilege Escalation](Windows_Privilege_Escalation.md)
 
 ## Networking
