@@ -58,7 +58,7 @@ Answer: `7`
 
 ### Task 2: Reconnaissance
 
-![CKC Reconnaissance](Images/CKC-Reconnaissance.svg)
+<img src="Images/CKC-Reconnaissance.svg" alt="Reconnaissance" style="width:300px;"/>
 
 Reconnaissance has its origins in the military and refers to the act of gathering information about a target. In cyber security, this stage collects information about the target’s vulnerabilities and weaknesses to discover potential entry points.
 
@@ -96,7 +96,7 @@ Answer: `passive reconnaissance`
 
 ### Task 3: Weaponization
 
-![CKC Weaponization](Images/CKC-Weaponization.svg)
+<img src="Images/CKC-Weaponization.svg" alt="Weaponization" style="width:300px;"/>
 
 Once enough information has been gathered about the target, the attacker proceeds to the next stage, weaponisation. Based on the information the attacker has gathered about the target systems, they can create a payload tailored to exploit the discovered weaknesses. The attacker might use a ready-made exploit, edit an existing one, or create one from scratch. We should note that various frameworks and toolkits can help them in this stage.
 
@@ -132,7 +132,7 @@ Answer: `Macro`
 
 ### Task 4: Delivery
 
-![CKC Delivery](Images/CKC-Delivery.svg)
+<img src="Images/CKC-Delivery.svg" alt="Delivery" style="width:300px;"/>
 
 In the previous stage, the attacker prepared a tailored payload, and now, they need to find a suitable way to transmit it to the target environment. They can pick an appropriate delivery method using the information gathered from reconnaissance.
 
@@ -169,7 +169,7 @@ Answer: `Smishing`
 
 ### Task 5: Exploitation
 
-![CKC Exploitation](Images/CKC-Exploitation.svg)
+<img src="Images/CKC-Exploitation.svg" alt="Exploitation" style="width:300px;"/>
 
 Following the successful delivery of the malicious payload comes the exploitation stage. Exploitation can take various forms, such as a software vulnerability, a weak password, or a system misconfiguration.
 
@@ -203,7 +203,7 @@ Answer: `MFA`
 
 ### Task 6: Installation
 
-![CKC Installation](Images/CKC-Installation.svg)
+<img src="Images/CKC-Installation.svg" alt="Installation" style="width:300px;"/>
 
 Following the successful exploitation of a target system, the installation phase ensures persistent access to the exploited system. Consequently, the attacker can return to the exploited system later without going through the exploitation phase again. The keyword here is persistence.
 
@@ -239,7 +239,7 @@ Answer: `allowlisting`
 
 ### Task 7: Command and Control (C2)
 
-![CKC Command and Control](Images/CKC-Command_and_Control.svg)
+<img src="Images/CKC-Command_and_Control.svg" alt="Command and Control" style="width:300px;"/>
 
 Following a successful installation of persistent access within the target environment, the attacker needs to maintain reliable and discreet access to the compromised systems so that they can later act on their objectives. The Command and Control (C2) phase aims to establish this covert communication channel for use in the next phase. In this phase, the attacker sets up the C2 communication channel between the compromised systems and their own infrastructure.
 
@@ -279,7 +279,7 @@ Answer: `HTTPS`
 
 ### Task 8: Actions on Objectives
 
-![CKC Actions on Objectives](Images/CKC-Actions_on_Objectives.svg)
+<img src="Images/CKC-Actions_on_Objectives.svg" alt="Actions on Objectives" style="width:300px;"/>
 
 After establishing a covert C2 communication channel, the attacker can carry out their original goals. In this phase, the attacker executes their original goals, which range from data exfiltration (information theft) to service disruption.
 
