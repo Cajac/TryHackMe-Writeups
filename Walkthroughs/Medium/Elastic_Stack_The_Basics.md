@@ -319,7 +319,7 @@ When we click on the search bar, we are presented with all the available fields 
 
 Create a search query to filter the logs where `Source_Country` is the `United States` and show logs from User `James` or `Albert`.
 
-Filter for: `Source_Country: "United States" AND UserName: ("james" OR "Albert")`
+Filter for: `Source_Country: "United States" AND UserName: ("James" OR "Albert")`
 
 Note that James should be Capitalized!
 
