@@ -25,6 +25,7 @@ Notes:
 - [Atomic Red Team](Atomic_Red_Team.md)
 - [Basic Malware RE](Basic_Malware_RE.md)
 - [Basic Static Analysis](Basic_Static_Analysis.md)
+- [Elastic Stack: The Basics](Elastic_Stack_The_Basics.md)
 - [Expediting Registry Analysis](Expediting_Registry_Analysis.md)
 - [Intro to Malware Analysis](Intro_to_Malware_Analysis.md)
 - [Logless Hunt](Logless_Hunt.md)
