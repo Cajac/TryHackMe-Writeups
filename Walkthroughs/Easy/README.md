@@ -120,6 +120,7 @@ Notes:
 - [Active Reconnaissance](Active_Reconnaissance.md)
 - [DNS in detail](DNS_in_detail.md)
 - [Firewall Fundamentals](Firewall_Fundamentals.md)
+- [Network Traffic Basics](Network_Traffic_Basics.md)
 - [Networking Concepts](Networking_Concepts.md)
 - [Networking Core Protocols](Networking_Core_Protocols.md)
 - [Networking Essentials](Networking_Essentials.md)
