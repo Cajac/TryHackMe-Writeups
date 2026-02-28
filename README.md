@@ -6,7 +6,7 @@ Welcome to [my](https://tryhackme.com/p/Cajac) writeups for [TryHackMe](https://
 
 These writeups are mainly a documentation for myself but I hope others will benefit from them as well.  
 
-In total you will find more than **200 room solutions** here.
+In total you will find more than **225 room solutions** here.
 
 ## Challenges (CTF)
 
