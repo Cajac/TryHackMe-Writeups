@@ -23,7 +23,7 @@ Room link: [https://tryhackme.com/room/steelmountain](https://tryhackme.com/room
 
 ### Task 1: Introduction
 
-![Mr Robot](Images/Mr_Robot.png)
+<img src="Images/Mr_Robot.png" alt="Mr Robot" style="width:200px;"/>
 
 In this room you will enumerate a Windows machine, gain initial access with Metasploit, use Powershell to further enumerate the machine and escalate your privileges to Administrator.
 
