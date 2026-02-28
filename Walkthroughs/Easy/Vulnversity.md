@@ -158,7 +158,7 @@ Using a fast directory discovery tool called `Gobuster`, you will locate a direc
 
 Let's first start by scanning the website to find any hidden directories. To do this, we're going to use Gobuster.
 
-![Pirate](Images/Pirate.png)
+<img src="Images/Pirate.png" alt="Pirate" style="width:300px;"/>
 
 **Gobuster** is a tool for brute-forcing URIs (directories and files), DNS subdomains, and virtual host names. For this machine, we will focus on using it to brute-force directories.
 
@@ -374,7 +374,7 @@ Answer: `/bin/systemctl`
 
 #### What is the root flag value?
 
-This solution is inspired by [this Q&A](https://askubuntu.com/questions/919054/how-do-i-run-a-single-command-at-startup-using-systemd)
+This solution is inspired by [this Q&A](https://askubuntu.com/questions/919054/how-do-i-run-a-single-command-at-startup-using-systemd).
 
 Create a "malicious" service in a writable directory and start it
 
