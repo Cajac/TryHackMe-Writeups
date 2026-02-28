@@ -107,6 +107,7 @@ Notes:
 - [Moniker Link (CVE-2024-21413)](Moniker_Link.md)
 - [Post-Exploitation Basics](Post-Exploitation_Basics.md)
 - [SQL Injection Lab](SQL_Injection_Lab.md)
+- [Steel Mountain](Steel_Mountain.md)
 - [Vulnerabilities 101](Vulnerabilities_101.md)
 - [What the Shell?](What_the_Shell.md)
 
