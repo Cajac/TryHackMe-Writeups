@@ -639,9 +639,7 @@ spec:
 ubuntu@tryhackme:~/Desktop/configuration$ 
 ```
 
-To apply the configuration outlined in these YAML files, we use the kubectl apply command. Remember to apply the service file first! Like so:
-
-Needed for the configMap `webapp-config`:
+Needed for the configMap `webapp-config` as a first step:
 
 ```bash
 ubuntu@tryhackme:~$ find /home -name webapp-config* 
@@ -651,6 +649,8 @@ ubuntu@tryhackme:~/Desktop$ cd configuration/
 ubuntu@tryhackme:~/Desktop/configuration$ kubectl apply -f /home/ubuntu/Documents/app/config/webapp/webapp-config.yaml
 configmap/webapp-config created
 ```
+
+To apply the configuration outlined in these YAML files, we use the kubectl apply command. Remember to apply the service file first! Like so:
 
 `kubectl apply -f nginx-service.yaml`  
 `kubectl apply -f nginx-deployment.yaml`
