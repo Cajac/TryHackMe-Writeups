@@ -35,6 +35,7 @@ Notes:
 
 ## Exploitation
 
+- [Basic Computer Exploitation](Basic_Computer_Exploitation.md)
 - [Exploitation Basics](Exploitation_Basics.md)
 - [Metasploit](Metasploit.md)
 - [Vulnerability Research](Vulnerability_Research.md)
