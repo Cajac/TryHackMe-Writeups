@@ -70,6 +70,7 @@ In total you will find more than **200 room solutions** here.
   - [Cyber Threat Intelligence](Walkthroughs/Easy/README.md#cyber-threat-intelligence)
   - [Defensive Security](Walkthroughs/Easy/README.md#defensive-security)
   - [Digital Forensics and Incident Response](Walkthroughs/Easy/README.md#digital-forensics-and-incident-response)
+  - [Enumeration](Walkthroughs/Easy/README.md#enumeration)
   - [Exploitation](Walkthroughs/Easy/README.md#exploitation)
   - [Fundamentals](Walkthroughs/Easy/README.md#fundamentals)
   - [Malware Analysis](Walkthroughs/Easy/README.md#malware-analysis)

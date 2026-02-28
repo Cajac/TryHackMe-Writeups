@@ -8,6 +8,7 @@
 - [Cyber Threat Intelligence](#cyber-threat-intelligence)
 - [Defensive Security](#defensive-security)
 - [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
+- [Enumeration](#enumeration)
 - [Exploitation](#exploitation)
 - [Fundamentals](#fundamentals)
 - [Malware Analysis](#malware-analysis)
@@ -83,6 +84,14 @@ Notes:
 - [NetworkMiner](NetworkMiner.md)
 - [Osquery: The Basics](Osquery_The_Basics.md)
 - [Retracted](Retracted.md)
+
+## Enumeration
+
+- [AD: Basic Enumeration](AD_Basic_Enumeration.md)
+- [Enumeration & Brute Force](Enumeration_and_Brute_Force.md)
+- [Gobuster: The Basics](Gobuster_The_Basics.md)
+- [Subdomain Enumeration](Subdomain_Enumeration.md)
+- [Web Enumeration](Web_Enumeration.md)
 
 ## Exploitation
 

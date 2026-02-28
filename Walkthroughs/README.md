@@ -14,6 +14,7 @@
   - [Cyber Threat Intelligence](Easy/README.md#cyber-threat-intelligence)
   - [Defensive Security](Easy/README.md#defensive-security)
   - [Digital Forensics and Incident Response](Easy/README.md#digital-forensics-and-incident-response)
+  - [Enumeration](Easy/README.md#enumeration)
   - [Exploitation](Easy/README.md#exploitation)
   - [Fundamentals](Easy/README.md#fundamentals)
   - [Malware Analysis](Easy/README.md#malware-analysis)
