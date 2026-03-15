@@ -90,6 +90,7 @@ Notes:
 - [AD: Basic Enumeration](AD_Basic_Enumeration.md)
 - [Enumeration](Enumeration.md)
 - [Enumeration & Brute Force](Enumeration_and_Brute_Force.md)
+- [ffuf](ffuf.md)
 - [Gobuster: The Basics](Gobuster_The_Basics.md)
 - [Subdomain Enumeration](Subdomain_Enumeration.md)
 - [Web Enumeration](Web_Enumeration.md)
