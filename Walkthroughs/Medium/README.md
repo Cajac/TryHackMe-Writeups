@@ -40,6 +40,7 @@ Notes:
 
 - [DLL HIJACKING](DLL_HIJACKING.md)
 - [Linux PrivEsc](Linux_PrivEsc.md)
+- [Linux PrivEsc Arena](Linux_PrivEsc_Arena.md)
 - [Linux Privilege Escalation](Linux_Privilege_Escalation.md)
 - [Living Off the Land](Living_Off_the_Land.md)
 - [Windows PrivEsc](Windows_PrivEsc.md)
