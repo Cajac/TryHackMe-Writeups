@@ -159,7 +159,7 @@ Notes:
 
 ## Offensive Security
 
-- [Common Linux Privesc](Common_Linux_Privesc.md)
+- [Common Linux Privesc](Common_Linux_PrivEsc.md)
 - [Enumeration & Brute Force](Enumeration_and_Brute_Force.md)
 - [Gobuster: The Basics](Gobuster_The_Basics.md)
 - [Hydra](Hydra.md)
