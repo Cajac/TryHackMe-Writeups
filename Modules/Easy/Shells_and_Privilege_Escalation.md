@@ -19,5 +19,5 @@ Web link: [https://tryhackme.com/module/privilege-escalation-and-shells](https:/
 ## Included rooms
 
 - [What the Shell?](../../Walkthroughs/Easy/What_the_Shell.md)
-- [Common Linux Privesc](../../Walkthroughs/Easy/Common_Linux_Privesc.md)
+- [Common Linux Privesc](../../Walkthroughs/Easy/Common_Linux_PrivEsc.md)
 - [Linux Privesc](../../Walkthroughs/Medium/Linux_Privesc.md)
