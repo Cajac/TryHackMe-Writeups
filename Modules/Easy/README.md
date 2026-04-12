@@ -61,6 +61,7 @@ Notes:
 - [Introduction to Pentesting](Introduction_to_Pentesting.md)
 - [Pentesting Tools](Pentesting_Tools.md)
 - [Scripting for Pentesters](Scripting_for_Pentesters.md)
+- [Shells and Privilege Escalation](Shells_and_Privilege_Escalation.md)
 
 ## Scripting and Programming
 
