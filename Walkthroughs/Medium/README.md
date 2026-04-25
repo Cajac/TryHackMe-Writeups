@@ -8,6 +8,7 @@
 - [Networking](#networking)
 - [Scripting and Programming](#scripting-and-programming)
 - [Web](#web)
+- [Windows](#windows)
 
 Notes:
 
@@ -67,3 +68,7 @@ Notes:
 - [File Inclusion](File_Inclusion.md)
 - [Race Conditions](Race_Conditions.md)
 - [SQL Injection](SQL_Injection.md)
+
+## Windows
+
+- [Enumerating Active Directory](Enumerating_Active_Directory.md)

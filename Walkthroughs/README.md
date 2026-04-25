@@ -30,3 +30,4 @@
   - [Networking](Medium/README.md#networking)
   - [Scripting and Programming](Medium/README.md#scripting-and-programming)
   - [Web](Medium/README.md#web)
+  - [Windows](Medium/README.md#windows)
