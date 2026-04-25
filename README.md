@@ -86,6 +86,7 @@ In total you will find more than **225 room solutions** here.
   - [Networking](Walkthroughs/Medium/README.md#networking)
   - [Scripting and Programming](Walkthroughs/Medium/README.md#scripting-and-programming)
   - [Web](Walkthroughs/Medium/README.md#web)
+  - [Windows](Walkthroughs/Medium/README.md#windows)
 
 ## No flag spoilers
 
