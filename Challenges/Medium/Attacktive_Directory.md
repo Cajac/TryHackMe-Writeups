@@ -98,7 +98,7 @@ If you are having issues installing Bloodhound and Neo4j, try issuing the follow
 
 `apt update && apt upgrade`
 
-If you are having issues with Impacket, reach out to the TryHackMe Discord(opens in new tab) for help!
+If you are having issues with Impacket, reach out to the [TryHackMe Discord](https://discord.gg/tryhackme) for help!
 
 ---------------------------------------------------------------------------------------
 
@@ -1130,6 +1130,7 @@ For additional information, please see the references below.
 - [Impacket-scripts - Kali Tools](https://www.kali.org/tools/impacket-scripts/)
 - [Kerberos (protocol) - Wikipedia](https://en.wikipedia.org/wiki/Kerberos_(protocol))
 - [Kerbrute - GitHub](https://github.com/ropnop/kerbrute)
+- [Lightweight Directory Access Protocol - Wikipedia](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol)
 - [Neo4j - Wikipedia](https://en.wikipedia.org/wiki/Neo4j)
 - [nmap - Homepage](https://nmap.org/)
 - [nmap - Linux manual page](https://linux.die.net/man/1/nmap)
@@ -1143,5 +1144,6 @@ For additional information, please see the references below.
 - [sudo - Linux manual page](https://man7.org/linux/man-pages/man8/sudo.8.html)
 - [sudo - Wikipedia](https://en.wikipedia.org/wiki/Sudo)
 - [whoami - Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/whoami)
+- [Windows Remote Management - Wikipedia](https://en.wikipedia.org/wiki/Windows_Remote_Management)
 - [xfreerdp - Kali Tools](https://www.kali.org/tools/freerdp3/#xfreerdp)
 - [xfreerdp - Linux manual page](https://linux.die.net/man/1/xfreerdp)
