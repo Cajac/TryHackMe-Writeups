@@ -71,4 +71,5 @@ Notes:
 
 ## Windows
 
+- [AD: Authenticated Enumeration](AD_Authenticated_Enumeration.md)
 - [Enumerating Active Directory](Enumerating_Active_Directory.md)
