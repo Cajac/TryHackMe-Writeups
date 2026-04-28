@@ -47,6 +47,7 @@ Notes:
 - [tomghost](tomghost.md)
 - [ToolsRus](ToolsRus.md)
 - [Vulnerability Capstone](Vulnerability_Capstone.md)
+- [VulnNet: Roasted](VulnNet_Roasted.md)
 - [Wgel CTF](Wgel_CTF.md)
 - [Year of the Rabbit](Year_of_the_Rabbit.md)
 
