@@ -2,7 +2,9 @@
 
 ![TryHackMe Logo](TryHackMe_logo.png)
 
-Welcome to [my](https://tryhackme.com/p/Cajac) writeups for [TryHackMe](https://tryhackme.com/) [challenges](https://tryhackme.com/hacktivities/challenges) and [walkthroughs](https://tryhackme.com/hacktivities/search?page=1&kind=rooms&searchText=&roomType=walkthrough).
+Welcome to [my](https://tryhackme.com/p/Cajac) writeups for [TryHackMe](https://tryhackme.com/) [challenges](https://tryhackme.com/challenges), [networks](https://tryhackme.com/hacktivities?tab=network) and [walkthroughs](https://tryhackme.com/hacktivities?tab=rooms).
+
+In addition, many [modules](https://tryhackme.com/hacktivities?tab=modules) and a few [learning paths](https://tryhackme.com/hacktivities?tab=paths) are included.
 
 These writeups are mainly a documentation for myself but I hope others will benefit from them as well.  
 
@@ -53,6 +55,11 @@ In total you will find more than **225 room solutions** here.
   - [Digital Forensics and Incident Response](Modules/Medium/README.md#digital-forensics-and-incident-response)
   - [Exploitation](Modules/Medium/README.md#exploitation)
   - [Networking](Modules/Medium/README.md#networking)
+
+## Networks
+
+- [Medium Networks](Networks/Medium/README.md)
+  - [Active Directory](Networks/Medium/README.md#active-directory)
 
 ## Walkthroughs
 

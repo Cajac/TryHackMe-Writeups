@@ -7,7 +7,7 @@
 ## Room information
 
 ```text
-Type: Walkthrough
+Type: Network
 Difficulty: Medium
 Tags: Windows, Active Directory
 Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
