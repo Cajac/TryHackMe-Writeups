@@ -7,7 +7,7 @@
 Notes:
 
 - The categorization is my own and not THM's.
-- Modules can be placed in more than one category.
+- Networks can be placed in more than one category.
 
 ## Active Directory
 
