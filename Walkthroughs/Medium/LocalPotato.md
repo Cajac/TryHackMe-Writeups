@@ -276,7 +276,7 @@ The command completed successfully.
 
 To spawn a command prompt with administrator privileges, you can simply right-click and Run as administrator using your user's credentials. Remember that the user is `user` and the password is `Password123`:
 
-![Run cmd.exe as Admin](Images\Run_cmd.exe_as_Admin.png)
+![Run cmd.exe as Admin](Images/Run_cmd.exe_as_Admin.png)
 
 ---------------------------------------------------------------------------
 
