@@ -44,6 +44,7 @@ Notes:
 - [Linux PrivEsc Arena](Linux_PrivEsc_Arena.md)
 - [Linux Privilege Escalation](Linux_Privilege_Escalation.md)
 - [Living Off the Land](Living_Off_the_Land.md)
+- [LocalPotato](LocalPotato.md)
 - [Windows PrivEsc](Windows_PrivEsc.md)
 - [Windows PrivEsc Arena](Windows_PrivEsc_Arena.md)
 - [Windows Privilege Escalation](Windows_Privilege_Escalation.md)
