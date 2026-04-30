@@ -97,6 +97,7 @@ Notes:
 
 ## Exploitation
 
+- [Attacking Kerberos](Attacking_Kerberos.md)
 - [Blue](Blue.md)
 - [Buffer Overflows](Buffer_Overflows.md)
 - [Empire](Empire.md)
