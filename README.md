@@ -58,6 +58,8 @@ In total you will find more than **225 room solutions** here.
 
 ## Networks
 
+- [Easy Networks](Networks/Easy/README.md)
+  - [Active Directory](Networks/Easy/README.md#active-directory)
 - [Medium Networks](Networks/Medium/README.md)
   - [Active Directory](Networks/Medium/README.md#active-directory)
 
