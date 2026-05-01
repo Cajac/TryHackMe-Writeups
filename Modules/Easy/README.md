@@ -2,6 +2,7 @@
 
 **Categories**:
 
+- [Active Directory](#active-directory)
 - [Cryptography](#cryptography)
 - [Defensive Security](#defensive-security)
 - [Exploitation](#exploitation)
@@ -16,6 +17,10 @@ Notes:
 
 - The categorization is my own and not THM's.
 - Modules can be placed in more than one category.
+
+## Active Directory
+
+- [Breaking Windows](Breaking_Windows.md)
 
 ## Cryptography
 
@@ -36,6 +41,7 @@ Notes:
 ## Exploitation
 
 - [Basic Computer Exploitation](Basic_Computer_Exploitation.md)
+- [Breaking Windows](Breaking_Windows.md)
 - [Exploitation Basics](Exploitation_Basics.md)
 - [Metasploit](Metasploit.md)
 - [Vulnerability Research](Vulnerability_Research.md)

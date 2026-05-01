@@ -42,6 +42,7 @@ In total you will find more than **225 room solutions** here.
   - [Fundamentals](Modules/Info/README.md#fundamentals)
   - [Windows](Modules/Info/README.md#windows)
 - [Easy Modules](Modules/Easy/README.md)
+  - [Active Directory](Modules/Easy/README.md#active-directory)
   - [Cryptography](Modules/Easy/README.md#cryptography)
   - [Defensive Security](Modules/Easy/README.md#defensive-security)
   - [Exploitation](Modules/Easy/README.md#exploitation)
