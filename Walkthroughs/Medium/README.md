@@ -45,6 +45,7 @@ Notes:
 - [Linux Privilege Escalation](Linux_Privilege_Escalation.md)
 - [Living Off the Land](Living_Off_the_Land.md)
 - [LocalPotato](LocalPotato.md)
+- [Windows Local Persistence](Windows_Local_Persistence.md)
 - [Windows PrivEsc](Windows_PrivEsc.md)
 - [Windows PrivEsc Arena](Windows_PrivEsc_Arena.md)
 - [Windows Privilege Escalation](Windows_Privilege_Escalation.md)
@@ -73,3 +74,7 @@ Notes:
 ## Windows
 
 - [AD: Authenticated Enumeration](AD_Authenticated_Enumeration.md)
+- [Windows Local Persistence](Windows_Local_Persistence.md)
+- [Windows PrivEsc](Windows_PrivEsc.md)
+- [Windows PrivEsc Arena](Windows_PrivEsc_Arena.md)
+- [Windows Privilege Escalation](Windows_Privilege_Escalation.md)
