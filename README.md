@@ -12,13 +12,6 @@ In total you will find more than **225 room solutions** here.
 
 ## Challenges (CTF)
 
-- [Info Challenges](Challenges/Info/README.md)
-  - [Exploitation](Challenges/Info/README.md#exploitation)
-- [Easy Challenges](Challenges/Easy/README.md)
-  - [Digital Forensics and Incident Response](Challenges/Easy/README.md#digital-forensics-and-incident-response)
-  - [Full Pwn](Challenges/Easy/README.md#full-pwn)
-  - [Jeopardy Style CTFs](Challenges/Easy/README.md#jeopardy-style-ctfs)
-  - [Miscellaneous](Challenges/Easy/README.md#miscellaneous)
 - [Medium Challenges](Challenges/Medium/README.md)
   - [Digital Forensics and Incident Response](Challenges/Medium/README.md#digital-forensics-and-incident-response)
   - [Exploitation](Challenges/Medium/README.md#exploitation)
@@ -26,21 +19,33 @@ In total you will find more than **225 room solutions** here.
   - [Jeopardy Style CTFs](Challenges/Medium/README.md#jeopardy-style-ctfs)
   - [Miscellaneous](Challenges/Medium/README.md#miscellaneous)
 
+- [Easy Challenges](Challenges/Easy/README.md)
+  - [Digital Forensics and Incident Response](Challenges/Easy/README.md#digital-forensics-and-incident-response)
+  - [Full Pwn](Challenges/Easy/README.md#full-pwn)
+  - [Jeopardy Style CTFs](Challenges/Easy/README.md#jeopardy-style-ctfs)
+  - [Miscellaneous](Challenges/Easy/README.md#miscellaneous)
+
+- [Info Challenges](Challenges/Info/README.md)
+  - [Exploitation](Challenges/Info/README.md#exploitation)
+
 ## Learning Paths
+
+- [Medium Learning Paths](Learning_Paths/Medium/README.md)
+  - [Jr Penetration Tester](Learning_Paths/Medium/Jr_Penetration_Tester.md)
 
 - [Easy Learning Paths](Learning_Paths/Easy/README.md)
   - [Cyber Security 101](Learning_Paths/Easy/Cyber_Security_101.md)
   - [Pre Security](Learning_Paths/Easy/Pre_Security.md)
   - [SOC Level 1 (Legacy)](Learning_Paths/Easy/SOC_Level_1_Legacy.md)
   - [Web Fundamentals](Learning_Paths/Easy/Web_Fundamentals.md)
-- [Medium Learning Paths](Learning_Paths/Medium/README.md)
-  - [Jr Penetration Tester](Learning_Paths/Medium/Jr_Penetration_Tester.md)
 
 ## Modules
 
-- [Info Modules](Modules/Info/README.md)
-  - [Fundamentals](Modules/Info/README.md#fundamentals)
-  - [Windows](Modules/Info/README.md#windows)
+- [Medium Modules](Modules/Medium/README.md)
+  - [Digital Forensics and Incident Response](Modules/Medium/README.md#digital-forensics-and-incident-response)
+  - [Exploitation](Modules/Medium/README.md#exploitation)
+  - [Networking](Modules/Medium/README.md#networking)
+
 - [Easy Modules](Modules/Easy/README.md)
   - [Active Directory](Modules/Easy/README.md#active-directory)
   - [Cryptography](Modules/Easy/README.md#cryptography)
@@ -52,28 +57,31 @@ In total you will find more than **225 room solutions** here.
   - [Penetration Testing](Modules/Easy/README.md#penetration-testing)
   - [Scripting and Programming](Modules/Easy/README.md#scripting-and-programming)
   - [Web](Modules/Easy/README.md#web)
-- [Medium Modules](Modules/Medium/README.md)
-  - [Digital Forensics and Incident Response](Modules/Medium/README.md#digital-forensics-and-incident-response)
-  - [Exploitation](Modules/Medium/README.md#exploitation)
-  - [Networking](Modules/Medium/README.md#networking)
+
+- [Info Modules](Modules/Info/README.md)
+  - [Fundamentals](Modules/Info/README.md#fundamentals)
+  - [Windows](Modules/Info/README.md#windows)
 
 ## Networks
+
+- [Medium Networks](Networks/Medium/README.md)
+  - [Active Directory](Networks/Medium/README.md#active-directory)
 
 - [Easy Networks](Networks/Easy/README.md)
   - [Active Directory](Networks/Easy/README.md#active-directory)
   - [Lateral Movement](Networks/Easy/README.md#lateral-movement)
-- [Medium Networks](Networks/Medium/README.md)
-  - [Active Directory](Networks/Medium/README.md#active-directory)
 
 ## Walkthroughs
 
-- [Info Walkthroughs](Walkthroughs/Info/README.md)
-  - [Exploitation](Walkthroughs/Info/README.md#exploitation)
-  - [Linux](Walkthroughs/Info/README.md#linux)
-  - [Miscellaneous](Walkthroughs/Info/README.md#miscellaneous)
-  - [Networking](Walkthroughs/Info/README.md#networking)
-  - [Web](Walkthroughs/Info/README.md#web)
-  - [Windows](Walkthroughs/Info/README.md#windows)
+- [Medium Walkthroughs](Walkthroughs/Medium/README.md)
+  - [Cyber Threat Intelligence](Walkthroughs/Medium/README.md#cyber-threat-intelligence)
+  - [Defensive Security](Walkthroughs/Medium/README.md#defensive-security)
+  - [Exploitation](Walkthroughs/Medium/README.md#exploitation)
+  - [Networking](Walkthroughs/Medium/README.md#networking)
+  - [Scripting and Programming](Walkthroughs/Medium/README.md#scripting-and-programming)
+  - [Web](Walkthroughs/Medium/README.md#web)
+  - [Windows](Walkthroughs/Medium/README.md#windows)
+
 - [Easy Walkthroughs](Walkthroughs/Easy/README.md)
   - [Active Directory](Walkthroughs/Easy/README.md#active-directory)
   - [Containerisation](Walkthroughs/Easy/README.md#containerisation)
@@ -90,14 +98,14 @@ In total you will find more than **225 room solutions** here.
   - [Scripting and Programming](Walkthroughs/Easy/README.md#scripting-and-programming)
   - [Web](Walkthroughs/Easy/README.md#web)
   - [Windows](Walkthroughs/Easy/README.md#windows)
-- [Medium Walkthroughs](Walkthroughs/Medium/README.md)
-  - [Cyber Threat Intelligence](Walkthroughs/Medium/README.md#cyber-threat-intelligence)
-  - [Defensive Security](Walkthroughs/Medium/README.md#defensive-security)
-  - [Exploitation](Walkthroughs/Medium/README.md#exploitation)
-  - [Networking](Walkthroughs/Medium/README.md#networking)
-  - [Scripting and Programming](Walkthroughs/Medium/README.md#scripting-and-programming)
-  - [Web](Walkthroughs/Medium/README.md#web)
-  - [Windows](Walkthroughs/Medium/README.md#windows)
+
+- [Info Walkthroughs](Walkthroughs/Info/README.md)
+  - [Exploitation](Walkthroughs/Info/README.md#exploitation)
+  - [Linux](Walkthroughs/Info/README.md#linux)
+  - [Miscellaneous](Walkthroughs/Info/README.md#miscellaneous)
+  - [Networking](Walkthroughs/Info/README.md#networking)
+  - [Web](Walkthroughs/Info/README.md#web)
+  - [Windows](Walkthroughs/Info/README.md#windows)
 
 ## No flag spoilers
 

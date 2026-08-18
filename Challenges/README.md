@@ -1,15 +1,17 @@
 # Challenges
 
-- [Info Challenges](Info/README.md)
-  - [Exploitation](Info/README.md#exploitation)
-- [Easy Challenges](Easy/README.md)
-  - [Digital Forensics and Incident Response](Easy/README.md#digital-forensics-and-incident-response)
-  - [Full Pwn](Easy/README.md#full-pwn)
-  - [Jeopardy Style CTFs](Easy/README.md#jeopardy-style-ctfs)
-  - [Miscellaneous](Easy/README.md#miscellaneous)
 - [Medium Challenges](Medium/README.md)
   - [Digital Forensics and Incident Response](Medium/README.md#digital-forensics-and-incident-response)
   - [Exploitation](Medium/README.md#exploitation)
   - [Full Pwn](Medium/README.md#full-pwn)
   - [Jeopardy Style CTFs](Medium/README.md#jeopardy-style-ctfs)
   - [Miscellaneous](Medium/README.md#miscellaneous)
+
+- [Easy Challenges](Easy/README.md)
+  - [Digital Forensics and Incident Response](Easy/README.md#digital-forensics-and-incident-response)
+  - [Full Pwn](Easy/README.md#full-pwn)
+  - [Jeopardy Style CTFs](Easy/README.md#jeopardy-style-ctfs)
+  - [Miscellaneous](Easy/README.md#miscellaneous)
+
+- [Info Challenges](Info/README.md)
+  - [Exploitation](Info/README.md#exploitation)
