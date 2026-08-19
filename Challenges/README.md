@@ -1,7 +1,7 @@
 # Challenges
 
 - [Medium Challenges](Medium/README.md)
-  - [Active Directory](Medium/README.md##active-directory)
+  - [Active Directory](Medium/README.md#active-directory)
   - [Digital Forensics and Incident Response](Medium/README.md#digital-forensics-and-incident-response)
   - [Exploitation](Medium/README.md#exploitation)
   - [Full Pwn](Medium/README.md#full-pwn)
