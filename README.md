@@ -13,10 +13,10 @@ In total you will find more than **225 room solutions** here.
 ## Challenges (CTF)
 
 - [Medium Challenges](Challenges/Medium/README.md)
+  - [Active Directory](Challenges/Medium/README.md##active-directory)
   - [Digital Forensics and Incident Response](Challenges/Medium/README.md#digital-forensics-and-incident-response)
   - [Exploitation](Challenges/Medium/README.md#exploitation)
   - [Full Pwn](Challenges/Medium/README.md#full-pwn)
-  - [Jeopardy Style CTFs](Challenges/Medium/README.md#jeopardy-style-ctfs)
   - [Miscellaneous](Challenges/Medium/README.md#miscellaneous)
 
 - [Easy Challenges](Challenges/Easy/README.md)

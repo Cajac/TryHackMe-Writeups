@@ -2,16 +2,21 @@
 
 **Categories**:
 
+- [Active Directory](#active-directory)
 - [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
 - [Exploitation](#exploitation)
 - [Full Pwn](#full-pwn)
-- [Jeopardy Style CTFs](#jeopardy-style-ctfs)
 - [Miscellaneous](#miscellaneous)
 
 Notes:
 
 - The categorization is my own and not THM's.
 - Challenges can be placed in more than one category.
+
+## Active Directory
+
+- [Attacktive Directory](Attacktive_Directory.md)
+- [RazorBlack](RazorBlack.md)
 
 ## Digital Forensics and Incident Response
 
@@ -30,8 +35,7 @@ Notes:
 ## Full Pwn
 
 - [GoldenEye](GoldenEye.md)
-
-## Jeopardy Style CTFs
+- [RazorBlack](RazorBlack.md)
 
 ## Miscellaneous
 
