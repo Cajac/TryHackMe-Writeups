@@ -1318,7 +1318,7 @@ Info: Download successful!
 *Evil-WinRM* PS C:\Users\twilliams> 
 ```
 
-And view it at our Kali machine with `eog` of `feh`.
+And view it at our Kali machine with `eog` or `feh`.
 
 ![RazorBlack Top Secret](Images/RazorBlack_Top_Secret.png)
 
