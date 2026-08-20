@@ -13,3 +13,4 @@ Notes:
 
 - [Breaching Active Directory](Breaching_Active_Directory.md)
 - [Enumerating Active Directory](Enumerating_Active_Directory.md)
+- [Intro to AD Authentication](Intro_to_AD_Authentication.md)
