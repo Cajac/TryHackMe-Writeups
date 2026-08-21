@@ -72,3 +72,4 @@ Web link: [https://tryhackme.com/path/outline/soclevel1legacy](https://tryhackme
 
 - [Introduction to SIEM](../../Walkthroughs/Easy/Introduction_to_SIEM.md)
 - [Elastic Stack: The Basics](../../Walkthroughs/Medium/Elastic_Stack_The_Basics.md)
+- [ItsyBitsy](../../Challenges/Medium/ItsyBitsy.md)

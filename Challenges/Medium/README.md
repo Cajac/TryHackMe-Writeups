@@ -22,6 +22,7 @@ Notes:
 
 - [Investigating Windows 2.0](Investigating_Windows_2.0.md)
 - [Investigating Windows 3.x](Investigating_Windows_3.x.md)
+- [ItsyBitsy](ItsyBitsy.md)
 - [Security Footage](Security_Footage.md)
 - [Snort Challenge - Live Attacks](Snort_Challenge-Live_Attacks.md)
 - [Snort Challenge - The Basics](Snort_Challenge-The_Basics.md)
