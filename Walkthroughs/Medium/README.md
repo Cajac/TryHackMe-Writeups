@@ -34,6 +34,7 @@ Notes:
 - [MITRE](MITRE.md)
 - [Redline](Redline.md)
 - [Snort](Snort.md)
+- [Splunk: Exploring SPL](Splunk_Exploring_SPL.md)
 - [Wazuh](Wazuh.md)
 - [Windows Event Logs](Windows_Event_Logs.md)
 
