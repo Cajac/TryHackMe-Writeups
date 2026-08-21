@@ -69,6 +69,7 @@ Notes:
 - [Log Operations](Log_Operations.md)
 - [Logs Fundamentals](Logs_Fundamentals.md)
 - [SOC Fundamentals](SOC_Fundamentals.md)
+- [Splunk: The Basics](Splunk_The_Basics.md)
 - [Sysmon](Sysmon.md)
 - [Vulnerability Scanner Overview](Vulnerability_Scanner_Overview.md)
 
