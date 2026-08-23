@@ -46,19 +46,11 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 - [Nmap Advanced Port Scans](../../Walkthroughs/Medium/Nmap_Advanced_Port_Scans.md)
 - [Nmap Post Port Scans](../../Walkthroughs/Medium/Nmap_Post_Port_Scans.md)
 
-### Introduction to Web Hacking
+### Web Application Security Fundamentals
 
 - [Walking An Application](../../Walkthroughs/Easy/Walking_An_Application.md)
 - [Content Discovery](../../Walkthroughs/Easy/Content_Discovery.md)
-- [Subdomain Enumeration](../../Walkthroughs/Easy/Subdomain_Enumeration.md)
-- [Authentication Bypass](../../Walkthroughs/Easy/Authentication_Bypass.md)
-- [IDOR](../../Walkthroughs/Easy/IDOR.md)
-- [File Inclusion](../../Walkthroughs/Medium/File_Inclusion.md)
-- [Intro to SSRF](../../Walkthroughs/Easy/Intro_to_SSRF.md)
-- [Intro to Cross-site Scripting](../../Walkthroughs/Easy/Intro_to_Cross-site_Scripting.md)
-- [Race Conditions](../../Walkthroughs/Medium/Race_Conditions.md)
-- [Command Injection](../../Walkthroughs/Easy/Command_Injection.md)
-- [SQL Injection](../../Walkthroughs/Medium/SQL_Injection.md)
+- [Modern Web Stacks](../../Walkthroughs/Easy/Modern_Web_Stacks.md)
 
 ### Burp Suite
 

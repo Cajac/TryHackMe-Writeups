@@ -201,6 +201,7 @@ Notes:
 - [Intro to SSRF](Intro_to_SSRF.md)
 - [Introduction to Flask](Introduction_to_Flask.md)
 - [JavaScript Essentials](JavaScript_Essentials.md)
+- [Modern Web Stacks](Modern_Web_Stacks.md)
 - [OWASP Juice Shop](OWASP_Juice_Shop.md)
 - [OWASP Top 10 - 2021](OWASP_Top_10_2021.md)
 - [OWASP Top 10 2025: Application Design Flaws](OWASP_Top_10_2025-Application_Design_Flaws.md)
