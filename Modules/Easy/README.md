@@ -55,6 +55,7 @@ Notes:
 ## Networking
 
 - [Network Traffic Analysis](Network_Traffic_Analysis.md)
+- [Network Reconnaissance](Network_Reconnaissance.md)
 - [Networking](Networking.md)
 - [Wireshark](Wireshark.md)
 

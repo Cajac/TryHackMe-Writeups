@@ -32,6 +32,13 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 - [Cyber Kill Chain](../../Walkthroughs/Medium/Cyber_Kill_Chain.md)
 - [Penetration Testing Frameworks](../../Walkthroughs/Easy/Penetration_Testing_Frameworks.md)
 
+### Network Reconnaissance
+
+- [Passive Reconnaissance](../../Walkthroughs/Easy/Passive_Reconnaissance.md)
+- [Active Reconnaissance](../../Walkthroughs/Easy/Active_Reconnaissance.md)
+- [Protocols and Servers](../../Walkthroughs/Easy/Protocols_and_Servers.md)
+- [Protocols and Servers 2](../../Walkthroughs/Medium/Protocols_and_Servers_2.md)
+
 ### Introduction to Web Hacking
 
 - [Walking An Application](../../Walkthroughs/Easy/Walking_An_Application.md)
