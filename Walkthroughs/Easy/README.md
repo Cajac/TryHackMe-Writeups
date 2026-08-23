@@ -191,7 +191,7 @@ Notes:
 - [Burp Suite: Other Modules](Burp_Suite_Other_Modules.md)
 - [Burp Suite: Extensions](Burp_Suite_Extensions.md)
 - [Command Injection](Command_Injection.md)
-- [Content Discovery](Content_Discovery.md)
+- [Content Discovery (Old)](Content_Discovery_Old.md)
 - [How Websites Work](How_Websites_Work.md)
 - [HTTP in Detail](HTTP_in_Detail.md)
 - [IDOR](IDOR.md)
