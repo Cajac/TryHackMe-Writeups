@@ -207,6 +207,7 @@ Notes:
 - [OWASP Top 10 2025: Insecure Data Handling](OWASP_Top_10_2025-Insecure_Data_Handling.md)
 - [Subdomain Enumeration](Subdomain_Enumeration.md)
 - [Upload Vulnerabilities](Upload_Vulnerabilities.md)
+- [Walking An Application (Old)](Walking_An_Application_Old.md)
 - [Web Application Basics](Web_Application_Basics.md)
 - [Web Enumeration](Web_Enumeration.md)
 
