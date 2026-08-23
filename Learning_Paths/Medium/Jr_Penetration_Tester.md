@@ -39,6 +39,13 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 - [Protocols and Servers](../../Walkthroughs/Easy/Protocols_and_Servers.md)
 - [Protocols and Servers 2](../../Walkthroughs/Medium/Protocols_and_Servers_2.md)
 
+### Nmap
+
+- [Nmap Live Host Discovery](../../Walkthroughs/Medium/Nmap_Live_Host_Discovery.md)
+- [Nmap Basic Port Scans](../../Walkthroughs/Easy/Nmap_Basic_Port_Scans.md)
+- [Nmap Advanced Port Scans](../../Walkthroughs/Medium/Nmap_Advanced_Port_Scans.md)
+- [Nmap Post Port Scans](../../Walkthroughs/Medium/Nmap_Post_Port_Scans.md)
+
 ### Introduction to Web Hacking
 
 - [Walking An Application](../../Walkthroughs/Easy/Walking_An_Application.md)
