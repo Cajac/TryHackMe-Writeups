@@ -18,16 +18,19 @@ Web link: [https://tryhackme.com/path/outline/jrpenetrationtester](https://tryha
 
 ## Included rooms
 
-### Introduction to Cyber Security
+### Start Your Cyber Security Journey
 
 - [Offensive Security Intro](../../Walkthroughs/Easy/Offensive_Security_Intro.md)
 - [Defensive Security Intro](../../Walkthroughs/Easy/Defensive_Security_Intro.md)
-- [Careers in Cyber](../../Walkthroughs/Info/Careers_in_Cyber.md)
+- [Search Skills](../../Walkthroughs/Easy/Search_Skills.md)
 
-### Introduction to Pentesting
+### Penetration Testing Foundations
 
-- [Pentesting Fundamentals](../../Walkthroughs/Easy/Pentesting_Fundamentals.md)
-- [Principles of Security](../../Walkthroughs/Info/Principles_of_Security.md)
+- [Guided Pentest: Web](../../Walkthroughs/Easy/Guided_Pentest_Web.md)
+- [Guided Pentest: Infrastructure](../../Walkthroughs/Easy/Guided_Pentest_Infrastructure.md)
+- [Dive Into Pentesting](../../Walkthroughs/Easy/Dive_Into_Pentesting.md)
+- [Cyber Kill Chain](../../Walkthroughs/Medium/Cyber_Kill_Chain.md)
+- [Penetration Testing Frameworks](../../Walkthroughs/Easy/Penetration_Testing_Frameworks.md)
 
 ### Introduction to Web Hacking
 

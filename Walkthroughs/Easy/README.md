@@ -162,11 +162,14 @@ Notes:
 ## Offensive Security
 
 - [Common Linux Privesc](Common_Linux_PrivEsc.md)
+- [Dive Into Pentesting](Dive_Into_Pentesting.md)
 - [Enumeration & Brute Force](Enumeration_and_Brute_Force.md)
 - [Gobuster: The Basics](Gobuster_The_Basics.md)
+- [Guided Pentest: Web](Guided_Pentest_Web.md)
 - [Hydra](Hydra.md)
 - [Nessus](Nessus.md)
 - [Offensive Security Intro](Offensive_Security_Intro.md)
+- [Penetration Testing Frameworks](Penetration_Testing_Frameworks.md)
 - [Pentesting Fundamentals](Pentesting_Fundamentals.md)
 - [Shells Overview](Shells_Overview.md)
 - [SQLMap: The Basics](SQLMap_The_Basics.md)
