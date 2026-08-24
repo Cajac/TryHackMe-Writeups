@@ -77,7 +77,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 50.91 seconds
 ```
 
-We have three main TCP-services running and available:
+We have four TCP-services running and available:
 
 - vsftpd 3.0.3 running on port 21
 - Apache httpd 2.4.18 running on port 80
