@@ -35,6 +35,7 @@ Notes:
 
 ## Full Pwn
 
+- [Biohazard](Biohazard.md)
 - [Boiler CTF](Boiler_CTF.md)
 - [GoldenEye](GoldenEye.md)
 - [RazorBlack](RazorBlack.md)
