@@ -1028,7 +1028,7 @@ User weasker may run the following commands on umbrella_corp:
 weasker@umbrella_corp:/home/umbrella_guest$ 
 ```
 
-Ah, we can run **ALL* commands. So let's become root.
+Ah, we can run **ALL** commands. So let's become root.
 
 ```bash
 weasker@umbrella_corp:/home/umbrella_guest$ sudo su
@@ -1093,6 +1093,7 @@ For additional information, please see the references below.
 - [export - Linux manual page](https://www.man7.org/linux/man-pages/man1/export.1p.html)
 - [File Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/File_Transfer_Protocol)
 - [ftp - Linux manual page](https://linux.die.net/man/1/ftp)
+- [GNU Privacy Guard - Wikipedia](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)
 - [gpg - Linux manual page](https://linux.die.net/man/1/gpg)
 - [gunzip - Linux manual page](https://linux.die.net/man/1/gunzip)
 - [head - Linux manual page](https://man7.org/linux/man-pages/man1/head.1.html)
