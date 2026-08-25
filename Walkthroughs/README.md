@@ -4,6 +4,7 @@
   - [Cyber Threat Intelligence](Medium/README.md#cyber-threat-intelligence)
   - [Defensive Security](Medium/README.md#defensive-security)
   - [Exploitation](Medium/README.md#exploitation)
+  - [Linux](Medium/README.md#elinux)
   - [Networking](Medium/README.md#networking)
   - [Scripting and Programming](Medium/README.md#scripting-and-programming)
   - [Web](Medium/README.md#web)

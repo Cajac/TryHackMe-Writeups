@@ -5,6 +5,7 @@
 - [Cyber Threat Intelligence](#cyber-threat-intelligence)
 - [Defensive Security](#defensive-security)
 - [Exploitation](#exploitation)
+- [Linux](#linux)
 - [Networking](#networking)
 - [Scripting and Programming](#scripting-and-programming)
 - [Web](#web)
@@ -50,6 +51,13 @@ Notes:
 - [Windows PrivEsc](Windows_PrivEsc.md)
 - [Windows PrivEsc Arena](Windows_PrivEsc_Arena.md)
 - [Windows Privilege Escalation](Windows_Privilege_Escalation.md)
+
+## Linux
+
+- [Linux Agency](Linux_Agency.md)
+- [Linux PrivEsc](Linux_PrivEsc.md)
+- [Linux PrivEsc Arena](Linux_PrivEsc_Arena.md)
+- [Linux Privilege Escalation](Linux_Privilege_Escalation.md)
 
 ## Networking
 
