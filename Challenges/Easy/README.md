@@ -62,3 +62,4 @@ Notes:
 - [Ninja Skills](Ninja_Skills.md)
 - [OhSINT](OhSINT.md)
 - [Reversing ELF](Reversing_ELF.md)
+- [W1seGuy](W1seGuy.md)
