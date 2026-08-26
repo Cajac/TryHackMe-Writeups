@@ -8,6 +8,7 @@
   - [Miscellaneous](Medium/README.md#miscellaneous)
 
 - [Easy Challenges](Easy/README.md)
+  - [Cryptography](Easy/README.md##cryptography)
   - [Digital Forensics and Incident Response](Easy/README.md#digital-forensics-and-incident-response)
   - [Full Pwn](Easy/README.md#full-pwn)
   - [Jeopardy Style CTFs](Easy/README.md#jeopardy-style-ctfs)

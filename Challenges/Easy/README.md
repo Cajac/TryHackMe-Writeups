@@ -2,6 +2,7 @@
 
 **Categories**:
 
+- [Cryptography](#cryptography)
 - [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
 - [Full Pwn](#full-pwn)
 - [Jeopardy Style CTFs](#jeopardy-style-ctfs)
@@ -11,6 +12,12 @@ Notes:
 
 - The categorization is my own and not THM's.
 - Challenges can be placed in more than one category.
+
+## Cryptography
+
+- [Crack the hash](Crack_the_hash.md)
+- [DarkMatter](DarkMatter.md)
+- [W1seGuy](W1seGuy.md)
 
 ## Digital Forensics and Incident Response
 
@@ -58,8 +65,6 @@ Notes:
 
 ## Miscellaneous
 
-- [Crack the hash](Crack_the_hash.md)
 - [Ninja Skills](Ninja_Skills.md)
 - [OhSINT](OhSINT.md)
 - [Reversing ELF](Reversing_ELF.md)
-- [W1seGuy](W1seGuy.md)

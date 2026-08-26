@@ -20,6 +20,7 @@ In total you will find more than **225 room solutions** here.
   - [Miscellaneous](Challenges/Medium/README.md#miscellaneous)
 
 - [Easy Challenges](Challenges/Easy/README.md)
+  - [Cryptography](Challenges/Easy/README.md##cryptography)
   - [Digital Forensics and Incident Response](Challenges/Easy/README.md#digital-forensics-and-incident-response)
   - [Full Pwn](Challenges/Easy/README.md#full-pwn)
   - [Jeopardy Style CTFs](Challenges/Easy/README.md#jeopardy-style-ctfs)
