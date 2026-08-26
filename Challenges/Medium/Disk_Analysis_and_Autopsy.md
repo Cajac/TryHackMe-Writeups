@@ -167,7 +167,7 @@ Then we need to check the images, usually located in the user's `Downloads` fold
 
 ![Autopsy 11](Images/Autopsy_11.png)
 
-Answer: `Anto Joshuw`
+Answer: `Anto Joshwa`
 
 #### A user had a file on her desktop. It had a flag but she changed the flag using PowerShell. What was the first flag?
 
@@ -260,6 +260,7 @@ For additional information, please see the references below.
 - [PowerShell - Wikipedia](https://en.wikipedia.org/wiki/PowerShell)
 - [Remote Desktop Protocol - Wikipedia](https://en.wikipedia.org/wiki/Remote_Desktop_Protocol)
 - [Shortcut (computing) - Wikipedia](https://en.wikipedia.org/wiki/Shortcut_(computing))
+- [Solving Computer Forensic Case Using Autopsy](https://www.exploit-db.com/docs/48254)
 - [Windows Registry - Wikipedia](https://en.wikipedia.org/wiki/Windows_Registry)
 - [xfreerdp - Linux manual page](https://linux.die.net/man/1/xfreerdp)
 - [Yara - GitHub](https://github.com/virustotal/yara)
