@@ -20,6 +20,7 @@ Notes:
 
 ## Digital Forensics and Incident Response
 
+- [Disk Analysis & Autopsy](Disk_Analysis_and_Autopsy.md)
 - [Investigating Windows 2.0](Investigating_Windows_2.0.md)
 - [Investigating Windows 3.x](Investigating_Windows_3.x.md)
 - [ItsyBitsy](ItsyBitsy.md)
