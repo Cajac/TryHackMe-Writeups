@@ -452,6 +452,14 @@ We were lucky enought to choose the communication with the flag.
 
 Answer: `THM{<REDACTED>}`
 
+#### Addendum
+
+We can actually do almost all of the CyberChef recipes **in one go** with additional `Register` and `Drop Bytes` operations:
+
+![Masquerade CyberChef 3](Images/Masquerade_CyberChef_3.png)
+
+Very nice!
+
 ---------------------------------------------------------------------------------------
 
 For additional information, please see the references below.
@@ -460,6 +468,8 @@ For additional information, please see the references below.
 
 - [.NET Framework - Wikipedia](https://en.wikipedia.org/wiki/.NET_Framework)
 - [Advanced Encryption Standard - Wikipedia](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+- [CyberChef - GitHub](https://github.com/gchq/CyberChef)
+- [CyberChef - Homepage](https://gchq.github.io/CyberChef/)
 - [dnSpy - GitHub](https://github.com/dnSpy/dnSpy)
 - [file - Linux manual page](https://man7.org/linux/man-pages/man1/file.1.html)
 - [Get-WinEvent - Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Diagnostics/Get-WinEvent?view=powershell-5.1)
