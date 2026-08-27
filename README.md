@@ -13,7 +13,7 @@ In total you will find more than **225 room solutions** here.
 ## Challenges (CTF)
 
 - [Medium Challenges](Challenges/Medium/README.md)
-  - [Active Directory](Challenges/Medium/README.md##active-directory)
+  - [Active Directory](Challenges/Medium/README.md#active-directory)
   - [Digital Forensics and Incident Response](Challenges/Medium/README.md#digital-forensics-and-incident-response)
   - [Exploitation](Challenges/Medium/README.md#exploitation)
   - [Full Pwn](Challenges/Medium/README.md#full-pwn)
@@ -107,6 +107,18 @@ In total you will find more than **225 room solutions** here.
   - [Networking](Walkthroughs/Info/README.md#networking)
   - [Web](Walkthroughs/Info/README.md#web)
   - [Windows](Walkthroughs/Info/README.md#windows)
+
+## When to use
+
+These solutions can be used in two different scenarios:
+
+**Scenario #1**:  
+When you are stuck, have already tried different solutions on your own, and don't know how to continue.  
+Don't look at them to soon though. It's always good to develop your ["Try harder"-mindset](https://www.offsec.com/blog/what-it-means-to-try-harder/)!
+
+**Scenario #2**:  
+When you have already solved the challenge on your own but want to see if you can learn different methods, tools or approaches.
+Are there different and perhaps smarter ways to solve this challenge?
 
 ## No flag spoilers
 
