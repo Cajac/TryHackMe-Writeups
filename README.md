@@ -139,6 +139,7 @@ I'm not a native English speaker so please forgive any spelling mistakes or gram
 
 Some of the solutions were inspired by writeups and walkthroughs from these guys:
 
+- [Djalil Ayed](https://www.youtube.com/@djalilayed)
 - [igor_sec](https://medium.com/@huglertomgaw)
 - [jcm3](https://medium.com/@jcm3)
 - [Motasem Hamdan](https://www.youtube.com/@MotasemHamdan)
