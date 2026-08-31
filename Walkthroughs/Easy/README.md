@@ -30,6 +30,7 @@ Notes:
 
 ## Containerisation
 
+- [Container Hardening](Container_Hardening.md)
 - [Container Vulnerabilities](Container_Vulnerabilities.md)
 - [Intro to Containerisation](Intro_to_Containerisation.md)
 - [Intro to Docker](Intro_to_Docker.md)
