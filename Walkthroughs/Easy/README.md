@@ -35,6 +35,7 @@ Notes:
 - [Intro to Containerisation](Intro_to_Containerisation.md)
 - [Intro to Docker](Intro_to_Docker.md)
 - [Intro to Kubernetes](Intro_to_Kubernetes.md)
+- [Microservices Architectures](Microservices_Architectures.md)
 - [Virtualization and Containers](Virtualization_and_Containers.md)
 - [Virtualization Basics](Virtualization_Basics.md)
 
