@@ -36,6 +36,7 @@ Notes:
 - [Intro to Docker](Intro_to_Docker.md)
 - [Intro to Kubernetes](Intro_to_Kubernetes.md)
 - [Virtualization and Containers](Virtualization_and_Containers.md)
+- [Virtualization Basics](Virtualization_Basics.md)
 
 ## Cryptography
 
