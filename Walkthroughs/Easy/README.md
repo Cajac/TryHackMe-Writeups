@@ -99,6 +99,7 @@ Notes:
 - [Enumeration & Brute Force](Enumeration_and_Brute_Force.md)
 - [ffuf](ffuf.md)
 - [Gobuster: The Basics](Gobuster_The_Basics.md)
+- [Linux: Local Enumeration](Linux_Local_Enumeration.md)
 - [Subdomain Enumeration](Subdomain_Enumeration.md)
 - [Web Enumeration](Web_Enumeration.md)
 
@@ -135,6 +136,7 @@ Notes:
 - [Common Linux Privesc](Common_Linux_PrivEsc.md)
 - [Linux Modules](Linux_Modules.md)
 - [Linux Shells](Linux_Shells.md)
+- [Linux: Local Enumeration](Linux_Local_Enumeration.md)
 
 ## Malware Analysis
 
