@@ -11,6 +11,7 @@
 - [Enumeration](#enumeration)
 - [Exploitation](#exploitation)
 - [Fundamentals](#fundamentals)
+- [Linux](#linux)
 - [Malware Analysis](#malware-analysis)
 - [Networking](#networking)
 - [Offensive Security](#offensive-security)
@@ -128,6 +129,12 @@ Notes:
 - [Security Principles](Security_Principles.md)
 - [SQL Fundamentals](SQL_Fundamentals.md)
 - [Toolbox: Vim](Toolbox_Vim.md)
+
+## Linux
+
+- [Common Linux Privesc](Common_Linux_PrivEsc.md)
+- [Linux Modules](Linux_Modules.md)
+- [Linux Shells](Linux_Shells.md)
 
 ## Malware Analysis
 

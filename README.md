@@ -95,6 +95,7 @@ This repository is part of my evolving efforts to [build](https://www.buildingas
   - [Enumeration](Walkthroughs/Easy/README.md#enumeration)
   - [Exploitation](Walkthroughs/Easy/README.md#exploitation)
   - [Fundamentals](Walkthroughs/Easy/README.md#fundamentals)
+  - [Linux](Walkthroughs/Easy/README.md#linux)
   - [Malware Analysis](Walkthroughs/Easy/README.md#malware-analysis)
   - [Networking](Walkthroughs/Easy/README.md#networking)
   - [Offensive Security](Walkthroughs/Easy/README.md#offensive-security)

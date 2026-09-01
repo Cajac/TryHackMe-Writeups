@@ -20,6 +20,7 @@
   - [Enumeration](Easy/README.md#enumeration)
   - [Exploitation](Easy/README.md#exploitation)
   - [Fundamentals](Easy/README.md#fundamentals)
+  - [Linux](Easy/README.md#linux)
   - [Malware Analysis](Easy/README.md#malware-analysis)
   - [Networking](Easy/README.md#networking)
   - [Offensive Security](Easy/README.md#offensive-security)
