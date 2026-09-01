@@ -12,7 +12,7 @@
 
 - [Easy Walkthroughs](Easy/README.md)
   - [Active Directory](Easy/README.md#active-directory)
-  - [Containerisation](Easy/README.md#containerisation)
+  - [Containerization and Virtualization](Easy/README.md#containerization-and-virtualization)
   - [Cryptography](Easy/README.md#cryptography)
   - [Cyber Threat Intelligence](Easy/README.md#cyber-threat-intelligence)
   - [Defensive Security](Easy/README.md#defensive-security)

@@ -87,7 +87,7 @@ This repository is part of my evolving efforts to [build](https://www.buildingas
 
 - [Easy Walkthroughs](Walkthroughs/Easy/README.md)
   - [Active Directory](Walkthroughs/Easy/README.md#active-directory)
-  - [Containerisation](Walkthroughs/Easy/README.md#containerisation)
+  - [Containerization and Virtualization](Walkthroughs/Easy/README.md#containerization-and-virtualization)
   - [Cryptography](Walkthroughs/Easy/README.md#cryptography)
   - [Cyber Threat Intelligence](Walkthroughs/Easy/README.md#cyber-threat-intelligence)
   - [Defensive Security](Walkthroughs/Easy/README.md#defensive-security)
