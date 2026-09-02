@@ -138,6 +138,7 @@ Notes:
 - [Linux Modules](Linux_Modules.md)
 - [Linux Shells](Linux_Shells.md)
 - [Linux: Local Enumeration](Linux_Local_Enumeration.md)
+- [The find command](The_find_command.md)
 
 ## Malware Analysis
 
