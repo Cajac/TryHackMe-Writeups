@@ -3,7 +3,7 @@
 **Categories**:
 
 - [Active Directory](#active-directory)
-- [Containerisation](#containerisation)
+- [Containerization and Virtualization](#containerization-and-virtualization)
 - [Cryptography](#cryptography)
 - [Defensive Security](#defensive-security)
 - [Exploitation](#exploitation)
@@ -23,7 +23,7 @@ Notes:
 
 - [Breaking Windows](Breaking_Windows.md)
 
-## Containerisation
+## Containerization and Virtualization
 
 - [Container Security](Container_Security.md)
 
@@ -59,9 +59,9 @@ Notes:
 
 ## Networking
 
-- [Network Traffic Analysis](Network_Traffic_Analysis.md)
 - [Network Reconnaissance](Network_Reconnaissance.md)
 - [Network Security](Network_Security.md)
+- [Network Traffic Analysis](Network_Traffic_Analysis.md)
 - [Networking](Networking.md)
 - [Wireshark](Wireshark.md)
 
