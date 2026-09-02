@@ -13,6 +13,7 @@
   - [Full Pwn](Easy/README.md#full-pwn)
   - [Jeopardy Style CTFs](Easy/README.md#jeopardy-style-ctfs)
   - [Miscellaneous](Easy/README.md#miscellaneous)
+  - [Reverse Engineering](Easy/README.md#reverse-engineering)
 
 - [Info Challenges](Info/README.md)
   - [Exploitation](Info/README.md#exploitation)

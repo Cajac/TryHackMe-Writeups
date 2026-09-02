@@ -7,6 +7,7 @@
 - [Full Pwn](#full-pwn)
 - [Jeopardy Style CTFs](#jeopardy-style-ctfs)
 - [Miscellaneous](#miscellaneous)
+- [Reverse Engineering](#reverse-engineering)
 
 Notes:
 
@@ -68,3 +69,7 @@ Notes:
 - [Ninja Skills](Ninja_Skills.md)
 - [OhSINT](OhSINT.md)
 - [Reversing ELF](Reversing_ELF.md)
+
+## Reverse Engineering
+
+- [Intro to x86-64](Intro_to_x86-64.md)

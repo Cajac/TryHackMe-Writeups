@@ -27,6 +27,7 @@ This repository is part of my evolving efforts to [build](https://www.buildingas
   - [Full Pwn](Challenges/Easy/README.md#full-pwn)
   - [Jeopardy Style CTFs](Challenges/Easy/README.md#jeopardy-style-ctfs)
   - [Miscellaneous](Challenges/Easy/README.md#miscellaneous)
+  - [Reverse Engineering](Challenges/Easy/README.md#reverse-engineering)
 
 - [Info Challenges](Challenges/Info/README.md)
   - [Exploitation](Challenges/Info/README.md#exploitation)
