@@ -24,6 +24,7 @@
   - [Malware Analysis](Easy/README.md#malware-analysis)
   - [Networking](Easy/README.md#networking)
   - [Offensive Security](Easy/README.md#offensive-security)
+  - [Reverse Engineering](Easy/README.md#reverse-engineering)
   - [Scripting and Programming](Easy/README.md#scripting-and-programming)
   - [Web](Easy/README.md#web)
   - [Windows](Easy/README.md#windows)

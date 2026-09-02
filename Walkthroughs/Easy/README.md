@@ -15,6 +15,7 @@
 - [Malware Analysis](#malware-analysis)
 - [Networking](#networking)
 - [Offensive Security](#offensive-security)
+- [Reverse Engineering](#reverse-engineering)
 - [Scripting and Programming](#scripting-and-programming)
 - [Web](#web)
 - [Windows](#windows)
@@ -192,6 +193,10 @@ Notes:
 - [SQLMap: The Basics](SQLMap_The_Basics.md)
 - [Vulnversity](Vulnversity.md)
 - [Writing Pentest Reports](Writing_Pentest_Reports.md)
+
+## Reverse Engineering
+
+- [x86 Architecture Overview](x86_Architecture_Overview.md)
 
 ## Scripting and Programming
 

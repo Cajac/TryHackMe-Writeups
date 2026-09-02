@@ -99,6 +99,7 @@ This repository is part of my evolving efforts to [build](https://www.buildingas
   - [Malware Analysis](Walkthroughs/Easy/README.md#malware-analysis)
   - [Networking](Walkthroughs/Easy/README.md#networking)
   - [Offensive Security](Walkthroughs/Easy/README.md#offensive-security)
+  - [Reverse Engineering](Walkthroughs/Easy/README.md#reverse-engineering)
   - [Scripting and Programming](Walkthroughs/Easy/README.md#scripting-and-programming)
   - [Web](Walkthroughs/Easy/README.md#web)
   - [Windows](Walkthroughs/Easy/README.md#windows)
