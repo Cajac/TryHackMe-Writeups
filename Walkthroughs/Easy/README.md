@@ -134,6 +134,7 @@ Notes:
 ## Linux
 
 - [Common Linux Privesc](Common_Linux_PrivEsc.md)
+- [Linux Backdoors](Linux_Backdoors.md)
 - [Linux Modules](Linux_Modules.md)
 - [Linux Shells](Linux_Shells.md)
 - [Linux: Local Enumeration](Linux_Local_Enumeration.md)
