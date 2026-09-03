@@ -8,11 +8,11 @@ In addition, many [modules](https://tryhackme.com/hacktivities?tab=modules) and 
 
 These writeups are mainly a documentation for myself but I hope others will benefit from them as well.  
 
-In total you will find more than **250 room solutions** here.
+In total you will find more than **275 room solutions** here.
 
 This repository is part of my evolving efforts to [build](https://www.buildingasecondbrain.com/) my [second](https://fortelabs.com/blog/basboverview/) [brain](https://fortelabs.com/blog/the-7-benefits-of-building-a-second-brain/).
 
-## Challenges (CTF)
+## Challenges
 
 - [Medium Challenges](Challenges/Medium/README.md)
   - [Active Directory](Challenges/Medium/README.md#active-directory)
