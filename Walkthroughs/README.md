@@ -6,6 +6,7 @@
   - [Exploitation](Medium/README.md#exploitation)
   - [Linux](Medium/README.md#linux)
   - [Networking](Medium/README.md#networking)
+  - [Reverse Engineering](Medium/README.md#reverse-engineering)
   - [Scripting and Programming](Medium/README.md#scripting-and-programming)
   - [Web](Medium/README.md#web)
   - [Windows](Medium/README.md#windows)

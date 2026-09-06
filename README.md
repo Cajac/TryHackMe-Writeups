@@ -82,6 +82,7 @@ This repository is part of my evolving efforts to [build](https://www.buildingas
   - [Defensive Security](Walkthroughs/Medium/README.md#defensive-security)
   - [Exploitation](Walkthroughs/Medium/README.md#exploitation)
   - [Networking](Walkthroughs/Medium/README.md#networking)
+  - [Reverse Engineering](Walkthroughs/Medium/README.md#reverse-engineering)
   - [Scripting and Programming](Walkthroughs/Medium/README.md#scripting-and-programming)
   - [Web](Walkthroughs/Medium/README.md#web)
   - [Windows](Walkthroughs/Medium/README.md#windows)

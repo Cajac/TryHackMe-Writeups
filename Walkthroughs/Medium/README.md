@@ -7,6 +7,7 @@
 - [Exploitation](#exploitation)
 - [Linux](#linux)
 - [Networking](#networking)
+- [Reverse Engineering](#reverse-engineering)
 - [Scripting and Programming](#scripting-and-programming)
 - [Web](#web)
 - [Windows](#windows)
@@ -68,6 +69,10 @@ Notes:
 - [Protocols and Servers 2](Protocols_and_Servers_2.md)
 - [TShark: CLI Wireshark Features](TShark_CLI_Wireshark_Features.md)
 - [Zeek](Zeek.md)
+
+## Reverse Engineering
+
+- [x86 Assembly Crash Course](x86_Assembly_Crash_Course.md)
 
 ## Scripting and Programming
 
