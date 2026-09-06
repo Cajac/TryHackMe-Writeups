@@ -483,6 +483,7 @@ In the previous tasks, we explored two conditional instructions, `test` and `cmp
 While comparing two values, there are only three possible results; each result has a different impact on the critical flags like ZF and CF. The value of the flags determines the program flow. Therefore, it is essential to understand which flags are impacted by each comparison condition.
 
 |Condition|Example|Flags affected by cmp instruction|Flags affected by test instruction|
+|----|----|----|----|
 |When both values are equal|eax = ebx|Parity Flag, Zero Flag|No flag is impacted|
 |When eax is greater than ebx|eax > ebx|No flag is impacted|Parity Flag, Zero Flag|
 |When eax is less than ebx|eax < ebx|Carry Flag, Sign Flag|Parity Flag, Zero Flag|
