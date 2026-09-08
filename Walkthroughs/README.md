@@ -13,6 +13,7 @@
 
 - [Easy Walkthroughs](Easy/README.md)
   - [Active Directory](Easy/README.md#active-directory)
+  - [Artificial intelligence](Easy/README.md#artificial-intelligence)
   - [Containerization and Virtualization](Easy/README.md#containerization-and-virtualization)
   - [Cryptography](Easy/README.md#cryptography)
   - [Cyber Threat Intelligence](Easy/README.md#cyber-threat-intelligence)

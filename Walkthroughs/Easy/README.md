@@ -3,6 +3,7 @@
 **Categories**:
 
 - [Active Directory](#active-directory)
+- [Artificial intelligence](#artificial-intelligence)
 - [Containerization and Virtualization](#containerization-and-virtualization)
 - [Cryptography](#cryptography)
 - [Cyber Threat Intelligence](#cyber-threat-intelligence)
@@ -29,6 +30,10 @@ Notes:
 
 - [Active Directory Basics](Active_Directory_Basics.md)
 - [AD: Basic Enumeration](AD_Basic_Enumeration.md)
+
+## Artificial intelligence
+
+- [The Building Blocks of AI](The_Building_Blocks_of_AI.md)
 
 ## Containerization and Virtualization
 
