@@ -3,7 +3,7 @@
 **Categories**:
 
 - [Active Directory](#active-directory)
-- [Artificial intelligence](#artificial-intelligence)
+- [Artificial Intelligence](#artificial-intelligence)
 - [Containerization and Virtualization](#containerization-and-virtualization)
 - [Cryptography](#cryptography)
 - [Cyber Threat Intelligence](#cyber-threat-intelligence)
@@ -33,6 +33,7 @@ Notes:
 
 ## Artificial intelligence
 
+- [AI Security Threats](AI_Security_Threats.md)
 - [The Building Blocks of AI](The_Building_Blocks_of_AI.md)
 
 ## Containerization and Virtualization
