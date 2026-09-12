@@ -1,6 +1,7 @@
 # Walkthroughs
 
 - [Medium Walkthroughs](Medium/README.md)
+  - [Artificial Intelligence](Medium/README.md#artificial-intelligence)
   - [Cyber Threat Intelligence](Medium/README.md#cyber-threat-intelligence)
   - [Defensive Security](Medium/README.md#defensive-security)
   - [Exploitation](Medium/README.md#exploitation)

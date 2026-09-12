@@ -78,6 +78,7 @@ This repository is part of my evolving efforts to [build](https://www.buildingas
 ## Walkthroughs
 
 - [Medium Walkthroughs](Walkthroughs/Medium/README.md)
+  - [Artificial Intelligence](Walkthroughs/Medium/README.md#artificial-intelligence)
   - [Cyber Threat Intelligence](Walkthroughs/Medium/README.md#cyber-threat-intelligence)
   - [Defensive Security](Walkthroughs/Medium/README.md#defensive-security)
   - [Exploitation](Walkthroughs/Medium/README.md#exploitation)

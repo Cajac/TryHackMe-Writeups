@@ -8,7 +8,7 @@
 
 ```text
 Type: Walkthrough
-Difficulty: Easy
+Difficulty: Medium
 Tags: Artificial intelligence
 Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Free

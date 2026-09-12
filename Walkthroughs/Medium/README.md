@@ -2,6 +2,7 @@
 
 **Categories**:
 
+- [Artificial Intelligence](#artificial-intelligence)
 - [Cyber Threat Intelligence](#cyber-threat-intelligence)
 - [Defensive Security](#defensive-security)
 - [Exploitation](#exploitation)
@@ -16,6 +17,11 @@ Notes:
 
 - The categorization is my own and not THM's.
 - Modules can be placed in more than one category.
+
+## Artificial intelligence
+
+- [AI Forensics](AI_Forensics.md)
+- [AI Models & Data](AI_Models_and_Data.md)
 
 ## Cyber Threat Intelligence
 
