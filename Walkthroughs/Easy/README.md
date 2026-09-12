@@ -35,6 +35,7 @@ Notes:
 
 - [AI Models & Data](AI_Models_and_Data.md)
 - [AI Security Threats](AI_Security_Threats.md)
+- [Prompt Engineering](Prompt_Engineering.md)
 - [The Building Blocks of AI](The_Building_Blocks_of_AI.md)
 
 ## Containerization and Virtualization
