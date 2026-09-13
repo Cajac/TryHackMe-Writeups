@@ -2,6 +2,7 @@
 
 **Categories**:
 
+- [Artificial Intelligence](#artificial-intelligence)
 - [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
 - [Exploitation](#exploitation)
 - [Networking](#networking)
@@ -10,6 +11,10 @@ Notes:
 
 - The categorization is my own and not THM's.
 - Modules can be placed in more than one category.
+
+## Artificial intelligence
+
+- [AI Fundamentals](AI_Fundamentals.md)
 
 ## Digital Forensics and Incident Response
 

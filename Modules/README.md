@@ -1,6 +1,7 @@
 # Modules
 
 - [Medium Modules](Medium/README.md)
+  - [Artificial Intelligence](Medium/README.md#artificial-intelligence)
   - [Digital Forensics and Incident Response](Medium/README.md#digital-forensics-and-incident-response)
   - [Exploitation](Medium/README.md#exploitation)
   - [Networking](Medium/README.md#networking)

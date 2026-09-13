@@ -46,6 +46,7 @@ This repository is part of my evolving efforts to [build](https://www.buildingas
 ## Modules
 
 - [Medium Modules](Modules/Medium/README.md)
+  - [Artificial Intelligence](Modules/Medium/README.md#artificial-intelligence)
   - [Digital Forensics and Incident Response](Modules/Medium/README.md#digital-forensics-and-incident-response)
   - [Exploitation](Modules/Medium/README.md#exploitation)
   - [Networking](Modules/Medium/README.md#networking)
