@@ -33,7 +33,7 @@ Icon made by [DinosoftLabs](https://www.flaticon.com/authors/dinosoftlabs) from 
 
 ### Check for services with nmap
 
-We start by scanning the machine on all ports with `nmap` including service info and default scripts
+We start by scanning the machine on all TCP-ports with `nmap` including service info and default scripts.
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -84,17 +84,17 @@ Nmap done: 1 IP address (1 host up) scanned in 202.15 seconds
 
 We have the following main TCP-services running and available:
 
-- Simple DNS Plus on port 53
-- Microsoft Windows Kerberos on port 88
-- Microsoft Windows RPC on port 135
-- NetBIOS Session Service on port 139
-- Microsoft Windows Active Directory LDAP on port 389 and 3268
-- SMB on port 445
-- Microsoft HTTPAPI httpd 2.0 (WinRM) on port 5985
+- Simple [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) Plus on port 53
+- Microsoft Windows [Kerberos](https://en.wikipedia.org/wiki/Kerberos_(protocol)) on port 88
+- Microsoft [Windows RPC](https://en.wikipedia.org/wiki/Microsoft_RPC) on port 135
+- [NetBIOS Session Service](https://en.wikipedia.org/wiki/NetBIOS_over_TCP/IP#Session_service) on port 139
+- Microsoft Windows Active Directory [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol) on port 389 and 3268
+- [SMB](https://en.wikipedia.org/wiki/Server_Message_Block) on port 445
+- [WinRM](https://en.wikipedia.org/wiki/Windows_Remote_Management) on port 5985
 
 From the output we see that this machine is a domain controller and the AD domain is `vulnnet-rst.local`.
 
-We also do an UDP-scanning on the top 100 UDP-ports including service info and default scripts
+We also do an UDP-scanning on the top 100 UDP-ports including service info and default scripts.
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -126,7 +126,7 @@ We have the following UDP-services running and available:
 
 ### SMB Enumeration
 
-Next, we check for SMB shares
+Next, we check for SMB shares:
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -175,7 +175,7 @@ and their contents
                 8771839 blocks of size 4096. 4496488 blocks available
 ```
 
-Let's download all files for analysis
+Let's download all files for analysis.
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -210,11 +210,11 @@ Analysing the files, we find the following (user) names:
 - Johnny Leet
 - Tony Skid
 
-But we still don't know the format of the usernames.
+But we still don't know the **format** of the usernames.
 
 ### RID-bruteforcing usernames
 
-So why not check if we can find usernames but bruteforcing RIDs
+So why not check if we can find usernames by bruteforcing RIDs?
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -252,7 +252,7 @@ SMB         10.113.163.173  445    WIN-2BO8M1OE1M1  1110: VULNNET-RST\j-goldenha
 SMB         10.113.163.173  445    WIN-2BO8M1OE1M1  1111: VULNNET-RST\j-leet (SidTypeUser)
 ```
 
-Success! We have the following usernames
+Success! We have the following usernames:
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -268,7 +268,7 @@ j-leet
 
 Based on the machine name, AS-REP roasting is probably a good next step.
 
-We use `GetNPUsers.py` from the Impacket suite
+We use `GetNPUsers.py` from the Impacket suite for that.
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -284,7 +284,7 @@ $krb5asrep$23$t-skid@VULNNET-RST.LOCAL:469cfed8e7fea0d4a49a0cc43b9528eb$c2750c4f
 
 ### Crack the hash
 
-Then we crack the hash with John the Ripper and the Rockyou wordlist
+Then we crack the hash with John the Ripper and the Rockyou wordlist.
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -299,11 +299,11 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
 
-Nice! We now have a set of credentials: `t-skid:tj072889*`
+Nice! We now have a set of credentials: `t-skid:tj072889*`.
 
 ### SMB Enumeration - Part 2
 
-Now that we have new credentials, we should re-check the SMB shares
+Now that we have new credentials, we should re-check the SMB shares:
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -363,11 +363,11 @@ strPassword = "bNdKVkjv3RR9ht"
 ' Determine DNS domain name from RootDSE object.
 ```
 
-Ah, we have another set of credentials: `a-whitehat:bNdKVkjv3RR9ht`
+Ah, we have another set of credentials: `a-whitehat:bNdKVkjv3RR9ht`.
 
 ### Connect as a-whitehat with WinRM
 
-Let's check if this user has access with WinRM
+Let's check if this user has access with WinRM.
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -396,7 +396,7 @@ Info: Establishing connection to remote endpoint
 
 ### Get the user flag
 
-Now we can search for the user flag
+Now we can search for the user flag.
 
 ```powershell
 *Evil-WinRM* PS C:\Users\a-whitehat\Documents> cd ../Desktop
@@ -410,7 +410,7 @@ THM{<REDACTED>}
 
 ### Dump hashes
 
-Next, we check if we can dump the hashes from NTDS.DIT
+Next, we check if we can dump the hashes from NTDS.DIT.
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -458,7 +458,7 @@ WIN-2BO8M1OE1M1$:des-cbc-md5:a2b6ce3458a1d99b
 
 ### Pass-the-hash as Administrator
 
-We can then re-use the Administrator's NTLM-hash to connect
+We can then re-use the Administrator's NTLM-hash to connect.
 
 ```bash
 ┌──(kali㉿kali)-[/mnt/…/TryHackMe/Challenges/Easy/VulnNet_Roasted]
@@ -478,7 +478,7 @@ vulnnet-rst\administrator
 
 ### Get the root flag
 
-Finally, we get the root/system flag
+Finally, we get the root/system flag.
 
 ```powershell
 *Evil-WinRM* PS C:\Users\Administrator\Documents> cd ..
@@ -522,6 +522,7 @@ For additional information, please see the references below.
 - [NetExec - GitHub](https://github.com/Pennyw0rth/NetExec)
 - [NetExec - Kali Tools](https://www.kali.org/tools/netexec/)
 - [NetExec - Wiki](https://www.netexec.wiki)
+- [Network Time Protocol - Wikipedia](https://en.wikipedia.org/wiki/Network_Time_Protocol)
 - [nmap - Homepage](https://nmap.org/)
 - [nmap - Linux manual page](https://linux.die.net/man/1/nmap)
 - [nmap - Manual page](https://nmap.org/book/man.html)
